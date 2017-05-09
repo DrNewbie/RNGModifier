@@ -3,11 +3,11 @@ core:import("CoreMissionScriptElement")
 core:import("CoreTable")
 ElementRandom = ElementRandom or class(CoreMissionScriptElement.MissionScriptElement)
 
-_G.RNDModifier = _G.RNDModifier or {}
+_G.RNGModifier = _G.RNGModifier or {}
 
-RNDModifier = _G.RNDModifier or {}
+RNGModifier = _G.RNGModifier or {}
 
-if not RNDModifier then
+if not RNGModifier then
 	return
 end
 
@@ -18,7 +18,7 @@ function ElementRandom:_get_random_elements()
 		local _level_id = tostring(Global.game_settings.level_id)
 		if _level_id == "branchbank" then
 			if self._id == 100726 then
-				local _randVaultDoor = RNDModifier:SafeGetData("branchbank", "_randVaultDoor") or "1"
+				local _randVaultDoor = RNGModifier:SafeGetData("branchbank", "_randVaultDoor") or "1"
 				if _randVaultDoor == "1" then 
 				
 				elseif _randVaultDoor == "2" then 
@@ -28,7 +28,7 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 			if self._id == 105112 then
-				local _logic_random_026 = RNDModifier:SafeGetData("branchbank", "_logic_random_026") or "1"
+				local _logic_random_026 = RNGModifier:SafeGetData("branchbank", "_logic_random_026") or "1"
 				if _logic_random_026 == "1" then 
 				
 				elseif _logic_random_026 == "2" then 
@@ -38,7 +38,7 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 			if self._id == 104743 then
-				local _logic_random_024 = RNDModifier:SafeGetData("branchbank", "_logic_random_024") or "1"
+				local _logic_random_024 = RNGModifier:SafeGetData("branchbank", "_logic_random_024") or "1"
 				if _logic_random_024 == "1" then 
 				
 				elseif _logic_random_024 == "2" then 
@@ -51,7 +51,7 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "arm_fac" or _level_id == "arm_par" or _level_id == "arm_und" or _level_id == "arm_cro" or _level_id == "arm_hcm" then
 			if self._id == 100028 then
-				local _rand_truck_amount = RNDModifier:SafeGetData("arm_fac", "_rand_truck_amount") or 0
+				local _rand_truck_amount = RNGModifier:SafeGetData("arm_fac", "_rand_truck_amount") or 0
 				_rand_truck_amount = _rand_truck_amount - 1
 				if _rand_truck_amount <= 0 or _rand_truck_amount > 4 then
 				

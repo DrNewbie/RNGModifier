@@ -1,0 +1,34 @@
+{
+	"RNGModifier_menu_title" : "RND Modifier",
+	"RNGModifier_menu_desc" : "Boom!!",
+	"RNGModifier_empty_desc" : "   ",
+	"RNGModifier_number_4_use_1" : "1",
+	"RNGModifier_number_4_use_2" : "2",
+	"RNGModifier_number_4_use_3" : "3",
+	"RNGModifier_number_4_use_4" : "4",
+	
+	"RNGModifier_bool_4_true" : "True",
+	"RNGModifier_bool_4_false" : "False",
+	
+	"RNGModifier_Default_One_Item" : "Default",
+	
+	"RNGModifier_branchbank_randVaultDoor_title" : "Vault Door",
+	"RNGModifier_branchbank_randVaultDoor_desc" : "Which side?",
+	"RNGModifier_branchbank_randVaultDoor_front" : "Front",
+	"RNGModifier_branchbank_randVaultDoor_back" : "Back",
+	"RNGModifier_branchbank_logic_random_026_title" : "Security Room",
+	"RNGModifier_branchbank_logic_random_026_desc" : "Which side?",
+	"RNGModifier_branchbank_logic_random_026_front" : "Front",
+	"RNGModifier_branchbank_logic_random_026_back" : "Back",
+	"RNGModifier_branchbank_logic_random_024_title" : "Escape Point",
+	"RNGModifier_branchbank_logic_random_024_farfront" : "Far Front",
+	"RNGModifier_branchbank_logic_random_024_front" : "Front",
+	"RNGModifier_branchbank_logic_random_024_back" : "Back",
+	"RNGModifier_branchbank_hideOfficeCard_title" : "Hide Office Keycard",
+	"RNGModifier_branchbank_hideOfficeCard_desc" : "Hide the keycard where on office table",
+	
+	"RNGModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
+	"RNGModifier_roberts_logic_chance_012_title" : "There is a Truck",
+	
+	"RNGModifier_arm_rand_truck_amount_title" : "How many trucks?"
+}
