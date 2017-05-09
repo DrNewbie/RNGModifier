@@ -42,12 +42,6 @@
 	"RNDModifier_arm_cro_rand_truck_amount_3" : "3",
 	"RNDModifier_arm_cro_rand_truck_amount_4" : "4",
 	
-	"RNDModifier_arm_for_rand_truck_amount_title" : "How many trucks?",
-	"RNDModifier_arm_for_rand_truck_amount_1" : "1",
-	"RNDModifier_arm_for_rand_truck_amount_2" : "2",
-	"RNDModifier_arm_for_rand_truck_amount_3" : "3",
-	"RNDModifier_arm_for_rand_truck_amount_4" : "4",
-	
 	"RNDModifier_arm_hcm_rand_truck_amount_title" : "How many trucks?",
 	"RNDModifier_arm_hcm_rand_truck_amount_1" : "1",
 	"RNDModifier_arm_hcm_rand_truck_amount_2" : "2",
