@@ -5,7 +5,12 @@ RNDModifier._data = {}
 RNDModifier._menu_id = "RNDModifier_menu_id"
 RNDModifier._heistlist = {
 	"branchbank",
-	"roberts"
+	"roberts",
+	"arm_fac",
+	"arm_par",
+	"arm_und",
+	"arm_cro",
+	"arm_hcm"
 }
 for _, _heist in pairs(RNDModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then

@@ -3,7 +3,7 @@
 	"description": " ",
 	"author": "Dr_Newbie",
 	"contact": " ",
-	"version": "2",
+	"version": "3",
 	"priority": 1,
 	"hooks": [
 		{
@@ -17,6 +17,14 @@
 		{
 			"hook_id": "core/lib/managers/mission/coreelementlogicchance",
 			"script_path": "lua/coreelementlogicchance.lua"
+		},
+		{
+			"hook_id": "core/lib/managers/mission/coreelementcounter",
+			"script_path": "lua/coreelementcounter.lua"
+		},
+		{
+			"hook_id": "core/lib/managers/mission/coreelementunitsequence",
+			"script_path": "lua/coreelementunitsequence.lua"
 		}
 	]
 }
