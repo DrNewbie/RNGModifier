@@ -1,0 +1,22 @@
+{
+	"name": "RND Modifier",
+	"description": " ",
+	"author": "Dr_Newbie",
+	"contact": " ",
+	"version": "2",
+	"priority": 1,
+	"hooks": [
+		{
+			"hook_id": "lib/managers/localizationmanager",
+			"script_path": "menu/Menu_Function.lua"
+		},
+		{
+			"hook_id": "core/lib/managers/mission/coreelementrandom",
+			"script_path": "lua/coreelementrandom.lua"
+		},
+		{
+			"hook_id": "core/lib/managers/mission/coreelementlogicchance",
+			"script_path": "lua/coreelementlogicchance.lua"
+		}
+	]
+}

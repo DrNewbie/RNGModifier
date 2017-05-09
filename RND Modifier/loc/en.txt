@@ -1,0 +1,20 @@
+{
+	"RNDModifier_menu_title" : "RND Modifier",
+	"RNDModifier_menu_desc" : "Boom!!",
+	"RNDModifier_empty_desc" : "   ",
+	
+	"RNDModifier_Default_One_Item" : "Default",
+	
+	"RNDModifier_branchbank_randVaultDoor_title" : "Vault Door",
+	"RNDModifier_branchbank_randVaultDoor_desc" : "Which side?",
+	"RNDModifier_branchbank_randVaultDoor_front" : "Front",
+	"RNDModifier_branchbank_randVaultDoor_back" : "Back"
+	
+	"RNDModifier_branchbank_logic_random_026_title" : "Security Room",
+	"RNDModifier_branchbank_logic_random_026_desc" : "Which side?",
+	"RNDModifier_branchbank_logic_random_026_front" : "Front",
+	"RNDModifier_branchbank_logic_random_026_back" : "Back"
+	
+	"RNDModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
+	"RNDModifier_roberts_logic_chance_011_desc" : " ",
+}
