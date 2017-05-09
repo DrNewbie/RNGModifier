@@ -28,7 +28,7 @@
 	"RNDModifier_branchbank_hideOfficeCard_desc" : "Hide the keycard where on office table",
 	
 	"RNDModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
-	"RNDModifier_roberts_logic_chance_011_desc" : " ",
+	"RNDModifier_roberts_logic_chance_012_title" : "There is a Truck",
 	
 	"RNDModifier_arm_rand_truck_amount_title" : "How many trucks?"
 }

@@ -3,7 +3,7 @@
 	"description": " ",
 	"author": "Dr_Newbie",
 	"contact": " ",
-	"version": "3.5",
+	"version": "3.6",
 	"priority": 1,
 	"hooks": [
 		{

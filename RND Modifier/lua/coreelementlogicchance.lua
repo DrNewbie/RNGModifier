@@ -23,6 +23,13 @@ function ElementLogicChance:on_executed(...)
 				else
 					self._chance = 100
 				end
+				local _logic_chance_012 = RNDModifier:SafeGetData("roberts", "_logic_chance_012") or 0
+				if (_logic_chance_012 == 0 and math.random(100) < 3) or _logic_chance_012 == 1 then 
+					local element = self:get_mission_element(105746)
+					if element then
+						element:on_executed(...)
+					end
+				end
 			end
 		end
 	end
