@@ -1,5 +1,5 @@
 {
-	"RNGModifier_menu_title" : "RND Modifier",
+	"RNGModifier_menu_title" : "RNG Modifier",
 	"RNGModifier_menu_desc" : "Boom!!",
 	"RNGModifier_empty_desc" : "   ",
 	"RNGModifier_number_4_use_1" : "1",

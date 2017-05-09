@@ -1,5 +1,5 @@
 {
-	"name": "RND Modifier",
+	"name": "RNG Modifier",
 	"description": " ",
 	"author": "Dr_Newbie",
 	"contact": " ",
