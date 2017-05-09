@@ -7,6 +7,9 @@
 	"RNDModifier_number_4_use_3" : "3",
 	"RNDModifier_number_4_use_4" : "4",
 	
+	"RNDModifier_bool_4_true" : "True",
+	"RNDModifier_bool_4_false" : "False",
+	
 	"RNDModifier_Default_One_Item" : "Default",
 	
 	"RNDModifier_branchbank_randVaultDoor_title" : "Vault Door",
@@ -21,6 +24,8 @@
 	"RNDModifier_branchbank_logic_random_024_farfront" : "Far Front",
 	"RNDModifier_branchbank_logic_random_024_front" : "Front",
 	"RNDModifier_branchbank_logic_random_024_back" : "Back",
+	"RNDModifier_branchbank_hideOfficeCard_title" : "Hide Office Keycard",
+	"RNDModifier_branchbank_hideOfficeCard_desc" : "Hide the keycard where on office table",
 	
 	"RNDModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
 	"RNDModifier_roberts_logic_chance_011_desc" : " ",

@@ -12,17 +12,17 @@ MenuCallbackHandler.RNDModifier_branchbank_randVaultDoor = function(self, item)
 	RNDModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNDModifier_".. _Curret_Heist .."_randVaultDoor",
-	title = "RNDModifier_".. _Curret_Heist .."_randVaultDoor_title",
-	desc = "RNDModifier_".. _Curret_Heist .."_randVaultDoor_desc",
-	callback = "RNDModifier_".. _Curret_Heist .."_randVaultDoor",
+	id = "RNDModifier_branchbank_randVaultDoor",
+	title = "RNDModifier_branchbank_randVaultDoor_title",
+	desc = "RNDModifier_branchbank_randVaultDoor_desc",
+	callback = "RNDModifier_branchbank_randVaultDoor",
 	items = {
 		"RNDModifier_Default_One_Item",
 		"RNDModifier_branchbank_randVaultDoor_front",
 		"RNDModifier_branchbank_randVaultDoor_back"
 	},
 	value = RNDModifier._data[_Curret_Heist]._randVaultDoor,
-	menu_id = "RNDModifier_".. _Curret_Heist .."_Options_Menu"
+	menu_id = "RNDModifier_branchbank_Options_Menu"
 })
 
 RNDModifier._data[_Curret_Heist]._logic_random_026 = RNDModifier._data[_Curret_Heist]._logic_random_026 or "RNDModifier_Default_One_Item"
@@ -31,17 +31,17 @@ MenuCallbackHandler.RNDModifier_branchbank_logic_random_026 = function(self, ite
 	RNDModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNDModifier_".. _Curret_Heist .."_logic_random_026",
-	title = "RNDModifier_".. _Curret_Heist .."_logic_random_026_title",
-	desc = "RNDModifier_".. _Curret_Heist .."_logic_random_026_desc",
-	callback = "RNDModifier_".. _Curret_Heist .."_logic_random_026",
+	id = "RNDModifier_branchbank_logic_random_026",
+	title = "RNDModifier_branchbank_logic_random_026_title",
+	desc = "RNDModifier_branchbank_logic_random_026_desc",
+	callback = "RNDModifier_branchbank_logic_random_026",
 	items = {
 		"RNDModifier_Default_One_Item",
 		"RNDModifier_branchbank_logic_random_026_front",
 		"RNDModifier_branchbank_logic_random_026_back"
 	},
 	value = RNDModifier._data[_Curret_Heist]._logic_random_026,
-	menu_id = "RNDModifier_".. _Curret_Heist .."_Options_Menu"
+	menu_id = "RNDModifier_branchbank_Options_Menu"
 })
 
 RNDModifier._data[_Curret_Heist]._logic_random_024 = RNDModifier._data[_Curret_Heist]._logic_random_024 or "RNDModifier_Default_One_Item"
@@ -50,10 +50,10 @@ MenuCallbackHandler.RNDModifier_branchbank_logic_random_024 = function(self, ite
 	RNDModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNDModifier_".. _Curret_Heist .."_logic_random_024",
-	title = "RNDModifier_".. _Curret_Heist .."_logic_random_024_title",
+	id = "RNDModifier_branchbank_logic_random_024",
+	title = "RNDModifier_branchbank_logic_random_024_title",
 	desc = "RNDModifier_empty_desc",
-	callback = "RNDModifier_".. _Curret_Heist .."_logic_random_024",
+	callback = "RNDModifier_branchbank_logic_random_024",
 	items = {
 		"RNDModifier_Default_One_Item",
 		"RNDModifier_branchbank_logic_random_024_farfront",
@@ -61,5 +61,23 @@ MenuHelper:AddMultipleChoice({
 		"RNDModifier_branchbank_logic_random_024_back"
 	},
 	value = RNDModifier._data[_Curret_Heist]._logic_random_024,
-	menu_id = "RNDModifier_".. _Curret_Heist .."_Options_Menu"
+	menu_id = "RNDModifier_branchbank_Options_Menu"
+})
+
+RNDModifier._data[_Curret_Heist]._hideOfficeCard = RNDModifier._data[_Curret_Heist]._hideOfficeCard or "RNDModifier_Default_One_Item"
+MenuCallbackHandler.RNDModifier_branchbank_hideOfficeCard = function(self, item)
+	RNDModifier._data[_Curret_Heist]._hideOfficeCard = tostring(item:value())
+	RNDModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNDModifier_branchbank_hideOfficeCard",
+	title = "RNDModifier_branchbank_hideOfficeCard_title",
+	desc = "RNDModifier_empty_desc",
+	callback = "RNDModifier_branchbank_hideOfficeCard",
+	items = {
+		"RNDModifier_Default_One_Item",
+		"RNDModifier_bool_4_false"
+	},
+	value = RNDModifier._data[_Curret_Heist]._hideOfficeCard,
+	menu_id = "RNDModifier_branchbank_Options_Menu"
 })
