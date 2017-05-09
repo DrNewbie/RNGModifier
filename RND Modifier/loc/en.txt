@@ -2,6 +2,10 @@
 	"RNDModifier_menu_title" : "RND Modifier",
 	"RNDModifier_menu_desc" : "Boom!!",
 	"RNDModifier_empty_desc" : "   ",
+	"RNDModifier_number_4_use_1" : "1",
+	"RNDModifier_number_4_use_2" : "2",
+	"RNDModifier_number_4_use_3" : "3",
+	"RNDModifier_number_4_use_4" : "4",
 	
 	"RNDModifier_Default_One_Item" : "Default",
 	
@@ -18,33 +22,5 @@
 	"RNDModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
 	"RNDModifier_roberts_logic_chance_011_desc" : " ",
 	
-	"RNDModifier_arm_fac_rand_truck_amount_title" : "How many trucks?",
-	"RNDModifier_arm_fac_rand_truck_amount_1" : "1",
-	"RNDModifier_arm_fac_rand_truck_amount_2" : "2",
-	"RNDModifier_arm_fac_rand_truck_amount_3" : "3",
-	"RNDModifier_arm_fac_rand_truck_amount_4" : "4",
-	
-	"RNDModifier_arm_par_rand_truck_amount_title" : "How many trucks?",
-	"RNDModifier_arm_par_rand_truck_amount_1" : "1",
-	"RNDModifier_arm_par_rand_truck_amount_2" : "2",
-	"RNDModifier_arm_par_rand_truck_amount_3" : "3",
-	"RNDModifier_arm_par_rand_truck_amount_4" : "4",
-	
-	"RNDModifier_arm_und_rand_truck_amount_title" : "How many trucks?",
-	"RNDModifier_arm_und_rand_truck_amount_1" : "1",
-	"RNDModifier_arm_und_rand_truck_amount_2" : "2",
-	"RNDModifier_arm_und_rand_truck_amount_3" : "3",
-	"RNDModifier_arm_und_rand_truck_amount_4" : "4",
-	
-	"RNDModifier_arm_cro_rand_truck_amount_title" : "How many trucks?",
-	"RNDModifier_arm_cro_rand_truck_amount_1" : "1",
-	"RNDModifier_arm_cro_rand_truck_amount_2" : "2",
-	"RNDModifier_arm_cro_rand_truck_amount_3" : "3",
-	"RNDModifier_arm_cro_rand_truck_amount_4" : "4",
-	
-	"RNDModifier_arm_hcm_rand_truck_amount_title" : "How many trucks?",
-	"RNDModifier_arm_hcm_rand_truck_amount_1" : "1",
-	"RNDModifier_arm_hcm_rand_truck_amount_2" : "2",
-	"RNDModifier_arm_hcm_rand_truck_amount_3" : "3",
-	"RNDModifier_arm_hcm_rand_truck_amount_4" : "4"
+	"RNDModifier_arm_rand_truck_amount_title" : "How many trucks?"
 }
