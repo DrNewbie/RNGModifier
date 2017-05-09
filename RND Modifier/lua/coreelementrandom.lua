@@ -37,6 +37,18 @@ function ElementRandom:_get_random_elements()
 					rand = 2
 				end
 			end
+			if self._id == 104743 then
+				local _rand_escape = RNDModifier:SafeGetData("branchbank", "_rand_escape") or "1"
+				if _rand_escape == "1" then 
+				
+				elseif _rand_escape == "2" then 
+					rand = 1
+				elseif _rand_escape == "3" then 
+					rand = 2
+				elseif _rand_escape == "4" then 
+					rand = 3
+				end
+			end
 		elseif _level_id == "arm_fac" or _level_id == "arm_par" or _level_id == "arm_und" or _level_id == "arm_cro" or _level_id == "arm_hcm" then
 			if self._id == 100028 then
 				local _rand_truck_amount = RNDModifier:SafeGetData("arm_fac", "_rand_truck_amount") or 0
