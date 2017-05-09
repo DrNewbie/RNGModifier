@@ -2,7 +2,6 @@ core:module("CoreElementUnitSequence")
 core:import("CoreMissionScriptElement")
 core:import("CoreCode")
 core:import("CoreUnit")
-ElementUnitSequence = ElementUnitSequence or class(CoreMissionScriptElement.MissionScriptElement)
 
 _G.RNDModifier = _G.RNDModifier or {}
 
@@ -12,10 +11,9 @@ if not RNDModifier then
 	return
 end
 
-function ElementUnitSequence:on_executed(instigator)
-	if not self._values.enabled then
-		return
-	end
+local RNDModifier_ElementUnitSequence_on_executed = ElementUnitSequence.on_executed
+
+function ElementUnitSequence:on_executed(...)
 	if Global.game_settings then
 		local _level_id = tostring(Global.game_settings.level_id)
 		if _level_id == "branchbank" then
@@ -29,10 +27,5 @@ function ElementUnitSequence:on_executed(instigator)
 			end
 		end
 	end
-	local run_sequence = true
-	run_sequence = self._values.only_for_local_player and (not managers.player:player_unit() or instigator == managers.player:player_unit())
-	if run_sequence then
-		self._unit:damage():run_sequence_simple("run_sequence")
-	end
-	ElementUnitSequence.super.on_executed(self, instigator)
+	return RNDModifier_ElementUnitSequence_on_executed(self, ...)
 end

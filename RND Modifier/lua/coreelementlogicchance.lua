@@ -10,10 +10,9 @@ if not RNDModifier then
 	return
 end
 
-function ElementLogicChance:on_executed(instigator)
-	if not self._values.enabled then
-		return
-	end
+local RNDModifier_ElementLogicChance_on_executed = ElementLogicChance.on_executed
+
+function ElementLogicChance:on_executed(...)
 	local roll = math.random(100)
 	if Global.game_settings then
 		if Global.game_settings.level_id == "roberts" then
@@ -27,10 +26,5 @@ function ElementLogicChance:on_executed(instigator)
 			end
 		end
 	end
-	if roll > self._chance then
-		self:_trigger_outcome("fail")
-		return
-	end
-	self:_trigger_outcome("success")
-	ElementLogicChance.super.on_executed(self, instigator)
+	return RNDModifier_ElementLogicChance_on_executed(self, ...)
 end
