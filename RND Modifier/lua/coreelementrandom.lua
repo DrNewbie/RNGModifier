@@ -38,14 +38,14 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 			if self._id == 104743 then
-				local _rand_escape = RNDModifier:SafeGetData("branchbank", "_rand_escape") or "1"
-				if _rand_escape == "1" then 
+				local _logic_random_024 = RNDModifier:SafeGetData("branchbank", "_logic_random_024") or "1"
+				if _logic_random_024 == "1" then 
 				
-				elseif _rand_escape == "2" then 
+				elseif _logic_random_024 == "2" then 
 					rand = 1
-				elseif _rand_escape == "3" then 
+				elseif _logic_random_024 == "3" then 
 					rand = 2
-				elseif _rand_escape == "4" then 
+				elseif _logic_random_024 == "4" then 
 					rand = 3
 				end
 			end
