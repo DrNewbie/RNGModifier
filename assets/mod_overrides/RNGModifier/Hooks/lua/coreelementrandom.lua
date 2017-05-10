@@ -51,7 +51,7 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "arm_fac" or _level_id == "arm_par" or _level_id == "arm_und" or _level_id == "arm_cro" or _level_id == "arm_hcm" then
 			if self._id == 100028 then
-				local _rand_truck_amount = RNGModifier:SafeGetData("arm_fac", "_rand_truck_amount") or 0
+				local _rand_truck_amount = RNGModifier:SafeGetData(_level_id, "_rand_truck_amount") or 0
 				_rand_truck_amount = _rand_truck_amount - 1
 				if _rand_truck_amount <= 0 or _rand_truck_amount > 4 then
 				
