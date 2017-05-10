@@ -1,6 +1,6 @@
 _G.RNGModifier = _G.RNGModifier or {}
-RNGModifier._path = ModPath
-RNGModifier._save_path = SavePath .. "RNGModifier.txt"
+RNGModifier._path = "assets/mod_overrides/RNGModifier/"
+RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {}
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._heistlist = {
@@ -55,10 +55,6 @@ function RNGModifier:SafeGetData(_heist, _table1, _table2, _table3, _table4)
 	return
 end
 
-Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_RNGModifier", function(loc)
-	loc:load_localization_file(RNGModifier._path .. "loc/en.txt")
-end)
-
 Hooks:Add("MenuManagerSetupCustomMenus", "MenuManagerSetupCustomMenus_RNGModifier", function(menu_manager, nodes)
 	MenuHelper:NewMenu(RNGModifier._menu_id)
 	for _, _heist in pairs(RNGModifier._heistlist) do
@@ -83,7 +79,7 @@ end)
 Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGModifier", function(menu_manager, nodes)
 	for _, _heist in pairs(RNGModifier._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
-			dofile(RNGModifier._path .. "menu/heist/".. _heist ..".lua")
+			dofile(RNGModifier._path .. "Hooks/menu/heist/".. _heist ..".lua")
 		end
 	end
 end)
