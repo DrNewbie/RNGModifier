@@ -6,7 +6,7 @@ local _Curret_Heist = "arm_fac"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._rand_truck_amount = RNGModifier._data[_Curret_Heist]._rand_truck_amount or "RNGModifier_Default_One_Item"
+RNGModifier._data[_Curret_Heist]._rand_truck_amount = RNGModifier._data[_Curret_Heist]._rand_truck_amount or 1
 MenuCallbackHandler.RNGModifier_arm_fac_rand_truck_amount = function(self, item)
 	RNGModifier._data[_Curret_Heist]._rand_truck_amount = item:value()
 	RNGModifier:Save()

@@ -6,9 +6,9 @@ local _Curret_Heist = "branchbank"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._randVaultDoor = RNGModifier._data[_Curret_Heist]._randVaultDoor or "RNGModifier_Default_One_Item"
+RNGModifier._data[_Curret_Heist]._randVaultDoor = RNGModifier._data[_Curret_Heist]._randVaultDoor or 1
 MenuCallbackHandler.RNGModifier_branchbank_randVaultDoor = function(self, item)
-	RNGModifier._data[_Curret_Heist]._randVaultDoor = tostring(item:value())
+	RNGModifier._data[_Curret_Heist]._randVaultDoor = item:value()
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -25,9 +25,9 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_branchbank_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._logic_random_026 = RNGModifier._data[_Curret_Heist]._logic_random_026 or "RNGModifier_Default_One_Item"
+RNGModifier._data[_Curret_Heist]._logic_random_026 = RNGModifier._data[_Curret_Heist]._logic_random_026 or 1
 MenuCallbackHandler.RNGModifier_branchbank_logic_random_026 = function(self, item)
-	RNGModifier._data[_Curret_Heist]._logic_random_026 = tostring(item:value())
+	RNGModifier._data[_Curret_Heist]._logic_random_026 = item:value()
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -44,9 +44,9 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_branchbank_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._logic_random_024 = RNGModifier._data[_Curret_Heist]._logic_random_024 or "RNGModifier_Default_One_Item"
+RNGModifier._data[_Curret_Heist]._logic_random_024 = RNGModifier._data[_Curret_Heist]._logic_random_024 or 1
 MenuCallbackHandler.RNGModifier_branchbank_logic_random_024 = function(self, item)
-	RNGModifier._data[_Curret_Heist]._logic_random_024 = tostring(item:value())
+	RNGModifier._data[_Curret_Heist]._logic_random_024 = item:value()
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -64,9 +64,9 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_branchbank_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._hideOfficeCard = RNGModifier._data[_Curret_Heist]._hideOfficeCard or "RNGModifier_Default_One_Item"
+RNGModifier._data[_Curret_Heist]._hideOfficeCard = RNGModifier._data[_Curret_Heist]._hideOfficeCard or 1
 MenuCallbackHandler.RNGModifier_branchbank_hideOfficeCard = function(self, item)
-	RNGModifier._data[_Curret_Heist]._hideOfficeCard = tostring(item:value())
+	RNGModifier._data[_Curret_Heist]._hideOfficeCard = item:value()
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

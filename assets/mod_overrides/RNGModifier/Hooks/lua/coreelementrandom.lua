@@ -18,34 +18,34 @@ function ElementRandom:_get_random_elements()
 		local _level_id = tostring(Global.game_settings.level_id)
 		if _level_id == "branchbank" then
 			if self._id == 100726 then
-				local _randVaultDoor = RNGModifier:SafeGetData("branchbank", "_randVaultDoor") or "1"
-				if _randVaultDoor == "1" then 
+				local _randVaultDoor = RNGModifier:SafeGetData("branchbank", "_randVaultDoor") or 1
+				if _randVaultDoor == 1 then 
 				
-				elseif _randVaultDoor == "2" then 
+				elseif _randVaultDoor == 2 then 
 					rand = 2
-				elseif _randVaultDoor == "3" then 
+				elseif _randVaultDoor == 3 then 
 					rand = 1
 				end
 			end
 			if self._id == 105112 then
-				local _logic_random_026 = RNGModifier:SafeGetData("branchbank", "_logic_random_026") or "1"
-				if _logic_random_026 == "1" then 
+				local _logic_random_026 = RNGModifier:SafeGetData("branchbank", "_logic_random_026") or 1
+				if _logic_random_026 == 1 then 
 				
-				elseif _logic_random_026 == "2" then 
+				elseif _logic_random_026 == 2 then 
 					rand = 1
-				elseif _logic_random_026 == "3" then 
+				elseif _logic_random_026 == 3 then 
 					rand = 2
 				end
 			end
 			if self._id == 104743 then
-				local _logic_random_024 = RNGModifier:SafeGetData("branchbank", "_logic_random_024") or "1"
-				if _logic_random_024 == "1" then 
+				local _logic_random_024 = RNGModifier:SafeGetData("branchbank", "_logic_random_024") or 1
+				if _logic_random_024 == 1 then 
 				
-				elseif _logic_random_024 == "2" then 
+				elseif _logic_random_024 == 2 then 
 					rand = 1
-				elseif _logic_random_024 == "3" then 
+				elseif _logic_random_024 == 3 then 
 					rand = 2
-				elseif _logic_random_024 == "4" then 
+				elseif _logic_random_024 == 4 then 
 					rand = 3
 				end
 			end
