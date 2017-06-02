@@ -6,6 +6,19 @@
 	"RNGModifier_number_4_use_2" : "2",
 	"RNGModifier_number_4_use_3" : "3",
 	"RNGModifier_number_4_use_4" : "4",
+	"RNGModifier_number_4_use_5" : "5",
+	"RNGModifier_number_4_use_6" : "6",
+	"RNGModifier_number_4_use_7" : "7",
+	"RNGModifier_number_4_use_8" : "8",
+	"RNGModifier_number_4_use_9" : "9",
+	"RNGModifier_number_4_use_10" : "10",
+	"RNGModifier_number_4_use_11" : "11",
+	"RNGModifier_number_4_use_12" : "12",
+	"RNGModifier_number_4_use_13" : "13",
+	"RNGModifier_number_4_use_14" : "14",
+	"RNGModifier_number_4_use_15" : "15",
+	"RNGModifier_number_4_use_16" : "16",
+	"RNGModifier_number_4_use_17" : "17",
 	
 	"RNGModifier_bool_4_true" : "True",
 	"RNGModifier_bool_4_false" : "False",
@@ -30,5 +43,11 @@
 	"RNGModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
 	"RNGModifier_roberts_logic_chance_012_title" : "There is a Truck",
 	
-	"RNGModifier_arm_rand_truck_amount_title" : "How many trucks?"
+	"RNGModifier_arm_rand_truck_amount_title" : "How many trucks?",
+	
+	"RNGModifier_cage_pick1_correct_computer_title" : "Correct Computer",
+	"RNGModifier_cage_pick1_correct_computer_desc" : "Which Computer is right one?",
+	"RNGModifier_cage_choose_storage_title" : "Storage Room",
+	"RNGModifier_cage_choose_storage_top" : "Top",
+	"RNGModifier_cage_choose_storage_bottom" : "Bottom"
 }

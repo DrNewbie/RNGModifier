@@ -65,6 +65,25 @@ function ElementRandom:_get_random_elements()
 					rand = _truck_list[_rand_truck_amount]
 				end
 			end
+		elseif _level_id == "cage" then
+			if self._id == 104929 then
+				local _pick1_correct_computer = RNGModifier:SafeGetData(_level_id, "_pick1_correct_computer") or 0
+				_pick1_correct_computer = _pick1_correct_computer - 1
+				if _pick1_correct_computer <= 0 then
+				
+				else
+					rand = _pick1_correct_computer
+				end
+			end
+			if self._id == 102384 then
+				local _choose_storage = RNGModifier:SafeGetData(_level_id, "_choose_storage") or 0
+				_choose_storage = _choose_storage - 1
+				if _choose_storage <= 0 then
+				
+				else
+					rand = _choose_storage
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
