@@ -1,7 +1,7 @@
 _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
-RNGModifier._data = {}
+RNGModifier._data = {{{{{{}}}}}}
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._heistlist = {
 	"branchbank",
@@ -11,7 +11,8 @@ RNGModifier._heistlist = {
 	"arm_und",
 	"arm_cro",
 	"arm_hcm",
-	"cage"
+	"cage",
+	"welcome_to_the_jungle_1"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then

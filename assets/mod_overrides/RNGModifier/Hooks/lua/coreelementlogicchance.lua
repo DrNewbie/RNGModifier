@@ -32,6 +32,16 @@ function ElementLogicChance:on_executed(...)
 				end
 			end
 		end
+		if Global.game_settings.level_id == "welcome_to_the_jungle_1" or Global.game_settings.level_id == "welcome_to_the_jungle_1_night" then
+			if self._id == 103270 then
+				local _chanceOfTrade10 = RNGModifier:SafeGetData("welcome_to_the_jungle_1", "_chanceOfTrade10") or 0
+				if _chanceOfTrade10 == 0 then 
+				
+				else
+					self._chance = 100
+				end
+			end
+		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
 end
