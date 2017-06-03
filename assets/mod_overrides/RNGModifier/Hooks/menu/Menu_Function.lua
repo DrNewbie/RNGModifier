@@ -13,7 +13,8 @@ RNGModifier._heistlist = {
 	"arm_hcm",
 	"cage",
 	"welcome_to_the_jungle_1",
-	"big"
+	"big",
+	"framing_frame_3"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
@@ -22,6 +23,11 @@ for _, _heist in pairs(RNGModifier._heistlist) do
 end
 
 function RNGModifier:Save()
+	local FF3_spawnRandomHarrdDrive_A = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_A")
+	local FF3_spawnRandomHarrdDrive_B = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_B")
+	if FF3_spawnRandomHarrdDrive_A ~= 0 and FF3_spawnRandomHarrdDrive_A == FF3_spawnRandomHarrdDrive_B then
+		self._data["framing_frame_3"]._spawnRandomHarrdDrive_A = 0
+	end
 	local _file = io.open(self._save_path, "w+")
 	if _file then
 		_file:write(json.encode(self._data))

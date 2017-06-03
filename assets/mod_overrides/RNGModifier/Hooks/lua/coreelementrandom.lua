@@ -11,6 +11,8 @@ if not RNGModifier then
 	return
 end
 
+local _tmp_data = {}
+
 function ElementRandom:_get_random_elements()
 	local t = {}
 	local rand = math.random(#self._unused_randoms)
@@ -82,6 +84,65 @@ function ElementRandom:_get_random_elements()
 				
 				else
 					rand = _choose_storage
+				end
+			end
+		elseif _level_id == "framing_frame_3" then
+			if self._id == 105506 then
+				local _chooseServerRoom = RNGModifier:SafeGetData(_level_id, "_chooseServerRoom") or 0
+				_chooseServerRoom = _chooseServerRoom - 1
+				if _chooseServerRoom <= 0 then
+				
+				else
+					rand = _chooseServerRoom
+				end
+			end
+			if self._id == 100461 then
+				local _spawnRandomVault = RNGModifier:SafeGetData(_level_id, "_spawnRandomVault") or 0
+				_spawnRandomVault = _spawnRandomVault - 1
+				if _spawnRandomVault <= 0 then
+				
+				else
+					rand = _spawnRandomVault
+				end
+			end
+			if self._id == 100697 then
+				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
+				_tmp_data[_level_id]["RandomHarrdDrive"] = _tmp_data[_level_id]["RandomHarrdDrive"] or 0
+				_tmp_data[_level_id]["RandomHarrdDrive"] = _tmp_data[_level_id]["RandomHarrdDrive"] + 1
+				if _tmp_data[_level_id]["RandomHarrdDrive"] == 1 then
+					local _spawnRandomHarrdDrive_A = RNGModifier:SafeGetData(_level_id, "_spawnRandomHarrdDrive_A") or 0
+					_spawnRandomHarrdDrive_A = _spawnRandomHarrdDrive_A - 1
+					if _spawnRandomHarrdDrive_A <= 0 then
+					
+					else
+						rand = _spawnRandomHarrdDrive_A
+					end
+				else
+					local _spawnRandomHarrdDrive_B = RNGModifier:SafeGetData(_level_id, "_spawnRandomHarrdDrive_B") or 0
+					_spawnRandomHarrdDrive_B = _spawnRandomHarrdDrive_B - 1
+					if _spawnRandomHarrdDrive_B <= 0 then
+					
+					else
+						rand = _spawnRandomHarrdDrive_B
+					end
+				end
+			end
+			if self._id == 100714 then
+				local _SpawnRandomPhone = RNGModifier:SafeGetData(_level_id, "_SpawnRandomPhone") or 0
+				_SpawnRandomPhone = _SpawnRandomPhone - 1
+				if _SpawnRandomPhone <= 0 then
+				
+				else
+					rand = _SpawnRandomPhone
+				end
+			end
+			if self._id == 100784 then
+				local _spawnRandomPads = RNGModifier:SafeGetData(_level_id, "_spawnRandomPads") or 0
+				_spawnRandomPads = _spawnRandomPads - 1
+				if _spawnRandomPads <= 0 then
+				
+				else
+					rand = _spawnRandomPads
 				end
 			end
 		end

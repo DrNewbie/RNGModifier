@@ -54,5 +54,19 @@
 	"RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title" : "Coke and Money deal",
 	
 	"RNGModifier_big_chance_to_work_title" : "First Try",
-	"RNGModifier_big_chance_to_work_desc" : "The server itself being the correct PC"
+	"RNGModifier_big_chance_to_work_desc" : "The server itself being the correct PC",
+	
+	"RNGModifier_framing_frame_3_chooseServerRoom_title" : "Server Room",
+	"RNGModifier_framing_frame_3_chooseServerRoom_001" : "Office",
+	"RNGModifier_framing_frame_3_chooseServerRoom_002" : "Close to the kitchen",
+	"RNGModifier_framing_frame_3_chooseServerRoom_003" : "Other one",	
+	"RNGModifier_framing_frame_3_spawnRandomVault_title" : "Vault",
+	"RNGModifier_framing_frame_3_spawnRandomVault_001" : "Underground",
+	"RNGModifier_framing_frame_3_spawnRandomVault_002" : "Bedroom",
+	"RNGModifier_framing_frame_3_spawnRandomVault_003" : "Other one",
+	"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_A_title" : "Hard Drive 01",
+	"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_B_title" : "Hard Drive 02",
+	"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_desc" : "Both hard drive can not be the same",
+	"RNGModifier_framing_frame_3_SpawnRandomPhone_title" : "Phone"
+	"RNGModifier_framing_frame_3_spawnRandomPads_title" : "Pads"
 }
