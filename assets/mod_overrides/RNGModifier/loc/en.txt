@@ -73,5 +73,7 @@
 	"RNGModifier_friend_pick_rand_escape_vehicle_title" : "Escape Plan",
 	"RNGModifier_friend_pick_rand_escape_vehicle_001" : "Boat",
 	"RNGModifier_friend_pick_rand_escape_vehicle_002" : "Van, Break the wall",
-	"RNGModifier_friend_pick_rand_escape_vehicle_003" : "Van, Other one"
+	"RNGModifier_friend_pick_rand_escape_vehicle_003" : "Van, Other one",
+	
+	"RNGModifier_crojob3_spawn_vault_title" : "Vault"
 }

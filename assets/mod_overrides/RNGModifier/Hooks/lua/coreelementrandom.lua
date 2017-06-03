@@ -2,6 +2,7 @@ core:module("CoreElementRandom")
 core:import("CoreMissionScriptElement")
 core:import("CoreTable")
 ElementRandom = ElementRandom or class(CoreMissionScriptElement.MissionScriptElement)
+dofile("assets/mod_overrides/RNGModifier/Hooks/menu/Menu_Function.lua")
 
 _G.RNGModifier = _G.RNGModifier or {}
 

@@ -1,6 +1,7 @@
 core:module("CoreElementLogicChance")
 core:import("CoreMissionScriptElement")
 ElementLogicChance = ElementLogicChance or class(CoreMissionScriptElement.MissionScriptElement)
+dofile("assets/mod_overrides/RNGModifier/Hooks/menu/Menu_Function.lua")
 
 _G.RNGModifier = _G.RNGModifier or {}
 
