@@ -51,5 +51,5 @@
 	"RNGModifier_cage_choose_storage_top" : "Top",
 	"RNGModifier_cage_choose_storage_bottom" : "Bottom",
 	
-	"RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title" : "4 coke + 1 money"
+	"RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title" : "Coke and Money deal"
 }
