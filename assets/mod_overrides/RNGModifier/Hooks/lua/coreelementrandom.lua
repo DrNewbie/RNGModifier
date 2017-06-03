@@ -20,7 +20,7 @@ function ElementRandom:_get_random_elements()
 		local _level_id = tostring(Global.game_settings.level_id)
 		if _level_id == "branchbank" then
 			if self._id == 100726 then
-				local _randVaultDoor = RNGModifier:SafeGetData("branchbank", "_randVaultDoor") or 1
+				local _randVaultDoor = RNGModifier:SafeGetData(_level_id, "_randVaultDoor") or 1
 				if _randVaultDoor == 1 then 
 				
 				elseif _randVaultDoor == 2 then 
@@ -30,7 +30,7 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 			if self._id == 105112 then
-				local _logic_random_026 = RNGModifier:SafeGetData("branchbank", "_logic_random_026") or 1
+				local _logic_random_026 = RNGModifier:SafeGetData(_level_id, "_logic_random_026") or 1
 				if _logic_random_026 == 1 then 
 				
 				elseif _logic_random_026 == 2 then 
@@ -40,7 +40,7 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 			if self._id == 104743 then
-				local _logic_random_024 = RNGModifier:SafeGetData("branchbank", "_logic_random_024") or 1
+				local _logic_random_024 = RNGModifier:SafeGetData(_level_id, "_logic_random_024") or 1
 				if _logic_random_024 == 1 then 
 				
 				elseif _logic_random_024 == 2 then 
@@ -143,6 +143,16 @@ function ElementRandom:_get_random_elements()
 				
 				else
 					rand = _spawnRandomPads
+				end
+			end
+		elseif _level_id == "friend" then
+			if self._id == 100825 then
+				local _pick_rand_escape_vehicle = RNGModifier:SafeGetData(_level_id, "_pick_rand_escape_vehicle") or 0
+				_pick_rand_escape_vehicle = _pick_rand_escape_vehicle - 1
+				if _pick_rand_escape_vehicle <= 0 then
+				
+				else
+					rand = _pick_rand_escape_vehicle
 				end
 			end
 		end

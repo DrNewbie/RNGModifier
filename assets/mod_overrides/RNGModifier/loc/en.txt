@@ -67,6 +67,11 @@
 	"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_A_title" : "Hard Drive 01",
 	"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_B_title" : "Hard Drive 02",
 	"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_desc" : "Both hard drive can not be the same",
-	"RNGModifier_framing_frame_3_SpawnRandomPhone_title" : "Phone"
-	"RNGModifier_framing_frame_3_spawnRandomPads_title" : "Pads"
+	"RNGModifier_framing_frame_3_SpawnRandomPhone_title" : "Phone",
+	"RNGModifier_framing_frame_3_spawnRandomPads_title" : "Pads",
+	
+	"RNGModifier_friend_pick_rand_escape_vehicle_title" : "Escape Plan",
+	"RNGModifier_friend_pick_rand_escape_vehicle_001" : "Boat",
+	"RNGModifier_friend_pick_rand_escape_vehicle_002" : "Van, Break the wall",
+	"RNGModifier_friend_pick_rand_escape_vehicle_003" : "Van, Other one"
 }
