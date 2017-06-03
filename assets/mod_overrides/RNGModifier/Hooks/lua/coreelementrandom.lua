@@ -72,18 +72,14 @@ function ElementRandom:_get_random_elements()
 			if self._id == 104929 then
 				local _pick1_correct_computer = RNGModifier:SafeGetData(_level_id, "_pick1_correct_computer") or 0
 				_pick1_correct_computer = _pick1_correct_computer - 1
-				if _pick1_correct_computer <= 0 then
-				
-				else
+				if _pick1_correct_computer > 0 then
 					rand = _pick1_correct_computer
 				end
 			end
 			if self._id == 102384 then
 				local _choose_storage = RNGModifier:SafeGetData(_level_id, "_choose_storage") or 0
 				_choose_storage = _choose_storage - 1
-				if _choose_storage <= 0 then
-				
-				else
+				if _choose_storage > 0 then
 					rand = _choose_storage
 				end
 			end
@@ -91,18 +87,14 @@ function ElementRandom:_get_random_elements()
 			if self._id == 105506 then
 				local _chooseServerRoom = RNGModifier:SafeGetData(_level_id, "_chooseServerRoom") or 0
 				_chooseServerRoom = _chooseServerRoom - 1
-				if _chooseServerRoom <= 0 then
-				
-				else
+				if _chooseServerRoom > 0 then
 					rand = _chooseServerRoom
 				end
 			end
 			if self._id == 100461 then
 				local _spawnRandomVault = RNGModifier:SafeGetData(_level_id, "_spawnRandomVault") or 0
 				_spawnRandomVault = _spawnRandomVault - 1
-				if _spawnRandomVault <= 0 then
-				
-				else
+				if _spawnRandomVault > 0 then
 					rand = _spawnRandomVault
 				end
 			end
@@ -113,17 +105,13 @@ function ElementRandom:_get_random_elements()
 				if _tmp_data[_level_id]["RandomHarrdDrive"] == 1 then
 					local _spawnRandomHarrdDrive_A = RNGModifier:SafeGetData(_level_id, "_spawnRandomHarrdDrive_A") or 0
 					_spawnRandomHarrdDrive_A = _spawnRandomHarrdDrive_A - 1
-					if _spawnRandomHarrdDrive_A <= 0 then
-					
-					else
+					if _spawnRandomHarrdDrive_A > 0 then
 						rand = _spawnRandomHarrdDrive_A
 					end
 				else
 					local _spawnRandomHarrdDrive_B = RNGModifier:SafeGetData(_level_id, "_spawnRandomHarrdDrive_B") or 0
 					_spawnRandomHarrdDrive_B = _spawnRandomHarrdDrive_B - 1
-					if _spawnRandomHarrdDrive_B <= 0 then
-					
-					else
+					if _spawnRandomHarrdDrive_B > 0 then
 						rand = _spawnRandomHarrdDrive_B
 					end
 				end
@@ -131,18 +119,14 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100714 then
 				local _SpawnRandomPhone = RNGModifier:SafeGetData(_level_id, "_SpawnRandomPhone") or 0
 				_SpawnRandomPhone = _SpawnRandomPhone - 1
-				if _SpawnRandomPhone <= 0 then
-				
-				else
+				if _SpawnRandomPhone > 0 then
 					rand = _SpawnRandomPhone
 				end
 			end
 			if self._id == 100784 then
 				local _spawnRandomPads = RNGModifier:SafeGetData(_level_id, "_spawnRandomPads") or 0
 				_spawnRandomPads = _spawnRandomPads - 1
-				if _spawnRandomPads <= 0 then
-				
-				else
+				if _spawnRandomPads > 0 then
 					rand = _spawnRandomPads
 				end
 			end
@@ -150,10 +134,23 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100825 then
 				local _pick_rand_escape_vehicle = RNGModifier:SafeGetData(_level_id, "_pick_rand_escape_vehicle") or 0
 				_pick_rand_escape_vehicle = _pick_rand_escape_vehicle - 1
-				if _pick_rand_escape_vehicle <= 0 then
-				
-				else
+				if _pick_rand_escape_vehicle > 0 then
 					rand = _pick_rand_escape_vehicle
+				end
+			end
+		elseif _level_id == "watchdogs_1" or _level_id == "watchdogs_1_night" then
+			if self._id == 100770 then
+				local _chooseLootVehicle = RNGModifier:SafeGetData("watchdogs_1", "_chooseLootVehicle") or 0
+				_chooseLootVehicle = _chooseLootVehicle - 1
+				if _chooseLootVehicle > 0 then
+					rand = _chooseLootVehicle
+				end
+			end
+			if self._id == 102854 then
+				local _chooseRandomChopper = RNGModifier:SafeGetData("watchdogs_1", "_chooseLootVehicle") or 0
+				_chooseRandomChopper = _chooseRandomChopper - 1
+				if _chooseRandomChopper > 0 then
+					rand = _chooseRandomChopper
 				end
 			end
 		end

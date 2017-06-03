@@ -75,5 +75,14 @@
 	"RNGModifier_friend_pick_rand_escape_vehicle_002" : "Van, Break the wall",
 	"RNGModifier_friend_pick_rand_escape_vehicle_003" : "Van, Other one",
 	
-	"RNGModifier_crojob3_spawn_vault_title" : "Vault"
+	"RNGModifier_crojob3_spawn_vault_title" : "Vault",
+	
+	"RNGModifier_watchdogs_1_chooseLootVehicle_title" : "Loot drop off Point",
+	"RNGModifier_watchdogs_1_chooseLootVehicle_001" : "Right Front",
+	"RNGModifier_watchdogs_1_chooseLootVehicle_002" : "Right Back",
+	"RNGModifier_watchdogs_1_chooseLootVehicle_003" : "Left Front",
+	"RNGModifier_watchdogs_1_chooseLootVehicle_004" : "Left Back",
+	"RNGModifier_watchdogs_1_chooseRandomChopper_title" : "Escape Point",
+	"RNGModifier_watchdogs_1_chooseRandomChopper_001" : "Right",
+	"RNGModifier_watchdogs_1_chooseRandomChopper_002" : "Left"
 }
