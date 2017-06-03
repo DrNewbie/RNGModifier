@@ -42,6 +42,16 @@ function ElementLogicChance:on_executed(...)
 				end
 			end
 		end
+		if Global.game_settings.level_id == "big" then
+			if self._id == 104494 then
+				local _chance_to_work = RNGModifier:SafeGetData("big", "_chance_to_work") or 0
+				if _chance_to_work == 0 then 
+				
+				else
+					self._chance = 100
+				end
+			end
+		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
 end

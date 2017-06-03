@@ -51,5 +51,8 @@
 	"RNGModifier_cage_choose_storage_top" : "Top",
 	"RNGModifier_cage_choose_storage_bottom" : "Bottom",
 	
-	"RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title" : "Coke and Money deal"
+	"RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title" : "Coke and Money deal",
+	
+	"RNGModifier_big_chance_to_work_title" : "First Try",
+	"RNGModifier_big_chance_to_work_desc" : "The server itself being the correct PC"
 }
