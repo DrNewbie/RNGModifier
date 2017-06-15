@@ -153,6 +153,22 @@ function ElementRandom:_get_random_elements()
 					rand = _chooseRandomChopper
 				end
 			end
+		elseif _level_id == "hox_2" then
+			if self._id == 104518 then
+				_tmp_data["hox_2"] = _tmp_data["hox_2"] or {}
+				_tmp_data["hox_2"]["SelectExcursion"] = _tmp_data["hox_2"]["SelectExcursion"] or 0
+				_tmp_data["hox_2"]["SelectExcursion"] = _tmp_data["hox_2"]["SelectExcursion"] + 1
+				local _select_excursion_list = {
+					RNGModifier:SafeGetData("hox_2", "_select_excursion_A"),
+					RNGModifier:SafeGetData("hox_2", "_select_excursion_B"),
+					RNGModifier:SafeGetData("hox_2", "_select_excursion_C")
+				}
+				local _select_excursion = _select_excursion_list[_tmp_data["hox_2"]["SelectExcursion"]] or 0
+				_select_excursion = _select_excursion - 1
+				if _select_excursion > 0 then
+					rand = _select_excursion
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

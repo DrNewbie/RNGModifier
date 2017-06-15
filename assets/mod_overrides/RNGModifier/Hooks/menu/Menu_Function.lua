@@ -18,8 +18,9 @@ RNGModifier._heistlist = {
 	"big",
 	"framing_frame_3",
 	"friend",
-	"crojob3",
-	"watchdogs_1"
+	--"crojob3",
+	"watchdogs_1",
+	"hox_2"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
@@ -34,6 +35,15 @@ function RNGModifier:Save()
 	local FF3_spawnRandomHarrdDrive_B = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_B")
 	if FF3_spawnRandomHarrdDrive_A ~= 0 and FF3_spawnRandomHarrdDrive_A == FF3_spawnRandomHarrdDrive_B then
 		self._data["framing_frame_3"]._spawnRandomHarrdDrive_A = 0
+	end
+	local HOX2_select_excursion_A = self:SafeGetData("hox_2", "_select_excursion_A")
+	local HOX2_select_excursion_B = self:SafeGetData("hox_2", "_select_excursion_B")
+	local HOX2_select_excursion_C = self:SafeGetData("hox_2", "_select_excursion_C")
+	if HOX2_select_excursion_A ~= 0 and HOX2_select_excursion_A == HOX2_select_excursion_B or HOX2_select_excursion_A == HOX2_select_excursion_C then
+		self._data["hox_2"]._select_excursion_A = 0
+	end
+	if HOX2_select_excursion_B ~= 0 and HOX2_select_excursion_B == HOX2_select_excursion_C then
+		self._data["hox_2"].HOX2_select_excursion_B = 0
 	end
 	local _file = io.open(self._save_path, "w+")
 	if _file then

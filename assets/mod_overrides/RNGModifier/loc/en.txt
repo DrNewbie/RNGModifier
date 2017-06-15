@@ -84,5 +84,15 @@
 	"RNGModifier_watchdogs_1_chooseLootVehicle_004" : "Left Back",
 	"RNGModifier_watchdogs_1_chooseRandomChopper_title" : "Escape Point",
 	"RNGModifier_watchdogs_1_chooseRandomChopper_001" : "Right",
-	"RNGModifier_watchdogs_1_chooseRandomChopper_002" : "Left"
+	"RNGModifier_watchdogs_1_chooseRandomChopper_002" : "Left",
+	
+	"RNGModifier_hox_2_select_excursion_title_A" : "Excursion 01",
+	"RNGModifier_hox_2_select_excursion_title_B" : "Excursion 02",
+	"RNGModifier_hox_2_select_excursion_title_C" : "Excursion 03",
+	"RNGModifier_hox_2_select_excursion_title_desc" : "All excursion can not be the same",
+	"RNGModifier_hox_2_select_excursion_001" : "Download keys",
+	"RNGModifier_hox_2_select_excursion_002" : "Director of FBI",
+	"RNGModifier_hox_2_select_excursion_003" : "Fetch some files",
+	"RNGModifier_hox_2_select_excursion_004" : "IT of server",
+	"RNGModifier_hox_2_select_excursion_005" : "DNA Evidence"
 }
