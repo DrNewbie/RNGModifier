@@ -43,7 +43,7 @@ function RNGModifier:Save()
 		self._data["hox_2"]._select_excursion_A = 0
 	end
 	if HOX2_select_excursion_B ~= 0 and HOX2_select_excursion_B == HOX2_select_excursion_C then
-		self._data["hox_2"].HOX2_select_excursion_B = 0
+		self._data["hox_2"]._select_excursion_B = 0
 	end
 	local _file = io.open(self._save_path, "w+")
 	if _file then
