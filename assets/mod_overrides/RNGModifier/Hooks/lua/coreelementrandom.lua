@@ -207,7 +207,6 @@ function ElementRandom:_get_random_elements()
 				if _logic_random_007 > 0 then
 					rand = _logic_random_007
 				end
-				log('101519 --- ' .. rand)
 			end
 		end
 	end
