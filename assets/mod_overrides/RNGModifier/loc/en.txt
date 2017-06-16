@@ -94,5 +94,13 @@
 	"RNGModifier_hox_2_select_excursion_002" : "Director of FBI",
 	"RNGModifier_hox_2_select_excursion_003" : "Fetch some files",
 	"RNGModifier_hox_2_select_excursion_004" : "IT of server",
-	"RNGModifier_hox_2_select_excursion_005" : "DNA Evidence"
+	"RNGModifier_hox_2_select_excursion_005" : "DNA Evidence",
+	
+	"RNGModifier_hox_1_logic_random_002_title" : "Escape Path",
+	"RNGModifier_hox_1_logic_random_002_001" : "FL",
+	"RNGModifier_hox_1_logic_random_002_002" : "F",
+	"RNGModifier_hox_1_logic_random_002_003" : "LR",
+	"RNGModifier_hox_1_logic_random_002_004" : "L",
+	
+	"RNGModifier_hox_1_logic_random_007_title" : "Server Room"
 }

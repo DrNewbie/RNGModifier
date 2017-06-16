@@ -17,6 +17,23 @@ local _tmp_data = {}
 function ElementRandom:_get_random_elements()
 	local t = {}
 	local rand = math.random(#self._unused_randoms)
+	local pick_new_rand = function(list, exlist, exlistfix)
+		local explist = {}
+		for k, v in pairs(#list) do
+			local ok = true
+			for _, v2 in pairs(exlist) do
+				v2 = v2 + exlistfix
+				if k == v2 and v2 > 0 then
+					ok = false
+					break
+				end
+			end
+			if ok then
+				table.insert(explist, k)
+			end
+		end
+		return math.random(explist[math.random(#explist)]) or 0
+	end
 	if Global.game_settings then
 		local _level_id = tostring(Global.game_settings.level_id)
 		if _level_id == "branchbank" then
@@ -163,11 +180,34 @@ function ElementRandom:_get_random_elements()
 					RNGModifier:SafeGetData("hox_2", "_select_excursion_B"),
 					RNGModifier:SafeGetData("hox_2", "_select_excursion_C")
 				}
+				for _, _r in pairs(_select_excursion_list) do
+					if _r ~= 0 then
+						while rand == _r do
+							rand = pick_new_rand(#self._unused_randoms, _select_excursion_list, -1)
+						end
+					end
+				end
 				local _select_excursion = _select_excursion_list[_tmp_data["hox_2"]["SelectExcursion"]] or 0
 				_select_excursion = _select_excursion - 1
 				if _select_excursion > 0 then
 					rand = _select_excursion
 				end
+			end
+		elseif _level_id == "hox_1" then
+			if self._id == 102597 then
+				local _logic_random_002 = RNGModifier:SafeGetData(_level_id, "_logic_random_002") or 0
+				_logic_random_002 = _logic_random_002 - 1
+				if _logic_random_002 > 0 then
+					rand = _logic_random_002
+				end
+			end
+			if self._id == 101519 then
+				local _logic_random_007 = RNGModifier:SafeGetData(_level_id, "_logic_random_007") or 0
+				_logic_random_007 = _logic_random_007 - 1
+				if _logic_random_007 > 0 then
+					rand = _logic_random_007
+				end
+				log('101519 --- ' .. rand)
 			end
 		end
 	end

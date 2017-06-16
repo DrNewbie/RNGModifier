@@ -20,7 +20,8 @@ RNGModifier._heistlist = {
 	"friend",
 	--"crojob3",
 	"watchdogs_1",
-	"hox_2"
+	"hox_2",
+	"hox_1"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
