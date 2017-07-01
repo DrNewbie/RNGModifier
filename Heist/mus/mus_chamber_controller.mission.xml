@@ -1,0 +1,2687 @@
+<mission>
+	<default activate_on_parsed="True">
+		<elements>
+			<element class="MissionScriptElement" editor_name="setup_path" id="100000" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100001"/>
+						<element delay="0" id="100337"/>
+						<element delay="0" id="100338"/>
+						<element delay="0" id="100355"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_start" id="100001" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100002"/>
+						<element delay="0" id="100003"/>
+						<element delay="0" id="100004"/>
+						<element delay="0" id="100005"/>
+						<element delay="0" id="100006"/>
+						<element delay="0" id="100007"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="a001" id="100002" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100008"/>
+						<element delay="0" id="100169"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="a002" id="100003" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100009"/>
+						<element delay="0" id="100178"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="a003" id="100004" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100010"/>
+						<element delay="0" id="100187"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="a004" id="100005" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100011"/>
+						<element delay="0" id="100196"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="a005" id="100006" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100012"/>
+						<element delay="0" id="100205"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="a006" id="100007" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100013"/>
+						<element delay="0" id="100214"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="b001" id="100008" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100056"/>
+						<element delay="0" id="100170"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="b002" id="100009" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100058"/>
+						<element delay="0" id="100179"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="b003" id="100010" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100059"/>
+						<element delay="0" id="100188"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="b004" id="100011" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100060"/>
+						<element delay="0" id="100197"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="b005" id="100012" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100061"/>
+						<element delay="0" id="100206"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="b006" id="100013" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100062"/>
+						<element delay="0" id="100215"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="c001" id="100014" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100075"/>
+						<element delay="0" id="100172"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="c002" id="100015" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100078"/>
+						<element delay="0" id="100180"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="c003" id="100016" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100081"/>
+						<element delay="0" id="100189"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="c004" id="100017" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100084"/>
+						<element delay="0" id="100198"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="c005" id="100018" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100087"/>
+						<element delay="0" id="100207"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="c006" id="100019" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100088"/>
+						<element delay="0" id="100216"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="d001" id="100020" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100091"/>
+						<element delay="0" id="100171"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="e001" id="100021" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100105"/>
+						<element delay="0" id="100173"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="f001" id="100022" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100121"/>
+						<element delay="0" id="100174"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="g001" id="100023" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100137"/>
+						<element delay="0" id="100175"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="h001" id="100024" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100153"/>
+						<element delay="0" id="100176"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="i001" id="100025" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100177"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="d002" id="100026" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100094"/>
+						<element delay="0" id="100181"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="e002" id="100027" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100108"/>
+						<element delay="0" id="100182"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="f002" id="100028" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100124"/>
+						<element delay="0" id="100183"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="g002" id="100029" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100140"/>
+						<element delay="0" id="100184"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="h002" id="100030" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100156"/>
+						<element delay="0" id="100185"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="i002" id="100031" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100186"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="d003" id="100032" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100097"/>
+						<element delay="0" id="100190"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="e003" id="100033" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100111"/>
+						<element delay="0" id="100191"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="f003" id="100034" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100127"/>
+						<element delay="0" id="100192"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="g003" id="100035" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100143"/>
+						<element delay="0" id="100193"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="h003" id="100036" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100159"/>
+						<element delay="0" id="100194"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="i003" id="100037" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100195"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="d004" id="100038" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100100"/>
+						<element delay="0" id="100199"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="e004" id="100039" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100114"/>
+						<element delay="0" id="100200"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="f004" id="100040" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100130"/>
+						<element delay="0" id="100201"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="g004" id="100041" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100146"/>
+						<element delay="0" id="100202"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="h004" id="100042" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100162"/>
+						<element delay="0" id="100203"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="i004" id="100043" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100204"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="d005" id="100044" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100103"/>
+						<element delay="0" id="100208"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="e005" id="100045" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100117"/>
+						<element delay="0" id="100209"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="f005" id="100046" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100133"/>
+						<element delay="0" id="100210"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="g005" id="100047" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100149"/>
+						<element delay="0" id="100211"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="h005" id="100048" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100165"/>
+						<element delay="0" id="100212"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="i005" id="100049" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100213"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="d006" id="100050" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100104"/>
+						<element delay="0" id="100217"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="e006" id="100051" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100120"/>
+						<element delay="0" id="100218"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="f006" id="100052" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100136"/>
+						<element delay="0" id="100219"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="g006" id="100053" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100152"/>
+						<element delay="0" id="100220"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="h006" id="100054" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100168"/>
+						<element delay="0" id="100221"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="i006" id="100055" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100222"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path001" id="100056" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100063"/>
+						<element delay="0" id="100014"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path002" id="100058" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100065"/>
+						<element delay="0" id="100015"/>
+						<element delay="0" id="100064"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path003" id="100059" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100016"/>
+						<element delay="0" id="100067"/>
+						<element delay="0" id="100066"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path004" id="100060" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100017"/>
+						<element delay="0" id="100068"/>
+						<element delay="0" id="100070"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path005" id="100061" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100018"/>
+						<element delay="0" id="100072"/>
+						<element delay="0" id="100069"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path006" id="100062" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100019"/>
+						<element delay="0" id="100071"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right001" id="100063" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100074</element>
+						<element>100064</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100009"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left001" id="100064" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100073</element>
+						<element>100063</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100008"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right002" id="100065" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100076</element>
+						<element>100066</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100010"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left002" id="100066" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100077</element>
+						<element>100065</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100009"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right003" id="100067" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100079</element>
+						<element>100068</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100011"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left003" id="100068" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100080</element>
+						<element>100067</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100010"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left004" id="100069" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100083</element>
+						<element>100070</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100011"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right004" id="100070" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100082</element>
+						<element>100069</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100012"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left005" id="100071" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100086</element>
+						<element>100072</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100012"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right005" id="100072" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100085</element>
+						<element>100071</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100013"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right006" id="100073" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100090</element>
+						<element>100074</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100015"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left006" id="100074" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100089</element>
+						<element>100073</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100014"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path007" id="100075" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100020"/>
+						<element delay="0" id="100073"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left007" id="100076" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100092</element>
+						<element>100077</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100015"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right007" id="100077" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100093</element>
+						<element>100076</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100016"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path008" id="100078" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100026"/>
+						<element delay="0" id="100077"/>
+						<element delay="0" id="100074"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left008" id="100079" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100095</element>
+						<element>100080</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100016"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right008" id="100080" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100096</element>
+						<element>100079</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100017"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path009" id="100081" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100032"/>
+						<element delay="0" id="100080"/>
+						<element delay="0" id="100076"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left009" id="100082" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100098</element>
+						<element>100083</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100017"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right009" id="100083" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100099</element>
+						<element>100082</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100018"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path010" id="100084" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100038"/>
+						<element delay="0" id="100083"/>
+						<element delay="0" id="100079"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left010" id="100085" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100101</element>
+						<element>100086</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100018"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right010" id="100086" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100102</element>
+						<element>100085</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100019"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path011" id="100087" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100044"/>
+						<element delay="0" id="100086"/>
+						<element delay="0" id="100082"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path012" id="100088" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100050"/>
+						<element delay="0" id="100085"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right011" id="100089" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100106</element>
+						<element>100090</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100026"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left011" id="100090" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100107</element>
+						<element>100089</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100020"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path013" id="100091" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100021"/>
+						<element delay="0" id="100089"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right012" id="100092" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100110</element>
+						<element>100093</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100032"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left012" id="100093" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100109</element>
+						<element>100092</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100026"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path014" id="100094" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100027"/>
+						<element delay="0" id="100092"/>
+						<element delay="0" id="100090"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right013" id="100095" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100113</element>
+						<element>100096</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100038"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left013" id="100096" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100112</element>
+						<element>100095</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100032"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path015" id="100097" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100033"/>
+						<element delay="0" id="100095"/>
+						<element delay="0" id="100093"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right014" id="100098" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100116</element>
+						<element>100099</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100044"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left014" id="100099" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100115</element>
+						<element>100098</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100038"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path016" id="100100" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100039"/>
+						<element delay="0" id="100098"/>
+						<element delay="0" id="100096"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right015" id="100101" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100119</element>
+						<element>100102</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100050"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left015" id="100102" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100118</element>
+						<element>100101</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100044"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path017" id="100103" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100045"/>
+						<element delay="0" id="100101"/>
+						<element delay="0" id="100099"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path018" id="100104" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100051"/>
+						<element delay="0" id="100102"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path019" id="100105" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100022"/>
+						<element delay="0" id="100107"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left016" id="100106" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100123</element>
+						<element>100107</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100021"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right016" id="100107" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100122</element>
+						<element>100106</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100027"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path020" id="100108" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100028"/>
+						<element delay="0" id="100109"/>
+						<element delay="0" id="100106"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right017" id="100109" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100126</element>
+						<element>100110</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100033"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left017" id="100110" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100125</element>
+						<element>100109</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100027"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path021" id="100111" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100034"/>
+						<element delay="0" id="100112"/>
+						<element delay="0" id="100110"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right018" id="100112" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100129</element>
+						<element>100113</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100039"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left018" id="100113" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100128</element>
+						<element>100112</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100033"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path022" id="100114" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100040"/>
+						<element delay="0" id="100115"/>
+						<element delay="0" id="100113"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right019" id="100115" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100132</element>
+						<element>100116</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100045"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left019" id="100116" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100131</element>
+						<element>100115</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100039"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path023" id="100117" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100046"/>
+						<element delay="0" id="100118"/>
+						<element delay="0" id="100116"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right020" id="100118" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100135</element>
+						<element>100119</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100051"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left020" id="100119" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100134</element>
+						<element>100118</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100045"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path024" id="100120" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100052"/>
+						<element delay="0" id="100119"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path025" id="100121" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100023"/>
+						<element delay="0" id="100123"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left021" id="100122" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100139</element>
+						<element>100123</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100022"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right021" id="100123" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100138</element>
+						<element>100122</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100028"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path026" id="100124" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100029"/>
+						<element delay="0" id="100125"/>
+						<element delay="0" id="100122"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right022" id="100125" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100142</element>
+						<element>100126</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100034"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left022" id="100126" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100141</element>
+						<element>100125</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100028"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path027" id="100127" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100035"/>
+						<element delay="0" id="100128"/>
+						<element delay="0" id="100126"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right023" id="100128" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100145</element>
+						<element>100129</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100040"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left023" id="100129" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100144</element>
+						<element>100128</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100034"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path028" id="100130" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100041"/>
+						<element delay="0" id="100131"/>
+						<element delay="0" id="100129"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right024" id="100131" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100148</element>
+						<element>100132</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100046"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left024" id="100132" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100147</element>
+						<element>100131</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100040"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path029" id="100133" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100047"/>
+						<element delay="0" id="100134"/>
+						<element delay="0" id="100132"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right025" id="100134" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100151</element>
+						<element>100135</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100052"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left025" id="100135" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100150</element>
+						<element>100134</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100046"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path030" id="100136" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100053"/>
+						<element delay="0" id="100135"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path031" id="100137" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100024"/>
+						<element delay="0" id="100139"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left026" id="100138" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100155</element>
+						<element>100139</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100023"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right026" id="100139" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100154</element>
+						<element>100138</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100029"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path032" id="100140" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100030"/>
+						<element delay="0" id="100141"/>
+						<element delay="0" id="100138"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right027" id="100141" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100158</element>
+						<element>100142</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100035"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left027" id="100142" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100157</element>
+						<element>100141</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100029"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path033" id="100143" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100036"/>
+						<element delay="0" id="100144"/>
+						<element delay="0" id="100142"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right028" id="100144" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100161</element>
+						<element>100145</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100041"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left028" id="100145" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100160</element>
+						<element>100144</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100035"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path034" id="100146" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100042"/>
+						<element delay="0" id="100147"/>
+						<element delay="0" id="100145"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right029" id="100147" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100164</element>
+						<element>100148</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100047"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left029" id="100148" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100163</element>
+						<element>100147</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100041"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path035" id="100149" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100048"/>
+						<element delay="0" id="100150"/>
+						<element delay="0" id="100148"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right030" id="100150" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100167</element>
+						<element>100151</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100053"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left030" id="100151" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100166</element>
+						<element>100150</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100047"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path036" id="100152" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100054"/>
+						<element delay="0" id="100151"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path037" id="100153" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100025"/>
+						<element delay="0" id="100155"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left031" id="100154" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100155</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100024"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right031" id="100155" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100154</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100030"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path038" id="100156" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100031"/>
+						<element delay="0" id="100157"/>
+						<element delay="0" id="100154"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right032" id="100157" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100158</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100036"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left032" id="100158" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100157</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100030"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path039" id="100159" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100037"/>
+						<element delay="0" id="100160"/>
+						<element delay="0" id="100158"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right033" id="100160" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100161</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100042"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left033" id="100161" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100160</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100036"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path040" id="100162" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100043"/>
+						<element delay="0" id="100163"/>
+						<element delay="0" id="100161"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right034" id="100163" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100164</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100048"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left034" id="100164" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100163</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100042"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path041" id="100165" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100049"/>
+						<element delay="0" id="100166"/>
+						<element delay="0" id="100164"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="left_to_right035" id="100166" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100167</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100054"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="right_to_left035" id="100167" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100166</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100048"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementRandom" editor_name="select_path042" id="100168" module="CoreElementRandom">
+				<values amount="1" amount_random="0" base_delay="0.75" enabled="True" execute_on_startup="False" ignore_disabled="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100055"/>
+						<element delay="0" id="100167"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_a001" id="100169" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="a001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100278"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_b001" id="100170" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="b001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100279"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_c001" id="100172" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="c001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100280"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_d001" id="100171" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="d001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100281"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_e001" id="100173" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="e001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100282"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_f001" id="100174" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="f001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100283"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_g001" id="100175" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="g001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100284"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_h001" id="100176" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="h001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100285"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_i001" id="100177" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="i001" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100286"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_a002" id="100178" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="a002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100287"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_b002" id="100179" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="b002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100288"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_c002" id="100180" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="c002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100289"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_d002" id="100181" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="d002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100290"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_e002" id="100182" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="e002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100291"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_f002" id="100183" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="f002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100292"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_g002" id="100184" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="g002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100293"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_h002" id="100185" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="h002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100294"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_i002" id="100186" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="i002" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100295"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_a003" id="100187" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="a003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100296"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_b003" id="100188" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="b003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100297"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_c003" id="100189" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="c003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100298"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_d003" id="100190" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="d003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100299"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_e003" id="100191" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="e003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100300"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_f003" id="100192" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="f003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100301"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_g003" id="100193" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="g003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100302"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_h003" id="100194" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="h003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100303"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_i003" id="100195" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="i003" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100304"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_a004" id="100196" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="a004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100305"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_b004" id="100197" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="b004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100306"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_c004" id="100198" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="c004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100307"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_d004" id="100199" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="d004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100308"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_e004" id="100200" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="e004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100309"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_f004" id="100201" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="f004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100310"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_g004" id="100202" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="g004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100311"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_h004" id="100203" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="h004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100312"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_i004" id="100204" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="i004" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100313"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_a005" id="100205" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="a005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100314"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_b005" id="100206" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="b005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100315"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_c005" id="100207" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="c005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100316"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_d005" id="100208" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="d005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100317"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_e005" id="100209" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="e005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100318"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_f005" id="100210" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="f005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100319"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_g005" id="100211" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="g005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100320"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_h005" id="100212" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="h005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100321"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_i005" id="100213" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="i005" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100322"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_a006" id="100214" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="a006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100323"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_b006" id="100215" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="b006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100324"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_c006" id="100216" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="c006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100325"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_d006" id="100217" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="d006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100326"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_e006" id="100218" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="e006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100327"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_f006" id="100219" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="f006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100328"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_g006" id="100220" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="g006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100329"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_h006" id="100221" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="h006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100330"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="output_i006" id="100222" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="i006" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100331"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementInteraction" editor_name="open_controller_box" id="100057">
+				<values base_delay="0" enabled="True" execute_on_startup="False" host_only="False" override_timer="-1" position="-50 0 100" rotation="0 0 0 -1" trigger_times="0" tweak_data_id="invisible_interaction_open">
+					<on_executed>
+						<element alternative="interacted" delay="0" id="100334"/>
+						<element alternative="interacted" delay="1" id="100336"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_a001" id="100278" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="900 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100232" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_b001" id="100279" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1300 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100231" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_c001" id="100280" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1700 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100230" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_d001" id="100281" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2100 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100229" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_e001" id="100282" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2500 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100228" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_f001" id="100283" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2900 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100227" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_g001" id="100284" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3300 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100226" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_h001" id="100285" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3700 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100225" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_i001" id="100286" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="4100 900 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100224" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_a002" id="100287" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="900 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100233" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_b002" id="100288" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1300 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100234" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_c002" id="100289" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1700 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100235" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_d002" id="100290" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2100 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100236" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_e002" id="100291" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2500 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100237" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_f002" id="100292" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2900 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100238" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_g002" id="100293" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3300 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100239" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_h002" id="100294" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3700 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100240" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_i002" id="100295" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="4100 500 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100241" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_a003" id="100296" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="900 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100242" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_b003" id="100297" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1300 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100243" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_c003" id="100298" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1700 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100244" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_d003" id="100299" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2100 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100245" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_e003" id="100300" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2500 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100246" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_f003" id="100301" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2900 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100247" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_g003" id="100302" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3300 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100248" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_h003" id="100303" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3700 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100249" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_i003" id="100304" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="4100 100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100250" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_a004" id="100305" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="900 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100251" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_b004" id="100306" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1300 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100252" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_c004" id="100307" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1700 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100253" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_d004" id="100308" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2100 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100254" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_e004" id="100309" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2500 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100255" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_f004" id="100310" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2900 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100256" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_g004" id="100311" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3300 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100257" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_h004" id="100312" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3700 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100258" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_i004" id="100313" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="4100 -300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100259" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_a005" id="100314" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="900 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100260" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_b005" id="100315" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1300 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100261" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_c005" id="100316" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1700 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100262" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_d005" id="100317" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2100 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100263" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_e005" id="100318" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2500 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100264" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_f005" id="100319" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2900 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100265" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_g005" id="100320" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3300 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100266" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_h005" id="100321" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3700 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100267" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_i005" id="100322" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="4100 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100268" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_a006" id="100323" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="900 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100269" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_b006" id="100324" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1300 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100270" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_c006" id="100325" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="1700 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100271" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_d006" id="100326" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2100 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100272" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_e006" id="100327" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2500 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100273" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_f006" id="100328" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="2900 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100274" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_g006" id="100329" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3300 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100275" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_h006" id="100330" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="3700 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100276" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_i006" id="100331" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="4100 -1100 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100277" notify_unit_sequence="path_on" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="open_doors" id="100334" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="-200 0 100" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100223" notify_unit_sequence="open_doors" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementInteraction" editor_name="hack_path" id="100335">
+				<values base_delay="0" enabled="False" execute_on_startup="False" host_only="False" override_timer="-1" position="-15 0 100" rotation="0 0 -0.707107 -0.707107" trigger_times="0" tweak_data_id="hack_electric_box">
+					<on_executed>
+						<element alternative="interacted" delay="0" id="100000"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="enable_hack_path" id="100336" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="on" trigger_times="0">
+					<elements>
+						<element>100335</element>
+					</elements>
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementInstanceInput" editor_name="set_objective" id="100332" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="set_objective" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100333"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementWaypoint" editor_name="point_waypoint_001" id="100333">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_wirecutter" only_in_civilian="False" position="-50 0 102.5" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementOperator" editor_name="remove_waypoint" id="100337" module="CoreElementOperator">
+				<values base_delay="0" enabled="True" execute_on_startup="False" operation="remove" trigger_times="0">
+					<elements>
+						<element>100333</element>
+					</elements>
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="created_path" id="100338" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="created_path" execute_on_startup="False" trigger_times="0">
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementInstanceInput" editor_name="cancel_obj" id="100339" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="cancel_objective" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100340"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="disable_interactions" id="100340" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="off" trigger_times="0">
+					<elements>
+						<element>100335</element>
+						<element>100057</element>
+						<element>100000</element>
+						<element>100355</element>
+						<element>100356</element>
+						<element>100344</element>
+						<element>100352</element>
+						<element>100353</element>
+						<element>100351</element>
+						<element>100354</element>
+						<element>100357</element>
+						<element>100358</element>
+						<element>100338</element>
+					</elements>
+					<on_executed>
+						<element delay="0" id="100337"/>
+						<element delay="0" id="100361"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="setup" id="100341" module="CoreMissionScriptElement">
+				<values base_delay="3" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100343"/>
+						<element delay="0" id="100342"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementFilter" editor_name="overkill_timer" id="100342">
+				<values base_delay="0" difficulty_easy="False" difficulty_easy_wish="False" difficulty_hard="False" difficulty_normal="False" difficulty_overkill="False" difficulty_overkill_145="True" difficulty_overkill_290="False" difficulty_sm_wish="False" enabled="True" execute_on_startup="False" mode_assault="True" mode_control="True" platform_ps3="True" platform_win32="True" player_1="True" player_2="True" player_3="True" player_4="True" position="300 -1200 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100345"/>
+						<element delay="0" id="100350"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementFilter" editor_name="deathwish_timer" id="100343">
+				<values base_delay="0" difficulty_easy="False" difficulty_easy_wish="True" difficulty_hard="False" difficulty_normal="False" difficulty_overkill="False" difficulty_overkill_145="False" difficulty_overkill_290="True" difficulty_sm_wish="True" enabled="True" execute_on_startup="False" mode_assault="True" mode_control="True" platform_ps3="True" platform_win32="True" player_1="True" player_2="True" player_3="True" player_4="True" position="300 -1300 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100346"/>
+						<element delay="0" id="100350"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementTimer" editor_name="countdown_timer" id="100344" module="CoreElementTimer">
+				<values base_delay="0" enabled="True" execute_on_startup="False" timer="0" trigger_times="0">
+					<digital_gui_unit_ids>
+						<element>100347</element>
+					</digital_gui_unit_ids>
+					<on_executed>
+						<element delay="0.05" id="100352"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementTimerOperator" editor_name="set_timer001" id="100345" module="CoreElementTimer">
+				<values base_delay="0" enabled="True" execute_on_startup="False" operation="set_time" position="400 -1200 0" rotation="0 0 0 -1" time="60" trigger_times="0">
+					<elements>
+						<element>100344</element>
+					</elements>
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementTimerOperator" editor_name="set_timer002" id="100346" module="CoreElementTimer">
+				<values base_delay="0" enabled="True" execute_on_startup="False" operation="set_time" position="400 -1300 0" rotation="0 0 0 -1" time="30" trigger_times="0">
+					<elements>
+						<element>100344</element>
+					</elements>
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_hide" id="100348" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="-300 -1200 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100347" notify_unit_sequence="state_vis_hide" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="startup" id="100349" module="CoreMissionScriptElement">
+				<values base_delay="0.5" enabled="True" execute_on_startup="True" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100341"/>
+						<element delay="0" id="100348"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="seq_show" id="100350" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="300 -1400 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100347" notify_unit_sequence="state_vis_show" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementInstanceOutput" editor_name="countdown_ended" id="100351" module="CoreElementInstance">
+				<values base_delay="0" enabled="True" event="countdown_ended" execute_on_startup="False" trigger_times="0">
+					<on_executed/>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="first" id="100352" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100351"/>
+						<element delay="0.5" id="100353"/>
+						<element delay="0" id="100357"/>
+						<element delay="0" id="100342"/>
+						<element delay="0" id="100343"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="MissionScriptElement" editor_name="second" id="100353" module="CoreMissionScriptElement">
+				<values base_delay="0" enabled="True" execute_on_startup="False" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100354"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementToggle" editor_name="enable_interaction" id="100354" module="CoreElementToggle">
+				<values base_delay="0" enabled="True" execute_on_startup="False" set_trigger_times="-1" toggle="on" trigger_times="0">
+					<elements>
+						<element>100335</element>
+					</elements>
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementFilter" editor_name="only_harder" id="100355">
+				<values base_delay="0" difficulty_easy="False" difficulty_easy_wish="True" difficulty_hard="False" difficulty_normal="False" difficulty_overkill="False" difficulty_overkill_145="True" difficulty_overkill_290="True" difficulty_sm_wish="True" enabled="True" execute_on_startup="False" mode_assault="True" mode_control="True" platform_ps3="True" platform_win32="True" player_1="True" player_2="True" player_3="True" player_4="True" position="400 0 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100356"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementTimerOperator" editor_name="started_timer" id="100356" module="CoreElementTimer">
+				<values base_delay="0" enabled="True" execute_on_startup="False" operation="start" position="400 -400 0" rotation="0 0 0 -1" time="0" trigger_times="0">
+					<elements>
+						<element>100344</element>
+					</elements>
+					<on_executed>
+						<element delay="6" id="100359"/>
+					</on_executed>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="reset001" id="100357" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="300 -700 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100358"/>
+					</on_executed>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100232" notify_unit_sequence="path_off" time="0"/>
+						<element id="2" name="run_sequence" notify_unit_id="100233" notify_unit_sequence="path_off" time="0"/>
+						<element id="3" name="run_sequence" notify_unit_id="100242" notify_unit_sequence="path_off" time="0"/>
+						<element id="4" name="run_sequence" notify_unit_id="100251" notify_unit_sequence="path_off" time="0"/>
+						<element id="5" name="run_sequence" notify_unit_id="100260" notify_unit_sequence="path_off" time="0"/>
+						<element id="6" name="run_sequence" notify_unit_id="100269" notify_unit_sequence="path_off" time="0"/>
+						<element id="7" name="run_sequence" notify_unit_id="100231" notify_unit_sequence="path_off" time="0"/>
+						<element id="8" name="run_sequence" notify_unit_id="100234" notify_unit_sequence="path_off" time="0"/>
+						<element id="9" name="run_sequence" notify_unit_id="100243" notify_unit_sequence="path_off" time="0"/>
+						<element id="10" name="run_sequence" notify_unit_id="100252" notify_unit_sequence="path_off" time="0"/>
+						<element id="11" name="run_sequence" notify_unit_id="100261" notify_unit_sequence="path_off" time="0"/>
+						<element id="12" name="run_sequence" notify_unit_id="100270" notify_unit_sequence="path_off" time="0"/>
+						<element id="13" name="run_sequence" notify_unit_id="100230" notify_unit_sequence="path_off" time="0"/>
+						<element id="14" name="run_sequence" notify_unit_id="100235" notify_unit_sequence="path_off" time="0"/>
+						<element id="15" name="run_sequence" notify_unit_id="100244" notify_unit_sequence="path_off" time="0"/>
+						<element id="16" name="run_sequence" notify_unit_id="100253" notify_unit_sequence="path_off" time="0"/>
+						<element id="17" name="run_sequence" notify_unit_id="100262" notify_unit_sequence="path_off" time="0"/>
+						<element id="18" name="run_sequence" notify_unit_id="100271" notify_unit_sequence="path_off" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementUnitSequence" editor_name="reset002" id="100358" module="CoreElementUnitSequence">
+				<values base_delay="0" enabled="True" execute_on_startup="False" position="300 -800 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed/>
+					<trigger_list>
+						<element id="1" name="run_sequence" notify_unit_id="100229" notify_unit_sequence="path_off" time="0"/>
+						<element id="2" name="run_sequence" notify_unit_id="100236" notify_unit_sequence="path_off" time="0"/>
+						<element id="3" name="run_sequence" notify_unit_id="100245" notify_unit_sequence="path_off" time="0"/>
+						<element id="4" name="run_sequence" notify_unit_id="100254" notify_unit_sequence="path_off" time="0"/>
+						<element id="5" name="run_sequence" notify_unit_id="100263" notify_unit_sequence="path_off" time="0"/>
+						<element id="6" name="run_sequence" notify_unit_id="100272" notify_unit_sequence="path_off" time="0"/>
+						<element id="7" name="run_sequence" notify_unit_id="100228" notify_unit_sequence="path_off" time="0"/>
+						<element id="8" name="run_sequence" notify_unit_id="100237" notify_unit_sequence="path_off" time="0"/>
+						<element id="9" name="run_sequence" notify_unit_id="100246" notify_unit_sequence="path_off" time="0"/>
+						<element id="10" name="run_sequence" notify_unit_id="100255" notify_unit_sequence="path_off" time="0"/>
+						<element id="11" name="run_sequence" notify_unit_id="100264" notify_unit_sequence="path_off" time="0"/>
+						<element id="12" name="run_sequence" notify_unit_id="100273" notify_unit_sequence="path_off" time="0"/>
+						<element id="13" name="run_sequence" notify_unit_id="100227" notify_unit_sequence="path_off" time="0"/>
+						<element id="14" name="run_sequence" notify_unit_id="100238" notify_unit_sequence="path_off" time="0"/>
+						<element id="15" name="run_sequence" notify_unit_id="100247" notify_unit_sequence="path_off" time="0"/>
+						<element id="16" name="run_sequence" notify_unit_id="100256" notify_unit_sequence="path_off" time="0"/>
+						<element id="17" name="run_sequence" notify_unit_id="100265" notify_unit_sequence="path_off" time="0"/>
+						<element id="18" name="run_sequence" notify_unit_id="100274" notify_unit_sequence="path_off" time="0"/>
+						<element id="19" name="run_sequence" notify_unit_id="100226" notify_unit_sequence="path_off" time="0"/>
+						<element id="20" name="run_sequence" notify_unit_id="100239" notify_unit_sequence="path_off" time="0"/>
+						<element id="21" name="run_sequence" notify_unit_id="100248" notify_unit_sequence="path_off" time="0"/>
+						<element id="22" name="run_sequence" notify_unit_id="100257" notify_unit_sequence="path_off" time="0"/>
+						<element id="23" name="run_sequence" notify_unit_id="100266" notify_unit_sequence="path_off" time="0"/>
+						<element id="24" name="run_sequence" notify_unit_id="100275" notify_unit_sequence="path_off" time="0"/>
+						<element id="25" name="run_sequence" notify_unit_id="100225" notify_unit_sequence="path_off" time="0"/>
+						<element id="26" name="run_sequence" notify_unit_id="100240" notify_unit_sequence="path_off" time="0"/>
+						<element id="27" name="run_sequence" notify_unit_id="100249" notify_unit_sequence="path_off" time="0"/>
+						<element id="28" name="run_sequence" notify_unit_id="100258" notify_unit_sequence="path_off" time="0"/>
+						<element id="29" name="run_sequence" notify_unit_id="100267" notify_unit_sequence="path_off" time="0"/>
+						<element id="30" name="run_sequence" notify_unit_id="100276" notify_unit_sequence="path_off" time="0"/>
+						<element id="31" name="run_sequence" notify_unit_id="100224" notify_unit_sequence="path_off" time="0"/>
+						<element id="32" name="run_sequence" notify_unit_id="100241" notify_unit_sequence="path_off" time="0"/>
+						<element id="33" name="run_sequence" notify_unit_id="100250" notify_unit_sequence="path_off" time="0"/>
+						<element id="34" name="run_sequence" notify_unit_id="100259" notify_unit_sequence="path_off" time="0"/>
+						<element id="35" name="run_sequence" notify_unit_id="100268" notify_unit_sequence="path_off" time="0"/>
+						<element id="36" name="run_sequence" notify_unit_id="100277" notify_unit_sequence="path_off" time="0"/>
+					</trigger_list>
+				</values>
+			</element>
+			<element class="ElementDialogue" editor_name="func_dialogue_023" id="100359">
+				<values base_delay="0" dialogue="Play_pln_hd1_23" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="2" use_instigator="False" use_position="False">
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementTimerOperator" editor_name="pause_timer" id="100360" module="CoreElementTimer">
+				<values base_delay="0" enabled="True" execute_on_startup="False" operation="pause" position="100 -800 0" rotation="0 0 0 -1" time="0" trigger_times="0">
+					<elements>
+						<element>100344</element>
+					</elements>
+					<on_executed/>
+				</values>
+			</element>
+			<element class="ElementFilter" editor_name="higher_only" id="100361">
+				<values base_delay="0" difficulty_easy="False" difficulty_easy_wish="True" difficulty_hard="False" difficulty_normal="False" difficulty_overkill="False" difficulty_overkill_145="True" difficulty_overkill_290="True" difficulty_sm_wish="True" enabled="True" execute_on_startup="False" mode_assault="True" mode_control="True" platform_ps3="True" platform_win32="True" player_1="True" player_2="True" player_3="True" player_4="True" position="0 -800 0" rotation="0 0 0 -1" trigger_times="0">
+					<on_executed>
+						<element delay="0" id="100360"/>
+					</on_executed>
+				</values>
+			</element>
+		</elements>
+		<instances/>
+	</default>
+</mission>
