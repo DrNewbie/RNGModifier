@@ -105,5 +105,7 @@
 	"RNGModifier_hox_1_logic_random_007_title" : "Server Room",
 	
 	"RNGModifier_mus_chamber_controller_title" : "Pressure Sensitive",
-	"RNGModifier_mus_chamber_controller_001" : "Easy One"
+	"RNGModifier_mus_chamber_controller_001" : "Easy One",
+	
+	"RNGModifier_roberts_rand_drop_location_title" : "Cage Bag Drop"
 }

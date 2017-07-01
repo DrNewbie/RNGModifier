@@ -45,3 +45,23 @@ MenuHelper:AddToggle({
 	menu_id = "RNGModifier_roberts_Options_Menu"
 })
 _bool = nil
+
+RNGModifier._data[_Curret_Heist]._rand_drop_location = RNGModifier._data[_Curret_Heist]._rand_drop_location or 1
+MenuCallbackHandler.RNGModifier_roberts_rand_drop_location = function(self, item)
+	RNGModifier._data[_Curret_Heist]._rand_drop_location = item:value()
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_roberts_rand_drop_location",
+	title = "RNGModifier_roberts_rand_drop_location_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_roberts_rand_drop_location",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3"
+	},
+	value = RNGModifier._data[_Curret_Heist]._rand_drop_location,
+	menu_id = "RNGModifier_roberts_Options_Menu"
+})

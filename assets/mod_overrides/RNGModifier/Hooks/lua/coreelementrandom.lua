@@ -219,6 +219,14 @@ function ElementRandom:_get_random_elements()
 					rand = 1
 				end
 			end
+		elseif _level_id == "roberts" then
+			if self._id == 101946 then
+				local _rand_drop_location = RNGModifier:SafeGetData(_level_id, "_rand_drop_location") or 0
+				_rand_drop_location = _rand_drop_location - 1
+				if _rand_drop_location > 0 then
+					rand = _rand_drop_location
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
