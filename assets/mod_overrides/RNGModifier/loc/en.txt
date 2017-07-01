@@ -102,5 +102,8 @@
 	"RNGModifier_hox_1_logic_random_002_003" : "LR",
 	"RNGModifier_hox_1_logic_random_002_004" : "L",
 	
-	"RNGModifier_hox_1_logic_random_007_title" : "Server Room"
+	"RNGModifier_hox_1_logic_random_007_title" : "Server Room",
+	
+	"RNGModifier_mus_chamber_controller_title" : "Pressure Sensitive",
+	"RNGModifier_mus_chamber_controller_001" : "Easy One"
 }

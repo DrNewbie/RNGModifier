@@ -208,6 +208,27 @@ function ElementRandom:_get_random_elements()
 					rand = _logic_random_007
 				end
 			end
+		elseif _level_id == "mus" then
+			local _chamber_controller = RNGModifier:SafeGetData(_level_id, "_chamber_controller") or 0
+			_chamber_controller = _chamber_controller - 1
+			if _chamber_controller > 0 then
+				local _id_fix = self._id - 33575
+				if _id_fix == 100001 then --a003 --b003
+					rand = 3
+				elseif _id_fix == 100059 or _id_fix == 100081 then --d003
+					rand = 1
+				elseif _id_fix == 100097 then --e003
+					rand = 1
+				elseif _id_fix == 100111 then --f003
+					rand = 1
+				elseif _id_fix == 100127 then --g003
+					rand = 1
+				elseif _id_fix == 100143 then --h003
+					rand = 1
+				elseif _id_fix == 100159 then --i003
+					rand = 1
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

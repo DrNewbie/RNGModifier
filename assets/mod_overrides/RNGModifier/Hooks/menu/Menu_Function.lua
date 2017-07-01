@@ -21,7 +21,8 @@ RNGModifier._heistlist = {
 	--"crojob3",
 	"watchdogs_1",
 	"hox_2",
-	"hox_1"
+	"hox_1",
+	"mus"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
@@ -63,23 +64,11 @@ end
 
 RNGModifier:Load()
 
-function RNGModifier:SafeGetData(_heist, _table1, _table2, _table3, _table4)
+function RNGModifier:SafeGetData(_heist, _table1)
 	if not _heist or not self._data or not self._data[_heist] then
 		return
 	end
-	if _table4 and _table3 and _table2 and _table1 and self._data[_heist][_table1][_table2][_table3][_table4] then
-		return self._data[_heist][_table1][_table2][_table3][_table4]
-	end
-	if not _table4 and _table3 and _table2 and _table1 and self._data[_heist][_table1][_table2][_table3] then
-		return self._data[_heist][_table1][_table2][_table3]
-	end
-	if not _table4 and not _table3 and _table2 and _table1 and self._data[_heist][_table1][_table2] then
-		return self._data[_heist][_table1][_table2]
-	end
-	if not _table4 and not _table3 and not _table2 and _table1 and self._data[_heist][_table1] then
-		return self._data[_heist][_table1]
-	end
-	return
+	return self._data[_heist][_table1] or nil
 end
 
 Hooks:Add("MenuManagerSetupCustomMenus", "MenuManagerSetupCustomMenus_RNGModifier", function(menu_manager, nodes)
