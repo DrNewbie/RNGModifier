@@ -213,19 +213,9 @@ function ElementRandom:_get_random_elements()
 			_chamber_controller = _chamber_controller - 1
 			if _chamber_controller > 0 then
 				local _id_fix = self._id - 33575
-				if _id_fix == 100001 then --a003 --b003
+				if _id_fix == 100001 then
 					rand = 3
-				elseif _id_fix == 100059 or _id_fix == 100081 then --d003
-					rand = 1
-				elseif _id_fix == 100097 then --e003
-					rand = 1
-				elseif _id_fix == 100111 then --f003
-					rand = 1
-				elseif _id_fix == 100127 then --g003
-					rand = 1
-				elseif _id_fix == 100143 then --h003
-					rand = 1
-				elseif _id_fix == 100159 then --i003
+				elseif _id_fix == 100059 or _id_fix == 100081 or _id_fix == 100097 or _id_fix == 100111 or _id_fix == 100127 or _id_fix == 100143 or _id_fix == 100159 then --i003
 					rand = 1
 				end
 			end
