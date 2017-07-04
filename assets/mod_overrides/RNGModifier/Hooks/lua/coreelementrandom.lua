@@ -183,7 +183,7 @@ function ElementRandom:_get_random_elements()
 				for _, _r in pairs(_select_excursion_list) do
 					if _r ~= 0 then
 						while rand == _r do
-							rand = pick_new_rand(#self._unused_randoms, _select_excursion_list, -1)
+							rand = pick_new_rand(self._unused_randoms, _select_excursion_list, -1)
 						end
 					end
 				end
