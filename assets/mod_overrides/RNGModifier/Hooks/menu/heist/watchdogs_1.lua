@@ -6,9 +6,8 @@ local _Curret_Heist = "watchdogs_1"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._chooseLootVehicle = RNGModifier._data[_Curret_Heist]._chooseLootVehicle or 1
 MenuCallbackHandler.RNGModifier_watchdogs_1_chooseLootVehicle = function(self, item)
-	RNGModifier._data[_Curret_Heist]._chooseLootVehicle = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chooseLootVehicle")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -26,9 +25,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_watchdogs_1_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._chooseRandomChopper = RNGModifier._data[_Curret_Heist]._chooseRandomChopper or 1
 MenuCallbackHandler.RNGModifier_watchdogs_1_chooseRandomChopper = function(self, item)
-	RNGModifier._data[_Curret_Heist]._chooseRandomChopper = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chooseRandomChopper")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

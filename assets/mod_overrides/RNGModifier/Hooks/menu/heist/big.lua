@@ -6,13 +6,12 @@ local _Curret_Heist = "big"
 local _bool = true
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
-RNGModifier._data[_Curret_Heist]._chance_to_work = RNGModifier._data[_Curret_Heist]._chance_to_work or 0
 
 MenuCallbackHandler.RNGModifier_big_chance_to_work = function(self, item)
 	if tostring(item:value()) == "on" then
-		RNGModifier._data[_Curret_Heist]._chance_to_work = 1
+		RNGModifier:SafeSetData(1, _Curret_Heist, "_chance_to_work")
 	else
-		RNGModifier._data[_Curret_Heist]._chance_to_work = 0
+		RNGModifier:SafeSetData(0, _Curret_Heist, "_chance_to_work")
 	end
 	RNGModifier:Save()
 end

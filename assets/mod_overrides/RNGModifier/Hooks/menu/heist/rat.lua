@@ -6,9 +6,8 @@ local _Curret_Heist = "rat"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._escape_position = RNGModifier._data[_Curret_Heist]._escape_position or 1
 MenuCallbackHandler.RNGModifier_rat_escape_position = function(self, item)
-	RNGModifier._data[_Curret_Heist]._escape_position = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape_position")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -25,9 +24,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_rat_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._random_flare = RNGModifier._data[_Curret_Heist]._random_flare or 1
 MenuCallbackHandler.RNGModifier_rat_random_flare = function(self, item)
-	RNGModifier._data[_Curret_Heist]._random_flare = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_flare")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -45,9 +43,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_rat_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._chose_methlab_position = RNGModifier._data[_Curret_Heist]._chose_methlab_position or 1
 MenuCallbackHandler.RNGModifier_rat_chose_methlab_position = function(self, item)
-	RNGModifier._data[_Curret_Heist]._chose_methlab_position = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chose_methlab_position")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

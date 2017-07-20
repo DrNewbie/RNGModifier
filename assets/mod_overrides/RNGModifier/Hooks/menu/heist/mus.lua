@@ -7,9 +7,8 @@ local _bool = true
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._chamber_controller = RNGModifier._data[_Curret_Heist]._chamber_controller or 1
 MenuCallbackHandler.RNGModifier_mus_chamber_controller = function(self, item)
-	RNGModifier._data[_Curret_Heist]._chamber_controller = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chamber_controller")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

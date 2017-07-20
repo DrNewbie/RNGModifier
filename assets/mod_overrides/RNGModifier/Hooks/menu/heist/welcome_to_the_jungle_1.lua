@@ -6,13 +6,12 @@ local _Curret_Heist = "welcome_to_the_jungle_1"
 local _bool = true
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
-RNGModifier._data[_Curret_Heist]._chanceOfTrade10 = RNGModifier._data[_Curret_Heist]._chanceOfTrade10 or 0
 
 MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10 = function(self, item)
 	if tostring(item:value()) == "on" then
-		RNGModifier._data[_Curret_Heist]._chanceOfTrade10 = 1
+		RNGModifier:SafeSetData(1, _Curret_Heist, "_chanceOfTrade10")
 	else
-		RNGModifier._data[_Curret_Heist]._chanceOfTrade10 = 0
+		RNGModifier:SafeSetData(0, _Curret_Heist, "_chanceOfTrade10")
 	end
 	RNGModifier:Save()
 end

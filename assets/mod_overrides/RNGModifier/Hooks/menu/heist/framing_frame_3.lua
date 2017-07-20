@@ -6,9 +6,8 @@ local _Curret_Heist = "framing_frame_3"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._chooseServerRoom = RNGModifier._data[_Curret_Heist]._chooseServerRoom or 1
 MenuCallbackHandler.RNGModifier_framing_frame_3_chooseServerRoom = function(self, item)
-	RNGModifier._data[_Curret_Heist]._chooseServerRoom = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chooseServerRoom")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -26,9 +25,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._spawnRandomVault = RNGModifier._data[_Curret_Heist]._spawnRandomVault or 1
 MenuCallbackHandler.RNGModifier_framing_frame_3_spawnRandomVault = function(self, item)
-	RNGModifier._data[_Curret_Heist]._spawnRandomVault = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawnRandomVault")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -46,9 +44,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_A = RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_A or 1
 MenuCallbackHandler.RNGModifier_framing_frame_3_spawnRandomHarrdDrive_A = function(self, item)
-	RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_A = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawnRandomHarrdDrive_A")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -73,9 +70,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_B = RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_B or 1
 MenuCallbackHandler.RNGModifier_framing_frame_3_spawnRandomHarrdDrive_B = function(self, item)
-	RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_B = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawnRandomHarrdDrive_B")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -100,9 +96,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._SpawnRandomPhone = RNGModifier._data[_Curret_Heist]._SpawnRandomPhone or 1
 MenuCallbackHandler.RNGModifier_framing_frame_3_SpawnRandomPhone = function(self, item)
-	RNGModifier._data[_Curret_Heist]._SpawnRandomPhone = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_SpawnRandomPhone")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -127,9 +122,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._spawnRandomPads = RNGModifier._data[_Curret_Heist]._spawnRandomPads or 1
 MenuCallbackHandler.RNGModifier_framing_frame_3_spawnRandomPads = function(self, item)
-	RNGModifier._data[_Curret_Heist]._spawnRandomPads = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawnRandomPads")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

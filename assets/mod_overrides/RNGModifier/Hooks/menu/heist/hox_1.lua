@@ -6,9 +6,8 @@ local _Curret_Heist = "hox_1"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._logic_random_002 = RNGModifier._data[_Curret_Heist]._logic_random_002 or 1
 MenuCallbackHandler.RNGModifier_hox_1_logic_random_002 = function(self, item)
-	RNGModifier._data[_Curret_Heist]._logic_random_002 = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_logic_random_002")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -27,9 +26,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_1_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._logic_random_007 = RNGModifier._data[_Curret_Heist]._logic_random_007 or 1
 MenuCallbackHandler.RNGModifier_hox_1_logic_random_007 = function(self, item)
-	RNGModifier._data[_Curret_Heist]._logic_random_007 = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_logic_random_007")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

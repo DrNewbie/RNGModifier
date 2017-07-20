@@ -6,9 +6,8 @@ local _Curret_Heist = "friend"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._pick_rand_escape_vehicle = RNGModifier._data[_Curret_Heist]._pick_rand_escape_vehicle or 1
 MenuCallbackHandler.RNGModifier_friend_pick_rand_escape_vehicle = function(self, item)
-	RNGModifier._data[_Curret_Heist]._pick_rand_escape_vehicle = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pick_rand_escape_vehicle")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

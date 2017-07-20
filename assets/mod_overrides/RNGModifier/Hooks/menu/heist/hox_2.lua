@@ -6,9 +6,8 @@ local _Curret_Heist = "hox_2"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-RNGModifier._data[_Curret_Heist]._select_excursion_A = RNGModifier._data[_Curret_Heist]._select_excursion_A or 1
 MenuCallbackHandler.RNGModifier_hox_2_select_excursion_A = function(self, item)
-	RNGModifier._data[_Curret_Heist]._select_excursion_A = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_excursion_A")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -28,9 +27,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._select_excursion_B = RNGModifier._data[_Curret_Heist]._select_excursion_B or 1
 MenuCallbackHandler.RNGModifier_hox_2_select_excursion_B = function(self, item)
-	RNGModifier._data[_Curret_Heist]._select_excursion_B = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_excursion_B")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -50,9 +48,8 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })
 
-RNGModifier._data[_Curret_Heist]._select_excursion_C = RNGModifier._data[_Curret_Heist]._select_excursion_C or 1
 MenuCallbackHandler.RNGModifier_hox_2_select_excursion_C = function(self, item)
-	RNGModifier._data[_Curret_Heist]._select_excursion_C = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_excursion_C")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({

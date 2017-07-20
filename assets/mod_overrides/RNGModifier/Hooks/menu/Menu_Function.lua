@@ -2,7 +2,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {
-	["Version"] = "5.8"
+	["Version"] = "5.9"
 }
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._heistlist = {
@@ -40,20 +40,26 @@ function RNGModifier:SafeGetData(_heist, _table1)
 	return self._data[_heist][_table1] or nil
 end
 
+function RNGModifier:SafeSetData(_value, _heist, _table1)
+	self._data = self._data or {}
+	self._data[_heist] = self._data[_heist] or {}
+	self._data[_heist][_table1] = _value
+end
+
 function RNGModifier:Save()
 	local FF3_spawnRandomHarrdDrive_A = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_A")
 	local FF3_spawnRandomHarrdDrive_B = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_B")
 	if FF3_spawnRandomHarrdDrive_A ~= 0 and FF3_spawnRandomHarrdDrive_A == FF3_spawnRandomHarrdDrive_B then
-		self._data["framing_frame_3"]._spawnRandomHarrdDrive_A = 0
+		self:SafeSetData(0, "framing_frame_3", "_spawnRandomHarrdDrive_A")
 	end
 	local HOX2_select_excursion_A = self:SafeGetData("hox_2", "_select_excursion_A")
 	local HOX2_select_excursion_B = self:SafeGetData("hox_2", "_select_excursion_B")
 	local HOX2_select_excursion_C = self:SafeGetData("hox_2", "_select_excursion_C")
 	if HOX2_select_excursion_A ~= 0 and HOX2_select_excursion_A == HOX2_select_excursion_B or HOX2_select_excursion_A == HOX2_select_excursion_C then
-		self._data["hox_2"]._select_excursion_A = 0
+		self:SafeSetData(0, "hox_2", "_select_excursion_A")
 	end
 	if HOX2_select_excursion_B ~= 0 and HOX2_select_excursion_B == HOX2_select_excursion_C then
-		self._data["hox_2"]._select_excursion_B = 0
+		self:SafeSetData(0, "hox_2", "_select_excursion_B")
 	end
 	local _file = io.open(self._save_path, "w+")
 	if _file then

@@ -6,13 +6,12 @@ local _Curret_Heist = "roberts"
 local _bool = true
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
-RNGModifier._data[_Curret_Heist]._logic_chance_011 = RNGModifier._data[_Curret_Heist]._logic_chance_011 or 0
 
 MenuCallbackHandler.RNGModifier_roberts_logic_chance_011 = function(self, item)
 	if tostring(item:value()) == "on" then
-		RNGModifier._data[_Curret_Heist]._logic_chance_011 = 1
+		RNGModifier:SafeSetData(1, _Curret_Heist, "_logic_chance_011")
 	else
-		RNGModifier._data[_Curret_Heist]._logic_chance_011 = 0
+		RNGModifier:SafeSetData(0, _Curret_Heist, "_logic_chance_011")
 	end
 	RNGModifier:Save()
 end
@@ -29,9 +28,9 @@ _bool = nil
 
 MenuCallbackHandler.RNGModifier_roberts_logic_chance_012 = function(self, item)
 	if tostring(item:value()) == "on" then
-		RNGModifier._data[_Curret_Heist]._logic_chance_012 = 1
+		RNGModifier:SafeSetData(1, _Curret_Heist, "_logic_chance_012")
 	else
-		RNGModifier._data[_Curret_Heist]._logic_chance_012 = 0
+		RNGModifier:SafeSetData(0, _Curret_Heist, "_logic_chance_012")
 	end
 	RNGModifier:Save()
 end
@@ -46,9 +45,8 @@ MenuHelper:AddToggle({
 })
 _bool = nil
 
-RNGModifier._data[_Curret_Heist]._rand_drop_location = RNGModifier._data[_Curret_Heist]._rand_drop_location or 1
 MenuCallbackHandler.RNGModifier_roberts_rand_drop_location = function(self, item)
-	RNGModifier._data[_Curret_Heist]._rand_drop_location = item:value()
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_rand_drop_location")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
