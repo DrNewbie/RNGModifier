@@ -227,6 +227,28 @@ function ElementRandom:_get_random_elements()
 					rand = _rand_drop_location
 				end
 			end
+		elseif _level_id == "rat" then
+			if self._id == 101127 then
+				local _escape_position = RNGModifier:SafeGetData(_level_id, "_escape_position") or 0
+				_escape_position = _escape_position - 1
+				if _escape_position > 0 then
+					rand = _escape_position
+				end
+			end
+			if self._id == 101127 then
+				local _random_flare = RNGModifier:SafeGetData(_level_id, "_random_flare") or 0
+				_random_flare = _random_flare - 1
+				if _random_flare > 0 then
+					rand = _random_flare
+				end
+			end
+			if self._id == 100337 then
+				local _chose_methlab_position = RNGModifier:SafeGetData(_level_id, "_chose_methlab_position") or 0
+				_chose_methlab_position = _chose_methlab_position - 1
+				if _chose_methlab_position > 0 then
+					rand = _chose_methlab_position
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

@@ -107,5 +107,9 @@
 	"RNGModifier_mus_chamber_controller_title" : "Pressure Sensitive",
 	"RNGModifier_mus_chamber_controller_001" : "Easy One",
 	
-	"RNGModifier_roberts_rand_drop_location_title" : "Cage Bag Drop"
+	"RNGModifier_roberts_rand_drop_location_title" : "Cage Bag Drop",
+	
+	"RNGModifier_rat_escape_position_title" : "Van",
+	"RNGModifier_rat_random_flare_title" : "Flare",
+	"RNGModifier_rat_chose_methlab_position_title" : "MethLab"
 }
