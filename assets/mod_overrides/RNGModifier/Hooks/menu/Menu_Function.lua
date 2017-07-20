@@ -2,7 +2,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {
-	["Version"] = "5.7"
+	["Version"] = "5.8"
 }
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._heistlist = {
@@ -31,6 +31,13 @@ for _, _heist in pairs(RNGModifier._heistlist) do
 			["name_id"] = tweak_data.levels[_heist].name_id
 		}
 	end
+end
+
+function RNGModifier:SafeGetData(_heist, _table1)
+	if not _heist or not self._data or not self._data[_heist] then
+		return
+	end
+	return self._data[_heist][_table1] or nil
 end
 
 function RNGModifier:Save()
@@ -70,13 +77,6 @@ function RNGModifier:Load()
 end
 
 RNGModifier:Load()
-
-function RNGModifier:SafeGetData(_heist, _table1)
-	if not _heist or not self._data or not self._data[_heist] then
-		return
-	end
-	return self._data[_heist][_table1] or nil
-end
 
 Hooks:Add("MenuManagerSetupCustomMenus", "MenuManagerSetupCustomMenus_RNGModifier", function(menu_manager, nodes)
 	MenuHelper:NewMenu(RNGModifier._menu_id)
