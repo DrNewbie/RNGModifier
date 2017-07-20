@@ -2,7 +2,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {
-	["Version"] = "4.7"
+	["Version"] = "5.6"
 }
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._heistlist = {
@@ -56,9 +56,15 @@ end
 
 function RNGModifier:Load()
 	local _file = io.open(self._save_path, "r")
+	local _data = {}
 	if _file then
-		self._data = json.decode(_file:read("*all" ))
+		_data = json.decode(_file:read("*all" ))
 		_file:close()
+	end
+	if not _data or not _file or tostring(self._data["Version"]) ~= tostring(_data["Version"]) then
+		self:Save()
+	else
+		self._data = _data
 	end
 end
 
