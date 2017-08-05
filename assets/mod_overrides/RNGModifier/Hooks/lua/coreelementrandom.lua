@@ -18,6 +18,12 @@ function ElementRandom:_get_random_elements()
 	local t = {}
 	local rand = math.random(#self._unused_randoms)
 	local pick_new_rand = function(list, exlist, exlistfix)
+		if not list or type(list) ~= "table" then
+			return
+		end
+		if not exlist or type(exlist) ~= "table" then
+			return
+		end
 		local explist = {}
 		for k, v in pairs(#list) do
 			local ok = true
