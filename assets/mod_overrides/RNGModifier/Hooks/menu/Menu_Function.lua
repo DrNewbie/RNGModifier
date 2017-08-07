@@ -2,7 +2,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {
-	["Version"] = "5.92"
+	["Version"] = "5.93"
 }
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._heistlist = {
@@ -63,9 +63,8 @@ function RNGModifier:Save()
 	end
 	for _, _heist in pairs(self._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
-			self._data[_heist] = {
-				["name_id"] = tweak_data.levels[_heist].name_id
-			}
+			self._data[_heist] = self._data[_heist] or {}
+			self._data[_heist]["name_id"] = tweak_data.levels[_heist].name_id
 		end
 	end
 	local _file = io.open(self._save_path, "w+")
