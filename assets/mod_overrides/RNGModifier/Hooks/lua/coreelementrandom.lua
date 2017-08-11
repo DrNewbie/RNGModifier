@@ -25,7 +25,7 @@ function ElementRandom:_get_random_elements()
 			return
 		end
 		local explist = {}
-		for k, v in pairs(#list) do
+		for k, v in pairs(list) do
 			local ok = true
 			for _, v2 in pairs(exlist) do
 				v2 = v2 + exlistfix
