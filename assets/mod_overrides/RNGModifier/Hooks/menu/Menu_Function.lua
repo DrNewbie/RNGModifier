@@ -23,7 +23,8 @@ RNGModifier._heistlist = {
 	"hox_2",
 	"hox_1",
 	"mus",
-	"rat"
+	"rat",
+	"arena"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
@@ -101,7 +102,7 @@ end)
 
 Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenus_RNGModifier", function(menu_manager, nodes)
 	nodes[RNGModifier._menu_id] = MenuHelper:BuildMenu(RNGModifier._menu_id)
-	MenuHelper:AddMenuItem( MenuHelper.menus.lua_mod_options_menu, RNGModifier._menu_id, "RNGModifier_menu_title", "RNGModifier_menu_desc")
+	MenuHelper:AddMenuItem(nodes["blt_options"], RNGModifier._menu_id, "RNGModifier_menu_title", "RNGModifier_menu_desc")
 	for _, _heist in pairs(RNGModifier._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
 			local _new = "RNGModifier_".. _heist .."_Options_Menu"

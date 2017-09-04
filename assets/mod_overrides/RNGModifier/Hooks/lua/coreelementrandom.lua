@@ -255,6 +255,17 @@ function ElementRandom:_get_random_elements()
 					rand = _chose_methlab_position
 				end
 			end
+		elseif _level_id == "arena" then
+			if self._id == 101311 then
+				local _select_security_room = RNGModifier:SafeGetData(_level_id, "_select_security_room") or 0
+				_select_security_room = _select_security_room - 1
+				if _select_security_room <= 0 then
+				elseif _select_security_room == 1 then
+					rand = math.random(2,4)
+				else
+					rand = _select_security_room - 1					
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

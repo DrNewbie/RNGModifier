@@ -111,5 +111,8 @@
 	
 	"RNGModifier_rat_escape_position_title" : "Van",
 	"RNGModifier_rat_random_flare_title" : "Flare",
-	"RNGModifier_rat_chose_methlab_position_title" : "MethLab"
+	"RNGModifier_rat_chose_methlab_position_title" : "MethLab",
+
+	"RNGModifier_arena_select_security_room_title" : "Security Room",
+	"RNGModifier_arena_select_security_room_No_Lobby" : "Not spawn in Lobby"
 }
