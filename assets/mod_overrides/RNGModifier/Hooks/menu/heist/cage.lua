@@ -35,7 +35,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_16",
 		"RNGModifier_number_4_use_17"
 	},
-	value = RNGModifier._data[_Curret_Heist]._pick1_correct_computer,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_pick1_correct_computer"),
 	menu_id = "RNGModifier_cage_Options_Menu"
 })
 
@@ -53,6 +53,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_cage_choose_storage_top",
 		"RNGModifier_cage_choose_storage_bottom"
 	},
-	value = RNGModifier._data[_Curret_Heist]._choose_storage,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_choose_storage"),
 	menu_id = "RNGModifier_cage_Options_Menu"
 })

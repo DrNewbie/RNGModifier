@@ -15,7 +15,7 @@ MenuCallbackHandler.RNGModifier_big_chance_to_work = function(self, item)
 	end
 	RNGModifier:Save()
 end
-_bool = RNGModifier._data[_Curret_Heist]._chance_to_work == 1 and true or false
+_bool = tonumber(RNGModifier:SafeGetData("big", "_chance_to_work")) == 1 and true or false
 MenuHelper:AddToggle({
 	id = "RNGModifier_big_chance_to_work",
 	title = "RNGModifier_big_chance_to_work_title",

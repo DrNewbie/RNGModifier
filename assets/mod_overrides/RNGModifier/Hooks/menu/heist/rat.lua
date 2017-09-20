@@ -20,7 +20,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_1",
 		"RNGModifier_number_4_use_2"
 	},
-	value = RNGModifier._data[_Curret_Heist]._escape_position,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_escape_position"),
 	menu_id = "RNGModifier_rat_Options_Menu"
 })
 
@@ -39,7 +39,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_2",
 		"RNGModifier_number_4_use_3"
 	},
-	value = RNGModifier._data[_Curret_Heist]._random_flare,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_random_flare"),
 	menu_id = "RNGModifier_rat_Options_Menu"
 })
 
@@ -57,6 +57,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_1",
 		"RNGModifier_number_4_use_2"
 	},
-	value = RNGModifier._data[_Curret_Heist]._chose_methlab_position,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_chose_methlab_position"),
 	menu_id = "RNGModifier_rat_Options_Menu"
 })

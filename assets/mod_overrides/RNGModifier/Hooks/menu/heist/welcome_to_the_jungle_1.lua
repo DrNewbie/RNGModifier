@@ -15,7 +15,7 @@ MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10 = functi
 	end
 	RNGModifier:Save()
 end
-_bool = RNGModifier._data[_Curret_Heist]._chanceOfTrade10 == 1 and true or false
+_bool = tonumber(RNGModifier:SafeGetData(_Curret_Heist, "_chanceOfTrade10")) == 1 and true or false
 MenuHelper:AddToggle({
 	id = "RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10",
 	title = "RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title",

@@ -23,7 +23,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_hox_2_select_excursion_004",
 		"RNGModifier_hox_2_select_excursion_005"
 	},
-	value = RNGModifier._data[_Curret_Heist]._select_excursion_A,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_A"),
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })
 
@@ -44,7 +44,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_hox_2_select_excursion_004",
 		"RNGModifier_hox_2_select_excursion_005"
 	},
-	value = RNGModifier._data[_Curret_Heist]._select_excursion_B,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_B"),
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })
 
@@ -65,6 +65,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_hox_2_select_excursion_004",
 		"RNGModifier_hox_2_select_excursion_005"
 	},
-	value = RNGModifier._data[_Curret_Heist]._select_excursion_C,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_C"),
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })

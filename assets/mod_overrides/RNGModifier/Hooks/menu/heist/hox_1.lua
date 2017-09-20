@@ -22,7 +22,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_hox_1_logic_random_002_003",
 		"RNGModifier_hox_1_logic_random_002_004"
 	},
-	value = RNGModifier._data[_Curret_Heist]._logic_random_002,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_logic_random_002"),
 	menu_id = "RNGModifier_hox_1_Options_Menu"
 })
 
@@ -48,6 +48,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_9",
 		"RNGModifier_number_4_use_10"
 	},
-	value = RNGModifier._data[_Curret_Heist]._logic_random_007,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_logic_random_007"),
 	menu_id = "RNGModifier_hox_1_Options_Menu"
 })

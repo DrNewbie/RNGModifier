@@ -266,6 +266,14 @@ function ElementRandom:_get_random_elements()
 					rand = _select_security_room - 1					
 				end
 			end
+		elseif _level_id == "firestarter_2" then
+			if self._id == 104539 then
+				local _randServerRoom = RNGModifier:SafeGetData(_level_id, "_randServerRoom") or 0
+				_randServerRoom = _randServerRoom - 1
+				if _randServerRoom > 0 then
+					rand = _randServerRoom
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

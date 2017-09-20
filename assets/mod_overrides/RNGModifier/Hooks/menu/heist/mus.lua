@@ -20,6 +20,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_mus_chamber_controller_001"
 	},
-	value = RNGModifier._data[_Curret_Heist]._chamber_controller,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_chamber_controller"),
 	menu_id = "RNGModifier_mus_Options_Menu"
 })

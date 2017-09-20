@@ -22,6 +22,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_3",
 		"RNGModifier_number_4_use_4",
 	},
-	value = RNGModifier._data[_Curret_Heist]._rand_truck_amount,
+	value = RNGModifier:SafeGetData("arm_fac", "_rand_truck_amount"),
 	menu_id = "RNGModifier_arm_fac_Options_Menu"
 })

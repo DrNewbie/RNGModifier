@@ -21,6 +21,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_friend_pick_rand_escape_vehicle_002",
 		"RNGModifier_friend_pick_rand_escape_vehicle_003"
 	},
-	value = RNGModifier._data[_Curret_Heist]._pick_rand_escape_vehicle,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_pick_rand_escape_vehicle"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })

@@ -15,7 +15,7 @@ MenuCallbackHandler.RNGModifier_roberts_logic_chance_011 = function(self, item)
 	end
 	RNGModifier:Save()
 end
-_bool = RNGModifier._data[_Curret_Heist]._logic_chance_011 == 1 and true or false
+_bool = tonumber(RNGModifier:SafeGetData(_Curret_Heist, "_logic_chance_011")) == 1 and true or false
 MenuHelper:AddToggle({
 	id = "RNGModifier_roberts_logic_chance_011",
 	title = "RNGModifier_roberts_logic_chance_011_title",
@@ -34,7 +34,7 @@ MenuCallbackHandler.RNGModifier_roberts_logic_chance_012 = function(self, item)
 	end
 	RNGModifier:Save()
 end
-_bool = RNGModifier._data[_Curret_Heist]._logic_chance_012 == 1 and true or false
+_bool = tonumber(RNGModifier:SafeGetData(_Curret_Heist, "_logic_chance_012")) == 1 and true or false
 MenuHelper:AddToggle({
 	id = "RNGModifier_roberts_logic_chance_012",
 	title = "RNGModifier_roberts_logic_chance_012_title",
@@ -60,6 +60,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_2",
 		"RNGModifier_number_4_use_3"
 	},
-	value = RNGModifier._data[_Curret_Heist]._rand_drop_location,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_rand_drop_location"),
 	menu_id = "RNGModifier_roberts_Options_Menu"
 })

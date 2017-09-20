@@ -21,7 +21,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_watchdogs_1_chooseLootVehicle_002",
 		"RNGModifier_watchdogs_1_chooseLootVehicle_003"
 	},
-	value = RNGModifier._data[_Curret_Heist]._chooseLootVehicle,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_chooseLootVehicle"),
 	menu_id = "RNGModifier_watchdogs_1_Options_Menu"
 })
 
@@ -39,6 +39,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_watchdogs_1_chooseRandomChopper_001",
 		"RNGModifier_watchdogs_1_chooseRandomChopper_002"
 	},
-	value = RNGModifier._data[_Curret_Heist]._chooseRandomChopper,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_chooseRandomChopper"),
 	menu_id = "RNGModifier_watchdogs_1_Options_Menu"
 })

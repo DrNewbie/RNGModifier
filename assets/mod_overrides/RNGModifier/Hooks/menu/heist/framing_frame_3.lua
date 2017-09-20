@@ -21,7 +21,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_framing_frame_3_chooseServerRoom_002",
 		"RNGModifier_framing_frame_3_chooseServerRoom_003"
 	},
-	value = RNGModifier._data[_Curret_Heist]._chooseServerRoom,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_chooseServerRoom"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
@@ -40,7 +40,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_framing_frame_3_spawnRandomVault_002",
 		"RNGModifier_framing_frame_3_spawnRandomVault_003"
 	},
-	value = RNGModifier._data[_Curret_Heist]._spawnRandomVault,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomVault"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
@@ -66,7 +66,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_9",
 		"RNGModifier_number_4_use_10"
 	},
-	value = RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_A,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomHarrdDrive_A"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
@@ -92,7 +92,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_9",
 		"RNGModifier_number_4_use_10"
 	},
-	value = RNGModifier._data[_Curret_Heist]._spawnRandomHarrdDrive_B,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomHarrdDrive_B"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
@@ -118,7 +118,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_9",
 		"RNGModifier_number_4_use_10"
 	},
-	value = RNGModifier._data[_Curret_Heist]._SpawnRandomPhone,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_SpawnRandomPhone"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
@@ -142,6 +142,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_7",
 		"RNGModifier_number_4_use_8"
 	},
-	value = RNGModifier._data[_Curret_Heist]._spawnRandomPads,
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomPads"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })

@@ -114,5 +114,7 @@
 	"RNGModifier_rat_chose_methlab_position_title" : "MethLab",
 
 	"RNGModifier_arena_select_security_room_title" : "Security Room",
-	"RNGModifier_arena_select_security_room_No_Lobby" : "Not spawn in Lobby"
+	"RNGModifier_arena_select_security_room_No_Lobby" : "Not spawn in Lobby",
+	
+	"RNGModifier_firestarter_2_randServerRoom_title" : "Server Room"
 }
