@@ -116,5 +116,9 @@
 	"RNGModifier_arena_select_security_room_title" : "Security Room",
 	"RNGModifier_arena_select_security_room_No_Lobby" : "Not spawn in Lobby",
 	
-	"RNGModifier_firestarter_2_randServerRoom_title" : "Server Room"
+	"RNGModifier_firestarter_2_randServerRoom_title" : "Server Room",
+	
+	"RNGModifier_arm_for_pick_rand_spawn_title" : "Start Spawn",
+	"RNGModifier_arm_for_pick_rand_spawn_1" : "Boat",
+	"RNGModifier_arm_for_pick_rand_spawn_2" : "Sawmill"
 }

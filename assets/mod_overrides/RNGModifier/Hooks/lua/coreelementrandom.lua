@@ -274,6 +274,14 @@ function ElementRandom:_get_random_elements()
 					rand = _randServerRoom
 				end
 			end
+		elseif _level_id == "arm_for" then
+			if self._id == 100126 then
+				local _pick_rand_spawn = RNGModifier:SafeGetData(_level_id, "_pick_rand_spawn") or 0
+				_pick_rand_spawn = _pick_rand_spawn - 1
+				if _pick_rand_spawn > 0 then
+					rand = _pick_rand_spawn
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
