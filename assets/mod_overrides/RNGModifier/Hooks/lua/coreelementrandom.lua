@@ -281,6 +281,32 @@ function ElementRandom:_get_random_elements()
 					rand = _pick_rand_spawn
 				end
 			end
+		elseif _level_id == "big" then
+			if self._id == 104589 then
+				local _logic_random_024 = RNGModifier:SafeGetData(_level_id, "_logic_random_024") or 0
+				_logic_random_024 = _logic_random_024 - 1
+				if _logic_random_024 > 0 then
+					rand = _logic_random_024
+				end
+			elseif self._id == 102551 then
+				local _rand_vault_door = RNGModifier:SafeGetData(_level_id, "_rand_vault_door") or 0
+				_rand_vault_door = _rand_vault_door - 1
+				if _rand_vault_door > 0 then
+					rand = _rand_vault_door
+				end
+			elseif self._id == 102219 then
+				local _pick_rand_floor = RNGModifier:SafeGetData(_level_id, "_pick_rand_floor") or 0
+				_pick_rand_floor = _pick_rand_floor - 1
+				if _pick_rand_floor > 0 then
+					rand = _pick_rand_floor
+				end
+			elseif self._id == 100697 then
+				local _rand_room = RNGModifier:SafeGetData(_level_id, "_rand_room") or 0
+				_rand_room = _rand_room - 1
+				if _rand_room > 0 then
+					rand = _rand_room
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
