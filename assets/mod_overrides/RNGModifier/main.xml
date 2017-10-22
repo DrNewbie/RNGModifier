@@ -9,5 +9,6 @@
         <hook file="lua/coreelementcounter.lua" source_file="core/lib/managers/mission/coreelementcounter"/>
         <hook file="lua/coreelementunitsequence.lua" source_file="core/lib/managers/mission/coreelementunitsequence"/>
         <hook file="lua/elementjobvalue.lua" source_file="lib/managers/mission/elementjobvalue"/>
+		<hook file="lua/ForcedEscapeDay.lua" source_file="lib/managers/group_ai_states/groupaistatebase"/>
     </Hooks>
 </table>

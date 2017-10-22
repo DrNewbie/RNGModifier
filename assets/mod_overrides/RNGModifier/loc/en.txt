@@ -1,6 +1,8 @@
 {
 	"RNGModifier_menu_title" : "RNG Modifier",
 	"RNGModifier_menu_desc" : "Boom!!",
+	"RNGModifier_menu_Heist_title" : "Heist",
+	"RNGModifier_menu_All_title" : "All",
 	"RNGModifier_empty_desc" : "   ",
 	"RNGModifier_number_4_use_1" : "1",
 	"RNGModifier_number_4_use_2" : "2",
@@ -120,5 +122,8 @@
 	
 	"RNGModifier_arm_for_pick_rand_spawn_title" : "Start Spawn",
 	"RNGModifier_arm_for_pick_rand_spawn_1" : "Boat",
-	"RNGModifier_arm_for_pick_rand_spawn_2" : "Sawmill"
+	"RNGModifier_arm_for_pick_rand_spawn_2" : "Sawmill",
+	
+	"RNGModifier_all_of_all_forced_escape_day_title" : "Forced Escape Day",
+	"RNGModifier_all_of_all_forced_escape_day_desc" : "If it is available"
 }
