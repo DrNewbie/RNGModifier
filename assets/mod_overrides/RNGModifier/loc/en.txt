@@ -97,6 +97,12 @@
 	"RNGModifier_hox_2_select_excursion_003" : "Fetch some files",
 	"RNGModifier_hox_2_select_excursion_004" : "IT of server",
 	"RNGModifier_hox_2_select_excursion_005" : "DNA Evidence",
+	"RNGModifier_hox_2_select_random_powerbox_title" : "Power Box",
+	"RNGModifier_hox_2_select_random_powerboxuse_1" : "Front",
+	"RNGModifier_hox_2_select_random_powerboxuse_2" : "Back",
+	"RNGModifier_hox_2_select_random_powerboxuse_3" : "Hoxton",
+	"RNGModifier_hox_2_select_random_powerboxuse_4" : "Middle",
+	"RNGModifier_hox_2_select_random_powerboxuse_5" : "Copier",
 	
 	"RNGModifier_hox_1_logic_random_002_title" : "Escape Path",
 	"RNGModifier_hox_1_logic_random_002_001" : "FL",

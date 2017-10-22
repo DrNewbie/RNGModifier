@@ -2,7 +2,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {
-	["Version"] = "6.3"
+	["Version"] = "6.4"
 }
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._menu_Heist_id = "RNGModifier_menu_Heist_id"

@@ -68,3 +68,24 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_C"),
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_hox_2_select_random_powerbox = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_random_powerbox")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_2_select_random_powerbox",
+	title = "RNGModifier_hox_2_select_random_powerbox_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_2_select_random_powerbox",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_2_select_random_powerboxuse_1",
+		"RNGModifier_hox_2_select_random_powerboxuse_2",
+		"RNGModifier_hox_2_select_random_powerboxuse_3",
+		"RNGModifier_hox_2_select_random_powerboxuse_4",
+		"RNGModifier_hox_2_select_random_powerboxuse_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_random_powerbox"),
+	menu_id = "RNGModifier_hox_2_Options_Menu"
+})
