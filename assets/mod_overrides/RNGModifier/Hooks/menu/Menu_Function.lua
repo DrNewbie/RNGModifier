@@ -2,7 +2,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = "assets/mod_overrides/RNGModifier/"
 RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
 RNGModifier._data = {
-	["Version"] = "6.4"
+	["Version"] = "6.5"
 }
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._menu_Heist_id = "RNGModifier_menu_Heist_id"
@@ -28,7 +28,9 @@ RNGModifier._heistlist = {
 	"rat",
 	"arena",
 	"firestarter_2",
-	"arm_for"
+	"arm_for",
+	"framing_frame_2",
+	"alex_2"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then

@@ -130,6 +130,10 @@
 	"RNGModifier_arm_for_pick_rand_spawn_1" : "Boat",
 	"RNGModifier_arm_for_pick_rand_spawn_2" : "Sawmill",
 	
-	"RNGModifier_all_of_all_forced_escape_day_title" : "Forced Escape Day",
+	"RNGModifier_all_of_all_forced_escape_day_title" : "Force Escape Day",
 	"RNGModifier_all_of_all_forced_escape_day_desc" : "If it is available"
+	
+	"RNGModifier_framing_frame_2_chanceForAAmbush_title" : "Force Ambush",
+	
+	"RNGModifier_alex_2_chance_of_fbi_interrupt_title" : "Ambush"
 }
