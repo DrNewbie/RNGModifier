@@ -1,9 +1,15 @@
 _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = ModPath
-RNGModifier._save_path = SavePath .. "RNGModifier.txt"
-RNGModifier._data = {
-	["Version"] = "6.6"
-}
+RNGModifier._save_path = SavePath .. "RNGModifier_SaveFile.txt"
+for i, mod in pairs(BLT.Mods.mods) do
+	local _dump = tostring(json.encode(mod.json_data))
+	if _dump:find('RNGModifier') then
+		RNGModifier._data = {
+			["Version"] = tostring(mod.version)
+		}		
+		break
+	end
+end
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._menu_Heist_id = "RNGModifier_menu_Heist_id"
 RNGModifier._menu_All_id = "RNGModifier_menu_All_id"
