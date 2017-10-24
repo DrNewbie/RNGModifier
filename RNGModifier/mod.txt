@@ -1,0 +1,24 @@
+{
+	"name" : "RNGModifier",
+	"description" : " ",
+	"author" : "Dr_Newbie",
+	"contact" : "http://modwork.shop/19913",
+	"version" : "7",
+	"priority": 1000,
+	"blt_version": 2,
+	"libraries" : [
+		{
+			"display_name" : "Announcer",
+			"identifier" : "ANCR",
+			"optional" : "false"
+		},
+		{  
+			"display_name":"BeardLib",
+			"identifier":"beardlib"
+		}
+	],
+	"hooks" :
+	[
+		{"hook_id": "lib/managers/localizationmanager", "script_path": "Base.lua"},
+	]
+}

@@ -1,0 +1,13 @@
+<table name="RNGModifier">
+	<Localization directory="Loc" default="en.txt"/>
+	<GlobalValue id="RNGModifier" color="Color(1, 0.5, 0)"/>
+	<Hooks directory="Hooks">
+		<hook file="menu/Menu_Function.lua" source_file="lib/managers/localizationmanager"/>
+		<hook file="lua/coreelementrandom.lua" source_file="core/lib/managers/mission/coreelementrandom"/>
+		<hook file="lua/coreelementlogicchance.lua" source_file="core/lib/managers/mission/coreelementlogicchance"/>
+		<hook file="lua/coreelementcounter.lua" source_file="core/lib/managers/mission/coreelementcounter"/>
+		<hook file="lua/coreelementunitsequence.lua" source_file="core/lib/managers/mission/coreelementunitsequence"/>
+		<hook file="lua/elementjobvalue.lua" source_file="lib/managers/mission/elementjobvalue"/>
+		<hook file="lua/ForcedEscapeDay.lua" source_file="lib/managers/group_ai_states/groupaistatebase"/>
+	</Hooks>
+</table>
