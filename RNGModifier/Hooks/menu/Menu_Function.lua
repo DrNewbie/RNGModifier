@@ -1,6 +1,6 @@
 _G.RNGModifier = _G.RNGModifier or {}
-RNGModifier._path = "assets/mod_overrides/RNGModifier/"
-RNGModifier._save_path = RNGModifier._path .. "Save/RNGModifier.txt"
+RNGModifier._path = ModPath
+RNGModifier._save_path = SavePath .. "RNGModifier.txt"
 RNGModifier._data = {
 	["Version"] = "6.6"
 }
