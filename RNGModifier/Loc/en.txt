@@ -157,5 +157,5 @@
 	"RNGModifier_wwh_random_captain_location_1" : "Near Train",
 	"RNGModifier_wwh_random_captain_location_2" : "Other",
 	"RNGModifier_wwh_random_captain_location_3" : "Face to Train",
-	"RNGModifier_wwh_random_captain_location_4" : "Near Ship",
+	"RNGModifier_wwh_random_captain_location_4" : "Near Ship"
 }
