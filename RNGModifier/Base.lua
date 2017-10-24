@@ -10,8 +10,8 @@ Hooks:Add("MenuManagerOnOpenMenu", "RNGModifier_MenuManagerOnOpenMenu", function
 				mod_id = 'RNGModifier',
 				data = {
 					modworkshop_id = 19913,
-					--dl_url = 'https://drnewbie.github.io/Mutators/Dr_Newbie%20Mutators%20Package.zip',
-					--info_url = 'https://drnewbie.github.io/Mutators/Dr_Newbie%20Mutators%20Package/mod.txt'
+					dl_url = 'https://drnewbie.github.io/RNGModifier/RNGModifier.zip',
+					info_url = 'https://drnewbie.github.io/RNGModifier/RNGModifier/mod.txt'
 				}
 			})
 		end
