@@ -72,6 +72,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 100
 				end
 			end
+		elseif _level_id == "dah" then
+			if self._id == 104079 or self._id == 104082 then
+				local _red_diamond_success = RNGModifier:SafeGetData(_level_id, "_red_diamond_success") or 0
+				if _red_diamond_success == 0 then 
+				
+				else
+					self._chance = 99999999
+				end
+			end
 		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)

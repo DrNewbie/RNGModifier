@@ -12,7 +12,7 @@ MenuCallbackHandler.RNGModifier_wwh_random_captain_location = function(self, ite
 end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_wwh_random_captain_location",
-	title = "RNGModifier_arm_random_captain_location_title",
+	title = "RNGModifier_wwh_random_captain_location_title",
 	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_wwh_random_captain_location",
 	items = {

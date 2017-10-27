@@ -315,6 +315,14 @@ function ElementRandom:_get_random_elements()
 					rand = _random_captain_location
 				end
 			end
+		elseif _level_id == "dah" then
+			if self._id == 103929 then
+				local _randomize_spawn = RNGModifier:SafeGetData(_level_id, "_randomize_spawn") or 0
+				_randomize_spawn = _randomize_spawn - 1
+				if _randomize_spawn > 0 then
+					rand = _randomize_spawn
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

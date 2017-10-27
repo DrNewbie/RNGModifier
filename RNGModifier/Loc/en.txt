@@ -153,9 +153,16 @@
 	
 	"RNGModifier_alex_2_chance_of_fbi_interrupt_title" : "Ambush",
 	
-	"RNGModifier_arm_random_captain_location_title" : "Captain",
+	"RNGModifier_wwh_random_captain_location_title" : "Captain",
 	"RNGModifier_wwh_random_captain_location_1" : "Near Train",
 	"RNGModifier_wwh_random_captain_location_2" : "Other",
 	"RNGModifier_wwh_random_captain_location_3" : "Face to Train",
-	"RNGModifier_wwh_random_captain_location_4" : "Near Ship"
+	"RNGModifier_wwh_random_captain_location_4" : "Near Ship",
+	
+	"RNGModifier_dah_randomize_spawn_title" : "Start Spawn",
+	"RNGModifier_dah_randomize_spawn_1" : "1F",
+	"RNGModifier_dah_randomize_spawn_2" : "2F",
+	"RNGModifier_dah_randomize_spawn_3" : "2F (Other)",
+	"RNGModifier_dah_red_diamond_success_title" : "Force Red Diamond",
+	"RNGModifier_dah_red_diamond_success_desc" : "Require: Overkill or above"
 }
