@@ -322,6 +322,18 @@ function ElementRandom:_get_random_elements()
 				if _randomize_spawn > 0 then
 					rand = _randomize_spawn
 				end
+			elseif self._id == 101655 then
+				local _rnd_Security_Rooms = RNGModifier:SafeGetData(_level_id, "_rnd_Security_Rooms") or 0
+				_rnd_Security_Rooms = _rnd_Security_Rooms - 1
+				if _rnd_Security_Rooms > 0 then
+					rand = _rnd_Security_Rooms
+				end
+			elseif self._id == 103088 then
+				local _Randomize_Hackboxes = RNGModifier:SafeGetData(_level_id, "_Randomize_Hackboxes") or 0
+				_Randomize_Hackboxes = _Randomize_Hackboxes - 1
+				if _Randomize_Hackboxes > 0 then
+					rand = _Randomize_Hackboxes
+				end
 			end
 		end
 	end

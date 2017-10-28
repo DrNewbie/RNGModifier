@@ -19,9 +19,55 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_dah_randomize_spawn_1",
 		"RNGModifier_dah_randomize_spawn_2",
-		"RNGModifier_dah_randomize_spawn_3",
+		"RNGModifier_dah_randomize_spawn_3"
 	},
 	value = RNGModifier:SafeGetData("dah", "_randomize_spawn"),
+	menu_id = "RNGModifier_dah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_dah_rnd_Security_Rooms = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_rnd_Security_Rooms")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dah_rnd_Security_Rooms",
+	title = "RNGModifier_dah_rnd_Security_Rooms_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_dah_rnd_Security_Rooms",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_dah_rnd_Security_Rooms_1",
+		"RNGModifier_dah_rnd_Security_Rooms_2",
+		"RNGModifier_dah_rnd_Security_Rooms_3",
+		"RNGModifier_dah_rnd_Security_Rooms_4",
+		"RNGModifier_dah_rnd_Security_Rooms_5"
+	},
+	value = RNGModifier:SafeGetData("dah", "_rnd_Security_Rooms"),
+	menu_id = "RNGModifier_dah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_dah_Randomize_Hackboxes = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_Randomize_Hackboxes")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dah_Randomize_Hackboxes",
+	title = "RNGModifier_dah_Randomize_Hackboxes_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_dah_Randomize_Hackboxes",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_dah_Randomize_Hackboxes_1",
+		"RNGModifier_dah_Randomize_Hackboxes_2",
+		"RNGModifier_dah_Randomize_Hackboxes_3",
+		"RNGModifier_dah_Randomize_Hackboxes_4",
+		"RNGModifier_dah_Randomize_Hackboxes_5",
+		"RNGModifier_dah_Randomize_Hackboxes_6",
+		"RNGModifier_dah_Randomize_Hackboxes_7",
+		"RNGModifier_dah_Randomize_Hackboxes_8",
+		"RNGModifier_dah_Randomize_Hackboxes_9"
+	},
+	value = RNGModifier:SafeGetData("dah", "_Randomize_Hackboxes"),
 	menu_id = "RNGModifier_dah_Options_Menu"
 })
 

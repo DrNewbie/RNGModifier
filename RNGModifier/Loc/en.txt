@@ -164,5 +164,21 @@
 	"RNGModifier_dah_randomize_spawn_2" : "2F",
 	"RNGModifier_dah_randomize_spawn_3" : "2F (Other)",
 	"RNGModifier_dah_red_diamond_success_title" : "Force Red Diamond",
-	"RNGModifier_dah_red_diamond_success_desc" : "Require: Overkill or above"
+	"RNGModifier_dah_red_diamond_success_desc" : "Require: Overkill or above",
+	"RNGModifier_dah_rnd_Security_Rooms_title" : "Server Room",
+	"RNGModifier_dah_rnd_Security_Rooms_1" : "Near 1F Start Spawn",
+	"RNGModifier_dah_rnd_Security_Rooms_2" : "Other A",
+	"RNGModifier_dah_rnd_Security_Rooms_3" : "Other B",
+	"RNGModifier_dah_rnd_Security_Rooms_4" : "Other C",
+	"RNGModifier_dah_rnd_Security_Rooms_5" : "Other D",
+	"RNGModifier_dah_Randomize_Hackboxes_title" : "Hackboxes",
+	"RNGModifier_dah_Randomize_Hackboxes_1" : "N2 F2 + W",
+	"RNGModifier_dah_Randomize_Hackboxes_2" : "W2 F2 + W1 F2",
+	"RNGModifier_dah_Randomize_Hackboxes_3" : "W2 F002 + W3 F2",
+	"RNGModifier_dah_Randomize_Hackboxes_4" : "E3 F2 + W3 F002",
+	"RNGModifier_dah_Randomize_Hackboxes_5" : "E + N E",
+	"RNGModifier_dah_Randomize_Hackboxes_6" : "E2 F2 + N1 F2",
+	"RNGModifier_dah_Randomize_Hackboxes_7" : "N + E3 F002",
+	"RNGModifier_dah_Randomize_Hackboxes_8" : "N E001 + W001",
+	"RNGModifier_dah_Randomize_Hackboxes_9" : "S E + N E002"
 }
