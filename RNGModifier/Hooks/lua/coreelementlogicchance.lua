@@ -73,7 +73,7 @@ function ElementLogicChance:on_executed(...)
 				end
 			end
 		elseif _level_id == "dah" then
-			if self._id == 104079 or self._id == 104082 then
+			if self._id == 104079 or self._id == 104082 or self._id == 101467 then
 				local _red_diamond_success = RNGModifier:SafeGetData(_level_id, "_red_diamond_success") or 0
 				if _red_diamond_success == 0 then 
 				
