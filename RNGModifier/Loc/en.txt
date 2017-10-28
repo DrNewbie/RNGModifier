@@ -165,7 +165,7 @@
 	"RNGModifier_dah_randomize_spawn_3" : "2F (Other)",
 	"RNGModifier_dah_red_diamond_success_title" : "Force Red Diamond",
 	"RNGModifier_dah_red_diamond_success_desc" : "Require: Overkill or above",
-	"RNGModifier_dah_rnd_Security_Rooms_title" : "Server Room",
+	"RNGModifier_dah_rnd_Security_Rooms_title" : "Security Room",
 	"RNGModifier_dah_rnd_Security_Rooms_1" : "Near 1F Start Spawn",
 	"RNGModifier_dah_rnd_Security_Rooms_2" : "Other A",
 	"RNGModifier_dah_rnd_Security_Rooms_3" : "Other B",
