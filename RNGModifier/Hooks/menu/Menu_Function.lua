@@ -158,4 +158,47 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 		menu_id = RNGModifier._menu_All_id
 	})
 	_bool = nil
+	
+	MenuCallbackHandler.RNGModifier_all_of_all_chancechange = function(self, item)
+		RNGModifier:SafeSetData(item:value(), "all_of_all", "_chancechange")
+		RNGModifier:Save()
+	end
+	MenuHelper:AddMultipleChoice({
+		id = "RNGModifier_all_of_all_chancechange",
+		title = "RNGModifier_all_of_all_chancechange_title",
+		desc = "RNGModifier_empty_desc",
+		callback = "RNGModifier_all_of_all_chancechange",
+		items = {
+			"RNGModifier_Default_One_Item",
+			"RNGModifier_all_of_all_chancechange_1",
+			"RNGModifier_all_of_all_chancechange_2",
+			"RNGModifier_all_of_all_chancechange_3",
+			"RNGModifier_all_of_all_chancechange_4",
+			"RNGModifier_all_of_all_chancechange_5",
+			"RNGModifier_all_of_all_chancechange_6",
+			"RNGModifier_all_of_all_chancechange_7"
+		},
+		value = RNGModifier:SafeGetData("all_of_all", "_chancechange"),
+		menu_id = RNGModifier._menu_All_id
+	})
+	
+	MenuCallbackHandler.RNGModifier_all_of_all_randomchange = function(self, item)
+		RNGModifier:SafeSetData(item:value(), "all_of_all", "_randomchange")
+		RNGModifier:Save()
+	end
+	MenuHelper:AddMultipleChoice({
+		id = "RNGModifier_all_of_all_randomchange",
+		title = "RNGModifier_all_of_all_randomchange_title",
+		desc = "RNGModifier_empty_desc",
+		callback = "RNGModifier_all_of_all_randomchange",
+		items = {
+			"RNGModifier_Default_One_Item",
+			"RNGModifier_all_of_all_randomchange_1",
+			"RNGModifier_all_of_all_randomchange_2",
+			"RNGModifier_all_of_all_randomchange_3",
+			"RNGModifier_all_of_all_randomchange_4"
+		},
+		value = RNGModifier:SafeGetData("all_of_all", "_randomchange"),
+		menu_id = RNGModifier._menu_All_id
+	})
 end)

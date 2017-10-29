@@ -147,7 +147,20 @@
 	"RNGModifier_arm_for_pick_rand_spawn_2" : "Sawmill",
 	
 	"RNGModifier_all_of_all_forced_escape_day_title" : "Force Escape Day",
-	"RNGModifier_all_of_all_forced_escape_day_desc" : "If it is available"
+	"RNGModifier_all_of_all_forced_escape_day_desc" : "If it is available",
+	"RNGModifier_all_of_all_chancechange_title" : "Force All 'Chance' to...",
+	"RNGModifier_all_of_all_chancechange_1" : "0%",
+	"RNGModifier_all_of_all_chancechange_2" : "25%",
+	"RNGModifier_all_of_all_chancechange_3" : "50%",
+	"RNGModifier_all_of_all_chancechange_4" : "75%",
+	"RNGModifier_all_of_all_chancechange_5" : "100%",
+	"RNGModifier_all_of_all_chancechange_6" : "99999999%",
+	"RNGModifier_all_of_all_chancechange_7" : "-99999999%",
+	"RNGModifier_all_of_all_randomchange_title" : "Force All 'Random' to...",
+	"RNGModifier_all_of_all_randomchange_1" : "First",
+	"RNGModifier_all_of_all_randomchange_2" : "Last",
+	"RNGModifier_all_of_all_randomchange_3" : "Center",
+	"RNGModifier_all_of_all_randomchange_4" : "1, 2, 3...",
 	
 	"RNGModifier_framing_frame_2_chanceForAAmbush_title" : "Force Ambush",
 	

@@ -17,7 +17,12 @@ function ElementLogicChance:on_executed(...)
 	local roll = math.random(100)
 	if Global.game_settings then
 		local _level_id = tostring(Global.game_settings.level_id)
-		if _level_id == "framing_frame_2" then
+		local _chancechange = RNGModifier:SafeGetData("all_of_all", "_chancechange") or 0
+		_chancechange = _chancechange - 1
+		if _chancechange > 0 then
+			local _chancechange_list = {0, 25, 50, 75, 100, 99999999, -99999999}
+			self._chance = _chancechange_list[_chancechange]
+		elseif _level_id == "framing_frame_2" then
 			if self._id == 101781 then
 				local _chanceForAAmbush = RNGModifier:SafeGetData(_level_id, "_chanceForAAmbush") or 0
 				if _chanceForAAmbush <= 0 then 

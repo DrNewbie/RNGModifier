@@ -42,7 +42,22 @@ function ElementRandom:_get_random_elements()
 	end
 	if Global.game_settings then
 		local _level_id = tostring(Global.game_settings.level_id)
-		if _level_id == "branchbank" then
+		local _randomchange = RNGModifier:SafeGetData("all_of_all", "_randomchange") or 0
+		_randomchange = _randomchange - 1
+		if _randomchange > 0 then
+			if _randomchange == 1 then
+				rand = 1
+			elseif _randomchange == 2 then
+				rand = #self._unused_randoms
+			elseif _randomchange == 3 then
+				rand = math.round((#self._unused_randoms)/2)+1
+			elseif _randomchange == 4 then
+				_tmp_data["all_of_all"] = _tmp_data["all_of_all"] or {}
+				_tmp_data["all_of_all"]._randomchange = _tmp_data["all_of_all"]._randomchange or 0
+				_tmp_data["all_of_all"]._randomchange = _tmp_data["all_of_all"]._randomchange + 1
+				rand = (_tmp_data["all_of_all"]._randomchange)%(#self._unused_randoms)
+			end
+		elseif _level_id == "branchbank" then
 			if self._id == 100726 then
 				local _randVaultDoor = RNGModifier:SafeGetData(_level_id, "_randVaultDoor") or 1
 				if _randVaultDoor == 1 then 
