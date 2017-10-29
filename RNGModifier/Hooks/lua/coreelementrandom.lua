@@ -55,7 +55,7 @@ function ElementRandom:_get_random_elements()
 				_tmp_data["all_of_all"] = _tmp_data["all_of_all"] or {}
 				_tmp_data["all_of_all"]._randomchange = _tmp_data["all_of_all"]._randomchange or 0
 				_tmp_data["all_of_all"]._randomchange = _tmp_data["all_of_all"]._randomchange + 1
-				rand = (_tmp_data["all_of_all"]._randomchange)%(#self._unused_randoms)
+				rand = (_tmp_data["all_of_all"]._randomchange)%(#self._unused_randoms) + 1
 			end
 		elseif _level_id == "branchbank" then
 			if self._id == 100726 then
