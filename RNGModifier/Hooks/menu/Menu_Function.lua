@@ -176,7 +176,8 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 			"RNGModifier_all_of_all_chancechange_4",
 			"RNGModifier_all_of_all_chancechange_5",
 			"RNGModifier_all_of_all_chancechange_6",
-			"RNGModifier_all_of_all_chancechange_7"
+			"RNGModifier_all_of_all_chancechange_7",
+			"RNGModifier_all_of_all_chancechange_8"
 		},
 		value = RNGModifier:SafeGetData("all_of_all", "_chancechange"),
 		menu_id = RNGModifier._menu_All_id
