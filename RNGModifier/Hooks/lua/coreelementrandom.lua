@@ -315,6 +315,22 @@ function ElementRandom:_get_random_elements()
 					rand = _random_captain_location
 				end
 			end
+		elseif _level_id == "glace" then
+			if self._id == 100074 then
+				local _random_correct_bus = RNGModifier:SafeGetData(_level_id, "_random_correct_bus") or 0
+				_random_correct_bus = _random_correct_bus - 1
+				if _random_correct_bus > 0 then
+					if _random_correct_bus == 1 then
+						rand = 2
+					elseif _random_correct_bus == 2 then
+						rand = 3
+					elseif _random_correct_bus == 3 then
+						rand = 1
+					elseif _random_correct_bus == 4 then
+						rand = 4
+					end
+				end
+			end
 		elseif _level_id == "dah" then
 			if self._id == 103929 then
 				local _randomize_spawn = RNGModifier:SafeGetData(_level_id, "_randomize_spawn") or 0

@@ -180,5 +180,11 @@
 	"RNGModifier_dah_Randomize_Hackboxes_6" : "E2 F2 + N1 F2",
 	"RNGModifier_dah_Randomize_Hackboxes_7" : "N + E3 F002",
 	"RNGModifier_dah_Randomize_Hackboxes_8" : "N E001 + W001",
-	"RNGModifier_dah_Randomize_Hackboxes_9" : "S E + N E002"
+	"RNGModifier_dah_Randomize_Hackboxes_9" : "S E + N E002",
+	
+	"RNGModifier_glace_random_correct_bus_title" : "Correct Bus",
+	"RNGModifier_glace_random_correct_bus_1" : "1R",
+	"RNGModifier_glace_random_correct_bus_2" : "1L",
+	"RNGModifier_glace_random_correct_bus_3" : "2",
+	"RNGModifier_glace_random_correct_bus_4" : "3"
 }
