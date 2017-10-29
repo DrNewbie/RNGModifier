@@ -9,7 +9,7 @@ Hooks:Add("MenuManagerOnOpenMenu", "RNGModifier_MenuManagerOnOpenMenu", function
 			UpdateThisMod:Add({
 				mod_id = 'RNGModifier',
 				data = {
-					modworkshop_id = "RNGModifier_19913",
+					modworkshop_id = 19913,
 					dl_url = 'https://drnewbie.github.io/RNGModifier/RNGModifier.zip',
 					info_url = 'https://drnewbie.github.io/RNGModifier/RNGModifier/mod.txt'
 				}
