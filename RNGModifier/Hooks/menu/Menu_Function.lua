@@ -1,6 +1,7 @@
 _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = ModPath
 RNGModifier._save_path = SavePath .. "RNGModifier_SaveFile.txt"
+RNGModifier._data = {}
 for i, mod in pairs(BLT.Mods.mods) do
 	local _dump = tostring(json.encode(mod.json_data))
 	if _dump:find('RNGModifier') then
@@ -39,7 +40,8 @@ RNGModifier._heistlist = {
 	"alex_2",
 	"wwh",
 	"dah",
-	"glace"
+	"glace",
+	"chill_combat"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then

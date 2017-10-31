@@ -366,6 +366,14 @@ function ElementRandom:_get_random_elements()
 					rand = _Randomize_Hackboxes
 				end
 			end
+		elseif _level_id == "chill_combat" then
+			if self._id == 101335 then
+				local _rnd_money_pile_loaction = RNGModifier:SafeGetData(_level_id, "_rnd_money_pile_loaction") or 0
+				_rnd_money_pile_loaction = _rnd_money_pile_loaction - 1
+				if _rnd_money_pile_loaction > 0 then
+					rand = _rnd_money_pile_loaction
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

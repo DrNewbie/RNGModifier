@@ -20,7 +20,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_wwh_random_captain_location_1",
 		"RNGModifier_wwh_random_captain_location_2",
 		"RNGModifier_wwh_random_captain_location_3",
-		"RNGModifier_wwh_random_captain_location_4",
+		"RNGModifier_wwh_random_captain_location_4"
 	},
 	value = RNGModifier:SafeGetData("wwh", "_random_captain_location"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
