@@ -1,7 +1,7 @@
 _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier._path = ModPath
 RNGModifier._save_path = SavePath .. "RNGModifier_SaveFile.txt"
-RNGModifier._data = {}
+RNGModifier._data = RNGModifier._data or {["Version"] = "Unknown"}
 for i, mod in pairs(BLT.Mods.mods) do
 	local _dump = tostring(json.encode(mod.json_data))
 	if _dump:find('RNGModifier') then
