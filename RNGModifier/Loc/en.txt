@@ -44,6 +44,8 @@
 	
 	"RNGModifier_roberts_logic_chance_011_title" : "Vault Already Opened?!",
 	"RNGModifier_roberts_logic_chance_012_title" : "There is a Truck",
+	"RNGModifier_roberts_blackmailer_title" : "Blackmailer",
+	"RNGModifier_roberts_bain_lie_title" : "Bain's lie is success",
 	
 	"RNGModifier_arm_rand_truck_amount_title" : "How many trucks?",
 	

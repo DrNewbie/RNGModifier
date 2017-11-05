@@ -63,3 +63,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_rand_drop_location"),
 	menu_id = "RNGModifier_roberts_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_roberts_blackmailer = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_blackmailer")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_roberts_blackmailer",
+	title = "RNGModifier_roberts_blackmailer_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_roberts_blackmailer",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_blackmailer"),
+	menu_id = "RNGModifier_roberts_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_roberts_bain_lie = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bain_lie")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_roberts_bain_lie",
+	title = "RNGModifier_roberts_bain_lie_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_roberts_bain_lie",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_bain_lie"),
+	menu_id = "RNGModifier_roberts_Options_Menu"
+})

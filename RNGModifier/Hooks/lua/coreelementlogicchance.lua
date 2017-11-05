@@ -28,7 +28,7 @@ function ElementLogicChance:on_executed(...)
 				if _chanceForAAmbush <= 0 then 
 				
 				elseif _chanceForAAmbush == 1 then 
-					self._chance = 100
+					self._chance = 999
 				end
 			end
 		elseif _level_id == "alex_2" then
@@ -38,9 +38,9 @@ function ElementLogicChance:on_executed(...)
 				if _chance_of_fbi_interrupt <= 0 then 
 				
 				elseif _chance_of_fbi_interrupt == 1 then 
-					self._chance = 100
+					self._chance = 999
 				elseif _chance_of_fbi_interrupt == 2 then 
-					self._chance = 0
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "roberts" then
@@ -49,7 +49,7 @@ function ElementLogicChance:on_executed(...)
 				if _logic_chance_011 == 0 then 
 				
 				else
-					self._chance = 100
+					self._chance = 999
 				end
 				local _logic_chance_012 = RNGModifier:SafeGetData(_level_id, "_logic_chance_012") or 0
 				if (_logic_chance_012 == 0 and math.random(100) < 3) or _logic_chance_012 == 1 then 
@@ -58,6 +58,22 @@ function ElementLogicChance:on_executed(...)
 						element:on_executed(...)
 					end
 				end
+			elseif self._id == 105137 then
+				local _blackmailer = RNGModifier:SafeGetData(_level_id, "_blackmailer") or 0
+				_blackmailer = _blackmailer - 1
+				if _blackmailer == 1 then
+					self._chance = -999
+				elseif _blackmailer == 2 then
+					self._chance = 999
+				end
+			elseif self._id == 106005 then
+				local _bain_lie = RNGModifier:SafeGetData(_level_id, "_bain_lie") or 0
+				_bain_lie = _bain_lie - 1
+				if _bain_lie == 1 then
+					self._chance = 999
+				elseif _bain_lie == 2 then
+					self._chance = -999
+				end
 			end
 		elseif _level_id == "welcome_to_the_jungle_1" or _level_id == "welcome_to_the_jungle_1_night" then
 			if self._id == 103270 then
@@ -65,7 +81,7 @@ function ElementLogicChance:on_executed(...)
 				if _chanceOfTrade10 == 0 then 
 				
 				else
-					self._chance = 100
+					self._chance = 999
 				end
 			end
 		elseif _level_id == "big" then
@@ -74,7 +90,7 @@ function ElementLogicChance:on_executed(...)
 				if _chance_to_work == 0 then 
 				
 				else
-					self._chance = 100
+					self._chance = 999
 				end
 			end
 		elseif _level_id == "dah" then
