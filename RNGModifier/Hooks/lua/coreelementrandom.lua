@@ -330,12 +330,28 @@ function ElementRandom:_get_random_elements()
 					rand = _random_captain_location
 				end
 			elseif self._id == 100183 then
+				local _random_tanker_location = RNGModifier:SafeGetData(_level_id, "_random_tanker_location") or 0
+				_random_tanker_location = _random_tanker_location - 1
+				if _random_tanker_location > 0 then
+					rand = _random_tanker_location
 				end
 			elseif self._id == 101078 then
+				local _random_health_bag = RNGModifier:SafeGetData(_level_id, "_random_health_bag") or 0
+				_random_health_bag = _random_health_bag - 1
+				if _random_health_bag > 0 then
+					rand = _random_health_bag
 				end
 			elseif self._id == 101079 then
+				local _random_ammo_bag = RNGModifier:SafeGetData(_level_id, "_random_ammo_bag") or 0
+				_random_ammo_bag = _random_ammo_bag - 1
+				if _random_ammo_bag > 0 then
+					rand = _random_ammo_bag
 				end
 			elseif self._id == 101080 then
+				local _random_grenade_crate = RNGModifier:SafeGetData(_level_id, "_random_grenade_crate") or 0
+				_random_grenade_crate = _random_grenade_crate - 1
+				if _random_grenade_crate > 0 then
+					rand = _random_grenade_crate
 				end
 			end
 		elseif _level_id == "glace" then
