@@ -25,3 +25,76 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("wwh", "_random_captain_location"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_wwh_random_tanker_location = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_tanker_location")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_random_tanker_location",
+	title = "RNGModifier_wwh_random_tanker_location_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_wwh_random_tanker_location",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_random_tanker_location"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_wwh_random_health_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_health_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_random_health_bag",
+	title = "RNGModifier_wwh_random_health_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_wwh_random_health_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_random_health_bag"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_wwh_random_ammo_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_ammo_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_random_ammo_bag",
+	title = "RNGModifier_wwh_random_ammo_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_wwh_random_ammo_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_random_ammo_bag"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_wwh_random_grenade_crate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_grenade_crate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_random_grenade_crate",
+	title = "RNGModifier_wwh_random_grenade_crate_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_wwh_random_grenade_crate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_random_grenade_crate"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})

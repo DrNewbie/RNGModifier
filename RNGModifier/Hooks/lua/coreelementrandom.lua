@@ -329,6 +329,14 @@ function ElementRandom:_get_random_elements()
 				if _random_captain_location > 0 then
 					rand = _random_captain_location
 				end
+			elseif self._id == 100183 then
+				end
+			elseif self._id == 101078 then
+				end
+			elseif self._id == 101079 then
+				end
+			elseif self._id == 101080 then
+				end
 			end
 		elseif _level_id == "glace" then
 			if self._id == 100074 then
