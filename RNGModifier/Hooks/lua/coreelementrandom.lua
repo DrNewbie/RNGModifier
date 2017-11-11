@@ -17,29 +17,6 @@ local _tmp_data = {}
 function ElementRandom:_get_random_elements()
 	local t = {}
 	local rand = math.random(#self._unused_randoms)
-	local pick_new_rand = function(list, exlist, exlistfix)
-		if not list or type(list) ~= "table" then
-			return
-		end
-		if not exlist or type(exlist) ~= "table" then
-			return
-		end
-		local explist = {}
-		for k, v in pairs(list) do
-			local ok = true
-			for _, v2 in pairs(exlist) do
-				v2 = v2 + exlistfix
-				if k == v2 and v2 > 0 then
-					ok = false
-					break
-				end
-			end
-			if ok then
-				table.insert(explist, k)
-			end
-		end
-		return math.random(explist[math.random(#explist)]) or 0
-	end
 	if Global.game_settings then
 		local _level_id = tostring(Global.game_settings.level_id)
 		local _randomchange = RNGModifier:SafeGetData("all_of_all", "_randomchange") or 0
@@ -188,24 +165,21 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "hox_2" then
 			if self._id == 104518 then
 				_tmp_data["hox_2"] = _tmp_data["hox_2"] or {}
-				_tmp_data["hox_2"]["SelectExcursion"] = _tmp_data["hox_2"]["SelectExcursion"] or 0
-				_tmp_data["hox_2"]["SelectExcursion"] = _tmp_data["hox_2"]["SelectExcursion"] + 1
-				local _select_excursion_list = {
-					RNGModifier:SafeGetData("hox_2", "_select_excursion_A"),
-					RNGModifier:SafeGetData("hox_2", "_select_excursion_B"),
-					RNGModifier:SafeGetData("hox_2", "_select_excursion_C")
-				}
-				for _, _r in pairs(_select_excursion_list) do
-					if _r ~= 0 then
-						while rand == _r do
-							rand = pick_new_rand(self._unused_randoms, _select_excursion_list, -1)
-						end
+				_tmp_data["hox_2"]["_rnd_excursion"] = _tmp_data["hox_2"]["_rnd_excursion"] or 0
+				_tmp_data["hox_2"]["_rnd_excursion"] = _tmp_data["hox_2"]["_rnd_excursion"] + 1
+				local _rnd_excursion = _tmp_data["hox_2"]["_rnd_excursion"]
+				local _eID = {}
+				for _, _name in pairs({"_select_excursion_A", "_select_excursion_B", "_select_excursion_C"}) do
+					if RNGModifier:SafeGetData("hox_2", _name) > 1 then
+						table.insert(_eID, (RNGModifier:SafeGetData("hox_2", _name) - 1))
 					end
 				end
-				local _select_excursion = _select_excursion_list[_tmp_data["hox_2"]["SelectExcursion"]] or 0
-				_select_excursion = _select_excursion - 1
-				if _select_excursion > 0 then
-					rand = _select_excursion
+				_rnd_excursion = _eID[_rnd_excursion]
+				if type(_rnd_excursion) == 'number' and _rnd_excursion > 0 then
+					_rnd_excursion = table.index_of(self._unused_randoms, _rnd_excursion)
+					if _rnd_excursion > 0 then
+						rand = _rnd_excursion
+					end
 				end
 			elseif self._id == 104419 then
 				local _select_random_powerbox = RNGModifier:SafeGetData(_level_id, "_select_random_powerbox") or 0
