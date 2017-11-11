@@ -398,6 +398,14 @@ function ElementRandom:_get_random_elements()
 					rand = _rnd_money_pile_loaction
 				end
 			end
+		elseif _level_id == "hvh" then
+			if self._id == 100319 then
+				local _rnd_world = RNGModifier:SafeGetData(_level_id, "_rnd_world") or 0
+				_rnd_world = _rnd_world - 1
+				if _rnd_world > 0 then
+					rand = _rnd_world
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

@@ -213,5 +213,11 @@
 	"RNGModifier_chill_combat_rnd_money_pile_loaction_2" : "2F Near WC",
 	"RNGModifier_chill_combat_rnd_money_pile_loaction_3" : "2F Middle",
 	"RNGModifier_chill_combat_rnd_money_pile_loaction_4" : "2F Other",
-	"RNGModifier_chill_combat_rnd_money_pile_loaction_5" : "1F Van"
+	"RNGModifier_chill_combat_rnd_money_pile_loaction_5" : "1F Van",
+	
+	"RNGModifier_hvh_rnd_world_title" : "Random World",
+	"RNGModifier_hvh_rnd_world_1" : "Snow",
+	"RNGModifier_hvh_rnd_world_2" : "Green",
+	"RNGModifier_hvh_rnd_world_3" : "[Unknown]",
+	"RNGModifier_hvh_rnd_world_4" : "[Unknown]"
 }

@@ -22,6 +22,14 @@ function ElementLogicChance:on_executed(...)
 		if _chancechange > 0 then
 			local _chancechange_list = {0, 1, 25, 50, 75, 100, 99999999, -99999999}
 			self._chance = _chancechange_list[_chancechange]
+		elseif _level_id == "hvh" then
+			if self._id == 100070 then
+				local _rnd_world = RNGModifier:SafeGetData(_level_id, "_rnd_world") or 0
+				_rnd_world = _rnd_world - 1
+				if _rnd_world > 0 then
+					self._chance = 999
+				end
+			end
 		elseif _level_id == "framing_frame_2" then
 			if self._id == 101781 then
 				local _chanceForAAmbush = RNGModifier:SafeGetData(_level_id, "_chanceForAAmbush") or 0
