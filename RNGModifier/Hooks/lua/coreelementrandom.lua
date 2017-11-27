@@ -170,7 +170,8 @@ function ElementRandom:_get_random_elements()
 				local _rnd_excursion = _tmp_data["hox_2"]["_rnd_excursion"]
 				local _eID = {}
 				for _, _name in pairs({"_select_excursion_A", "_select_excursion_B", "_select_excursion_C"}) do
-					if RNGModifier:SafeGetData("hox_2", _name) > 1 then
+					local _var = RNGModifier:SafeGetData("hox_2", _name) or 0
+					if _var > 1 then
 						table.insert(_eID, (RNGModifier:SafeGetData("hox_2", _name) - 1))
 					end
 				end
