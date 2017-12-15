@@ -381,6 +381,38 @@ function ElementRandom:_get_random_elements()
 					rand = _rnd_world
 				end
 			end
+		elseif _level_id == "rvd1" then
+			if self._id == 101365 then
+				local _rnd_storage_unit_location = RNGModifier:SafeGetData(_level_id, "_rnd_storage_unit_location") or 0
+				_rnd_storage_unit_location = _rnd_storage_unit_location - 1
+				if _rnd_storage_unit_location > 0 then
+					rand = _rnd_storage_unit_location
+				end
+			elseif self._id == 100903 then
+				local _rnd_left_briefcase_pos = RNGModifier:SafeGetData(_level_id, "_rnd_left_briefcase_pos") or 0
+				_rnd_left_briefcase_pos = _rnd_left_briefcase_pos - 1
+				if _rnd_left_briefcase_pos > 0 then
+					rand = _rnd_left_briefcase_pos
+				end
+			elseif self._id == 101076 then
+				local _rnd_mid_briefcase_pos = RNGModifier:SafeGetData(_level_id, "_rnd_mid_briefcase_pos") or 0
+				_rnd_mid_briefcase_pos = _rnd_mid_briefcase_pos - 1
+				if _rnd_mid_briefcase_pos > 0 then
+					rand = _rnd_mid_briefcase_pos
+				end
+			elseif self._id == 101316 then
+				local _rnd_back_briefcase_pos = RNGModifier:SafeGetData(_level_id, "_rnd_back_briefcase_pos") or 0
+				_rnd_back_briefcase_pos = _rnd_back_briefcase_pos - 1
+				if _rnd_back_briefcase_pos > 0 then
+					rand = _rnd_back_briefcase_pos
+				end
+			elseif self._id == 100294 then
+				local _random_escape_position = RNGModifier:SafeGetData(_level_id, "_random_escape_position") or 0
+				_random_escape_position = _random_escape_position - 1
+				if _random_escape_position > 0 then
+					rand = _random_escape_position
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
