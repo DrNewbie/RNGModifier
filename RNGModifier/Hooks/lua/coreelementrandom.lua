@@ -3,15 +3,11 @@ core:import("CoreMissionScriptElement")
 core:import("CoreTable")
 ElementRandom = ElementRandom or class(CoreMissionScriptElement.MissionScriptElement)
 dofile("mods/RNGModifier/Hooks/menu/Menu_Function.lua")
-
 _G.RNGModifier = _G.RNGModifier or {}
-
 RNGModifier = _G.RNGModifier or {}
-
 if not RNGModifier then
 	return
 end
-
 local _tmp_data = {}
 
 function ElementRandom:_get_random_elements()

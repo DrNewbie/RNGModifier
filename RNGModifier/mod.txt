@@ -3,7 +3,7 @@
 	"description" : " ",
 	"author" : "Dr_Newbie",
 	"contact" : "http://modwork.shop/19913",
-	"version" : "7.8",
+	"version" : "7.81",
 	"priority": 1000,
 	"blt_version": 2,
 	"libraries" : [
