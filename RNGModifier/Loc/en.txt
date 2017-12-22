@@ -243,5 +243,18 @@
 	"RNGModifier_rvd1_random_escape_position_title" : "Escape Position",
 	"RNGModifier_rvd1_random_escape_position_1" : "Far Back",
 	"RNGModifier_rvd1_random_escape_position_2" : "Street Side",
-	"RNGModifier_rvd1_random_escape_position_3" : "Parking Lot"
+	"RNGModifier_rvd1_random_escape_position_3" : "Parking Lot",
+	
+	"RNGModifier_brb_Pick_Escape_title" : "Pick Escape",
+	"RNGModifier_brb_Pick_Escape_1" : "Parking lot",
+	"RNGModifier_brb_Pick_Escape_2" : "Sewer Escape",
+	"RNGModifier_brb_pick_prevault_entry_title" : "Pick Prevault Entry",
+	"RNGModifier_brb_pick_prevault_entry_1" : "Teller Doors",
+	"RNGModifier_brb_pick_prevault_entry_2" : "Back Door",
+	"RNGModifier_brb_pick_prevault_entry_3" : "Upper Office Floor",
+	"RNGModifier_brb_pick_where_winch_spawns_title" : "Winch Spawns",
+	"RNGModifier_brb_pick_where_winch_spawns_1" : "Train A",
+	"RNGModifier_brb_pick_where_winch_spawns_2" : "Train B",
+	"RNGModifier_brb_vault_door_equipment_title" : "Vault Door Equipment",	
+	"RNGModifier_brb_is_2_train_title" : "2 Train?"
 }

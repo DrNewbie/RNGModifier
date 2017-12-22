@@ -30,6 +30,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
+		elseif _level_id == "brb" then
+			if self._id == 100640 then
+				local _is_2_train = RNGModifier:SafeGetData(_level_id, "_is_2_train") or 0
+				_is_2_train = _is_2_train - 1
+				if _is_2_train == 1 then
+					self._chance = 999
+				elseif _is_2_train == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "framing_frame_2" then
 			if self._id == 101781 then
 				local _chanceForAAmbush = RNGModifier:SafeGetData(_level_id, "_chanceForAAmbush") or 0

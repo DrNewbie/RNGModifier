@@ -409,6 +409,32 @@ function ElementRandom:_get_random_elements()
 					rand = _random_escape_position
 				end
 			end
+		elseif _level_id == "brb" then
+			if self._id == 100619 then
+				local _Pick_Escape = RNGModifier:SafeGetData(_level_id, "_Pick_Escape") or 0
+				_Pick_Escape = _Pick_Escape - 1
+				if _Pick_Escape > 0 then
+					rand = _Pick_Escape
+				end
+			elseif self._id == 100320 then
+				local _pick_prevault_entry = RNGModifier:SafeGetData(_level_id, "_pick_prevault_entry") or 0
+				_pick_prevault_entry= _pick_prevault_entry - 1
+				if _pick_prevault_entry > 0 then
+					rand = _pick_prevault_entry
+				end
+			elseif self._id == 100162 then
+				local _pick_where_winch_spawns = RNGModifier:SafeGetData(_level_id, "_pick_where_winch_spawns") or 0
+				_pick_where_winch_spawns= _pick_where_winch_spawns - 1
+				if _pick_where_winch_spawns > 0 then
+					rand = _pick_where_winch_spawns
+				end
+			elseif self._id == 100592 then
+				local _vault_door_equipment = RNGModifier:SafeGetData(_level_id, "_vault_door_equipment") or 0
+				_vault_door_equipment= _vault_door_equipment - 1
+				if _vault_door_equipment > 0 then
+					rand = _vault_door_equipment
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
