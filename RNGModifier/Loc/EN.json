@@ -256,5 +256,12 @@
 	"RNGModifier_brb_pick_where_winch_spawns_1" : "Train A",
 	"RNGModifier_brb_pick_where_winch_spawns_2" : "Train B",
 	"RNGModifier_brb_vault_door_equipment_title" : "Vault Door Equipment",	
-	"RNGModifier_brb_is_2_train_title" : "2 Train?"
+	"RNGModifier_brb_is_2_train_title" : "2 Train?",
+
+	"RNGModifier_family_rand_keypad_title" : "Keypad",
+	"RNGModifier_family_rand_keypad_1" : "with people",
+	"RNGModifier_family_rand_keypad_2" : "First after go into 2F",
+	"RNGModifier_family_rand_keypad_3" : "Second",
+	"RNGModifier_family_rand_keypad_4" : "Security Room",
+	"RNGModifier_family_chance_of_door_title" : "Security Outside Door"
 }

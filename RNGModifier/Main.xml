@@ -1,5 +1,5 @@
 <table name="RNGModifier">
-	<Localization directory="Loc" default="en.txt"/>
+	<Localization directory="Loc" default="EN.json"/>
 	<GlobalValue id="RNGModifier" color="Color(1, 0.5, 0)"/>
 	<Hooks directory="Hooks">
 		<hook file="menu/Menu_Function.lua" source_file="lib/managers/localizationmanager"/>

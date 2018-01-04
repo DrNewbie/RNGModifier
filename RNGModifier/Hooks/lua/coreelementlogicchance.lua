@@ -30,6 +30,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
+		elseif _level_id == "family" then
+			if self._id == 104842 then
+				local _chance_of_door = RNGModifier:SafeGetData(_level_id, "_chance_of_door") or 0
+				_chance_of_door = _chance_of_door - 1
+				if _chance_of_door == 1 then
+					self._chance = 999
+				elseif _chance_of_door == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "brb" then
 			if self._id == 100640 then
 				local _is_2_train = RNGModifier:SafeGetData(_level_id, "_is_2_train") or 0

@@ -435,6 +435,14 @@ function ElementRandom:_get_random_elements()
 					rand = _vault_door_equipment
 				end
 			end
+		elseif _level_id == "family" then
+			if self._id == 100028 then
+				local _rand_keypad = RNGModifier:SafeGetData(_level_id, "_rand_keypad") or 0
+				_rand_keypad = _rand_keypad - 1
+				if _rand_keypad > 0 then
+					rand = _rand_keypad
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
