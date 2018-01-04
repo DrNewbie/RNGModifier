@@ -259,6 +259,14 @@ function ElementRandom:_get_random_elements()
 					rand = _randServerRoom
 				end
 			end
+		elseif _level_id == "firestarter_3" then
+			if self._id == 105112 then
+				local _logic_random_026 = RNGModifier:SafeGetData(_level_id, "_logic_random_026") or 0
+				_logic_random_026 = _logic_random_026 - 1
+				if _logic_random_026 > 0 then
+					rand = _logic_random_026
+				end
+			end
 		elseif _level_id == "arm_for" then
 			if self._id == 100126 then
 				local _pick_rand_spawn = RNGModifier:SafeGetData(_level_id, "_pick_rand_spawn") or 0

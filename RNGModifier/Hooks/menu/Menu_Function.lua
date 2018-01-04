@@ -35,6 +35,7 @@ RNGModifier._heistlist = {
 	"rat",
 	"arena",
 	"firestarter_2",
+	"firestarter_3",
 	"arm_for",
 	"framing_frame_2",
 	"alex_2",

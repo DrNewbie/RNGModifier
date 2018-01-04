@@ -263,5 +263,9 @@
 	"RNGModifier_family_rand_keypad_2" : "First after go into 2F",
 	"RNGModifier_family_rand_keypad_3" : "Second",
 	"RNGModifier_family_rand_keypad_4" : "Security Room",
-	"RNGModifier_family_chance_of_door_title" : "Security Outside Door"
+	"RNGModifier_family_chance_of_door_title" : "Security Outside Door",
+	
+	"RNGModifier_firestarter_3_logic_random_026_title" : "Security Room",
+	"RNGModifier_firestarter_3_logic_random_026_1" : "Front",
+	"RNGModifier_firestarter_3_logic_random_026_2" : "Back"
 }
