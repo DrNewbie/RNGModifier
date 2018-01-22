@@ -130,6 +130,36 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 99999999
 				end
 			end
+		elseif _level_id == "dark" then
+			if self._id == 100683 then
+				local _hd_upper_lower = RNGModifier:SafeGetData(_level_id, "_hd_upper_lower") or 0
+				if _hd_upper_lower == 2 then
+					self._chance = 999				
+				elseif _hd_upper_lower == 3 then
+					self._chance = -999
+				end
+			elseif self._id == 100370 then
+				local _keycard_upper_lower = RNGModifier:SafeGetData(_level_id, "_keycard_upper_lower") or 0
+				if _keycard_upper_lower == 2 then
+					self._chance = 999				
+				elseif _keycard_upper_lower == 3 then
+					self._chance = -999
+				end
+			elseif self._id == 100657 then
+				local _thermite_upper_lower = RNGModifier:SafeGetData(_level_id, "_thermite_upper_lower") or 0
+				if _thermite_upper_lower == 2 then
+					self._chance = 999				
+				elseif _thermite_upper_lower == 3 then
+					self._chance = -999
+				end
+			elseif self._id == 100464 then
+				local _blowtorch_upper_lower = RNGModifier:SafeGetData(_level_id, "_blowtorch_upper_lower") or 0
+				if _blowtorch_upper_lower == 2 then
+					self._chance = 999				
+				elseif _blowtorch_upper_lower == 3 then
+					self._chance = -999
+				end
+			end
 		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)

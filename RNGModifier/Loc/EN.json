@@ -25,6 +25,9 @@
 	"RNGModifier_bool_4_true" : "True",
 	"RNGModifier_bool_4_false" : "False",
 	
+	"RNGModifier_switch_4_UP" : "UP",
+	"RNGModifier_switch_4_DOWN" : "DOWN",
+	
 	"RNGModifier_Default_One_Item" : "Default",
 	
 	"RNGModifier_branchbank_randVaultDoor_title" : "Vault Door",
@@ -267,5 +270,25 @@
 	
 	"RNGModifier_firestarter_3_logic_random_026_title" : "Security Room",
 	"RNGModifier_firestarter_3_logic_random_026_1" : "Front",
-	"RNGModifier_firestarter_3_logic_random_026_2" : "Back"
+	"RNGModifier_firestarter_3_logic_random_026_2" : "Back",
+	
+	"RNGModifier_dark_pick_emp_train_1_title" : "pick_emp_train_1"
+	"RNGModifier_dark_pick_emp_train_2_title" : "pick_emp_train_2",	
+	"RNGModifier_dark_pick_murky_train_1_title" : "pick_murky_train_1",
+	"RNGModifier_dark_pick_murky_train_2_title" : "pick_murky_train_2",
+	"RNGModifier_dark_pick_exit_title" : "pick_exit",
+	"RNGModifier_dark_pick_exit_1" : "Van",
+	"RNGModifier_dark_pick_exit_2" : "Boat",	
+	"RNGModifier_dark_pick_thermite_upper_title" : "thermite - upper",
+	"RNGModifier_dark_pick_thermite_lower_title" : "thermite - lower",
+	"RNGModifier_dark_pick_blowtorch_upper_title" : "blowtorch - upper",
+	"RNGModifier_dark_pick_blowtorch_lower_title" : "blowtorch - lower",
+	"RNGModifier_dark_pick_hd_upper_title" : "hd - upper",
+	"RNGModifier_dark_pick_hd_lower_title" : "hd - lower",
+	"RNGModifier_dark_pick_keycard_upper_title" : "keycard - upper",
+	"RNGModifier_dark_pick_keycard_lower_title" : "keycard - lower",
+	"RNGModifier_dark_thermite_upper_lower_title" : "thermite_up_low",
+	"RNGModifier_dark_blowtorch_upper_lower_title" : "blowtorch_up_low",
+	"RNGModifier_dark_hd_upper_lower_title" : "hd_up_low",
+	"RNGModifier_dark_keycard_upper_lower_title" : "keycard_up_low"
 }
