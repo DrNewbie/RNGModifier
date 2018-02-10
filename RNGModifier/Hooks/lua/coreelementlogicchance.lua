@@ -164,3 +164,36 @@ function ElementLogicChance:on_executed(...)
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
 end
+
+local RNGModifier_ElementLogicChanceOperator_on_executed = ElementLogicChanceOperator.on_executed
+
+function ElementLogicChanceOperator:on_executed(...)
+	if not self._values.enabled then
+		return
+	end
+	if Global.game_settings then
+		local _level_id = tostring(Global.game_settings.level_id)
+		if _level_id == "alex_3" then
+			if self._id == 100325 then
+				local _chance = 0
+				local _logic_chance_operator_002 = RNGModifier:SafeGetData(_level_id, "_logic_chance_operator_002") or 0
+				if _logic_chance_operator_002 == 2 then
+					_chance = -999			
+				elseif _logic_chance_operator_002 == 3 then
+					_chance = 999
+				end
+				if _chance ~= 0 then
+					for _, id in ipairs(self._values.elements) do
+						local element = self:get_mission_element(id)
+						if element then
+							element:chance_operation_set_chance(_chance)
+						end
+					end
+					ElementLogicChanceOperator.super.on_executed(self, instigator)
+					return
+				end
+			end
+		end
+	end
+	RNGModifier_ElementLogicChanceOperator_on_executed(self, ...)
+end

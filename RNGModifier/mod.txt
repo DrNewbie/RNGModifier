@@ -3,8 +3,8 @@
 	"description" : " ",
 	"author" : "Dr_Newbie",
 	"contact" : "http://modwork.shop/19913",
-	"version" : "8.21",
-	"priority": 1000,
+	"version" : "8.3",
+	"priority": 900,
 	"blt_version": 2,
 	"libraries" : [
 		{
