@@ -292,5 +292,7 @@
 	"RNGModifier_dark_hd_upper_lower_title" : "hd_up_low",
 	"RNGModifier_dark_keycard_upper_lower_title" : "keycard_up_low",
 	
-	"RNGModifier_alex_3_logic_chance_operator_002_title" : "No C4"
+	"RNGModifier_alex_3_logic_chance_operator_002_title" : "No C4",
+	
+	"RNGModifier_pal_boobytrap_chance_title" : "Booby trap C4"
 }

@@ -160,6 +160,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "pal" then
+			if self._id == 100604 then
+				local _boobytrap_chance = RNGModifier:SafeGetData(_level_id, "_boobytrap_chance") or 0
+				if _boobytrap_chance == 2 then
+					self._chance = 999
+				elseif _boobytrap_chance == 3 then
+					self._chance = -999				
+				end
+			end
 		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
@@ -173,9 +182,9 @@ function ElementLogicChanceOperator:on_executed(...)
 	end
 	if Global.game_settings then
 		local _level_id = tostring(Global.game_settings.level_id)
+		local _chance = 0
 		if _level_id == "alex_3" then
 			if self._id == 100325 then
-				local _chance = 0
 				local _logic_chance_operator_002 = RNGModifier:SafeGetData(_level_id, "_logic_chance_operator_002") or 0
 				if _logic_chance_operator_002 == 2 then
 					_chance = -999			
@@ -190,6 +199,15 @@ function ElementLogicChanceOperator:on_executed(...)
 						end
 					end
 					ElementLogicChanceOperator.super.on_executed(self, instigator)
+					return
+				end
+			end
+		elseif _level_id == "pal" then
+			local _boobytrap_chance = RNGModifier:SafeGetData(_level_id, "_boobytrap_chance") or 0
+			if _boobytrap_chance == 1 then
+			
+			else
+				if self._id == 101542 or self._id == 102295 or self._id == 102297 or self._id == 102298 or self._id == 102299 then
 					return
 				end
 			end
