@@ -169,6 +169,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999				
 				end
 			end
+		elseif _level_id == "nightclub" then
+			if self._id == 103869 then
+				local _logic_chance_009 = RNGModifier:SafeGetData(_level_id, "_logic_chance_009") or 0
+				if _logic_chance_009 == 2 then
+					self._chance = 999
+				elseif _logic_chance_009 == 3 then
+					self._chance = -999				
+				end
+			end
 		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)

@@ -319,6 +319,12 @@ function ElementRandom:_get_random_elements()
 			if self._id == 101384 then
 				rand = PickRandomFromList(rand, "_call_blackhawk")
 			end
+		elseif _level_id == "nightclub" then
+			if self._id == 100875 then
+				rand = PickRandomFromList(rand, "_randomize_escape")
+			elseif self._id == 100632 then
+				rand = PickRandomFromList(rand, "_logic_random_003")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

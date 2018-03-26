@@ -296,5 +296,23 @@
 	
 	"RNGModifier_pal_boobytrap_chance_title" : "Booby trap C4",
 	
-	"RNGModifier_kosugi_call_blackhawk_title" : "Blackhawk's Artifact"
+	"RNGModifier_kosugi_call_blackhawk_title" : "Blackhawk's Artifact",
+	
+	"RNGModifier_nightclub_logic_chance_009_title" : "Cameras on VH+",
+	"RNGModifier_nightclub_randomize_escape_title" : "Escape",
+	"RNGModifier_nightclub_randomize_escape_1" : "Front Right",
+	"RNGModifier_nightclub_randomize_escape_2" : "Front Left",
+	"RNGModifier_nightclub_randomize_escape_3" : "Back",
+	"RNGModifier_nightclub_logic_random_003_title" : "Boss's Location",
+	"RNGModifier_nightclub_logic_random_003_1" : "1F WC",
+	"RNGModifier_nightclub_logic_random_003_2" : "2F Mgmt. In",
+	"RNGModifier_nightclub_logic_random_003_3" : "2F Mgmt. Out",
+	"RNGModifier_nightclub_logic_random_003_4" : "2F Mgmt. Chair",
+	"RNGModifier_nightclub_logic_random_003_5" : "2F Mgmt. Sofa",
+	"RNGModifier_nightclub_logic_random_003_6" : "Back Parking",
+	"RNGModifier_nightclub_logic_random_003_7" : "Back Parking",
+	"RNGModifier_nightclub_logic_random_003_8" : "2F Out Bar",
+	"RNGModifier_nightclub_logic_random_003_9" : "Entrance",
+	"RNGModifier_nightclub_logic_random_003_10" : "Kitchen",
+	"RNGModifier_nightclub_logic_random_003_11" : "Kitchen"
 }
