@@ -315,6 +315,10 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101862 then
 				rand = PickRandomFromList(rand, "_pick_keycard_lower")
 			end
+		elseif _level_id == "kosugi" then
+			if self._id == 101384 then
+				rand = PickRandomFromList(rand, "_call_blackhawk")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
