@@ -318,7 +318,7 @@
 	
 	"RNGModifier_tag_chance_basement_escape_title" : "Escape Plan",
 	"RNGModifier_tag_chance_basement_escape_1" : "Basement C4",
-	"RNGModifier_tag_chance_basement_escape_2" : "Zip-line"
+	"RNGModifier_tag_chance_basement_escape_2" : "Zip-line",
 	"RNGModifier_tag_randomize_office_title" : "Office",
 	"RNGModifier_tag_randomize_office_1" : "Right",
 	"RNGModifier_tag_randomize_office_2" : "Left"
