@@ -51,7 +51,8 @@ RNGModifier._heistlist = {
 	"alex_3",
 	"pal",
 	"kosugi",
-	"nightclub"
+	"nightclub",
+	"tag"
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then

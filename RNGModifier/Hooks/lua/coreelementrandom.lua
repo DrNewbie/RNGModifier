@@ -325,6 +325,10 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100632 then
 				rand = PickRandomFromList(rand, "_logic_random_003")
 			end
+		elseif _level_id == "tag" then
+			if self._id == 100123 then
+				rand = PickRandomFromList(rand, "_randomize_office")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

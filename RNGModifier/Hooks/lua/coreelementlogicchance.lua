@@ -178,6 +178,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999				
 				end
 			end
+		elseif _level_id == "tag" then
+			if self._id == 103869 then
+				local _chance_basement_escape = RNGModifier:SafeGetData(_level_id, "_chance_basement_escape") or 0
+				if _chance_basement_escape == 2 then
+					self._chance = 999
+				elseif _chance_basement_escape == 3 then
+					self._chance = -999				
+				end
+			end
 		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
