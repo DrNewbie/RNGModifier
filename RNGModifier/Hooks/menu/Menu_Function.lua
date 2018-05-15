@@ -149,7 +149,7 @@ end)
 Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGModifier", function(menu_manager, nodes)
 	for _, _heist in pairs(RNGModifier._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
-			dofile(RNGModifier._path .. "menu/heist/".. _heist ..".lua")
+			dofile(RNGModifier._path .. "Hooks/menu/heist/".. _heist ..".lua")
 		end
 	end
 	RNGModifier:SafeSetData(0, "all_of_all", "_forced_escape_day")
