@@ -11,7 +11,7 @@ if not RNGModifier then
 	return
 end
 
-local RNGModifier_ElementLogicChance_on_executed = ElementLogicChance.on_executed
+RNGModifier_ElementLogicChance_on_executed = RNGModifier_ElementLogicChance_on_executed or ElementLogicChance.on_executed
 
 function ElementLogicChance:on_executed(...)
 	local roll = math.random(100)

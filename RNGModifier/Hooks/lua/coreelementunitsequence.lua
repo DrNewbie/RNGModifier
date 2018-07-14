@@ -12,7 +12,7 @@ if not RNGModifier then
 	return
 end
 
-local RNGModifier_ElementUnitSequence_on_executed = ElementUnitSequence.on_executed
+RNGModifier_ElementUnitSequence_on_executed = RNGModifier_ElementUnitSequence_on_executed or ElementUnitSequence.on_executed
 
 function ElementUnitSequence:on_executed(...)
 	if Global.game_settings then

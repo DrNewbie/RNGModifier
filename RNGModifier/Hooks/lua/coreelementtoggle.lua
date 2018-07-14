@@ -8,7 +8,7 @@ if not RNGModifier then
 	return
 end
 
-local RNG_ElementToggle = ElementToggle.on_executed
+RNG_ElementToggle = RNG_ElementToggle or ElementToggle.on_executed
 
 function ElementToggle:on_executed(...)
 	if not self._values.enabled then

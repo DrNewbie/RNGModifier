@@ -18,4 +18,4 @@ Hooks:Add("MenuManagerOnOpenMenu", "RNGModifier_MenuManagerOnOpenMenu", function
 	end
 end)
 
-ModCore:new(ModPath .. "Main.xml", false, true):init_modules()
+ModCore:new(ModPath .. "UP.xml", false, true):init_modules()
