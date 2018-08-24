@@ -321,5 +321,25 @@
 	"RNGModifier_tag_chance_basement_escape_2" : "Zip-line",
 	"RNGModifier_tag_randomize_office_title" : "Office",
 	"RNGModifier_tag_randomize_office_1" : "Right",
-	"RNGModifier_tag_randomize_office_2" : "Left"
+	"RNGModifier_tag_randomize_office_2" : "Left",
+	
+	"RNGModifier_sah_pick_rand_escape_title" : "Escape",
+	"RNGModifier_sah_pick_rand_escape_1" : "1",
+	"RNGModifier_sah_pick_rand_escape_2" : "2",
+	"RNGModifier_sah_pick_rand_escape_3" : "3",
+	"RNGModifier_sah_spawn_rand_walker_title" : "Rand walker",
+	"RNGModifier_sah_randomize_hackbox_pairs_title" : "Hackbox pairs",
+	"RNGModifier_sah_randomize_hackbox_pairs_1" : "Left pair",
+	"RNGModifier_sah_randomize_hackbox_pairs_2" : "Right pair",
+	"RNGModifier_sah_randomize_hackbox_pairs_3" : "Back pair",
+	"RNGModifier_sah_randomize_hackbox_pairs_4" : "Center pair",
+	"RNGModifier_sah_randomize_vault_title" : "Vault",
+	"RNGModifier_sah_randomize_breaker_title" : "Breaker",
+	"RNGModifier_sah_randomize_ziplines_title" : "Ziplines",
+	"RNGModifier_sah_randomize_security_rooms_title" : "Security room",
+	"RNGModifier_sah_randomize_security_rooms_1" : "West",
+	"RNGModifier_sah_randomize_security_rooms_2" : "East",
+	"RNGModifier_sah_randomzize_electrical_boxes_title" : "Electrical boxes",
+	"RNGModifier_sah_randomzize_electrical_boxes_1" : "Left",
+	"RNGModifier_sah_randomzize_electrical_boxes_2" : "Right"
 }

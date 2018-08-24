@@ -329,6 +329,24 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100123 then
 				rand = PickRandomFromList(rand, "_randomize_office")
 			end
+		elseif _level_id == "sah" then
+			if self._id == 100825 then
+				rand = PickRandomFromList(rand, "_pick_rand_escape")
+			elseif self._id == 101239 then
+				rand = PickRandomFromList(rand, "_spawn_rand_walker")
+			elseif self._id == 106835 then
+				rand = PickRandomFromList(rand, "_randomize_hackbox_pairs")
+			elseif self._id == 104036 then
+				rand = PickRandomFromList(rand, "_randomize_vault")
+			elseif self._id == 100967 then
+				rand = PickRandomFromList(rand, "_randomize_breaker")
+			elseif self._id == 101030 then
+				rand = PickRandomFromList(rand, "_randomize_ziplines")
+			elseif self._id == 100892 then
+				rand = PickRandomFromList(rand, "_randomize_security_rooms")
+			elseif self._id == 101197 then
+				rand = PickRandomFromList(rand, "_randomzize_electrical_boxes")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
