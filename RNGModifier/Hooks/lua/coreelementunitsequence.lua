@@ -2,7 +2,7 @@ core:module("CoreElementUnitSequence")
 core:import("CoreMissionScriptElement")
 core:import("CoreCode")
 core:import("CoreUnit")
-dofile("mods/RNGModifier/Hooks/menu/Menu_Function.lua")
+dofile("mods/RNGModifier/Base.lua")
 
 _G.RNGModifier = _G.RNGModifier or {}
 

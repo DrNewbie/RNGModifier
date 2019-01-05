@@ -1,7 +1,8 @@
 core:module("CoreElementToggle")
 core:import("CoreMissionScriptElement")
 ElementToggle = ElementToggle or class(CoreMissionScriptElement.MissionScriptElement)
-dofile("mods/RNGModifier/Hooks/menu/Menu_Function.lua")
+dofile("mods/RNGModifier/Base.lua")
+
 _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier = _G.RNGModifier or {}
 if not RNGModifier then
