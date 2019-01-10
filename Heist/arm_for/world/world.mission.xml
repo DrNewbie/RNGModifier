@@ -890,17 +890,17 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="van_wp_bag001" id="100233">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="3700 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="3700 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="van_wp_bag002" id="100008">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="2900 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="2900 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="van_wp_bag003" id="100020">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="2100 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="2100 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -1062,17 +1062,17 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="van_wp_esc001" id="100264">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" position="3200 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" only_on_instigator="False" position="3200 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="van_wp_esc002" id="100265">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" position="2400 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" only_on_instigator="False" position="2400 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="van_wp_esc003" id="100266">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" position="1600 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" only_on_instigator="False" position="1600 1000 5780" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -1128,7 +1128,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_001" id="100238">
-				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -1169,17 +1169,17 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_002" id="100331">
-				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_003" id="100332">
-				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_004" id="100333">
-				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -1214,12 +1214,12 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_005" id="100338">
-				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="none" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_006" id="100339">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bagit_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bagit_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -1231,7 +1231,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_007" id="100341">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bfr_06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bfr_06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -1251,7 +1251,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_008" id="100344">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bgst_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bgst_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -1263,7 +1263,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_009" id="100346">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_indif_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_indif_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104048"/>
 					</on_executed>
@@ -1277,7 +1277,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_010" id="100348">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_vih_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_vih_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -1296,7 +1296,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="func_dialogue_011" id="100351">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_polin_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_polin_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -7426,7 +7426,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_001" id="102288">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="-2687 -1116 700" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="-2687 -1116 700" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -7489,7 +7489,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_001" id="102592">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="forbid_access" position="0 100 6800" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="forbid_access" position="0 100 6800" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>57</element>
 						<element>59</element>
@@ -7502,7 +7502,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_002" id="100004">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="allow_access" position="-2875 -1150 675" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="allow_access" position="-2875 -1150 675" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>57</element>
 						<element>58</element>
@@ -7511,7 +7511,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_003" id="100005">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="allow_access" position="-1600 -1225 675" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="allow_access" position="-1600 -1225 675" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>59</element>
 						<element>58</element>
@@ -7520,7 +7520,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_004" id="100009">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="allow_access" position="-325 -1225 675" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="allow_access" position="-325 -1225 675" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>61</element>
 						<element>62</element>
@@ -7529,7 +7529,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_005" id="100205">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="allow_access" position="875 -1175 675" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="allow_access" position="875 -1175 675" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>63</element>
 						<element>62</element>
@@ -7538,7 +7538,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_006" id="100206">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="allow_access" position="2200 -1100 675" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="allow_access" position="2200 -1100 675" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>65</element>
 						<element>66</element>
@@ -7547,7 +7547,7 @@
 				</values>
 			</element>
 			<element class="ElementAIGraph" editor_name="ai_graph_007" id="100252">
-				<values base_delay="0" enabled="True" execute_on_startup="False" operation="allow_access" position="3400 -1200 675" rotation="0 0 0 -1" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" filter_group="none" operation="allow_access" position="3400 -1200 675" rotation="0 0 0 -1" trigger_times="0">
 					<graph_ids>
 						<element>67</element>
 						<element>66</element>
@@ -7556,7 +7556,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_002" id="100253">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="-1725 -1150 700" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="-1725 -1150 700" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -7569,7 +7569,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_003" id="100835">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="-175 -1150 700" rotation="0 0 1 1.19209E-07" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="-175 -1150 700" rotation="0 0 1 1.19209E-07" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -7590,7 +7590,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_004" id="100838">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="775 -1150 700" rotation="0 0 0.707107 -0.707107" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="775 -1150 700" rotation="0 0 0.707107 -0.707107" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -7603,7 +7603,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_005" id="100840">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="2350 -1150 700" rotation="0 0 0.382683 -0.92388" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="2350 -1150 700" rotation="0 0 0.382683 -0.92388" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -7616,7 +7616,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_006" id="102593">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="3300 -1175 700" rotation="0 0 0.382683 -0.92388" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="3300 -1175 700" rotation="0 0 0.382683 -0.92388" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -8390,7 +8390,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="boat_waypoint_turret" id="102685">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="-5350 -6800 -975" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="-5350 -6800 -975" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -8520,7 +8520,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="waypoint_escape_boat" id="102698">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" position="-4600 -7600 -817.04" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" only_on_instigator="False" position="-4600 -7600 -817.04" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -9722,7 +9722,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="vo_this_is_bile" id="102903">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="1" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="1" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104695"/>
 						<element delay="0" id="102907"/>
@@ -9730,14 +9730,14 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="pilot_6_1min" id="102907">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="30" id="102908"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="pilot_7_30sec" id="102908">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="45" id="102910"/>
 						<element delay="0" id="102882"/>
@@ -9745,7 +9745,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="pilot_8_imhere" id="102910">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a08" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_plt_a08" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -10505,7 +10505,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="boat_waypoint_ammo" id="103048">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="-5350 -6800 -896" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="-5350 -6800 -896" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -10643,28 +10643,28 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="1min" id="103127">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a05" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a05" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="30" id="103040"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="almost" id="103128">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="102928"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="imHere" id="103129">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="5" id="103130"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="deliver" id="103130">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a09" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a09" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -11297,17 +11297,17 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_010" id="103264">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="-2725 -3325 2799.34" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="-2725 -3325 2799.34" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_011" id="103265">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="-450 -1075 2796.68" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="-450 -1075 2796.68" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="point_waypoint_012" id="103266">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" position="25 1500 1875" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_drill" only_in_civilian="False" only_on_instigator="False" position="25 1500 1875" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -11397,19 +11397,19 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="almost001" id="103138">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="imHere001" id="103139">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="5" id="103281"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="deliver001" id="103281">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a09" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_bot_a09" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -11853,92 +11853,92 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="keep_off_drill" id="102437">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_dd_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_dd_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="5" id="103787"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="good_job" id="103787">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_pdsg_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_pdsg_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="our_chopper_coming_in" id="104020">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_heli_02" enabled="False" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_heli_02" enabled="False" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="police_chopper" id="104022">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_heli_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_heli_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="police_on_the_way" id="104028">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_pow_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_pow_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104065"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="hurry" id="104029">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_hur_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_hur_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="1" id="104032">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_count_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_count_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104049"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="2" id="104033">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_count_02" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_count_02" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104049"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="3" id="104037">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_count_03" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_count_03" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="defend" id="104048">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_wsd_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_wsd_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="doing_good" id="104049">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_lkgo_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_lkgo_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="fthey_are_on_the_roof" id="104052">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_att_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_att_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="alarm_went_off" id="104054">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_alm_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_alm_01" enabled="True" execute_on_executed_when_done="True" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104028"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="more_snipers" id="104060">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_snip_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_snip_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="snipers_coming" id="104061">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_snip_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_snip_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="30s" id="104065">
-				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bfr_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="play_pln_gen_bfr_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -12571,7 +12571,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player collects access card" id="104407">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104565"/>
 					</on_executed>
@@ -12584,49 +12584,49 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player uses camera (sees Ammo)" id="104420">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player uses camera (sees Cannon)" id="104422">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_29" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_29" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104988"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player secures prototype piece" id="104428">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_04" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_04" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player Secures Ammo" id="104433">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_05" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_05" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Vault door about to open" id="104439">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Secondary boat and ammo secure" id="104446">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player secures ammo crate" id="104547">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_08" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="1" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_08" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="1" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Alarm went off" id="104548">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_09" enabled="False" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_09" enabled="False" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Sending Drill" id="104549">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_01" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104082"/>
 						<element delay="0" id="101255"/>
@@ -12634,64 +12634,64 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Players secured three Cannon " id="104550">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_11" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_11" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Break Into Correct Railcar" id="104551">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_12" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_12" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Entering Railcar" id="104553">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_13" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_13" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Ammo explodes" id="104554">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_14" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_14" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Drill chopper gets close" id="104555">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_15" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_15" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Chopper drops the drill" id="104557">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_16" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_16" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Picked up keycard" id="104558">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_17" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_17" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="0" id="104565"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Keycard Hint" id="104559">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_18" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_18" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Looking for cannon" id="104560">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_19" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_19" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Found cannon, no drill" id="104561">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_20" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_20" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Vault open, turret intact" id="104562">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_21" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_21" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Turret dismantled, Vault open" id="104563">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_22" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_22" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -13644,29 +13644,29 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Pilot Arrives" id="104834">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_24" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_24" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="3" id="104835"/>
 					</on_executed>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Pilot is dropping lance" id="104835">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_25" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_25" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Pilot Returns" id="104836">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_26" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_26" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Player enters railcar with ammo" id="104837">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_27" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_27" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Police blast train doors" id="104838">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_28" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1_28" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -14478,7 +14478,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="waypoint_Truck_Turret_dropoff" id="104072">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="5050 2500 674.197" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="5050 2500 674.197" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -14660,7 +14660,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="waypoint_Truck_Ammo_Dropoff" id="103275">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" position="5050 2500 724.197" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_lootdrop" only_in_civilian="False" only_on_instigator="False" position="5050 2500 724.197" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -15214,7 +15214,7 @@
 				</values>
 			</element>
 			<element class="ElementWaypoint" editor_name="waypoint_escape_truck" id="105175">
-				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" position="3104 5450 1.0651" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
+				<values base_delay="0" enabled="True" execute_on_startup="False" icon="pd2_escape" only_in_civilian="False" only_on_instigator="False" position="3104 5450 1.0651" rotation="0 0 0 -1" text_id="debug_none" trigger_times="0">
 					<on_executed/>
 				</values>
 			</element>
@@ -15233,7 +15233,7 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="30sec" id="105181">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_dr1_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_dr1_a06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="30" id="105182"/>
 						<element delay="15" id="103276"/>
@@ -15241,12 +15241,12 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="1min003" id="105182">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_dr1_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_dr1_a07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="returning" id="105183">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_dr1_a12" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_dr1_a12" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed>
 						<element delay="30" id="105182"/>
 						<element delay="30" id="103276"/>
@@ -16411,12 +16411,12 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Turret_Secured" id="105611">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_02" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Ammo_Secured" id="105612">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_03" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_03" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
@@ -16432,22 +16432,22 @@
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Harddrive_Pickedup" id="105614">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_04" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_04" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Harddrive_Pickedup001" id="105615">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_05" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="1" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_05" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="1" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Harddrive_Pickedup002" id="105616">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_07" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>
 			<element class="ElementDialogue" editor_name="Harddrive_Pickedup003" id="105617">
-				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" trigger_times="0" use_instigator="False" use_position="False">
+				<values base_delay="0" can_not_be_muted="False" dialogue="Play_pln_tr1b_06" enabled="True" execute_on_executed_when_done="False" execute_on_startup="False" play_on_player_instigator_only="False" trigger_times="0" use_instigator="False" use_position="False">
 					<on_executed/>
 				</values>
 			</element>

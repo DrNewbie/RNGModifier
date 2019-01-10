@@ -23,3 +23,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("arm_for", "_pick_rand_spawn"),
 	menu_id = "RNGModifier_arm_for_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_arm_for_chance_boat_or_truck = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chance_boat_or_truck")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arm_for_chance_boat_or_truck",
+	title = "RNGModifier_arm_for_chance_boat_or_truck_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arm_for_chance_boat_or_truck",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arm_for_chance_boat_or_truck_1",
+		"RNGModifier_arm_for_chance_boat_or_truck_2"
+	},
+	value = RNGModifier:SafeGetData("arm_for", "_chance_boat_or_truck"),
+	menu_id = "RNGModifier_arm_for_Options_Menu"
+})

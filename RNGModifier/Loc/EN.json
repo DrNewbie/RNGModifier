@@ -150,6 +150,9 @@
 	"RNGModifier_arm_for_pick_rand_spawn_title" : "Start Spawn",
 	"RNGModifier_arm_for_pick_rand_spawn_1" : "Boat",
 	"RNGModifier_arm_for_pick_rand_spawn_2" : "Sawmill",
+	"RNGModifier_arm_for_chance_boat_or_truck_title" : "Loot Drop Point",
+	"RNGModifier_arm_for_chance_boat_or_truck_1" : "Truck",
+	"RNGModifier_arm_for_chance_boat_or_truck_2" : "Boat",
 	
 	"RNGModifier_all_of_all_forced_escape_day_title" : "Force Escape Day",
 	"RNGModifier_all_of_all_forced_escape_day_desc" : "If it is available",
