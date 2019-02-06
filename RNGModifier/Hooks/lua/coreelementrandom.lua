@@ -348,6 +348,10 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101197 then
 				rand = PickRandomFromList(rand, "_randomzize_electrical_boxes")
 			end
+		elseif _level_id == "nmh" then
+			if self._id == 102309 then
+				rand = PickRandomFromList(rand, "_chooseRandomRoom")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
