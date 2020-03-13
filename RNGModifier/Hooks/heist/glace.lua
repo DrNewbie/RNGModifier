@@ -25,3 +25,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("glace", "_random_correct_bus"),
 	menu_id = "RNGModifier_glace_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_glace_logic_chance_001 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_logic_chance_001")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_glace_logic_chance_001",
+	title = "RNGModifier_glace_logic_chance_001_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_glace_logic_chance_001",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_glace_logic_chance_001_1"
+	},
+	value = RNGModifier:SafeGetData("glace", "_logic_chance_001"),
+	menu_id = "RNGModifier_glace_Options_Menu"
+})

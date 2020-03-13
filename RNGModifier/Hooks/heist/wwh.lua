@@ -98,3 +98,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("wwh", "_random_grenade_crate"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
 })
+MenuCallbackHandler.RNGModifier_wwh_wwh_container = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_wwh_container")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_wwh_container",
+	title = "RNGModifier_wwh_wwh_container_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_wwh_wwh_container",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_wwh_container"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+

@@ -1,4 +1,6 @@
-if _G.RNGModifier then return end
+if _G.RNGModifier then 
+	return 
+end
 _G.RNGModifier = {}
 RNGModifier._path = ModPath
 RNGModifier._save_path = SavePath .. "RNGModifier_SaveFile.txt"
@@ -18,34 +20,50 @@ RNGModifier._menu_All_id = "RNGModifier_menu_All_id"
 RNGModifier._heistlist = {
 	"branchbank",
 	"roberts",
+	--"fish",
 	"arm_fac",
 	"arm_par",
 	"arm_und",
 	"arm_cro",
 	"arm_hcm",
+	"four_stores",
 	"cage",
 	"welcome_to_the_jungle_1",
+	"welcome_to_the_jungle_2",
 	"big",
 	"framing_frame_3",
 	"friend",
 	--"crojob3",
+	"crojob2",
 	"watchdogs_1",
+	"shoutout_raid",
+	"mex",
 	"hox_2",
 	"hox_1",
+	"hox_3",
+	--"mia_1",
+	--"mia_2",
+	"cane",
 	"mus",
 	"rat",
 	"arena",
+	"jolly",
+	"election_day_1",
+	"election_day_2",
+	"firestarter_1",
 	"firestarter_2",
 	"firestarter_3",
 	"arm_for",
 	"framing_frame_2",
 	"alex_2",
+	"pbr",
 	"wwh",
 	"dah",
 	"glace",
 	"chill_combat",
 	"hvh",
 	"rvd1",
+	"rvd2",
 	"brb",
 	"family",
 	"dark",
@@ -54,8 +72,11 @@ RNGModifier._heistlist = {
 	"kosugi",
 	"nightclub",
 	"tag",
+	"vit",
 	"sah",
-	"nmh"
+	"peta",
+	"peta2"
+
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
@@ -79,10 +100,99 @@ function RNGModifier:SafeSetData(_value, _heist, _table1)
 end
 
 function RNGModifier:Save()
+	local BTM_bomb_crate_A = self:SafeGetData("pbr", "_bomb_crate_A")
+	local BTM_bomb_crate_B = self:SafeGetData("pbr", "_bomb_crate_B")
+	if BTM_bomb_crate_A ~= 0 and BTM_bomb_crate_A == BTM_bomb_crate_B then
+		self:SafeSetData(0, "pbr", "_bomb_crate_A")
+	end
+	local F1_hangar_1 = self:SafeGetData("firestater_1", "_hangar_1")
+	local F1_hangar_1 = self:SafeGetData("firestater_1", "_hangar_1")
+	if F1_hangar_1 ~= 0 and F1_hangar_1 == F1_hangar_1 then
+		self:SafeSetData(0, "firestater_1", "_hangar_1")
+	end
 	local FF3_spawnRandomHarrdDrive_A = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_A")
 	local FF3_spawnRandomHarrdDrive_B = self:SafeGetData("framing_frame_3", "_spawnRandomHarrdDrive_B")
 	if FF3_spawnRandomHarrdDrive_A ~= 0 and FF3_spawnRandomHarrdDrive_A == FF3_spawnRandomHarrdDrive_B then
 		self:SafeSetData(0, "framing_frame_3", "_spawnRandomHarrdDrive_A")
+	end
+	local ED2_spawncrate_A = self:SafeGetData("election_day_2", "_spawncrate_A")
+	local ED2_spawncrate_B = self:SafeGetData("election_day_2", "_spawncrate_B")
+	local ED2_spawncrate_C = self:SafeGetData("election_day_2", "_spawncrate_C")
+	local ED2_spawncrate_D = self:SafeGetData("election_day_2", "_spawncrate_D")
+	local ED2_spawncrate_E = self:SafeGetData("election_day_2", "_spawncrate_E")
+	local ED2_spawncrate_F = self:SafeGetData("election_day_2", "_spawncrate_F")
+	if ED2_spawncrate_A ~= 0 and ED2_spawncrate_A == ED2_spawncrate_B == ED2_spawncrate_C == ED2_spawncrate_D == ED2_spawncrate_E == ED2_spawncrate_F then
+		self:SafeSetData(0, "election_day_2", "_spawncrate_A")
+	end
+	local tag_boxes_A = self:SafeGetData("tag", "_boxes_A")
+	local tag_boxes_B = self:SafeGetData("tag", "_boxes_B")
+	local tag_boxes_C = self:SafeGetData("tag", "_boxes_C")
+	if tag_boxes_A ~= 0 and tag_boxes_A == tag_boxes_B == tag_boxes_C then
+		self:SafeSetData(0, "tag", "_boxes_A")
+	end
+	local tag_boxes1_A = self:SafeGetData("tag", "_boxes1_A")
+	local tag_boxes1_B = self:SafeGetData("tag", "_boxes1_B")
+	local tag_boxes1_C = self:SafeGetData("tag", "_boxes1_C")
+	if tag_boxes1_A ~= 0 and tag_boxes1_A == tag_boxes1_B == tag_boxes1_C then
+		self:SafeSetData(0, "tag", "_boxes1_A")
+	end
+	local kosugi_painting_A = self:SafeGetData("kosugi", "_painting_A")
+	local kosugi_painting_B = self:SafeGetData("kosugi", "_painting_B")
+	if kosugi_painting_A ~= 0 and kosugi_painting_A == kosugi_painting_B then
+		self:SafeSetData(0, "kosugi", "_painting_A")
+	end
+	local kosugi_money_A = self:SafeGetData("kosugi", "_money_A")
+	local kosugi_money_B = self:SafeGetData("kosugi", "_money_B")
+	if kosugi_money_A ~= 0 and kosugi_money_A == kosugi_money_B then
+		self:SafeSetData(0, "kosugi", "_money_A")
+	end
+	local kosugi_cocaine_A = self:SafeGetData("kosugi", "_cocaine_A")
+	local kosugi_cocaine_B = self:SafeGetData("kosugi", "_cocaine_B")
+	if kosugi_cocaine_A ~= 0 and kosugi_cocaine_A == kosugi_cocaine_B then
+		self:SafeSetData(0, "kosugi", "_cocaine_A")
+	end
+	local kosugi_weapon_A = self:SafeGetData("kosugi", "_weapon_A")
+	local kosugi_weapon_B = self:SafeGetData("kosugi", "_weapon_B")
+	if kosugi_weapon_A ~= 0 and kosugi_weapon_A == kosugi_weapon_B then
+		self:SafeSetData(0, "kosugi", "_weapon_A")
+	end
+	local mus_spawnboxes_A = self:SafeGetData("mus", "_spawnboxes_A")
+	local mus_spawnboxes_B = self:SafeGetData("mus", "_spawnboxes_B")
+	local mus_spawnboxes_C = self:SafeGetData("mus", "_spawnboxes_C")
+	local mus_spawnboxes_D = self:SafeGetData("mus", "_spawnboxes_D")
+	local mus_spawnboxes_E = self:SafeGetData("mus", "_spawnboxes_E")
+	local mus_spawnboxes_F = self:SafeGetData("mus", "_spawnboxes_F")
+	local mus_spawnboxes_G = self:SafeGetData("mus", "_spawnboxes_G")
+	if mus_spawnboxes_A ~= 0 and mus_spawnboxes_A == mus_spawnboxes_B == mus_spawnboxes_C == mus_spawnboxes_D == mus_spawnboxes_E then
+		self:SafeSetData(0, "mus", "_spawnboxes_A")
+	end
+	local pal_crowbar_A = self:SafeGetData("pal", "_crowbar_A")
+	local pal_crowbar_B = self:SafeGetData("pal", "_crowbar_B")
+	local pal_crowbar_C = self:SafeGetData("pal", "_crowbar_C")
+	if pal_crowbar_A ~= 0 and pal_crowbar_A == pal_crowbar_B == pal_crowbar_C then
+		self:SafeSetData(0, "pal", "_crowbar_A")
+	end
+	local HOX3_keycard_A = self:SafeGetData("HOX3", "_keycard_A")
+	local HOX3_keycard_B = self:SafeGetData("HOX3", "_keycard_B")
+	local HOX3_keycard_C = self:SafeGetData("HOX3", "_keycard_C")
+	if HOX3_keycard_A ~= 0 and HOX3_keycard_A == HOX3_keycard_B == HOX3_keycard_C then
+		self:SafeSetData(0, "HOX3", "_keycard_A")
+	end
+	local M1_gascan_A = self:SafeGetData("mia_1", "_gascan_A")
+	local M1_gascan_B = self:SafeGetData("mia_1", "_gascan_B")
+	local M1_gascan_C = self:SafeGetData("mia_1", "_gascan_C")
+	local M1_gascan_D = self:SafeGetData("mia_1", "_gascan_D")
+	local M1_gascan_E = self:SafeGetData("mia_1", "_gascan_E")
+	local M1_gascan_F = self:SafeGetData("mia_1", "_gascan_F")
+	local M1_gascan_G = self:SafeGetData("mia_1", "_gascan_G")
+	local M1_gascan_H = self:SafeGetData("mia_1", "_gascan_H")
+	if M1_gascan_A ~= 0 and M1_gascan_A == M1_gascan_B == M1_gascan_C == M1_gascan_D == M1_gascan_E == M1_gascan_F == M1_gascan_G == M1_gascan_H then
+		self:SafeSetData(0, "mia_1", "_gascan_A")
+	end
+	local SR_crowbar_A = self:SafeGetData("shoutout_raid", "_crowbar_A")
+	local SR_crowbar_B = self:SafeGetData("shoutout_raid", "_crowbar_B")
+	if SR_crowbar_A ~= 0 and SR_crowbar_A == SR_crowbar_B then
+		self:SafeSetData(0, "shoutout_raid", "_crowbar_A")
 	end
 	local HOX2_select_excursion_A = self:SafeGetData("hox_2", "_select_excursion_A")
 	local HOX2_select_excursion_B = self:SafeGetData("hox_2", "_select_excursion_B")

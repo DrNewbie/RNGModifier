@@ -26,3 +26,4 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("arena", "_select_security_room"),
 	menu_id = "RNGModifier_arena_Options_Menu"
 })
+

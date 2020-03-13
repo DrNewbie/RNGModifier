@@ -23,3 +23,144 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("pal", "_boobytrap_chance"),
 	menu_id = "RNGModifier_pal_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_pal_spawn = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_spawn",
+	title = "RNGModifier_pal_spawn_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_spawn",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_spawn_1",
+		"RNGModifier_pal_spawn_2",
+		"RNGModifier_pal_spawn_3",
+		"RNGModifier_pal_spawn_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_spawn"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_crowbar_A = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar_A")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_crowbar_A",
+	title = "RNGModifier_pal_crowbar_A_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_crowbar_A",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5",
+		"RNGModifier_number_4_use_6",
+		"RNGModifier_number_4_use_7",
+		"RNGModifier_number_4_use_8",
+		"RNGModifier_number_4_use_9",
+		"RNGModifier_number_4_use_10",
+		"RNGModifier_number_4_use_11",
+		"RNGModifier_number_4_use_12"
+	},
+	value = RNGModifier:SafeGetData("pal", "_crowbar_A"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_crowbar_B = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar_B")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_crowbar_B",
+	title = "RNGModifier_pal_crowbar_B_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_crowbar_B",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5",
+		"RNGModifier_number_4_use_6",
+		"RNGModifier_number_4_use_7",
+		"RNGModifier_number_4_use_8",
+		"RNGModifier_number_4_use_9",
+		"RNGModifier_number_4_use_10",
+		"RNGModifier_number_4_use_11",
+		"RNGModifier_number_4_use_12"
+	},
+	value = RNGModifier:SafeGetData("pal", "_crowbar_B"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_crowbar_C = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar_C")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_crowbar_C",
+	title = "RNGModifier_pal_crowbar_C_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_crowbar_C",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5",
+		"RNGModifier_number_4_use_6",
+		"RNGModifier_number_4_use_7",
+		"RNGModifier_number_4_use_8",
+		"RNGModifier_number_4_use_9",
+		"RNGModifier_number_4_use_10",
+		"RNGModifier_number_4_use_11",
+		"RNGModifier_number_4_use_12"
+	},
+	value = RNGModifier:SafeGetData("pal", "_crowbar_C"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_valve = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_valve")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_valve",
+	title = "RNGModifier_pal_valve_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_valve",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_valve_1",
+		"RNGModifier_pal_valve_2",
+		"RNGModifier_pal_valve_3"
+	},
+	value = RNGModifier:SafeGetData("pal", "_valve"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_manhole = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_manhole")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_manhole",
+	title = "RNGModifier_pal_manhole_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_manhole",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_manhole_1",
+		"RNGModifier_pal_manhole_2"
+	},
+	value = RNGModifier:SafeGetData("pal", "_manhole"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})

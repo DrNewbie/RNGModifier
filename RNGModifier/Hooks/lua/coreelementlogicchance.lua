@@ -1,3 +1,4 @@
+local path = ModPath
 core:module("CoreElementLogicChance")
 core:import("CoreMissionScriptElement")
 ElementLogicChance = ElementLogicChance or class(CoreMissionScriptElement.MissionScriptElement)
@@ -7,7 +8,7 @@ _G.RNGModifier = _G.RNGModifier or {}
 
 RNGModifier = _G.RNGModifier or {}
 
-if not RNGModifier then
+if not RNGModifier  then
 	return
 end
 
@@ -38,6 +39,14 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				elseif _chance_of_door == 2 then
 					self._chance = -999
+				end
+			end
+		elseif _level_id == "glace" then
+			if self._id == 100616 then
+				local _logic_chance_001 = RNGModifier:SafeGetData(_level_id, "_logic_chance_001") or 0 
+				_logic_chance_001 = _logic_chance_001 - 1
+				if _logic_chance_001 == 1 then
+					self._chance = 999
 				end
 			end
 		elseif _level_id == "brb" then
@@ -169,6 +178,24 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999				
 				end
 			end
+		elseif _level_id == "man" then
+			if self._id == 102943 then
+				local _roof_or_fall = RNGModifier:SafeGetData(_level_id,"_roof_or_fall") or 0
+				if _roof_or_fall == 2 then
+					self._chance = 999
+				elseif _roof_or_fall == 4 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "mex" then
+			if self._id == 101702 then
+				local _chance_diffusible = RNGModifier:SafeGetData(_level_id,"_chance_diffusible") or 0
+				if _chance_diffusible == 0 then
+				
+				else
+					self._chance = -999 
+				end
+			end
 		elseif _level_id == "nightclub" then
 			if self._id == 103869 then
 				local _logic_chance_009 = RNGModifier:SafeGetData(_level_id, "_logic_chance_009") or 0
@@ -179,21 +206,54 @@ function ElementLogicChance:on_executed(...)
 				end
 			end
 		elseif _level_id == "tag" then
-			if self._id == 103869 then
+			if self._id == 101653 then
 				local _chance_basement_escape = RNGModifier:SafeGetData(_level_id, "_chance_basement_escape") or 0
-				if _chance_basement_escape == 2 then
-					self._chance = 999
-				elseif _chance_basement_escape == 3 then
+				if _chance_basement_escape == 0 then
+					
+				else
 					self._chance = -999				
 				end
+			elseif self._id == 100625 then
+				local _chance_keycard = RNGModifier:SafeGetData(_level_id, "_chance_keycard") or 0
+				if _chance_keycard == 0 then
+				
+				else
+					self._chance = -999
+				end
 			end
-		elseif _level_id == "arm_for" then
-			if self._id == 104977 then
-				local _chance_boat_or_truck = RNGModifier:SafeGetData(_level_id, "_chance_boat_or_truck") or 0
-				if _chance_boat_or_truck == 2 then
+		elseif _level_id == "election_day_1" then
+			if self._id == 104564 then
+				local _chance_of_container = RNGModifier:SafeGetData(_level_id, "_chance_of_container") or 0
+				if _chance_of_container == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "election_day_2" then
+			if self._id == 102497 then
+				local _chance_of_jackpot = RNGModifier:SafeGetData(_level_id, "_chance_of_jackpot") or 0
+				if _chance_of_jackpot == 2 then
 					self._chance = 999
-				elseif _chance_boat_or_truck == 3 then
-					self._chance = -999				
+				end
+			end
+		elseif _level_id == "shoutout_raid" then
+			if self._id == 100326 then
+				local _70_chance = RNGModifier:SafeGetData(_level_id, "_70_chance") or 0
+				if _70_chance == 1 then
+					self._chance = -999
+				elseif _70_chance == 2 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "hox_3" then
+			if self._id == 103347 then
+				local _fake_boss = RNGModifier:SafeGetData(_level_id, "_fake_boss") or 0
+				if _fake_boss == 1 then
+					self._chance = -999
+				end
+			elseif self._id == 101782 then
+				local _code = RNGModifier:SafeGetData(_level_id,"_code") or 0 
+				if _code == 2 then
+					self._chance = -999
 				end
 			end
 		end

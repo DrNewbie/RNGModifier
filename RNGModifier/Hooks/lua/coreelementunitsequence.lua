@@ -1,3 +1,4 @@
+local path = ModPath
 core:module("CoreElementUnitSequence")
 core:import("CoreMissionScriptElement")
 core:import("CoreCode")
@@ -24,6 +25,14 @@ function ElementUnitSequence:on_executed(...)
 				
 				elseif _hideOfficeCard == 2 then
 					return
+				end
+			end
+		elseif _level_id == "rvd1" then
+			if self._id == 101127 then
+				local _car_crash_drive_in005 = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in005") or 1
+				if _car_crash_drive_in005 == 1 then
+					return
+
 				end
 			end
 		end

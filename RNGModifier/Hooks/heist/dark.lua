@@ -356,3 +356,4 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("dark", "_keycard_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
 })
+
