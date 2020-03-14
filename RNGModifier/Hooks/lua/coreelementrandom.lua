@@ -239,6 +239,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_random_flare")
 			end
 			if self._id == 100337 then
+				local __element3 = self:get_mission_element(100486)
+				if __element3 and __element3._values then
+					__element3._values.enabled = true
+				end
 				rand = PickRandomFromList(rand, "_chose_methlab_position")
 			end
 		elseif _level_id == "arena" then
@@ -250,8 +254,8 @@ function ElementRandom:_get_random_elements()
 					rand = 2,3
 				end	
 				local _id_fix1 = self._editor_name
-			log(_id_fix)
-			log(_id_fix1)
+			--log(_id_fix)
+			--log(_id_fix1)
 			end
 			if self._id == 101311 then
 				local _select_security_room = RNGModifier:SafeGetData(_level_id, "_select_security_room") or 0
@@ -309,8 +313,8 @@ function ElementRandom:_get_random_elements()
 			if _wwh_container > 0 then
 				local _id_fix = self._id 
 				local _id_fix1 = self._editor_name
-				log(_id_fix)
-				log(_id_fix1)
+				--log(_id_fix)
+				--log(_id_fix1)
 			end
 			if self._id == 100099 then
 				rand = PickRandomFromList(rand, "_random_captain_location")
@@ -719,8 +723,8 @@ function ElementRandom:_get_random_elements()
 			if _vit_bookshelf > 0 then
 				local _id_fix = self._id 
 				local _id_fix1 = self._editor_name
-				log(_id_fix)
-				log(_id_fix1)
+				--log(_id_fix)
+				--log(_id_fix1)
 				if _id_fix == 151398 then
 					rand = 1
 				elseif _id_fix == 150598 or _id_fix == 148798 or _id_fix == 151098 or _id_fix == 147898 or _id_fix == 151698 or _id_fix == 150298 or _id_fix == 148498 or _id_fix == 149698 or _id_fix == 149998 then

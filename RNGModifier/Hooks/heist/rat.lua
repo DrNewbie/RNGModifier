@@ -55,7 +55,8 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_chose_methlab_position"),
 	menu_id = "RNGModifier_rat_Options_Menu"
