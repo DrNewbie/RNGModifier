@@ -239,10 +239,6 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_random_flare")
 			end
 			if self._id == 100337 then
-				local __element3 = self:get_mission_element(100486)
-				if __element3 and __element3._values then
-					__element3._values.enabled = true
-				end
 				rand = PickRandomFromList(rand, "_chose_methlab_position")
 			end
 		elseif _level_id == "arena" then
