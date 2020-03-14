@@ -14,7 +14,7 @@ Hooks:PostHook(GroupAIStateBase, "set_whisper_mode", "RNGModifier_GroupAIStateBa
 			for idx, element in pairs(script:elements()) do
 				if element._values.interupt then
 					local interupt = tostring(element._values.interupt)
-					if tweak_data.levels[interupt] and tweak_data.levels[interupt].name_id then
+					if tweak_data.levels[interupt] and tweak_data.levels[interupt].name_id and table.contains(tweak_data.levels.escape_levels, interupt) then
 						table.insert(_runE, element)
 					end
 				end
