@@ -74,6 +74,7 @@ RNGModifier._heistlist = {
 	"tag",
 	"vit",
 	"sah",
+	"nmh",
 	"peta",
 	"peta2"
 

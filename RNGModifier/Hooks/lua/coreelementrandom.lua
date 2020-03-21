@@ -659,6 +659,10 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101197 then
 				rand = PickRandomFromList(rand, "_randomzize_electrical_boxes")
 			end
+		elseif _level_id == "nmh" then
+			if self._id == 102309 then
+				rand = PickRandomFromList(rand, "_chooseRandomRoom")
+			end
 		elseif _level_id == "firestarter_1" then
 			if self._id == 102208 then
 				rand = PickRandomFromList(rand, "_ehangar")
