@@ -77,7 +77,6 @@ RNGModifier._heistlist = {
 	"nmh",
 	"peta",
 	"peta2"
-
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
@@ -101,7 +100,7 @@ function RNGModifier:SafeSetData(_value, _heist, _table1)
 end
 
 function RNGModifier:SafeGetOpt(_heist, _table1)
-	return :SafeGetData(_heist, _table1) or 0
+	return self:SafeGetData(_heist, _table1) or 0
 end
 
 function RNGModifier:Save()

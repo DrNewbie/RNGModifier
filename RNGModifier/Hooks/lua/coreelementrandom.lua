@@ -6,7 +6,7 @@ dofile("mods/RNGModifier/Base.lua")
 
 _G.RNGModifier = _G.RNGModifier or {}
 RNGModifier = _G.RNGModifier or {}
-if not RNGModifier then
+if not RNGModifier or not RNGModifier.SafeGetData then
 	return
 end
 local _tmp_data = {}
