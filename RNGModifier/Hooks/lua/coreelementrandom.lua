@@ -774,7 +774,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 104426 then
 				rand = PickRandomFromList(rand, "_flair")
 			elseif self._id == 103318 then
-				local _prein = RNGModifier:SafeGetData(_level_id, "_prein")
+				local _prein = RNGModifier:SafeGetData(_level_id, "_prein") or 0
 				_prein = _prein - 1
 				if _prein > 0 then
 					rand = 1
