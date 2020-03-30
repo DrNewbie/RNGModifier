@@ -151,3 +151,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomLaptop"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_framing_frame_3_chooseServerRoom = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chooseServerRoom")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_3_chooseServerRoom",
+	title = "RNGModifier_framing_frame_3_chooseServerRoom_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_3_chooseServerRoom",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_framing_frame_3_chooseServerRoom_001",
+		"RNGModifier_framing_frame_3_chooseServerRoom_002",
+		"RNGModifier_framing_frame_3_chooseServerRoom_003"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_chooseServerRoom"),
+	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
+})
