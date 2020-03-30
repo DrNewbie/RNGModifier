@@ -234,26 +234,19 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "rat" then
 			if self._id == 101127 then
 				rand = PickRandomFromList(rand, "_escape_position")
-			end
-			if self._id == 101127 then
+			elseif self._id == 101127 then
 				rand = PickRandomFromList(rand, "_random_flare")
-			end
-			if self._id == 100337 then
+			elseif self._id == 100337 then
 				rand = PickRandomFromList(rand, "_chose_methlab_position")
 			end
 		elseif _level_id == "arena" then
-			local _are_pyro_booth = RNGModifier:SafeGetData(_level_id, "_are_pyro_booth") or 0
-			_are_pyro_booth = _are_pyro_booth - 1
-			if _are_pyro_booth > 0 then
-				local _id_fix = self._id 
-				if _id_fix == 134971 then
+			if self._id == 134971 then
+				local _are_pyro_booth = RNGModifier:SafeGetData(_level_id, "_are_pyro_booth") or 0
+				_are_pyro_booth = _are_pyro_booth - 1
+				if _are_pyro_booth > 0 then
 					rand = 2,3
-				end	
-				local _id_fix1 = self._editor_name
-			--log(_id_fix)
-			--log(_id_fix1)
-			end
-			if self._id == 101311 then
+				end				
+			elseif self._id == 101311 then
 				local _select_security_room = RNGModifier:SafeGetData(_level_id, "_select_security_room") or 0
 				_select_security_room = _select_security_room - 1
 				if _select_security_room <= 0 then
@@ -304,14 +297,16 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_rand_room")
 			end
 		elseif _level_id == "wwh" then
+		--[[
 			local _wwh_container = RNGModifier:SafeGetData(_level_id, "_wwh_container") or 0
 			_wwh_container = _wwh_container - 1
 			if _wwh_container > 0 then
 				local _id_fix = self._id 
 				local _id_fix1 = self._editor_name
-				--log(_id_fix)
-				--log(_id_fix1)
+				log(_id_fix)
+				log(_id_fix1)
 			end
+		]]
 			if self._id == 100099 then
 				rand = PickRandomFromList(rand, "_random_captain_location")
 			elseif self._id == 100183 then
@@ -576,8 +571,7 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_whiteboard")
 			elseif self._id == 100126 then
 				rand = PickRandomFromList(rand, "_spawn")
-			end
-			if self._id == 100359 then
+			elseif self._id == 100359 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["start_randomization_boxes"] = _tmp_data[_level_id]["start_randomization_boxes"] or 0
 				_tmp_data[_level_id]["start_randomization_boxes"] = _tmp_data[_level_id]["start_randomization_boxes"] + 1
@@ -598,8 +592,7 @@ function ElementRandom:_get_random_elements()
 						rand = _boxes_C
 					end
 				end
-			end
-			if self._id == 100991 then
+			elseif self._id == 100991 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["start_randomization_boxes001"] = _tmp_data[_level_id]["start_randomization_boxes001"] or 0
 				_tmp_data[_level_id]["start_randomization_boxes001"] = _tmp_data[_level_id]["start_randomization_boxes001"] + 1
@@ -718,20 +711,13 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 		elseif _level_id == "vit" then
-			local _vit_bookshelf = RNGModifier:SafeGetData(_level_id, "_vit_bookshelf") or 0
-			_vit_bookshelf = _vit_bookshelf - 1
-			if _vit_bookshelf > 0 then
-				local _id_fix = self._id 
-				local _id_fix1 = self._editor_name
-				--log(_id_fix)
-				--log(_id_fix1)
-				if _id_fix == 151398 then
-					rand = 1
-				elseif _id_fix == 150598 or _id_fix == 148798 or _id_fix == 151098 or _id_fix == 147898 or _id_fix == 151698 or _id_fix == 150298 or _id_fix == 148498 or _id_fix == 149698 or _id_fix == 149998 then
+			if self._id == 151398 or self._id == 150598 or self._id == 148798 or self._id == 151098 or self._id == 147898 or self._id == 151698 or self._id == 150298 or self._id == 148498 or self._id == 149698 or self._id == 149998 then
+				local _vit_bookshelf = RNGModifier:SafeGetData(_level_id, "_vit_bookshelf") or 0
+				_vit_bookshelf = _vit_bookshelf - 1
+				if _vit_bookshelf > 0 then
 					rand = 1
 				end
-			end
-			if self._id == 101264 then
+			elseif self._id == 101264 then
 				rand = PickRandomFromList(rand, "_vault_location")
 			elseif self._id == 101042 then
 				rand = PickRandomFromList(rand, "_laptop_room")
@@ -854,8 +840,7 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(r,"_deny")
 			elseif self._id == 101367 then
 				rand = PickRandomFromList(r,"_helipad")
-			end
-			if self._id == 101436 then
+			elseif self._id == 101436 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_two_bomb_crates"] = _tmp_data[_level_id]["select_two_bomb_crates"] or 0
 				_tmp_data[_level_id]["select_two_bomb_crates"] = _tmp_data[_level_id]["select_two_bomb_crates"] + 1
@@ -900,8 +885,7 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_enable_crate")
 			elseif self._id == 103908 then
 				rand = PickRandomFromList(rand, "_enable_crate2")
-			end
-			if self._id == 	103895 then
+			elseif self._id == 	103895 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_two"] = _tmp_data[_level_id]["select_two"] or 0
 				_tmp_data[_level_id]["select_two"] = _tmp_data[_level_id]["select_two"] + 1
@@ -918,8 +902,7 @@ function ElementRandom:_get_random_elements()
 						rand = _create_crate_B
 					end
 				end
-			end
-			if self._id == 	103907 then
+			elseif self._id == 	103907 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_two"] = _tmp_data[_level_id]["select_two"] or 0
 				_tmp_data[_level_id]["select_two"] = _tmp_data[_level_id]["select_two"] + 1
@@ -936,8 +919,7 @@ function ElementRandom:_get_random_elements()
 						rand = _create_crateD
 					end
 				end
-			end
-			if self._id == 103927 then
+			elseif self._id == 103927 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["make_six_crates_in_open"] = _tmp_data[_level_id]["make_six_crates_in_open"] or 0
 				_tmp_data[_level_id]["make_six_crates_in_open"] = _tmp_data[_level_id]["make_six_crates_in_open"] + 1
@@ -962,8 +944,7 @@ function ElementRandom:_get_random_elements()
 						rand = _spawncrate_D
 					end
 				end
-			end
-			if self._id == 103928 then
+			elseif self._id == 103928 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["make_two_crates_sealed"] = _tmp_data[_level_id]["make_two_crates_sealed"] or 0
 				_tmp_data[_level_id]["make_two_crates_sealed"] = _tmp_data[_level_id]["make_two_crates_sealed"] + 1
@@ -1056,8 +1037,7 @@ function ElementRandom:_get_random_elements()
 						rand = _crowbar_B
 					end
 				end
-			end
-			if self._id == 103172 then
+			elseif self._id == 103172 then
 				rand = PickRandomFromList(rand, "_containerA")
 			elseif self._id == 100238 then
 				rand = PickRandomFromList(rand, "_containerB")
@@ -1115,8 +1095,7 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(r, "_manager")
 			elseif self._id == 101091 then
 				rand = PickRandomFromList(r, "_manual")
-			end
-			if self._id == 100308 then
+			elseif self._id == 100308 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["randomize_colours"] = _tmp_data[_level_id]["randomize_colours"] or 0
 				_tmp_data[_level_id]["randomize_colours"] = _tmp_data[_level_id]["randomize_colours"] + 1

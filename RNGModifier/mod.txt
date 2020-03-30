@@ -3,7 +3,7 @@
   "description": "https://www.speedrun.com/pd2/thread/v2elh",
   "author": "Dr_Newbie",
   "contact": "http://modwork.shop/19913",
-  "version": "10.23",
+  "version": "10.24",
   "priority": 900,
   "blt_version": 2,
   "hooks": [
