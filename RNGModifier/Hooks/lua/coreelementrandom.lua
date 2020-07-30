@@ -1207,6 +1207,28 @@ function ElementRandom:_get_random_elements()
 					rand = 10
 				end
 			end
+		elseif _level_id == "des" then
+			if self._id == 100723 then
+				_tmp_data["des"] = _tmp_data["des"] or {}
+				_tmp_data["des"]["_rnd_excursion"] = _tmp_data["des"]["_rnd_excursion"] or 0
+				_tmp_data["des"]["_rnd_excursion"] = _tmp_data["des"]["_rnd_excursion"] + 1
+				local _rnd_excursion = _tmp_data["des"]["_rnd_excursion"]
+				local _eID = {}
+				for _, _name in pairs({"room1", "room2"}) do
+					local _var = RNGModifier:SafeGetData("des", _name) or 0
+					if _var > 1 then
+						table.insert(_eID, _var - 1)
+					end
+				end
+				_rnd_excursion = _eID[_rnd_excursion]
+				if type(_rnd_excursion) == 'number' and _rnd_excursion > 0 then
+					_rnd_excursion = table.index_of(self._unused_randoms, _rnd_excursion)
+					if _rnd_excursion > 0 then
+						rand = _rnd_excursion
+					end
+				end
+			end
+		end
 	end
 	return table.remove(self._unused_randoms, rand)
 end

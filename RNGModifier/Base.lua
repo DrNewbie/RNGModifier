@@ -80,6 +80,7 @@ RNGModifier._heistlist = {
 	"peta2",
 	"bex",
 	"pex",
+	"des",
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then

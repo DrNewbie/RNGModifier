@@ -966,4 +966,12 @@
   "RNGModifier_pex_ls_locker_title": "Large-Small Locker spawn",
   "RNGModifier_pex_ls_locker_desc": "For Medium Locker spawn",
   "RNGModifier_pex_parking_title": "Parking lot number at escape",
+
+  "RNGModifier_des_select_room_title_A": "Room 01",
+  "RNGModifier_des_select_room_title_B": "Room 02",
+  "RNGModifier_des_select_room_title_desc": "Pick which room you want (can't be the same!)",
+  "RNGModifier_des_select_room_001": "Computer lab",
+  "RNGModifier_des_select_room_002": "Weapon lab",
+  "RNGModifier_des_select_room_003": "Archaeology lab",
+  "RNGModifier_des_select_room_004": "Bio lab",
 }
