@@ -1228,6 +1228,29 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			end
+		elseif _level_id == "kenaz" then
+			if self._id == 100760 then
+				rand = PickRandomFromList(rand, "_gambler")
+			elseif self._id == 100874 then
+				rand = PickRandomFromList(rand, "_spiked_colour")
+			elseif self._id == 101140 then
+				rand = PickRandomFromList(rand, "_vomit_spot")
+			elseif self._id == 100055 then
+				rand = PickRandomFromList(rand, "_gear_location")
+			elseif self._id == 100129 then
+				rand = PickRandomFromList(rand, "_hotel_room")
+			elseif self._id == 100808 then
+				rand = PickRandomFromList(rand, "_bottle_location")
+			elseif self._id == 101018 then
+				rand = PickRandomFromList(rand, "random_weak_floor")
+			elseif self._id == 100332 or self._id == 100328 or self._id == 100329 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[100332] = 2, [100328] = 7 , [100329] = 9}
+					rand = ids_for_1[self._id] or rand
+				end
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
