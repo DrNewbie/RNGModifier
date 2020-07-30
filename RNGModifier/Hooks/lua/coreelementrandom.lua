@@ -690,6 +690,10 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "hox_3" then
 			if self._id == 101695 then
 				rand = PickRandomFromList(rand, "_panic_hector")
+			elseif self._id == 102122 then
+				rand = PickRandomFromList(r,"_rock")
+			elseif self._id == 102972 then
+				rand = PickRandomFromList(r,"_ladder")
 			elseif self._id == 101441 then
 				rand = PickRandomFromList(rand, "_alarm_box")
 			elseif self._id == 101529 then
