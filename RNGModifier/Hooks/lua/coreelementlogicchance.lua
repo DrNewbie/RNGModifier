@@ -183,8 +183,15 @@ function ElementLogicChance:on_executed(...)
 				local _roof_or_fall = RNGModifier:SafeGetData(_level_id,"_roof_or_fall") or 0
 				if _roof_or_fall == 2 then
 					self._chance = 999
-				elseif _roof_or_fall == 4 then
-					self._chance = 999
+				elseif _roof_or_fall == 3 then
+					self._chance = -999
+				end
+			elseif self._id == 101645 then
+				local _balcony  = RNGModifier:SafeGetData(_level_id,"_balcony") or 0
+				if _balcony == 2 then
+					self._chance = 999 
+				elseif _balcony == 3 then
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "mex" then

@@ -863,12 +863,31 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 		elseif _level_id == "man" then
-			if self._id == 102022 then
+			if self._id == 102026 then
 				rand = PickRandomFromList(r,"_roof_boxes")
 			elseif self._id == 103696 then
 				rand = PickRandomFromList(r,"_building_boxes")
 			elseif self._id == 100055 then
 				rand = PickRandomFromList(r,"_spawn")
+			elseif self._id == 101786 then
+				rand = PickRandomFromList(r,"_limo")
+			elseif self._id == 101647 then
+				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
+				_tmp_data[_level_id]["random_crowbar"] = _tmp_data[_level_id]["random_crowbar"] or 0
+				_tmp_data[_level_id]["random_crowbar"] = _tmp_data[_level_id]["random_crowbar"] + 1
+				if _tmp_data[_level_id]["random_crowbar"] == 1 then
+					local _crowbar_A = RNGModifier:SafeGetData(_level_id, "_crowbar_A") or 0
+					_crowbar_A = _crowbar_A - 1
+					if _crowbar_A > 0 then
+						rand = _crowbar_A
+					end
+				else
+					local _crowbar_B = RNGModifier:SafeGetData(_level_id, "_crowbar_B") or 0
+					_crowbar_B = _crowbar_B - 1
+					if _crowbar_B > 0 then
+						rand = _crowbar_B
+					end
+				end
 			end
 		elseif _level_id == "election_day_1" then
 			if self._id == 100631 then
