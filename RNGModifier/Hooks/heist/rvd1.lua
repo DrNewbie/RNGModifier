@@ -115,7 +115,7 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_rvd1_car_crash_drive_in005",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_bool_4_true"
+		"RNGModifier_rvd1_car_crash_drive_in005_1"
 	},
 	value = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in005"),
 	menu_id = "RNGModifier_rvd1_Options_Menu"

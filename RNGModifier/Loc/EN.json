@@ -532,10 +532,11 @@
   "RNGModifier_rvd1_random_escape_position_1": "Far Back",
   "RNGModifier_rvd1_random_escape_position_2": "Street Side",
   "RNGModifier_rvd1_random_escape_position_3": "Parking Lot",
-  "RNGModifier_rvd1_car_crash_drive_in005_title": "Pink palm tree",
-
-  "RNGModifier_car_crash_desc": "Switch it off - play game - switch on - restart if not work  ",
-  
+  "RNGModifier_rvd1_car_crash_drive_in005_title": "Mr. Pink spawn",
+  "RNGModifier_rvd1_car_crash_drive_in005_1": "Palm tree",
+  "RNGModifier_rvd1_car_crash_drive_in005_2": "2",
+  "RNGModifier_rvd1_car_crash_drive_in005_3": "3",
+  "RNGModifier_rvd1_car_crash_drive_in005_4": "4",
   "RNGModifier_rvd1_cop_title": "Cop create door",
   "RNGModifier_rvd1_cop_1": "Side Door",
   "RNGModifier_rvd1_cop_2": "Main Road",

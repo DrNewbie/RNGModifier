@@ -373,6 +373,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_saw")
 			elseif self._id == 100300 then
 				rand = PickRandomFromList(rand, "_cop")
+			elseif self._id == 100730 then
+				rand = PickRandomFromList(r, "_car_crash_drive_in005")
 			end
 		elseif _level_id == "rvd2" then
 			if self._id == 100442 then
