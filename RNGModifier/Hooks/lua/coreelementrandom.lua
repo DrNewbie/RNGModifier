@@ -95,8 +95,7 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "framing_frame_3" then
 			if self._id == 105506 then
 				rand = PickRandomFromList(rand, "_chooseServerRoom")
-			end
-			if self._id == 100697 then
+			elseif self._id == 100697 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["RandomHarrdDrive"] = _tmp_data[_level_id]["RandomHarrdDrive"] or 0
 				_tmp_data[_level_id]["RandomHarrdDrive"] = _tmp_data[_level_id]["RandomHarrdDrive"] + 1
@@ -113,8 +112,7 @@ function ElementRandom:_get_random_elements()
 						rand = _spawnRandomHarrdDrive_B
 					end
 				end
-			end
-			if self._id == 100714 then
+			elseif self._id == 100714 then
 				rand = PickRandomFromList(rand, "_SpawnRandomPhone")
 			elseif self._id == 100784 then
 				rand = PickRandomFromList(rand, "_spawnRandomPads")
@@ -221,8 +219,7 @@ function ElementRandom:_get_random_elements()
 						rand = _spawnboxes_E
 					end
 				end
-			end
-			if self._id == 100756 then
+			elseif self._id == 100756 then
 				rand = PickRandomFromList(r,"_security")
 			elseif self._id == 101445 then
 				rand = PickRandomFromList(r,"_box_at_end")
