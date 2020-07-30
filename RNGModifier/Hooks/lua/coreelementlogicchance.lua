@@ -263,6 +263,13 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "nmh" then
+            if self._id == 103011 then
+                local _correct_paper = RNGModifier:SafeGetData(_level_id, "_correct_paper") or 0
+                if _correct_paper == 2 then
+                    self._chance = 999
+                end
+            end
 		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
