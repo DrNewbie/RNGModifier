@@ -1171,7 +1171,42 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			end
-		end
+		elseif _level_id == "pex" then
+			if self._id == 100126 then
+				rand = PickRandomFromList(r,"_spawn")
+			elseif self._id == 101297 then
+				rand = PickRandomFromList(r,"_pc")
+			elseif self._id == 101800 then
+				rand = PickRandomFromList(r,"_it")
+			elseif self._id == 100879 then
+				rand = PickRandomFromList(r,"_tag")
+			elseif self._id == 103840 then
+				rand = PickRandomFromList(r,"_hide")
+			elseif self._id == 100781 then
+				rand = PickRandomFromList(r,"_prisoner")
+			elseif self._id == 100702 then
+				rand = PickRandomFromList(r,"_armory")			
+			elseif self._id == 102359 then
+				rand = PickRandomFromList(r,"_sm_suit")
+			elseif self._id == 102370 then
+				rand = PickRandomFromList(r,"_parking")
+			elseif self._id == 100912 then
+				rand = PickRandomFromList(r,"_ms_locker")
+			elseif self._id == 100766 then
+				rand = PickRandomFromList(r,"_ml_locker")
+			elseif self._id == 100905 then
+				rand = PickRandomFromList(r,"_ls_locker")
+			end
+			local _evidence = RNGModifier:SafeGetData(_level_id,"_evidence") or 0
+			_evidence = _evidence - 1
+			if _evidence > 0 then
+				local _id_fix = self._id 
+				if _id_fix == 144416 then
+					rand = 11
+				elseif _id_fix == 143419 then
+					rand = 10
+				end
+			end
 	end
 	return table.remove(self._unused_randoms, rand)
 end
