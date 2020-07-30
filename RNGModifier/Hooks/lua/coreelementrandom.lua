@@ -1100,35 +1100,60 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			end	
-			end
 		elseif _level_id == "bex" then
+			local _code = RNGModifier:SafeGetData(_level_id, "_code") or 0
+			_code = _code - 1
+			if _code > 0 then
+				local _id_fix = self._id 
+				if _id_fix == 137302 then
+					rand = 1
+				elseif _id_fix == 137343 or _id_fix == 137344 or _id_fix == 137345 or _id_fix == 139102 or _id_fix == 139143 or _id_fix == 139144 or _id_fix == 139145 then 
+					rand = 1
+				end
+			end
+			local _computer1 = RNGModifier:SafeGetData(_level_id, "_computer1")
+			_computer1 = _computer1 - 1
+			if _computer1 == 1 then
+				local _id_fix = self._id
+				if _id_fix == 101314 then
+					rand = 1
+				elseif _id_fix == 101315 or _id_fix == 101316 or _id_fix == 101317 or _id_fix == 101318 or _id_fix == 101319 or _id_fix == 101320 or _id_fix == 101321 or _id_fix == 101322 or _id_fix == 101323 or _id_fix == 101324 or _id_fix == 101325 or _id_fix == 101326 then
+					rand = 1
+				end
+			else
+				local _id_fix = self._id
+				if _id_fix == 101314 then
+					rand = 13
+				elseif _id_fix == 101315 or _id_fix == 101316 or _id_fix == 101317 or _id_fix == 101318 or _id_fix == 101319 or _id_fix == 101320 or _id_fix == 101321 or _id_fix == 101322 or _id_fix == 101323 or _id_fix == 101324 or _id_fix == 101325 or _id_fix == 101326 then
+					rand = 13
+				end
+			end
 			if self._id == 100126 then
 				rand = PickRandomFromList(r, "_spawn")
 			elseif self._id == 100317 then
 				rand = PickRandomFromList(r, "_blue")
-			elseif self._id == 101976 then
-				rand = PickRandomFromList(r, "_bluen")
 			elseif self._id == 100962 then
 				rand = PickRandomFromList(r, "_green")
-			elseif self._id == 102047 then
-				rand = PickRandomFromList(r, "_greenn")
 			elseif self._id == 100963 then
 				rand = PickRandomFromList(r, "_red")
-			elseif self._id == 102048 then
-				rand = PickRandomFromList(r, "_redn")
-			elseif self._id == 100064 then
+			elseif self._id == 100964 then
 				rand = PickRandomFromList(r, "_yellow")
-			elseif self._id == 102049 then
-				rand = PickRandomFromList(r, "_yellown")
-			elseif self._id == 103646 then
+			elseif self._id == 103650 or self._id == 103648 then
 				rand = PickRandomFromList(r, "_tape")
-			elseif self._id == 103578 then
+			elseif self._id == 101911 then
 				rand = PickRandomFromList(r, "_safe")
+			elseif self._id == 103578 then
+				rand = PickRandomFromList(r, "_safe1")
+			elseif self._id == 103579 then
+				rand = PickRandomFromList(r, "_safe2")
 			elseif self._id == 101754 then
 				rand = PickRandomFromList(r, "_manager")
 			elseif self._id == 101091 then
 				rand = PickRandomFromList(r, "_manual")
-			elseif self._id == 100308 then
+			elseif self._id == 100697 then
+				rand = PickRandomFromList(r, "_security")
+			end
+			if self._id == 100308 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["randomize_colours"] = _tmp_data[_level_id]["randomize_colours"] or 0
 				_tmp_data[_level_id]["randomize_colours"] = _tmp_data[_level_id]["randomize_colours"] + 1
