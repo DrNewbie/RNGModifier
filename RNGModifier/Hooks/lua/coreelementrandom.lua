@@ -745,7 +745,9 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_fourth_number")
 			end
 		elseif _level_id == "welcome_to_the_jungle_1" or _level_id == "welcome_to_the_jungle_1_night" then
-			if self._id == 102888 then
+			if self._id == 100321 then
+				rand = PickRandomFromList(rand,"_spawn")
+			elseif self._id == 102888 then
 				rand = PickRandomFromList(rand,"_table_1")
 			elseif self._id == 102938 then
 				rand = PickRandomFromList(rand,"_table_2")
@@ -753,10 +755,6 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_table_3")
 			elseif self._id == 101333 then
 				rand = PickRandomFromList(rand,"_safe1")
-			elseif self._id == 100658 then
-				rand = PickRandomFromList(rand,"_safe2")
-			elseif self._id == 100691 then
-				rand = PickRandomFromList(rand,"_safe3")
 			end
 		elseif _level_id == "welcome_to_the_jungle_2" or _level_id == "welcome_to_the_jungle_2_night" then
 			if self._id == 103718 then
@@ -765,14 +763,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_server")
 			elseif self._id == 103838 then
 				rand = PickRandomFromList(rand, "_plane")
-			elseif self._id == 104426 then
-				rand = PickRandomFromList(rand, "_flair")
-			elseif self._id == 103318 then
-				local _prein = RNGModifier:SafeGetData(_level_id, "_prein") or 0
-				_prein = _prein - 1
-				if _prein > 0 then
-					rand = 1
-				end
+			elseif self._id == 100349 then
+				rand = PickRandomFromList(rand, "_pickup")
 			end		
 		elseif _level_id == "jolly" then
 			if self._id == 100401 then
