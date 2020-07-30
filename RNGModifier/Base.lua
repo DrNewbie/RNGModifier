@@ -251,6 +251,22 @@ Hooks:Add("MenuManagerSetupCustomMenus", "MenuManagerSetupCustomMenus_RNGModifie
 	end
 end)
 
+function get_contractor_from_level_id(level_id)
+	for job_id, job_data in pairs(tweak_data.narrative.jobs) do
+		for _, stage in ipairs(tweak_data.narrative:job_chain(job_id)) do
+			if stage.level_id == nil then -- it should mean that it's a list of stages?
+				for _, stage in ipairs(stage) do
+					if stage.level_id == level_id and job_data.contact then
+						return job_data.contact
+					end
+				end
+			elseif stage.level_id == level_id and job_data.contact then
+				return job_data.contact
+			end
+		end
+	end
+end
+
 Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenus_RNGModifier", function(menu_manager, nodes)
 	nodes[RNGModifier._menu_id] = MenuHelper:BuildMenu(RNGModifier._menu_id)
 	nodes[RNGModifier._menu_Heist_id] = MenuHelper:BuildMenu(RNGModifier._menu_Heist_id)
@@ -258,11 +274,18 @@ Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenus_RNGModifie
 	MenuHelper:AddMenuItem(nodes["blt_options"], RNGModifier._menu_id, "RNGModifier_menu_title", "RNGModifier_menu_desc")
 	MenuHelper:AddMenuItem(nodes[RNGModifier._menu_id], RNGModifier._menu_Heist_id, "RNGModifier_menu_Heist_title", "RNGModifier_empty_desc")
 	MenuHelper:AddMenuItem(nodes[RNGModifier._menu_id], RNGModifier._menu_All_id, "RNGModifier_menu_All_title", "RNGModifier_empty_desc")
-	for _, _heist in pairs(RNGModifier._heistlist) do
+	for index, _heist in pairs(RNGModifier._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
 			local _new = "RNGModifier_".. _heist .."_Options_Menu"
 			nodes[_new] = MenuHelper:BuildMenu(_new)
-			MenuHelper:AddMenuItem(nodes[RNGModifier._menu_Heist_id], _new, tweak_data.levels[_heist].name_id, "RNGModifier_empty_desc")
+			local contact = get_contractor_from_level_id(_heist) or "dallas"
+			local contact_menu = "RNGModifier_contact_".. contact .."_Options_Menu"
+			if not nodes[contact_menu] then
+				MenuHelper:NewMenu(contact_menu)
+				nodes[contact_menu] = MenuHelper:BuildMenu(contact_menu)
+				MenuHelper:AddMenuItem(nodes[RNGModifier._menu_Heist_id], contact_menu, tweak_data.narrative.contacts[contact].name_id, "RNGModifier_empty_desc")
+			end
+			MenuHelper:AddMenuItem(nodes[contact_menu], _new, tweak_data.levels[_heist].name_id, "RNGModifier_empty_desc")
 		end
 	end
 end)
