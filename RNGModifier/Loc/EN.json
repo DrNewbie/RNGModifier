@@ -374,6 +374,9 @@
   "RNGModifier_cane_pick_desc": "Pick one",
   "RNGModifier_cane_pick_1": "Right",
   "RNGModifier_cane_pick_2": "Left",
+  "RNGModifier_cane_unhide_zone_1_title": "Front escape",
+  "RNGModifier_cane_unhide_zone_2_title": "Back escape", 
+  "RNGModifier_cane_unhide_zone_desc": "Escape need to be the opposite to the chimmey to work",
   
   "RNGModifier_rat_escape_position_title": "Van",
   "RNGModifier_rat_random_flare_title": "Flare",

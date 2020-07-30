@@ -25,14 +25,6 @@ function ElementToggle:on_executed(...)
 					return
 				end
 			end
-		elseif _level_id == "cane" then
-			if self._id == 102293 or self._id == 102292 then
-				local _escape = RNGModifier:SafeGetData(_level_id,"_escape") or 0
-				_escape = _escape - 1
-				if _escape > 0 then
-					return
-				end
-			end
 		end
 	end
 	RNG_ElementToggle(self, ...)
