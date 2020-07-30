@@ -1070,7 +1070,15 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100014 then
 				rand = PickRandomFromList(rand, "_drop")
 			elseif self._id == 100033 then
-				rand = PickRandomFromList(rand, "_cage")
+				local _var = RNGModifier:SafeGetData("peta2", "_cage") or 0
+				_var = _var - 1
+				if _var > 1 then
+					local rnd = table.index_of(self._unused_randoms, _var)
+					if rnd > 0 then
+						rand  = rnd
+					end
+				end
+			end	
 			end
 		elseif _level_id == "bex" then
 			if self._id == 100126 then

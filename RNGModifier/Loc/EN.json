@@ -874,6 +874,10 @@
 
   "RNGModifier_peta_truck_title": "Truck",
   "RNGModifier_peta_spawn_title": "Spawn",
+
   "RNGModifier_peta2_drop_title": "Plane drop",
-  "RNGModifier_peta2_cage_title": "Assemble cage location"
+  "RNGModifier_peta2_cage_title": "Assemble cage",
+  "RNGModifier_peta2_drop_1": "Road",
+  "RNGModifier_peta2_drop_2": "Bridge",
+  "RNGModifier_peta2_drop_3": "Silo",
 }
