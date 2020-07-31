@@ -228,6 +228,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "arm_for" then
+			if self._id == 104977 then
+				local _chance_boat_or_truck = RNGModifier:SafeGetData(_level_id, "_chance_boat_or_truck") or 0
+				if _chance_boat_or_truck == 2 then
+					self._chance = 999
+				elseif _chance_boat_or_truck == 3 then
+					self._chance = -999				
+				end
+			end
 		elseif _level_id == "election_day_1" then
 			if self._id == 104564 then
 				local _chance_of_container = RNGModifier:SafeGetData(_level_id, "_chance_of_container") or 0
