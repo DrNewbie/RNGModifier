@@ -82,3 +82,37 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_pick"),
 	menu_id = "RNGModifier_cane_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_cane_unhide_zone_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_unhide_zone_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_cane_unhide_zone_1",
+	title = "RNGModifier_cane_unhide_zone_1_title",
+	desc = "RNGModifier_cane_unhide_zone_desc",
+	callback = "RNGModifier_cane_unhide_zone_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_unhide_zone_1"),
+	menu_id = "RNGModifier_cane_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_cane_unhide_zone_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_unhide_zone_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_cane_unhide_zone_2",
+	title = "RNGModifier_cane_unhide_zone_2_title",
+	desc = "RNGModifier_cane_unhide_zone_desc",
+	callback = "RNGModifier_cane_unhide_zone_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_unhide_zone_2"),
+	menu_id = "RNGModifier_cane_Options_Menu"
+})

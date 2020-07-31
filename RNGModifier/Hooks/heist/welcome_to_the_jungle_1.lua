@@ -26,6 +26,25 @@ MenuHelper:AddToggle({
 })
 _bool = nil
 
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_spawn = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_1_spawn",
+	title = "RNGModifier_welcome_to_the_jungle_1_spawn_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_1_spawn",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_1_spawn_001",
+		"RNGModifier_welcome_to_the_jungle_1_spawn_002",
+		"RNGModifier_welcome_to_the_jungle_1_spawn_003"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawn"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_table_1 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_table_1")
 	RNGModifier:Save()
@@ -47,6 +66,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_table_1"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_table_2 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_table_2")
 	RNGModifier:Save()
@@ -101,43 +121,21 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_welcome_to_the_jungle_1_safe1",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_welcome_to_the_jungle_1_safe1_1"
+		"RNGModifier_welcome_to_the_jungle_1_safe1_1",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_2",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_3",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_4",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_5",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_6",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_7",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_8",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_9",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_10",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_11",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_12",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_13",
+		"RNGModifier_welcome_to_the_jungle_1_safe1_14"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe1"),
-	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
-})
-
-MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_safe2 = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_safe2")
-	RNGModifier:Save()
-end
-MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_welcome_to_the_jungle_1_safe2",
-	title = "RNGModifier_welcome_to_the_jungle_1_safe2_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_welcome_to_the_jungle_1_safe2",
-	items = {
-		"RNGModifier_Default_One_Item",
-		"RNGModifier_welcome_to_the_jungle_1_safe2_1",
-		"RNGModifier_welcome_to_the_jungle_1_safe2_2"
-	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe2"),
-	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
-})
-
-MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_safe3 = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_safe3")
-	RNGModifier:Save()
-end
-MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_welcome_to_the_jungle_1_safe3",
-	title = "RNGModifier_welcome_to_the_jungle_1_safe3_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_welcome_to_the_jungle_1_safe3",
-	items = {
-		"RNGModifier_Default_One_Item",
-		"RNGModifier_welcome_to_the_jungle_1_safe3_1"
-	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe3"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
 })

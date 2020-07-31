@@ -26,3 +26,17 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("nmh", "_chooseRandomRoom"),
 	menu_id = "RNGModifier_nmh_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_nmh_correct_paper = function(self, item)
+    RNGModifier:SafeSetData(item:value() == "on" and 2 or 1, _Curret_Heist, "_correct_paper")
+    RNGModifier:Save()
+end
+
+MenuHelper:AddToggle({
+    id = "RNGModifier_nmh_correct_paper",
+    title = "RNGModifier_nmh_correct_paper_title",
+    desc = "RNGModifier_empty_desc",
+    callback = "RNGModifier_nmh_correct_paper",
+    value = RNGModifier:SafeGetData("nmh", "_correct_paper") == 2,
+    menu_id = "RNGModifier_nmh_Options_Menu"
+})

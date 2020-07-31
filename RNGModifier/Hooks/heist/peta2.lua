@@ -17,9 +17,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_peta2_drop",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_peta2_drop_1",
+		"RNGModifier_peta2_drop_2",
+		"RNGModifier_peta2_drop_3"
 	},
 	value = RNGModifier:SafeGetData("peta2", "_drop"),
 	menu_id = "RNGModifier_peta2_Options_Menu"
@@ -36,9 +36,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_peta2_cage",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_peta2_drop_1",
+		"RNGModifier_peta2_drop_2",
+		"RNGModifier_peta2_drop_3"
 	},
 	value = RNGModifier:SafeGetData("peta2", "_cage"),
 	menu_id = "RNGModifier_peta2_Options_Menu"

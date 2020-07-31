@@ -217,3 +217,42 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
 
+
+MenuCallbackHandler.RNGModifier_hox_3_rock = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_rock")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_rock",
+	title = "RNGModifier_hox_3_rock_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_rock",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_rock_1",
+		"RNGModifier_hox_3_rock_2",
+		"RNGModifier_hox_3_rock_3",
+		"RNGModifier_hox_3_rock_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_rock"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_ladder = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ladder")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_ladder",
+	title = "RNGModifier_hox_3_ladder_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_ladder",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_ladder_1",
+		"RNGModifier_hox_3_ladder_2",
+		"RNGModifier_hox_3_ladder_3"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_ladder"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
