@@ -128,7 +128,7 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			elseif self._id == 103893 then
-				rand = PickRandomFromList(r, "_block")
+				rand = PickRandomFromList(rand, "_block")
 			end
 		elseif _level_id == "friend" then
 			if self._id == 100825 then
@@ -220,17 +220,17 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			elseif self._id == 100756 then
-				rand = PickRandomFromList(r,"_security")
+				rand = PickRandomFromList(rand,"_security")
 			elseif self._id == 101445 then
-				rand = PickRandomFromList(r,"_box_at_end")
+				rand = PickRandomFromList(rand,"_box_at_end")
 			elseif self._id == 101446 then
-				rand = PickRandomFromList(r,"_box_at_courtyard")
+				rand = PickRandomFromList(rand,"_box_at_courtyard")
 			elseif self._id == 101448 then
-				rand = PickRandomFromList(r,"_box_at_exhibit")
+				rand = PickRandomFromList(rand,"_box_at_exhibit")
 			elseif self._id == 100609 then
-				rand = PickRandomFromList(r,"_box_at_left_side")
+				rand = PickRandomFromList(rand,"_box_at_left_side")
 			elseif self._id == 101689 then
-				rand = PickRandomFromList(r,"_box_in_room_right")
+				rand = PickRandomFromList(rand,"_box_in_room_right")
 			end
 		elseif _level_id == "roberts" then
 			if self._id == 101946 then
@@ -263,13 +263,13 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "cane" then
 			if self._id == 100225 then
-				rand = PickRandomFromList(r,"_chimney")
+				rand = PickRandomFromList(rand,"_chimney")
 			elseif self._id == 101337 then
-				rand = PickRandomFromList(r,"_pick")
+				rand = PickRandomFromList(rand,"_pick")
 			elseif self._id == 100490 then
-				rand = PickRandomFromList(r,"_elf1")
+				rand = PickRandomFromList(rand,"_elf1")
 			elseif self._id == 102516 then
-				rand = PickRandomFromList(r,"_elf2")
+				rand = PickRandomFromList(rand,"_elf2")
 			end
 		elseif _level_id == "firestarter_2" then
 			if self._id == 104539 then
@@ -283,13 +283,13 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100126 then
 				rand = PickRandomFromList(rand, "_pick_rand_spawn")
 			elseif self._id == 104736 then
-				rand = PickRandomFromList(r, "_vault1")
+				rand = PickRandomFromList(rand, "_vault1")
 			elseif self._id == 104737 then
-				rand = PickRandomFromList(r, "_vault2")
+				rand = PickRandomFromList(rand, "_vault2")
 			elseif self._id == 104738 then
-				rand = PickRandomFromList(r, "_vault3")
+				rand = PickRandomFromList(rand, "_vault3")
 			elseif self._id == 102480 then
-				rand = PickRandomFromList(r, "_turret")
+				rand = PickRandomFromList(rand, "_turret")
 			end
 		elseif _level_id == "big" then
 			if self._id == 104589 then
@@ -371,13 +371,13 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100300 then
 				rand = PickRandomFromList(rand, "_cop")
 			elseif self._id == 100730 then
-				rand = PickRandomFromList(r, "_car_crash_drive_in005")
+				rand = PickRandomFromList(rand, "_car_crash_drive_in005")
 			end
 		elseif _level_id == "rvd2" then
 			if self._id == 100442 then
-				rand = PickRandomFromList(r, "_hack")
+				rand = PickRandomFromList(rand, "_hack")
 			elseif self._id == 100581 then
-				rand = PickRandomFromList(r, "_vehicle")
+				rand = PickRandomFromList(rand, "_vehicle")
 			end
 		elseif _level_id == "brb" then
 			if self._id == 100619 then
@@ -457,7 +457,7 @@ function ElementRandom:_get_random_elements()
 			if self._id == 101384 then
 				rand = PickRandomFromList(rand, "_call_blackhawk")
 			elseif self._id == 100950 or self._id == 100944 or self._id == 100946 or self._id == 100941 or self._id == 100949 or self._id == 100947 or self._id == 100943 or self._id == 100942 or self._id == 100945 then
-				rand = PickRandomFromList(r, "_loot")
+				rand = PickRandomFromList(rand, "_loot")
 			elseif self._id == 102821 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random_paintings"] = _tmp_data[_level_id]["random_paintings"] or 0
@@ -476,7 +476,7 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			elseif self._id == 104031 then
-				rand = PickRandomFromList(r, "_paintingDW")
+				rand = PickRandomFromList(rand, "_paintingDW")
 			elseif self._id == 103199 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random_moneystacks"] = _tmp_data[_level_id]["random_moneystacks"] or 0
@@ -512,11 +512,11 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			elseif self._id == 100896 then
-				rand = PickRandomFromList(r, "_server")
+				rand = PickRandomFromList(rand, "_server")
 			elseif self._id == 101070 then
-				rand = PickRandomFromList(r, "_gate")
+				rand = PickRandomFromList(rand, "_gate")
 			elseif self._id == 100126 then
-				rand = PickRandomFromList(r, "_spawn")
+				rand = PickRandomFromList(rand, "_spawn")
 			elseif self._id == 100875 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random_weapon_crates"] = _tmp_data[_level_id]["random_weapon_crates"] or 0
@@ -535,7 +535,7 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			elseif self._id == 104030 then
-				rand = PickRandomFromList(r, "_weaponDW")
+				rand = PickRandomFromList(rand, "_weaponDW")
 			end
 		elseif _level_id == "nightclub" then
 			if self._id == 100875 then
@@ -690,9 +690,9 @@ function ElementRandom:_get_random_elements()
 			if self._id == 101695 then
 				rand = PickRandomFromList(rand, "_panic_hector")
 			elseif self._id == 102122 then
-				rand = PickRandomFromList(r,"_rock")
+				rand = PickRandomFromList(rand,"_rock")
 			elseif self._id == 102972 then
-				rand = PickRandomFromList(r,"_ladder")
+				rand = PickRandomFromList(rand,"_ladder")
 			elseif self._id == 101441 then
 				rand = PickRandomFromList(rand, "_alarm_box")
 			elseif self._id == 101529 then
@@ -761,7 +761,7 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "welcome_to_the_jungle_2" or _level_id == "welcome_to_the_jungle_2_night" then
 			if self._id == 103718 then
-				rand = PickRandomFromList(r, "_engine")
+				rand = PickRandomFromList(rand, "_engine")
 			elseif self._id == 101916 then
 				rand = PickRandomFromList(rand, "_server")
 			elseif self._id == 103838 then
@@ -816,33 +816,33 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "pbr" then
 			if self._id == 100002 then
-				rand = PickRandomFromList(r,"_entrance")
+				rand = PickRandomFromList(rand,"_entrance")
 			elseif self._id == 101482 then
-				rand = PickRandomFromList(r,"_tools")
+				rand = PickRandomFromList(rand,"_tools")
 			elseif self._id == 100013 then
-				rand = PickRandomFromList(r,"_gate1")
+				rand = PickRandomFromList(rand,"_gate1")
 			elseif self._id == 100165 then
-				rand = PickRandomFromList(r,"_gate2")
+				rand = PickRandomFromList(rand,"_gate2")
 			elseif self._id == 100170 then
-				rand = PickRandomFromList(r,"_gate3")
+				rand = PickRandomFromList(rand,"_gate3")
 			elseif self._id == 100012 then
-				rand = PickRandomFromList(r,"_control_room1")
+				rand = PickRandomFromList(rand,"_control_room1")
 			elseif self._id == 100353 then
-				rand = PickRandomFromList(r,"_control_room2")
+				rand = PickRandomFromList(rand,"_control_room2")
 			elseif self._id == 100357 then
-				rand = PickRandomFromList(r,"_control_room3")
+				rand = PickRandomFromList(rand,"_control_room3")
 			elseif self._id == 101060 then
-				rand = PickRandomFromList(r,"_server")
+				rand = PickRandomFromList(rand,"_server")
 			elseif self._id == 101061 then
-				rand = PickRandomFromList(r,"_weapon")
+				rand = PickRandomFromList(rand,"_weapon")
 			elseif self._id == 101062 then
-				rand = PickRandomFromList(r,"_painting")
+				rand = PickRandomFromList(rand,"_painting")
 			elseif self._id == 101690 then
-				rand = PickRandomFromList(r,"_artifact")
+				rand = PickRandomFromList(rand,"_artifact")
 			elseif self._id == 101350 then
-				rand = PickRandomFromList(r,"_deny")
+				rand = PickRandomFromList(rand,"_deny")
 			elseif self._id == 101367 then
-				rand = PickRandomFromList(r,"_helipad")
+				rand = PickRandomFromList(rand,"_helipad")
 			elseif self._id == 101436 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_two_bomb_crates"] = _tmp_data[_level_id]["select_two_bomb_crates"] or 0
@@ -863,13 +863,13 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "man" then
 			if self._id == 102026 then
-				rand = PickRandomFromList(r,"_roof_boxes")
+				rand = PickRandomFromList(rand,"_roof_boxes")
 			elseif self._id == 103696 then
-				rand = PickRandomFromList(r,"_building_boxes")
+				rand = PickRandomFromList(rand,"_building_boxes")
 			elseif self._id == 100055 then
-				rand = PickRandomFromList(r,"_spawn")
+				rand = PickRandomFromList(rand,"_spawn")
 			elseif self._id == 101786 then
-				rand = PickRandomFromList(r,"_limo")
+				rand = PickRandomFromList(rand,"_limo")
 			elseif self._id == 101647 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random_crowbar"] = _tmp_data[_level_id]["random_crowbar"] or 0
@@ -1035,11 +1035,11 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "mia_2" then
 			if self._id == 101511 then
-				rand = PickRandomFromList(r, "_c4")
+				rand = PickRandomFromList(rand, "_c4")
 			elseif self._id == 100475 then
-				rand = PickRandomFromList(r, "_vault")
+				rand = PickRandomFromList(rand, "_vault")
 			elseif self._id == 101857 then
-				rand = PickRandomFromList(r, "_escape")
+				rand = PickRandomFromList(rand, "_escape")
 			end
 		elseif _level_id == "shoutout_raid" then
 			if self._id == 100694 then
@@ -1070,13 +1070,13 @@ function ElementRandom:_get_random_elements()
 			end	
 		elseif _level_id == "fish" then
 			if self._id == 100332 then
-				rand = PickRandomFromList(r, "_color")
+				rand = PickRandomFromList(rand, "_color")
 			elseif self._id == 100261 then
-				rand = PickRandomFromList(r, "_laptop")
+				rand = PickRandomFromList(rand, "_laptop")
 			elseif self._id == 100591 then
-				rand = PickRandomFromList(r, "_end")
+				rand = PickRandomFromList(rand, "_end")
 			elseif self._id == 100250 then
-				rand = PickRandomFromList(r, "_book")
+				rand = PickRandomFromList(rand, "_book")
 			end
 		elseif _level_id == "peta" then
 			if self._id == 100190 then
@@ -1126,29 +1126,29 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 			if self._id == 100126 then
-				rand = PickRandomFromList(r, "_spawn")
+				rand = PickRandomFromList(rand, "_spawn")
 			elseif self._id == 100317 then
-				rand = PickRandomFromList(r, "_blue")
+				rand = PickRandomFromList(rand, "_blue")
 			elseif self._id == 100962 then
-				rand = PickRandomFromList(r, "_green")
+				rand = PickRandomFromList(rand, "_green")
 			elseif self._id == 100963 then
-				rand = PickRandomFromList(r, "_red")
+				rand = PickRandomFromList(rand, "_red")
 			elseif self._id == 100964 then
-				rand = PickRandomFromList(r, "_yellow")
+				rand = PickRandomFromList(rand, "_yellow")
 			elseif self._id == 103650 or self._id == 103648 then
-				rand = PickRandomFromList(r, "_tape")
+				rand = PickRandomFromList(rand, "_tape")
 			elseif self._id == 101911 then
-				rand = PickRandomFromList(r, "_safe")
+				rand = PickRandomFromList(rand, "_safe")
 			elseif self._id == 103578 then
-				rand = PickRandomFromList(r, "_safe1")
+				rand = PickRandomFromList(rand, "_safe1")
 			elseif self._id == 103579 then
-				rand = PickRandomFromList(r, "_safe2")
+				rand = PickRandomFromList(rand, "_safe2")
 			elseif self._id == 101754 then
-				rand = PickRandomFromList(r, "_manager")
+				rand = PickRandomFromList(rand, "_manager")
 			elseif self._id == 101091 then
-				rand = PickRandomFromList(r, "_manual")
+				rand = PickRandomFromList(rand, "_manual")
 			elseif self._id == 100697 then
-				rand = PickRandomFromList(r, "_security")
+				rand = PickRandomFromList(rand, "_security")
 			end
 			if self._id == 100308 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
@@ -1170,29 +1170,29 @@ function ElementRandom:_get_random_elements()
 			end
 		elseif _level_id == "pex" then
 			if self._id == 100126 then
-				rand = PickRandomFromList(r,"_spawn")
+				rand = PickRandomFromList(rand,"_spawn")
 			elseif self._id == 101297 then
-				rand = PickRandomFromList(r,"_pc")
+				rand = PickRandomFromList(rand,"_pc")
 			elseif self._id == 101800 then
-				rand = PickRandomFromList(r,"_it")
+				rand = PickRandomFromList(rand,"_it")
 			elseif self._id == 100879 then
-				rand = PickRandomFromList(r,"_tag")
+				rand = PickRandomFromList(rand,"_tag")
 			elseif self._id == 103840 then
-				rand = PickRandomFromList(r,"_hide")
+				rand = PickRandomFromList(rand,"_hide")
 			elseif self._id == 100781 then
-				rand = PickRandomFromList(r,"_prisoner")
+				rand = PickRandomFromList(rand,"_prisoner")
 			elseif self._id == 100702 then
-				rand = PickRandomFromList(r,"_armory")			
+				rand = PickRandomFromList(rand,"_armory")			
 			elseif self._id == 102359 then
-				rand = PickRandomFromList(r,"_sm_suit")
+				rand = PickRandomFromList(rand,"_sm_suit")
 			elseif self._id == 102370 then
-				rand = PickRandomFromList(r,"_parking")
+				rand = PickRandomFromList(rand,"_parking")
 			elseif self._id == 100912 then
-				rand = PickRandomFromList(r,"_ms_locker")
+				rand = PickRandomFromList(rand,"_ms_locker")
 			elseif self._id == 100766 then
-				rand = PickRandomFromList(r,"_ml_locker")
+				rand = PickRandomFromList(rand,"_ml_locker")
 			elseif self._id == 100905 then
-				rand = PickRandomFromList(r,"_ls_locker")
+				rand = PickRandomFromList(rand,"_ls_locker")
 			end
 			local _evidence = RNGModifier:SafeGetData(_level_id,"_evidence") or 0
 			_evidence = _evidence - 1
