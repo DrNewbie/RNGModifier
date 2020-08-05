@@ -278,8 +278,12 @@ function ElementLogicChance:on_executed(...)
                 if _correct_paper == 2 then
                     self._chance = 999
                 end
+            elseif self._editor_name == "chance_28" then -- centrifuge success
+            	local new_chance = RNGModifier:SafeGetData(_level_id, "_vile_chance") or -1
+            	if new_chance > 0 then
+            		self._chance = new_chance
+            	end
             end
-		end
 	end
 	return RNGModifier_ElementLogicChance_on_executed(self, ...)
 end

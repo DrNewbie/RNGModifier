@@ -40,3 +40,21 @@ MenuHelper:AddToggle({
     value = RNGModifier:SafeGetData("nmh", "_correct_paper") == 2,
     menu_id = "RNGModifier_nmh_Options_Menu"
 })
+
+
+MenuCallbackHandler.RNGModifier_nmh_vile_chance = function(self, item)
+    RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vile_chance")
+    RNGModifier:Save()
+end
+
+MenuHelper:AddSlider({
+    id = "RNGModifier_nmh_vile_chance",
+    title = "RNGModifier_nmh_vile_chance_title",
+    desc = "RNGModifier_nmh_vile_chance_desc",
+    callback = "RNGModifier_nmh_vile_chance",
+    value = RNGModifier:SafeGetData("nmh", "_vile_chance") or 0.28,
+    min = 0,
+    max = 1,
+    step = 0.01,
+    menu_id = "RNGModifier_nmh_Options_Menu"
+})

@@ -721,6 +721,8 @@
   "RNGModifier_nmh_chooseRandomRoom_2": "B",
   "RNGModifier_nmh_chooseRandomRoom_3": "C",
   "RNGModifier_nmh_correct_paper_title": "Correct File First Try",
+  "RNGModifier_nmh_vile_chance_title": "Chance for vile",
+  "RNGModifier_nmh_vile_chance_desc": "Default is 28%",
   "RNGModifier_vit_usb_title": "USB",
   "RNGModifier_vit_usb_desc": "Code depend on USB",
   "RNGModifier_vit_usb_001": "corridor flowers desk",
