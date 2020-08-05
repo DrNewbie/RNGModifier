@@ -52,9 +52,9 @@ MenuHelper:AddSlider({
     title = "RNGModifier_nmh_vile_chance_title",
     desc = "RNGModifier_nmh_vile_chance_desc",
     callback = "RNGModifier_nmh_vile_chance",
-    value = RNGModifier:SafeGetData("nmh", "_vile_chance") or 0.28,
+    value = RNGModifier:SafeGetData("nmh", "_vile_chance") or 28,
     min = 0,
-    max = 1,
-    step = 0.01,
+    max = 100,
+    step = 1,
     menu_id = "RNGModifier_nmh_Options_Menu"
 })
