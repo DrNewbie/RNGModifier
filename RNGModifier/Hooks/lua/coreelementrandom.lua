@@ -121,7 +121,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100461 then
 				local _var = RNGModifier:SafeGetData("framing_frame_3", "_spawnRandomVault") or 0
 				_var = _var - 1
-				if _var > 1 then
+				if _var > 0 then
 					local rnd = table.index_of(self._unused_randoms, _var)
 					if rnd > 0 then
 						rand  = rnd
@@ -1090,7 +1090,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100033 then
 				local _var = RNGModifier:SafeGetData("peta2", "_cage") or 0
 				_var = _var - 1
-				if _var > 1 then
+				if _var > 0 then
 					local rnd = table.index_of(self._unused_randoms, _var)
 					if rnd > 0 then
 						rand  = rnd
