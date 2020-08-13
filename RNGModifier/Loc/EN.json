@@ -951,5 +951,22 @@
   "RNGModifier_kenaz_bottle_location_4": "PRGB",
   "RNGModifier_kenaz_random_weak_floor_title": "Weak Floor",
   "RNGModifier_kenaz_random_weak_floor_1": "Close",
-  "RNGModifier_kenaz_random_weak_floor_2": "Far"
+  "RNGModifier_kenaz_random_weak_floor_2": "Far",
+  "RNGModifier_born_random_truck_location_title": "Truck Location",
+  "RNGModifier_born_random_truck_location_1": "Near Exit",
+  "RNGModifier_born_random_truck_location_2": "Near Turret",
+  "RNGModifier_bph_pick_random_hackbox_unit_title": "Hackbox Location",
+  "RNGModifier_bph_pick_random_hackbox_unit_desc": "7 is best",
+  "RNGModifier_bph_pick_laundry_or_canteen_title": "Laundry or Canteen",
+  "RNGModifier_bph_pick_laundry_or_canteen_1": "Laundry",
+  "RNGModifier_bph_pick_laundry_or_canteen_2": "Canteen",
+  "RNGModifier_bph_pick_random_cell_title": "Bain's Cell",
+  "RNGModifier_bph_pick_random_cell_1": "0405",
+  "RNGModifier_bph_pick_random_cell_2": "0402",
+  "RNGModifier_bph_pick_random_cell_3": "0406",
+  "RNGModifier_bph_pick_random_cell_4": "0409",
+  "RNGModifier_bph_pick_random_thermite_title": "Thermite Location",
+  "RNGModifier_bph_random_thermite_1": "Left",
+  "RNGModifier_bph_random_thermite_2": "Right",
+  "RNGModifier_bph_random_thermite_3": "Middle"
 }

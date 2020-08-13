@@ -1248,6 +1248,20 @@ function ElementRandom:_get_random_elements()
 					rand = ids_for_1[self._id] or rand
 				end
 			end
+		elseif _level_id == "born" then
+			if self._id == 101147 then
+				rand = PickRandomFromList(rand, "_random_truck_location")
+			end
+		elseif _level_id == "bph" then
+			if self._id == 103388 then
+				rand = PickRandomFromList(rand, "_pick_random_hackbox_unit")
+			elseif self._id == 101389 then
+				rand = PickRandomFromList(rand, "_pick_laundry_or_canteen")
+			elseif self._id == 101265 then
+				rand = PickRandomFromList(rand, "_pick_random_cell")
+			elseif self._id == 100010 then
+				rand = PickRandomFromList(rand, "_pick_random_thermite")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
