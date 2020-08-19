@@ -722,6 +722,8 @@ function ElementRandom:_get_random_elements()
 						rand = _keycard_C
 					end
 				end
+			elseif self._ == 102209 then
+				rand = PickRandomFromList(rand, "_select_chopper")
 			end
 		elseif _level_id == "vit" then
 			if self._id == 151398 or self._id == 150598 or self._id == 148798 or self._id == 151098 or self._id == 147898 or self._id == 151698 or self._id == 150298 or self._id == 148498 or self._id == 149698 or self._id == 149998 then

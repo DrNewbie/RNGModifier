@@ -256,3 +256,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_ladder"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_hox_3_select_chopper = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_chopper")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_select_chopper",
+	title = "RNGModifier_hox_3_select_chopper_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_select_chopper",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_select_chopper_1",
+		"RNGModifier_hox_3_select_chopper_2",
+		"RNGModifier_hox_3_select_chopper_3",
+		"RNGModifier_hox_3_select_chopper_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_chopper"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
