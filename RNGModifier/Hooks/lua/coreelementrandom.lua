@@ -365,13 +365,29 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101316 then
 				rand = PickRandomFromList(rand, "_rnd_back_briefcase_pos")
 			elseif self._id == 100294 then
-				rand = PickRandomFromList(rand, "_random_escape_position")
+				-- there are 3 possible locations, but only 2 will actaully work, and they depend on the storage unit location.
+				local _var = RNGModifier:SafeGetData("rvd1", "_random_escape_position") or 0
+				_var = _var - 1
+				if _var > 0 then
+					local rnd = table.index_of(self._unused_randoms, _var)
+					if rnd > 0 then
+						rand  = rnd
+					end
+				end
 			elseif self._id == 100424 then
 				rand = PickRandomFromList(rand, "_saw")
 			elseif self._id == 100300 then
 				rand = PickRandomFromList(rand, "_cop")
 			elseif self._id == 100730 then
-				rand = PickRandomFromList(rand, "_car_crash_drive_in005")
+				-- there are 4 positions, but some things can make them unusable, like if the gate is closed for example.
+				local _var = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in") or 0
+				_var = _var - 1
+				if _var > 0 then
+					local rnd = table.index_of(self._unused_randoms, _var)
+					if rnd > 0 then
+						rand  = rnd
+					end
+				end
 			end
 		elseif _level_id == "rvd2" then
 			if self._id == 100442 then
@@ -988,7 +1004,7 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			end
-		elseif level_id == "mia_1" then
+		elseif _level_id == "mia_1" then
 			if self._id == 100126 then
 				rand = PickRandomFromList(rand, "_spawn")
 			elseif self._id == 106522 then

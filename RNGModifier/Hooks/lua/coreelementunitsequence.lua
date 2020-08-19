@@ -27,13 +27,6 @@ function ElementUnitSequence:on_executed(...)
 					return
 				end
 			end
-		elseif _level_id == "rvd1" then
-			if self._id == 101127 then
-				local _car_crash_drive_in005 = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in005") or 1
-				if _car_crash_drive_in005 == 1 then
-					return
-				end
-			end
 		end
 	end
 	return RNGModifier_ElementUnitSequence_on_executed(self, ...)
