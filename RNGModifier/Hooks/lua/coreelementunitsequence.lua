@@ -34,18 +34,6 @@ function ElementUnitSequence:on_executed(...)
 					return
 				end
 			end
-		elseif _level_id == "cane" then
-			if self._id == 102317 then
-				local _unhide_zone_1 =  RNGModifier:SafeGetData("cane", "_unhide_zone_1") or 1
-				if _unhide_zone_1 == 1 then
-					return
-				end
-			elseif self._id == 102320 then
-				local _unhide_zone_2 =  RNGModifier:SafeGetData("cane", "_unhide_zone_2") or 1
-				if _unhide_zone_2 == 1 then
-					return
-				end
-			end
 		end
 	end
 	return RNGModifier_ElementUnitSequence_on_executed(self, ...)
