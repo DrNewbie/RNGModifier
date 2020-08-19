@@ -424,6 +424,8 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "family" then
 			if self._id == 100028 then
 				rand = PickRandomFromList(rand, "_rand_keypad")
+			elseif self._id == 100751 then
+				rand = PickRandomFromList(rand, "_rand_escape")
 			end
 		elseif _level_id == "dark" then
 			if self._id == 106025 then

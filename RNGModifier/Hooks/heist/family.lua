@@ -43,3 +43,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("family", "_chance_of_door"),
 	menu_id = "RNGModifier_family_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_family_rand_escape = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_rand_escape")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_family_rand_escape",
+	title = "RNGModifier_family_rand_escape_title",
+	desc = "RNGModifier_family_rand_escape_desc",
+	callback = "RNGModifier_family_rand_escape",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_family_rand_escape_1",
+		"RNGModifier_family_rand_escape_2",
+		"RNGModifier_family_rand_escape_3",
+		"RNGModifier_family_rand_escape_4"
+	},
+	value = RNGModifier:SafeGetData("family", "_rand_escape"),
+	menu_id = "RNGModifier_family_Options_Menu"
+})
