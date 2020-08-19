@@ -72,7 +72,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_cane_pick",
 	title = "RNGModifier_cane_pick_title",
-	desc = "RRNGModifier_cane_pick_desc",
+	desc = "RNGModifier_cane_pick_desc",
 	callback = "RNGModifier_cane_pick",
 	items = {
 		"RNGModifier_Default_One_Item",
