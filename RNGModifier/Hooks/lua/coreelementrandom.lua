@@ -1128,7 +1128,7 @@ function ElementRandom:_get_random_elements()
 					rand = 1
 				end
 			end
-			local _computer1 = RNGModifier:SafeGetData(_level_id, "_computer1")
+			local _computer1 = RNGModifier:SafeGetData(_level_id, "_computer1") or 0
 			_computer1 = _computer1 - 1
 			if _computer1 == 1 then
 				local _id_fix = self._id
