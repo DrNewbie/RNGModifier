@@ -22,7 +22,8 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_truck_3"
 	},
 	value = RNGModifier:SafeGetData("peta", "_truck"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 9
 })
 
 MenuCallbackHandler.RNGModifier_peta_spawn = function(self, item)
@@ -41,7 +42,8 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_spawn_3"
 	},
 	value = RNGModifier:SafeGetData("peta", "_spawn"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 10
 })
 
 MenuCallbackHandler.RNGModifier_peta_fan_or_scaffold = function(self, item)
@@ -59,13 +61,15 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_fan"
 	},
 	value = RNGModifier:SafeGetData("peta", "_fan_or_scaffold"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 8
 })
 
 MenuCallbackHandler.RNGModifier_peta_pick_fan = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pick_fan")
 	RNGModifier:Save()
 end
+
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_peta_pick_fan",
 	title = "RNGModifier_peta_pick_fan_title",
@@ -78,13 +82,15 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_shop_3"
 	},
 	value = RNGModifier:SafeGetData("peta", "_pick_fan"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 7
 })
 
 MenuCallbackHandler.RNGModifier_peta_drill_or_streetlight = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_drill_or_streetlight")
 	RNGModifier:Save()
 end
+
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_peta_drill_or_streetlight",
 	title = "RNGModifier_peta_drill_or_streetlight_title",
@@ -96,13 +102,15 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_drill"
 	},
 	value = RNGModifier:SafeGetData("peta", "_drill_or_streetlight"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 5
 })
 
 MenuCallbackHandler.RNGModifier_peta_pick_drill = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pick_drill")
 	RNGModifier:Save()
 end
+
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_peta_pick_drill",
 	title = "RNGModifier_peta_pick_drill_title",
@@ -115,13 +123,15 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_shop_3"
 	},
 	value = RNGModifier:SafeGetData("peta", "_pick_drill"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 4
 })
 
 MenuCallbackHandler.RNGModifier_peta_pick_streetlight = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pick_streetlight")
 	RNGModifier:Save()
 end
+
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_peta_pick_streetlight",
 	title = "RNGModifier_peta_pick_streetlight_title",
@@ -135,13 +145,15 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta_streetlight4"
 	},
 	value = RNGModifier:SafeGetData("peta", "_pick_streetlight"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 3
 })
 
 MenuCallbackHandler.RNGModifier_peta_corret_powerbox = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_corret_powerbox")
 	RNGModifier:Save()
 end
+
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_peta_corret_powerbox",
 	title = "RNGModifier_peta_corret_powerbox_title",
@@ -155,6 +167,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_4"
 	},
 	value = RNGModifier:SafeGetData("peta", "_corret_powerbox"),
-	menu_id = "RNGModifier_peta_Options_Menu"
+	menu_id = "RNGModifier_peta_Options_Menu",
+	priority = 6
 })
-

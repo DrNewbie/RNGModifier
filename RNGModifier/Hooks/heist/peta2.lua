@@ -22,7 +22,8 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta2_drop_3"
 	},
 	value = RNGModifier:SafeGetData("peta2", "_drop"),
-	menu_id = "RNGModifier_peta2_Options_Menu"
+	menu_id = "RNGModifier_peta2_Options_Menu",
+	priority = 10
 })
 
 MenuCallbackHandler.RNGModifier_peta2_cage = function(self, item)
@@ -41,7 +42,8 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_peta2_drop_3"
 	},
 	value = RNGModifier:SafeGetData("peta2", "_cage"),
-	menu_id = "RNGModifier_peta2_Options_Menu"
+	menu_id = "RNGModifier_peta2_Options_Menu",
+	priority = 9
 })
 
 MenuCallbackHandler.RNGModifier_peta2_cage_success = function(self, item)
@@ -55,5 +57,6 @@ MenuHelper:AddToggle({
 	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_peta2_cage_success",
 	value = RNGModifier:SafeGetData("peta2", "_cage_success") == 2,
-	menu_id = "RNGModifier_peta2_Options_Menu"
+	menu_id = "RNGModifier_peta2_Options_Menu",
+	priority = 8
 })
