@@ -1106,7 +1106,6 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 105635 then
 				rand = PickRandomFromList(rand, "_fan_or_scaffold")
 			elseif self._id == 105636 then
-				managers.chat:_receive_message(1, "[RNGModifier]", string.format("Picking fan goat spawn! %s", dump(self._unused_randoms)), Color("FF9988"))
 				local _var = RNGModifier:SafeGetData("peta2", "_pick_fan") or 0
 				_var = _var - 1
 				if _var > 0 then
@@ -1119,10 +1118,8 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 105640 then
 				rand = PickRandomFromList(rand, "_drill_or_streetlight")
 			elseif self._id == 105639 then
-				managers.chat:_receive_message(1, "[RNGModifier]", string.format("Picking drill goat spawn! %s", dump(self._unused_randoms)), Color("FF9988"))
 				rand = PickRandomFromList(rand, "_pick_drill")	
 			elseif self._id == 105638 then
-				managers.chat:_receive_message(1, "[RNGModifier]", string.format("Picking streelight goat spawn! %s", dump(self._unused_randoms)), Color("FF9988"))
 				rand = PickRandomFromList(rand, "_pick_streetlight")
 			elseif self._id == 105670 or self._id == 105720 or self._id == 105721 or self._id == 105669 then -- first 3 are fans, last one is scaffold
 				rand = PickRandomFromList(rand, "_corret_powerbox")
@@ -1308,25 +1305,4 @@ function ElementRandom:_get_random_elements()
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
-end
-
-function dump(o, max_depth, depth)
-    depth = depth or 0
-    if type(o) == 'table' then
-        if  max_depth and depth > max_depth then
-            return "{}"
-        end
-        local s = '{'
-        for k,v in pairs(o) do
-            if type(k) ~= 'number' then 
-                k = '"'..k..'"' 
-            end
-            s = s .. ''..k..': ' .. dump(v, max_depth, depth + 1) .. ', '
-        end
-        return s .. '} '
-    elseif type(o) == 'function' then
-        return "function"
-    else
-        return tostring(o)
-    end
 end
