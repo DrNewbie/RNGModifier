@@ -92,7 +92,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_rvd1_random_escape_position",
 	title = "RNGModifier_rvd1_random_escape_position_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_rvd1_random_escape_position_desc",
 	callback = "RNGModifier_rvd1_random_escape_position",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -104,20 +104,23 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_rvd1_Options_Menu"
 })
 
-MenuCallbackHandler.RNGModifier_rvd1_car_crash_drive_in005 = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_car_crash_drive_in005")
+MenuCallbackHandler.RNGModifier_rvd1_car_crash_drive_in = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_car_crash_drive_in")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_rvd1_car_crash_drive_in005",
-	title = "RNGModifier_rvd1_car_crash_drive_in005_title",
-	desc = "RNGModifier_car_crash_desc",
-	callback = "RNGModifier_rvd1_car_crash_drive_in005",
+	id = "RNGModifier_rvd1_car_crash_drive_in",
+	title = "RNGModifier_rvd1_car_crash_drive_in_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_rvd1_car_crash_drive_in",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_rvd1_car_crash_drive_in005_1"
+		"RNGModifier_rvd1_car_crash_drive_in_1",
+		"RNGModifier_rvd1_car_crash_drive_in_2",
+		"RNGModifier_rvd1_car_crash_drive_in_3",
+		"RNGModifier_rvd1_car_crash_drive_in_4"
 	},
-	value = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in005"),
+	value = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in"),
 	menu_id = "RNGModifier_rvd1_Options_Menu"
 })
 
