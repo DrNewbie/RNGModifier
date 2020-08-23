@@ -234,10 +234,12 @@ function RNGModifier:Load()
 		_data = json.decode(_file:read("*all" ))
 		_file:close()
 	end
-	if not _data or not _file or tostring(self._data["Version"]) ~= tostring(_data["Version"]) then
+	if not _data or not _file or tostring(self._data["Version"]) < tostring(_data["Version"]) then -- this will break if version number count will change digits amount, but good enough for now
 		self:Save()
 	else
+		local version = self._data["Version"]
 		self._data = _data
+		self._data["Version"] = version
 	end
 end
 
