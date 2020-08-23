@@ -1017,41 +1017,14 @@ function ElementRandom:_get_random_elements()
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random-gascan_positions"] = _tmp_data[_level_id]["random-gascan_positions"] or 0
 				_tmp_data[_level_id]["random-gascan_positions"] = _tmp_data[_level_id]["random-gascan_positions"] + 1
-				if _tmp_data[_level_id]["random-gascan_positions"] == 1 then
-					local _gascan_A = RNGModifier:SafeGetData(_level_id, "_gascan_A") or 0
-					_gascan_A = _gascan_A - 1
-					if _gascan_A > 0 then
-						rand = _gascan_A
-					end
-				else
-					local _gascan_B = RNGModifier:SafeGetData(_level_id, "_gascan_B") or 0
-					_gascan_B = _gascan_B - 1
-					local _gascan_C = RNGModifier:SafeGetData(_level_id, "_gascan_C") or 0
-					_gascan_C = _gascan_C - 1
-					local _gascan_D = RNGModifier:SafeGetData(_level_id, "_gascan_D") or 0
-					_gascan_D = _gascan_D - 1
-					local _gascan_E = RNGModifier:SafeGetData(_level_id, "_gascan_E") or 0
-					_gascan_E = _gascan_E - 1
-					local _gascan_F = RNGModifier:SafeGetData(_level_id, "_gascan_F") or 0
-					_gascan_F = _gascan_F - 1
-					local _gascan_G = RNGModifier:SafeGetData(_level_id, "_gascan_G") or 0
-					_gascan_G = _gascan_G - 1
-					local _gascan_H = RNGModifier:SafeGetData(_level_id, "_gascan_H") or 0
-					_gascan_H = _gascan_H - 1
-					if _gascan_B > 0 then
-						rand = _gascan_B
-					elseif _gascan_C > 0 then
-						rand = _gascan_C
-					elseif _gascan_D > 0 then
-						rand = _gascan_D
-					elseif _gascan_E > 0 then
-						rand = _gascan_E
-					elseif _gascan_F > 0 then
-						rand = _gascan_F
-					elseif _gascan_G > 0 then
-						rand = _gascan_G
-					elseif _gascan_H > 0 then
-						rand = _gascan_H
+				local gascan_index = _tmp_data[_level_id]["random-gascan_positions"]
+				local gascan = "_gascan_" .. string.char(string.byte("A") - 1 + gascan_index)
+				local gascan_location = RNGModifier:SafeGetData(_level_id, gascan) or 0
+				gascan_location = gascan_location - 1
+				if gascan_location > 0 then
+					local rnd = table.index_of(self._unused_randoms, gascan_location)
+					if rnd > 0 then
+						rand  = rnd
 					end
 				end
 			end
