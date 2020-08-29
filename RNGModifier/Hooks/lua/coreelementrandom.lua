@@ -1081,7 +1081,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 105635 then
 				rand = PickRandomFromList(rand, "_fan_or_scaffold")
 			elseif self._id == 105636 then
-				local _var = RNGModifier:SafeGetData("peta2", "_pick_fan") or 0
+				local _var = RNGModifier:SafeGetData("peta", "_pick_fan") or 0
 				_var = _var - 1
 				if _var > 0 then
 					local rnd = table.index_of(self._unused_randoms, _var)
@@ -1089,7 +1089,6 @@ function ElementRandom:_get_random_elements()
 						rand  = rnd
 					end
 				end
-				rand = PickRandomFromList(rand, "_pick_fan")
 			elseif self._id == 105640 then
 				rand = PickRandomFromList(rand, "_drill_or_streetlight")
 			elseif self._id == 105639 then
