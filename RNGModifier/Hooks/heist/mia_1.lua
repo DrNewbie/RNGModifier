@@ -340,3 +340,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("mia_1", "_barcode"),
 	menu_id = "RNGModifier_mia_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mia_1_bile_location = function(self, item)
+    RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bile_location")
+    RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+    id = "RNGModifier_mia_1_bile_location",
+    title = "RNGModifier_mia_1_bile_location_title",
+    desc = "RNGModifier_empty_desc",
+    callback = "RNGModifier_mia_1_bile_location",
+    items = {
+        "RNGModifier_Default_One_Item",
+        "RNGModifier_mia_1_bile_location_1",
+        "RNGModifier_mia_1_bile_location_2",
+        "RNGModifier_mia_1_bile_location_3",
+    },
+    value = RNGModifier:SafeGetData("mia_1", "_bile_location"),
+    menu_id = "RNGModifier_mia_1_Options_Menu"
+})
