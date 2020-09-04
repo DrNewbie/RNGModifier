@@ -1012,7 +1012,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101242 then
 				rand = PickRandomFromList(rand, "_hatch")
 			elseif self._id == 106138 then
-                rand = PickRandomFromList(rand, "_bile_location")
+				rand = PickRandomFromList(rand, "_bile_location")
 			elseif self._id == 101547 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random-gascan_positions"] = _tmp_data[_level_id]["random-gascan_positions"] or 0
