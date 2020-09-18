@@ -763,9 +763,9 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 102888 then
 				rand = PickRandomFromList(rand,"_table_1")
 			elseif self._id == 102938 then
-				rand = PickRandomFromList(rand,"_table_2")
+				rand = PickValueFromList(rand,"_table_2")
 			elseif self._id == 102970 then
-				rand = PickRandomFromList(rand,"_table_3")
+				rand = PickValueFromList(rand,"_table_3")
 			elseif self._id == 101333 then
 				rand = PickRandomFromList(rand,"_safe1")
 			end
