@@ -20,6 +20,17 @@ function ElementRandom:_get_random_elements()
 		end
 		return r
 	end
+	local PickValueFromList = function(r, na)
+		local _var = RNGModifier:SafeGetData(tostring(Global.game_settings.level_id), na) or 0
+		_var = _var - 1
+		if _var > 0 then
+			local rnd = table.index_of(self._unused_randoms, _var)
+			if rnd > 0 then
+				return rnd
+			end
+		end
+		return r
+	end
 	local t = {}
 	local rand = math.random(#self._unused_randoms)
 	if Global.game_settings then
@@ -119,14 +130,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 104086 then
 				rand = PickRandomFromList(rand, "_spawnRandomLaptop")
 			elseif self._id == 100461 then
-				local _var = RNGModifier:SafeGetData("framing_frame_3", "_spawnRandomVault") or 0
-				_var = _var - 1
-				if _var > 0 then
-					local rnd = table.index_of(self._unused_randoms, _var)
-					if rnd > 0 then
-						rand  = rnd
-					end
-				end
+				rand = PickValueFromList(rand, "_spawnRandomVault")
 			elseif self._id == 103893 then
 				rand = PickRandomFromList(rand, "_block")
 			end
@@ -366,28 +370,14 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_rnd_back_briefcase_pos")
 			elseif self._id == 100294 then
 				-- there are 3 possible locations, but only 2 will actaully work, and they depend on the storage unit location.
-				local _var = RNGModifier:SafeGetData("rvd1", "_random_escape_position") or 0
-				_var = _var - 1
-				if _var > 0 then
-					local rnd = table.index_of(self._unused_randoms, _var)
-					if rnd > 0 then
-						rand  = rnd
-					end
-				end
+				rand = PickValueFromList(rand, "_random_escape_position")
 			elseif self._id == 100424 then
 				rand = PickRandomFromList(rand, "_saw")
 			elseif self._id == 100300 then
 				rand = PickRandomFromList(rand, "_cop")
 			elseif self._id == 100730 then
 				-- there are 4 positions, but some things can make them unusable, like if the gate is closed for example.
-				local _var = RNGModifier:SafeGetData("rvd1", "_car_crash_drive_in") or 0
-				_var = _var - 1
-				if _var > 0 then
-					local rnd = table.index_of(self._unused_randoms, _var)
-					if rnd > 0 then
-						rand  = rnd
-					end
-				end
+				rand = PickValueFromList(rand, "_car_crash_drive_in")
 			end
 		elseif _level_id == "rvd2" then
 			if self._id == 100442 then
@@ -773,9 +763,9 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 102888 then
 				rand = PickRandomFromList(rand,"_table_1")
 			elseif self._id == 102938 then
-				rand = PickRandomFromList(rand,"_table_2")
+				rand = PickValueFromList(rand,"_table_2")
 			elseif self._id == 102970 then
-				rand = PickRandomFromList(rand,"_table_3")
+				rand = PickValueFromList(rand,"_table_3")
 			elseif self._id == 101333 then
 				rand = PickRandomFromList(rand,"_safe1")
 			end
@@ -1019,14 +1009,7 @@ function ElementRandom:_get_random_elements()
 				_tmp_data[_level_id]["random-gascan_positions"] = _tmp_data[_level_id]["random-gascan_positions"] + 1
 				local gascan_index = _tmp_data[_level_id]["random-gascan_positions"]
 				local gascan = "_gascan_" .. string.char(string.byte("A") - 1 + gascan_index)
-				local gascan_location = RNGModifier:SafeGetData(_level_id, gascan) or 0
-				gascan_location = gascan_location - 1
-				if gascan_location > 0 then
-					local rnd = table.index_of(self._unused_randoms, gascan_location)
-					if rnd > 0 then
-						rand  = rnd
-					end
-				end
+				rand = PickValueFromList(rand, gascan)
 			end
 		elseif _level_id == "mia_2" then
 			if self._id == 101511 then
@@ -1081,14 +1064,7 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 105635 then
 				rand = PickRandomFromList(rand, "_fan_or_scaffold")
 			elseif self._id == 105636 then
-				local _var = RNGModifier:SafeGetData("peta", "_pick_fan") or 0
-				_var = _var - 1
-				if _var > 0 then
-					local rnd = table.index_of(self._unused_randoms, _var)
-					if rnd > 0 then
-						rand  = rnd
-					end
-				end
+				rand = PickValueFromList(rand, "_pick_fan")
 			elseif self._id == 105640 then
 				rand = PickRandomFromList(rand, "_drill_or_streetlight")
 			elseif self._id == 105639 then
@@ -1102,14 +1078,7 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100014 then
 				rand = PickRandomFromList(rand, "_drop")
 			elseif self._id == 100033 then
-				local _var = RNGModifier:SafeGetData("peta2", "_cage") or 0
-				_var = _var - 1
-				if _var > 0 then
-					local rnd = table.index_of(self._unused_randoms, _var)
-					if rnd > 0 then
-						rand  = rnd
-					end
-				end
+				rand = PickValueFromList(rand, "_cage")
 			end	
 		elseif _level_id == "bex" then
 			local _code = RNGModifier:SafeGetData(_level_id, "_code") or 0
