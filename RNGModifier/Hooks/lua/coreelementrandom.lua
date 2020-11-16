@@ -798,6 +798,10 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "pal" then
 			if self._id == 100026 then
 				rand = PickRandomFromList(rand,"_spawn")
+			elseif self._id == 100931 then
+				rand = PickRandomFromList(rand,"_garden_hoe")
+			elseif self._id == 102887 then
+				rand = PickRandomFromList(rand,"_bile")
 			elseif self._id == 101152 then
 				rand = PickRandomFromList(rand,"_valve")
 			elseif self._id == 101325 then
