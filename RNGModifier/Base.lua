@@ -305,7 +305,6 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 			dofile(RNGModifier._path .. "Hooks/heist/".. _heist ..".lua")
 		end
 	end
-	RNGModifier:SafeSetData(0, "all_of_all", "_forced_escape_day")
 	MenuCallbackHandler.RNGModifier_all_of_all_forced_escape_day = function(self, item)
 		if tostring(item:value()) == "on" then
 			RNGModifier:SafeSetData(1, "all_of_all", "_forced_escape_day")
