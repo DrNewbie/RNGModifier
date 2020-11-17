@@ -59,6 +59,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "spa" then
+			if self._id == 101307 then
+				local _van_rush_in = RNGModifier:SafeGetData(_level_id, "_van_rush_in") or 0
+				_van_rush_in = _van_rush_in - 1
+				if _van_rush_in == 1 then
+					self._chance = 999
+				elseif _van_rush_in == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "framing_frame_2" then
 			if self._id == 101781 then
 				local _chanceForAAmbush = RNGModifier:SafeGetData(_level_id, "_chanceForAAmbush") or 0
