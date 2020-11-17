@@ -427,6 +427,10 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100727 then
 				rand = PickRandomFromList(rand, "_plane")
 			end
+		elseif _level_id == "mex_cooking" then
+			if self._id == 102820 then
+				rand = PickRandomFromList(rand, "_methlab")
+			end
 		elseif _level_id == "family" then
 			if self._id == 100028 then
 				rand = PickRandomFromList(rand, "_rand_keypad")
