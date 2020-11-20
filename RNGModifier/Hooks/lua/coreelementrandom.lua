@@ -1063,6 +1063,22 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_end")
 			elseif self._id == 100250 then
 				rand = PickRandomFromList(rand, "_book")
+			elseif self._id == 100317 then
+				rand = PickRandomFromList(rand, "_kitchen_cabinet")
+			elseif self._id == 100294 then
+				rand = PickRandomFromList(rand, "_cigar")
+			elseif self._id == 100295 then
+				rand = PickRandomFromList(rand, "_room")
+			elseif self._id == 100307 then
+				rand = PickRandomFromList(rand, "_fridge")
+			elseif self._id == 100313 then
+				rand = PickRandomFromList(rand, "_aquarium")
+			end
+		elseif _level_id == "spa" then
+			if self._id == 100466 then
+				rand = PickRandomFromList(rand, "_briefcase")
+			elseif self._id == 100490 then
+				rand = PickRandomFromList(rand, "_ammo")
 			end
 		elseif _level_id == "peta" then
 			if self._id == 100190 then
