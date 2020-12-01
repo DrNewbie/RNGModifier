@@ -97,7 +97,7 @@ end
 
 function RNGModifier:SafeGetData(_heist, _table1)
 	if not _heist or not self._data or not self._data[_heist] then
-		return
+		return nil
 	end
 	return self._data[_heist][_table1] or nil
 end
@@ -315,7 +315,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 		end
 		RNGModifier:Save()
 	end
-	local _bool = tonumber(RNGModifier:SafeGetData("all_of_all", "_forced_escape_day")) == 1 and true or false
+	local _bool = tonumber(tostring(RNGModifier:SafeGetData("all_of_all", "_forced_escape_day"))) == 1 and true or false
 	MenuHelper:AddToggle({
 		id = "RNGModifier_all_of_all_forced_escape_day",
 		title = "RNGModifier_all_of_all_forced_escape_day_title",
