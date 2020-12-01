@@ -68,6 +68,7 @@ RNGModifier._heistlist = {
 	"brb",
 	"family",
 	"dark",
+	"mad",
 	"alex_3",
 	"man",
 	"pal",

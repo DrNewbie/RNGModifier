@@ -465,6 +465,26 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101862 then
 				rand = PickRandomFromList(rand, "_pick_keycard_lower")
 			end
+		elseif _level_id == "mad" then
+			if self._id == 100214 then
+				rand = PickRandomFromList(rand, "_emp_drop")
+			elseif self._id == 100219 then
+				rand = PickRandomFromList(rand, "_scanner")
+			elseif self._id == 101904 then
+				rand = PickRandomFromList(rand, "_aa_radar")
+			elseif self._id == 100825 then
+				rand = PickRandomFromList(rand, "_aa_rocket")
+			elseif self._id == 100667 then
+				rand = PickRandomFromList(rand, "_security")
+			elseif self._id == 101632 then
+				rand = PickRandomFromList(rand, "_c4_right")
+			elseif self._id == 101631 then
+				rand = PickRandomFromList(rand, "_c4_left")
+			elseif self._id == 101890 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100345 then
+				rand = PickRandomFromList(rand, "_escape")
+			end
 		elseif _level_id == "kosugi" then
 			if self._id == 101384 then
 				rand = PickRandomFromList(rand, "_call_blackhawk")
