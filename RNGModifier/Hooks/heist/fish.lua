@@ -46,7 +46,6 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_fish_Options_Menu"
 })
 
-
 MenuCallbackHandler.RNGModifier_fish_end = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_end")
 	RNGModifier:Save()
