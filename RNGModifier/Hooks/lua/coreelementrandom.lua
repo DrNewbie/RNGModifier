@@ -431,6 +431,20 @@ function ElementRandom:_get_random_elements()
 			if self._id == 102820 then
 				rand = PickRandomFromList(rand, "_methlab")
 			end
+		elseif _level_id == "fex" then
+			if self._id == 101409 then
+				rand = PickRandomFromList(rand, "_switch")
+			elseif self._id == 101707 then
+				rand = PickRandomFromList(rand, "_server")
+			elseif self._id == 101280 then
+				rand = PickRandomFromList(rand, "_code_1")
+			elseif self._id == 101293 then
+				rand = PickRandomFromList(rand, "_code_2")
+			elseif self._id == 101294 then
+				rand = PickRandomFromList(rand, "_code_3")
+			elseif self._id == 101295 then
+				rand = PickRandomFromList(rand, "_code_4")
+			end
 		elseif _level_id == "family" then
 			if self._id == 100028 then
 				rand = PickRandomFromList(rand, "_rand_keypad")
