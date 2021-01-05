@@ -19,6 +19,7 @@ RNGModifier._menu_Heist_id = "RNGModifier_menu_Heist_id"
 RNGModifier._menu_All_id = "RNGModifier_menu_All_id"
 RNGModifier._heistlist = {
 	"branchbank",
+	"fex",
 	"roberts",
 	"fish",
 	"spa",
