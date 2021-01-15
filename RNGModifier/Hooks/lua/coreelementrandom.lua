@@ -1303,6 +1303,10 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100010 then
 				rand = PickRandomFromList(rand, "_pick_random_thermite")
 			end
+		elseif _level_id == "ukrainian_job" then
+			if self._id == 103254 then
+				rand = PickRandomFromList(rand, "_logic_random_006")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)

@@ -1219,5 +1219,8 @@
   "RNGModifier_bph_pick_random_thermite_title": "Thermite Location",
   "RNGModifier_bph_random_thermite_1": "Left",
   "RNGModifier_bph_random_thermite_2": "Right",
-  "RNGModifier_bph_random_thermite_3": "Middle"
+  "RNGModifier_bph_random_thermite_3": "Middle",
+  "RNGModifier_ukrainian_job_logic_random_006_title": "Tiara",
+  "RNGModifier_ukrainian_job_logic_random_006_1": "Left Room",
+  "RNGModifier_ukrainian_job_logic_random_006_2": "Right Room"
 }
