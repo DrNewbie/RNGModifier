@@ -452,6 +452,27 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_rand_escape")
 			elseif self._id == 101332 then
 				rand = PickRandomFromList(rand, "_rand_safe")
+			elseif self._id == 100033 then
+				local n_rand = PickRandomFromList(rand, "_camera_001")
+				if n_rand == 1 then
+					_tmp_data["family"] = _tmp_data["family"] or {}
+					if not _tmp_data["family"]["_camera_001"] then
+						_tmp_data["family"]["_camera_001"] = true
+						rand = 1
+					elseif rand == 1 then
+						local __try = 50
+						while rand == 1 and __try > 0 do
+							__try = __try - 1
+							rand = math.random(#self._unused_randoms)
+						end
+					end
+				elseif n_rand == 2 and rand == 1 then
+					local __try = 50
+					while rand == 1 and __try > 0 do
+							__try = __try - 1
+						rand = math.random(#self._unused_randoms)
+					end
+				end
 			end
 		elseif _level_id == "dark" then
 			if self._id == 106025 then
