@@ -359,6 +359,10 @@ function ElementRandom:_get_random_elements()
 			if self._id == 100319 then
 				rand = PickRandomFromList(rand, "_rnd_world")
 			end
+		elseif _level_id == "help" then
+			if self._id == 100854 then
+				rand = PickRandomFromList(rand, "_c4")
+			end
 		elseif _level_id == "rvd1" then
 			if self._id == 101365 then
 				rand = PickRandomFromList(rand, "_rnd_storage_unit_location")
@@ -1269,7 +1273,13 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 		elseif _level_id == "des" then
-			if self._id == 100723 then
+			if self._id == 101956 then
+				rand = PickRandomFromList(rand,"_symbol_1")
+			elseif self._id == 101957 then
+				rand = PickRandomFromList(rand,"_symbol_2")
+			elseif self._id == 101958 then
+				rand = PickRandomFromList(rand,"_symbol_3")
+			elseif self._id == 100723 then
 				_tmp_data["des"] = _tmp_data["des"] or {}
 				_tmp_data["des"]["_rnd_excursion"] = _tmp_data["des"]["_rnd_excursion"] or 0
 				_tmp_data["des"]["_rnd_excursion"] = _tmp_data["des"]["_rnd_excursion"] + 1
