@@ -71,6 +71,23 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_dah_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_dah_easy_code = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_code")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dah_easy_code",
+	title = "RNGModifier_dah_easy_code_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_dah_easy_code",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+	},
+	value = RNGModifier:SafeGetData("dah", "_easy_code"),
+	menu_id = "RNGModifier_dah_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_dah_red_diamond_success = function(self, item)
 	if tostring(item:value()) == "on" then
 		RNGModifier:SafeSetData(1, _Curret_Heist, "_red_diamond_success")
