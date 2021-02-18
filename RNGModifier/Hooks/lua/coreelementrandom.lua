@@ -350,6 +350,13 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_rnd_Security_Rooms")
 			elseif self._id == 103088 then
 				rand = PickRandomFromList(rand, "_Randomize_Hackboxes")
+			elseif self._id == 103267 or self._id == 103268 or self._id == 103269 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[103267] = 1, [103268] = 1 , [103269] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "chill_combat" then
 			if self._id == 101335 then
@@ -358,6 +365,10 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "hvh" then
 			if self._id == 100319 then
 				rand = PickRandomFromList(rand, "_rnd_world")
+			end
+		elseif _level_id == "help" then
+			if self._id == 100854 then
+				rand = PickRandomFromList(rand, "_c4")
 			end
 		elseif _level_id == "rvd1" then
 			if self._id == 101365 then
@@ -1269,7 +1280,13 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 		elseif _level_id == "des" then
-			if self._id == 100723 then
+			if self._id == 101956 then
+				rand = PickRandomFromList(rand,"_symbol_1")
+			elseif self._id == 101957 then
+				rand = PickRandomFromList(rand,"_symbol_2")
+			elseif self._id == 101958 then
+				rand = PickRandomFromList(rand,"_symbol_3")
+			elseif self._id == 100723 then
 				_tmp_data["des"] = _tmp_data["des"] or {}
 				_tmp_data["des"]["_rnd_excursion"] = _tmp_data["des"]["_rnd_excursion"] or 0
 				_tmp_data["des"]["_rnd_excursion"] = _tmp_data["des"]["_rnd_excursion"] + 1

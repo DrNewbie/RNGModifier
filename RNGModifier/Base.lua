@@ -64,6 +64,7 @@ RNGModifier._heistlist = {
 	"glace",
 	"chill_combat",
 	"hvh",
+	"help",
 	"rvd1",
 	"rvd2",
 	"brb",
