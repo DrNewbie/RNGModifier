@@ -164,3 +164,43 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("pal", "_manhole"),
 	menu_id = "RNGModifier_pal_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_pal_garden_hoe = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_garden_hoe")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_garden_hoe",
+	title = "RNGModifier_pal_garden_hoe_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_garden_hoe",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_garden_hoe_1",
+		"RNGModifier_pal_garden_hoe_2",
+		"RNGModifier_pal_garden_hoe_3",
+		"RNGModifier_pal_garden_hoe_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_garden_hoe"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_bile = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bile")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_bile",
+	title = "RNGModifier_pal_bile_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_bile",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_bile_1",
+		"RNGModifier_pal_bile_2",
+		"RNGModifier_pal_bile_3",
+		"RNGModifier_pal_bile_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_bile"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})

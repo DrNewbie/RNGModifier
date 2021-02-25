@@ -45,3 +45,55 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "room2"),
 	menu_id = "RNGModifier_des_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_des_symbol_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_symbol_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_des_symbol_1",
+	title = "RNGModifier_des_symbol_1_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_des_symbol_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_des_symbol_1_1"
+		
+	},
+	value = RNGModifier:SafeGetData("des", "_symbol_1"),
+	menu_id = "RNGModifier_des_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_des_symbol_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_symbol_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_des_symbol_2",
+	title = "RNGModifier_des_symbol_2_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_des_symbol_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_des_symbol_2_1"
+	},
+	value = RNGModifier:SafeGetData("des", "_symbol_2"),
+	menu_id = "RNGModifier_des_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_des_symbol_3 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_symbol_3")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_des_symbol_3",
+	title = "RNGModifier_des_symbol_3_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_des_symbol_3",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_des_symbol_3_1"
+	},
+	value = RNGModifier:SafeGetData("des", "_symbol_3"),
+	menu_id = "RNGModifier_des_Options_Menu"
+})

@@ -63,3 +63,40 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("family", "_rand_escape"),
 	menu_id = "RNGModifier_family_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_family_rand_safe = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_rand_safe")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_family_rand_safe",
+	title = "RNGModifier_family_rand_safe_title",
+	desc = "RNGModifier_family_rand_safe_desc",
+	callback = "RNGModifier_family_rand_safe",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_family_rand_safe_1",
+		"RNGModifier_family_rand_safe_2",
+		"RNGModifier_family_rand_safe_3"
+	},
+	value = RNGModifier:SafeGetData("family", "_rand_safe"),
+	menu_id = "RNGModifier_family_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_family_camera_001 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera_001")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_family_camera_001",
+	title = "RNGModifier_family_camera_001_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_family_camera_001",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("family", "_camera_001"),
+	menu_id = "RNGModifier_family_Options_Menu"
+})
