@@ -61,6 +61,7 @@ RNGModifier._heistlist = {
 	"pbr",
 	"wwh",
 	"dah",
+	"red2",
 	"glace",
 	"chill_combat",
 	"hvh",

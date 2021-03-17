@@ -64,6 +64,26 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_roberts_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_roberts_sewer = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_sewer")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_roberts_sewer",
+	title = "RNGModifier_roberts_sewer_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_roberts_sewer",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_roberts_sewer_1",
+		"RNGModifier_roberts_sewer_2",
+		"RNGModifier_roberts_sewer_3",
+		"RNGModifier_roberts_sewer_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_sewer"),
+	menu_id = "RNGModifier_roberts_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_roberts_blackmailer = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_blackmailer")
 	RNGModifier:Save()

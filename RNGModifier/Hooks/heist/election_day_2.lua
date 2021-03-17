@@ -27,6 +27,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_door"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+MenuCallbackHandler.RNGModifier_election_day_2_camera = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_election_day_2_camera",
+	title = "RNGModifier_election_day_2_camera_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_election_day_2_camera",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_election_day_2_camera_1",
+		"RNGModifier_election_day_2_camera_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
+	menu_id = "RNGModifier_election_day_2_Options_Menu"
+})
 MenuCallbackHandler.RNGModifier_election_day_2_crowbar = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar")
 	RNGModifier:Save()

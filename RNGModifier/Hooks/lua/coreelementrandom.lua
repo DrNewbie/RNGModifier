@@ -239,6 +239,8 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "roberts" then
 			if self._id == 101946 then
 				rand = PickRandomFromList(rand, "_rand_drop_location")
+			elseif self._id == 100239 then
+				rand = PickRandomFromList(rand, "_sewer")
 			end
 		elseif _level_id == "rat" then
 			if self._id == 101127 then
@@ -357,6 +359,16 @@ function ElementRandom:_get_random_elements()
 					local ids_for_1 = {[103267] = 1, [103268] = 1 , [103269] = 1}
 					rand = ids_for_1[self._id] or rand
 				end
+			end
+		elseif _level_id == "red2" then
+			if self._id == 105496 then
+				rand = PickRandomFromList(rand, "_vault_gate")
+			elseif self._id == 106428 then
+				rand = PickRandomFromList(rand, "_manager")
+			elseif self._id == 105760 then
+				rand = PickRandomFromList(rand, "_camera_room")
+			elseif self._id == 105575 then
+				rand = PickRandomFromList(rand, "_server_room")
 			end
 		elseif _level_id == "chill_combat" then
 			if self._id == 101335 then
@@ -983,6 +995,8 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "election_day_2" then
 			if self._id == 101027 then
 				rand = PickRandomFromList(rand, "_door")
+			elseif self._id == 100697 then
+				rand = PickRandomFromList(rand, "_camera")
 			elseif self._id == 101156 then
 				rand = PickRandomFromList(rand, "_crowbar")
 			elseif self._id == 103873 then
