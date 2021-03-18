@@ -468,6 +468,55 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 101295 then
 				rand = PickRandomFromList(rand, "_code_4")
 			end
+		elseif _level_id == "chas" then
+			if self._id == 101823 then
+				rand = PickRandomFromList(rand, "_puzzle")
+			elseif self._id == 101111 then
+				rand = PickRandomFromList(rand, "_camera_room")
+			elseif self._id == 101109 then
+				rand = PickRandomFromList(rand, "_alarm_box")
+			elseif self._id == 102895 then
+				rand = PickRandomFromList(rand, "_keys")
+			elseif self._id == 102752 then
+				rand = PickRandomFromList(rand, "_power_switch")
+			elseif self._id == 102478 then
+				rand = PickRandomFromList(rand, "_hack_box")
+			elseif self._id == 101859 or self._id == 101860 or self._id == 101861 or self._id == 101862 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code_1") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[101859] = 1, [101860] = 1 , [101861] = 1 , [101862] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101902 or self._id == 101903 or self._id == 101904 or self._id == 101905 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code_2") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[101902] = 1, [101903] = 1 , [101904] = 1 , [101905] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101951 or self._id == 101952 or self._id == 101953 or self._id == 101954 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code_3") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[101951] = 1, [101952] = 2 , [101953] = 2 , [101954] = 2}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 102028 or self._id == 102029 or self._id == 102030 or self._id == 102031 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code_4") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[102028] = 1, [102029] = 1 , [102030] = 1 , [102031] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101323 or self._id == 101324 or self._id == 101325 or self._id == 101326 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_wires") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[101323] = 1, [101324] = 2 , [101325] = 3 , [101326] = 4}
+					rand = ids_for_1[self._id] or rand
+				end
+			end
 		elseif _level_id == "family" then
 			if self._id == 100028 then
 				rand = PickRandomFromList(rand, "_rand_keypad")
