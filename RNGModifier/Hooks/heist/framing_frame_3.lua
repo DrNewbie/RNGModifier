@@ -171,6 +171,24 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_framing_frame_3_escape = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_3_escape",
+	title = "RNGModifier_framing_frame_3_escape_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_3_escape",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_framing_frame_3_escape_1",
+		"RNGModifier_framing_frame_3_escape_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_escape"),
+	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_framing_frame_3_block = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_block")
 	RNGModifier:Save()
