@@ -39,6 +39,29 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_cage_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_cage_manager = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_manager")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_cage_manager",
+	title = "RNGModifier_cage_manager_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_cage_manager",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_cage_manager_1",
+		"RNGModifier_cage_manager_2",
+		"RNGModifier_cage_manager_3",
+		"RNGModifier_cage_manager_4",
+		"RNGModifier_cage_manager_5",
+		"RNGModifier_cage_manager_6",
+		"RNGModifier_cage_manager_7"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_manager"),
+	menu_id = "RNGModifier_cage_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_cage_choose_storage = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_choose_storage")
 	RNGModifier:Save()

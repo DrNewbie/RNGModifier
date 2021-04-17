@@ -97,15 +97,27 @@ function ElementRandom:_get_random_elements()
 					rand = _truck_list[_rand_truck_amount]
 				end
 			end
+		elseif _level_id == "gallery" then
+			if self._id == 103010 then
+				rand = PickRandomFromList(rand, "_camera")
+			end
 		elseif _level_id == "cage" then
 			if self._id == 104929 then
 				rand = PickRandomFromList(rand, "_pick1_correct_computer")
 			elseif self._id == 102384 then
 				rand = PickRandomFromList(rand, "_choose_storage")
+			elseif self._id == 102326 then
+				rand = PickRandomFromList(rand, "_manager")
+			end
+		elseif _level_id == "framing_frame_1" then
+			if self._id == 103010 then
+				rand = PickRandomFromList(rand, "_camera")
 			end
 		elseif _level_id == "framing_frame_3" then
 			if self._id == 105506 then
 				rand = PickRandomFromList(rand, "_chooseServerRoom")
+			elseif self._id == 104909 then
+				rand = PickRandomFromList(rand, "_escape")
 			elseif self._id == 100697 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["RandomHarrdDrive"] = _tmp_data[_level_id]["RandomHarrdDrive"] or 0
@@ -284,6 +296,10 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "firestarter_3" then
 			if self._id == 105112 then
 				rand = PickRandomFromList(rand, "_logic_random_026")
+			elseif self._id == 100726 then
+				rand = PickRandomFromList(rand, "_vault")
+			elseif self._id == 104743 then
+				rand = PickRandomFromList(rand, "_escape")
 			end
 		elseif _level_id == "arm_for" then
 			if self._id == 100126 then
@@ -369,6 +385,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_camera_room")
 			elseif self._id == 105575 then
 				rand = PickRandomFromList(rand, "_server_room")
+			elseif self._id == 100053 then
+				rand = PickRandomFromList(rand, "_power_boxes")
 			end
 		elseif _level_id == "chill_combat" then
 			if self._id == 101335 then
@@ -1132,6 +1150,12 @@ function ElementRandom:_get_random_elements()
 						rand = _spawncrate_F
 					end
 				end
+			end
+		elseif _level_id == "election_day_3" or _level_id == "election_day_3_skip1" or _level_id == "election_day_3_skip2" then
+			if self._id == 101334 then
+				rand = PickRandomFromList(rand, "_server")
+			elseif self._id == 103166 then
+				rand = PickRandomFromList(rand, "_elevator")
 			end
 		elseif _level_id == "mia_1" then
 			if self._id == 100126 then
