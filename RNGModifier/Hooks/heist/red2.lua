@@ -24,6 +24,30 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_red2_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_red2_power_boxes = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_power_boxes")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_red2_power_boxes",
+	title = "RNGModifier_red2_power_boxes_title",
+	desc = "RNGModifier_red2_power_boxes_desc",
+	callback = "RNGModifier_red2_power_boxes",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_red2_power_boxes_1",
+		"RNGModifier_red2_power_boxes_2",
+		"RNGModifier_red2_power_boxes_3",
+		"RNGModifier_red2_power_boxes_4",
+		"RNGModifier_red2_power_boxes_5",
+		"RNGModifier_red2_power_boxes_6",
+		"RNGModifier_red2_power_boxes_7",
+		"RNGModifier_red2_power_boxes_8"
+	},
+	value = RNGModifier:SafeGetData("red2", "_power_boxes"),
+	menu_id = "RNGModifier_red2_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_red2_manager = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_manager")
 	RNGModifier:Save()
