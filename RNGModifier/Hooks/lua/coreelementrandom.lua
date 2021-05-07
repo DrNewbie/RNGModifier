@@ -1179,6 +1179,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_c4")
 			elseif self._id == 100475 then
 				rand = PickRandomFromList(rand, "_vault")
+			elseif self._id == 100427 then
+				rand = PickRandomFromList(rand, "_drill_heli_delay")
+			elseif self._id == 101334 then
+				rand = PickRandomFromList(rand, "_drill_heli")
 			elseif self._id == 101857 then
 				rand = PickRandomFromList(rand, "_escape")
 			end

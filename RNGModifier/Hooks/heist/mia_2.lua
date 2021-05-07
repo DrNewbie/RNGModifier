@@ -46,6 +46,45 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_mia_2_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_mia_2_drill_heli_delay = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_drill_heli_delay")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_2_drill_heli_delay",
+	title = "RNGModifier_mia_2_drill_heli_delay_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_2_drill_heli_delay",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mia_2_drill_heli_delay_20",
+		"RNGModifier_mia_2_drill_heli_delay_30"
+	},
+	value = RNGModifier:SafeGetData("mia_2", "_drill_heli_delay"),
+	menu_id = "RNGModifier_mia_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mia_2_drill_heli = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_drill_heli")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_2_drill_heli",
+	title = "RNGModifier_mia_2_drill_heli_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_2_drill_heli",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mia_2_drill_heli_1",
+		"RNGModifier_mia_2_drill_heli_2",
+		"RNGModifier_mia_2_drill_heli_3"
+	},
+	value = RNGModifier:SafeGetData("mia_2", "_drill_heli"),
+	menu_id = "RNGModifier_mia_2_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_mia_2_escape = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape")
 	RNGModifier:Save()
