@@ -69,6 +69,65 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_2_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_hox_2_request_wait_time = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_request_wait_time")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_2_request_wait_time",
+	title = "RNGModifier_hox_2_request_wait_time_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_2_request_wait_time",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_2_request_wait_time_1",
+		"RNGModifier_hox_2_request_wait_time_2",
+		"RNGModifier_hox_2_request_wait_time_3",
+		"RNGModifier_hox_2_request_wait_time_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_request_wait_time"),
+	menu_id = "RNGModifier_hox_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_2_select_it_location = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_it_location")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_2_select_it_location",
+	title = "RNGModifier_hox_2_select_it_location_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_2_select_it_location",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_2_select_it_location_lower",
+		"RNGModifier_hox_2_select_it_location_upper"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_it_location"),
+	menu_id = "RNGModifier_hox_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_2_select_sec_location = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_sec_location")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_2_select_sec_location",
+	title = "RNGModifier_hox_2_select_sec_location_title",
+	desc = "RNGModifier_hox_2_select_sec_location_desc",
+	callback = "RNGModifier_hox_2_select_sec_location",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_2_select_sec_location_lower",
+		"RNGModifier_hox_2_select_sec_location_upper"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_sec_location"),
+	menu_id = "RNGModifier_hox_2_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_hox_2_select_random_powerbox = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_random_powerbox")
 	RNGModifier:Save()

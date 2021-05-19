@@ -186,6 +186,12 @@ function ElementRandom:_get_random_elements()
 						rand = _rnd_excursion
 					end
 				end
+			elseif self._id == 104578 then
+				rand = PickRandomFromList(rand, "_request_wait_time")
+			elseif self._id == 101837 then
+				rand = PickRandomFromList(rand, "_select_it_location")
+			elseif self._id == 101325 then
+				rand = PickRandomFromList(rand, "_select_sec_location")
 			elseif self._id == 104419 then
 				rand = PickRandomFromList(rand, "_select_random_powerbox")
 			end
