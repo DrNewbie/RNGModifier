@@ -97,3 +97,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("des", "_symbol_3"),
 	menu_id = "RNGModifier_des_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_des_toggle_firstpc = function(self, item)
+	if tostring(item:value()) == "on" then
+		RNGModifier:SafeSetData(1, _Curret_Heist, "_toggle_firstpc")
+	else
+		RNGModifier:SafeSetData(0, _Curret_Heist, "_toggle_firstpc")
+	end
+	RNGModifier:Save()
+end
+_bool = tonumber(RNGModifier:SafeGetData(_Curret_Heist, "_toggle_firstpc")) == 1 and true or false
+MenuHelper:AddToggle({
+	id = "RNGModifier_des_toggle_firstpc",
+	title = "RNGModifier_des_toggle_firstpc",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_des_toggle_firstpc",
+	value = _bool,
+	menu_id = "RNGModifier_des_Options_Menu"
+})
+_bool = nil
