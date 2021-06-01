@@ -35,6 +35,7 @@ RNGModifier._heistlist = {
 	"arm_for",--Bain - Transport: Train Heist
 	"arm_und",--Bain - Transport: Underpass
 	"pal",--Classics -  Counterfeit
+	"flat", --Classics - Panic Room
 	"dah",--Classics -  Diamond Heist
 	"red2",--Classics -  First World Bank
 	"glace",--Classics -  Green Bridge
