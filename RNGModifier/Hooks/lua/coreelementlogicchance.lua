@@ -301,7 +301,7 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
-				elseif _level_id == "des" then
+		elseif _level_id == "des" then
 			if self._id == 108693 then
 				local _toggle_firstpc = RNGModifier:SafeGetData(_level_id, "_toggle_firstpc") or 0
 				if _toggle_firstpc == 0 then 
