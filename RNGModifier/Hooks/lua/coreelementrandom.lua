@@ -1444,6 +1444,14 @@ function ElementRandom:_get_random_elements()
 			if self._id == 103254 then
 				rand = PickRandomFromList(rand, "_logic_random_006")
 			end
+		elseif _level_id == "flat" then
+			if self._id == 101572 then
+				rand = PickRandomFromList(rand, "_c4_drop_location")
+			elseif self._id == 102251 then
+				rand = PickRandomFromList(rand, "_c4_drop_location")
+			elseif self._id == 102261 then
+				rand = PickRandomFromList(rand, "_c4_drop_location")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
