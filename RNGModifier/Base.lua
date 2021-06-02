@@ -96,7 +96,6 @@ RNGModifier._heistlist = {
 	"bex",--Vlad - San Martín Bank
 	"cane",--Vlad - Santa's Workshop
 	"ukrainian_job"--Vlad - Ukrainian Job
-	"moon"--Vlad - Stealing Xmas
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
