@@ -1376,13 +1376,6 @@ function ElementRandom:_get_random_elements()
 					rand = 10
 				end
 			end
-		elseif _level_id == "moon" then
-			local _room_number = 1
-			if self._id == 100240 then
-				local _moon_excursion = "_select_excursion_" .. tostring(_room_number)
-				_room_number++
-				rand = PickRandomFromList(rand, _moon_excursion)
-			end
 		elseif _level_id == "des" then
 			if self._id == 101956 then
 				rand = PickRandomFromList(rand,"_symbol_1")
