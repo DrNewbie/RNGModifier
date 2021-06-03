@@ -1466,6 +1466,15 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_logic_random_006")
 			end
 		end
+		elseif _level_id == "flat" then
+			if self._id == 101572 then
+				rand = PickRandomFromList(rand, "_pick_1")
+			elseif self._id == 102251 then
+				rand = PickRandomFromList(rand, "_pick_1")
+			elseif self._id == 102261 then
+				rand = PickRandomFromList(rand, "_pick_1")
+			end
+		end
 	end
 	return table.remove(self._unused_randoms, rand)
 end
