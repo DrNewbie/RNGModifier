@@ -225,6 +225,15 @@ function RNGModifier:Save()
 	if HOX2_select_excursion_B ~= 0 and HOX2_select_excursion_B == HOX2_select_excursion_C then
 		self:SafeSetData(0, "hox_2", "_select_excursion_B")
 	end
+	local MOON_select_excursion_A = self:SafeGetOpt("moon", "_select_excursion_A")
+	local MOON_select_excursion_B = self:SafeGetOpt("moon", "_select_excursion_B")
+	local MOON_select_excursion_C = self:SafeGetOpt("moon", "_select_excursion_C")
+	if MOON_select_excursion_A ~= 0 and MOON_select_excursion_A == MOON_select_excursion_B or MOON_select_excursion_A == MOON_select_excursion_C then
+		self:SafeSetData(0, "moon", "_select_excursion_A")
+	end
+	if MOON_select_excursion_B ~= 0 and MOON_select_excursion_B == MOON_select_excursion_C then
+		self:SafeSetData(0, "moon", "_select_excursion_B")
+	end
 	for _, _heist in pairs(self._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
 			self._data[_heist] = self._data[_heist] or {}
