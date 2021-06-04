@@ -1497,7 +1497,6 @@ function ElementRandom:_get_random_elements()
 			if self._id == 103254 then
 				rand = PickRandomFromList(rand, "_logic_random_006")
 			end
-		end
 		elseif _level_id == "flat" then
 			if self._id == 101572 then
 				rand = PickRandomFromList(rand, "_pick_1")
