@@ -276,3 +276,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_chopper"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_hox_3_camera = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_camera",
+	title = "RNGModifier_hox_3_camera_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_camera",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_camera_1",
+		"RNGModifier_hox_3_camera_2",
+		"RNGModifier_hox_3_camera_3"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})

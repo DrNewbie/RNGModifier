@@ -139,3 +139,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe1"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_shock = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_shock")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_1_shock",
+	title = "RNGModifier_welcome_to_the_jungle_1_shock_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_1_shock",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_false",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_shock"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
+})

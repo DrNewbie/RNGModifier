@@ -130,6 +130,14 @@ function ElementLogicChance:on_executed(...)
 				else
 					self._chance = 999
 				end
+			elseif self._id == 103356 then
+				local _shock = RNGModifier:SafeGetData(_level_id, "_shock") or 0
+				_shock = _shock - 1
+				if _shock == 1 then
+					self._chance = -999
+				elseif _shock == 2 then
+					self._chance = 999
+				end
 			end
 		elseif _level_id == "big" then
 			if self._id == 104494 then

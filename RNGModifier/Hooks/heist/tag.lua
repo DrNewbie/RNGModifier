@@ -305,3 +305,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("tag", "_tag_office"),
 	menu_id = "RNGModifier_tag_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_tag_security_left = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_security_left")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_tag_security_left",
+	title = "RNGModifier_tag_security_left_title",
+	desc = "RNGModifier_tag_security_left_desc",
+	callback = "RNGModifier_tag_security_left",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2"
+	},
+	value = RNGModifier:SafeGetData("tag", "_security_left"),
+	menu_id = "RNGModifier_tag_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_tag_security_right = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_security_right")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_tag_security_right",
+	title = "RNGModifier_tag_security_right_title",
+	desc = "RNGModifier_tag_security_right_desc",
+	callback = "RNGModifier_tag_security_right",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2"
+	},
+	value = RNGModifier:SafeGetData("tag", "_security_right"),
+	menu_id = "RNGModifier_tag_Options_Menu"
+})

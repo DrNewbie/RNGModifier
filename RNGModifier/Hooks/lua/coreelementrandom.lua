@@ -743,6 +743,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_whiteboard")
 			elseif self._id == 100126 then
 				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100844 then
+				rand = PickRandomFromList(rand, "_security_left")
+			elseif self._id == 100621 then
+				rand = PickRandomFromList(rand, "_security_right")
 			elseif self._id == 100359 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["start_randomization_boxes"] = _tmp_data[_level_id]["start_randomization_boxes"] or 0
@@ -854,6 +858,8 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "hox_3" then
 			if self._id == 101695 then
 				rand = PickRandomFromList(rand, "_panic_hector")
+			elseif self._id == 100697 then
+				rand = PickRandomFromList(rand,"_camera")
 			elseif self._id == 102122 then
 				rand = PickRandomFromList(rand,"_rock")
 			elseif self._id == 102972 then
@@ -1191,6 +1197,13 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_drill_heli")
 			elseif self._id == 101857 then
 				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 100404 or self._id == 100405 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_bombguy") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[100404] = 4, [100405] = 4}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "shoutout_raid" then
 			if self._id == 100694 then

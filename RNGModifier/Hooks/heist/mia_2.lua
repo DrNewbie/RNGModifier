@@ -104,3 +104,20 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_mia_2_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_mia_2_bombguy = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bombguy")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_2_bombguy",
+	title = "RNGModifier_mia_2_bombguy_title",
+	desc = "RNGModifier_mia_2_bombguy_desc",
+	callback = "RNGModifier_mia_2_bombguy",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("mia_2", "_bombguy"),
+	menu_id = "RNGModifier_mia_2_Options_Menu"
+})
