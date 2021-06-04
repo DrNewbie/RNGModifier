@@ -1396,6 +1396,25 @@ function ElementRandom:_get_random_elements()
 						rand = _rnd_excursion
 					end
 				end
+			elseif self._id == 100238 then
+				_tmp_data["moon"] = _tmp_data["moon"] or {}
+				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] or 0
+				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] + 1
+				local _rnd_excursion = _tmp_data["moon"]["_rnd_excursion"]
+				local _eID = {}
+				for _, _name in pairs({"select_excursion_A", "select_excursion_B", "select_excursion_C"}) do
+					local _var = RNGModifier:SafeGetData("moon", _name) or 0
+					if _var > 1 then
+						table.insert(_eID, _var - 1)
+					end
+				end
+				_rnd_excursion = _eID[_rnd_excursion]
+				if type(_rnd_excursion) == 'number' and _rnd_excursion > 0 then
+					_rnd_excursion = table.index_of(self._unused_randoms, _rnd_excursion)
+					if _rnd_excursion > 0 then
+						rand = _rnd_excursion
+					end
+				end
 			end
 		elseif _level_id == "des" then
 			if self._id == 101956 then
