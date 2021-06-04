@@ -1415,7 +1415,7 @@ function ElementRandom:_get_random_elements()
 				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] + 1
 				local _rnd_excursion = _tmp_data["moon"]["_rnd_excursion"]
 				local _eID = {}
-				for _, _name in pairs({"select_excursion_A", "select_excursion_B", "select_excursion_C"}) do
+				for _, _name in pairs({"_select_excursion_A", "_select_excursion_B", "_select_excursion_C"}) do
 					local _var = RNGModifier:SafeGetData("moon", _name) or 0
 					if _var > 1 then
 						table.insert(_eID, _var - 1)
