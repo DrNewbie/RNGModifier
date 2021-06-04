@@ -7,7 +7,7 @@ RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
 MenuCallbackHandler.RNGModifier_moon_select_excursion_A = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "select_excursion_A")
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_excursion_A")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -23,12 +23,12 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_moon_select_excursion_004",
 		"RNGModifier_moon_select_excursion_005"
 	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "select_excursion_A"),
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_A"),
 	menu_id = "RNGModifier_moon_Options_Menu"
 })
 
 MenuCallbackHandler.RNGModifier_moon_select_excursion_B = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "select_excursion_B")
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_excursion_B")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -44,12 +44,12 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_moon_select_excursion_004",
 		"RNGModifier_moon_select_excursion_005"
 	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "select_excursion_B"),
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_B"),
 	menu_id = "RNGModifier_moon_Options_Menu"
 })
 
 MenuCallbackHandler.RNGModifier_moon_select_excursion_C = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "select_excursion_C")
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_select_excursion_C")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
@@ -65,6 +65,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_moon_select_excursion_004",
 		"RNGModifier_moon_select_excursion_005"
 	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "select_excursion_C"),
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_C"),
 	menu_id = "RNGModifier_moon_Options_Menu"
 })
