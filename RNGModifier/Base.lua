@@ -39,6 +39,7 @@ RNGModifier._heistlist = {
 	"red2",--Classics -  First World Bank
 	"glace",--Classics -  Green Bridge
 	"nmh",--Classics -  No Mercy
+	"flat",--Classics - Panic Room
 	"man",--Classics -  Undercover
 	"hvh",--Events -  Cursed Kill Room
 	"help",--Events -  Prison Nightmare
@@ -94,6 +95,7 @@ RNGModifier._heistlist = {
 	"nightclub",--Vlad - Nightclub
 	"bex",--Vlad - San Martín Bank
 	"cane",--Vlad - Santa's Workshop
+	"moon",--Vlad - Stealing Xmas
 	"ukrainian_job"--Vlad - Ukrainian Job
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
