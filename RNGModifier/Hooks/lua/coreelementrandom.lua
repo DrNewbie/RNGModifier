@@ -109,6 +109,9 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 102326 then
 				rand = PickRandomFromList(rand, "_manager")
 			end
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_choose_spawn")
+			end
 		elseif _level_id == "framing_frame_1" then
 			if self._id == 103010 then
 				rand = PickRandomFromList(rand, "_camera")
