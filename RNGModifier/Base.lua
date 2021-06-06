@@ -96,7 +96,14 @@ RNGModifier._heistlist = {
 	"bex",--Vlad - San Martín Bank
 	"cane",--Vlad - Santa's Workshop
 	"moon",--Vlad - Stealing Xmas
-	"ukrainian_job"--Vlad - Ukrainian Job
+	"ukrainian_job",--Vlad - Ukrainian Job
+	"escape_cafe",--Escape Days - Cafe Escape
+	"escape_cafe_day",--Escape Days - Cafe Escape (Day)
+	"escape_garage",--Escape Days - Garage Escape
+	"escape_overpass",-- Escape Days - Overpass Escape
+	"escape_park",--Escape Days - Park Escape
+	"escape_park_day",--Escape Days - Park Escape (Day)
+	"escape_street"--Escape Days - Street Escape
 }
 for _, _heist in pairs(RNGModifier._heistlist) do
 	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
