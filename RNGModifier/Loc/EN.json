@@ -1373,7 +1373,7 @@
   "RNGModifier_escape_cafe_escape_title": "Escape Location",
   "RNGModifier_escape_cafe_escape_1": "Cafe right",
   "RNGModifier_escape_cafe_escape_2": "Far from cafe",
-  "RNGModifier_escape_cafe_time_title": "Escape arrives in"
+  "RNGModifier_escape_cafe_time_title": "Escape arrives in",
   "RNGModifier_escape_cafe_time_1": "2 minutes",
   "RNGModifier_escape_cafe_time_2": "3 minutes",
   "RNGModifier_escape_cafe_day_spawn_title": "Spawn Location (Day)",
@@ -1383,7 +1383,7 @@
   "RNGModifier_escape_cafe_day_escape_title": "Escape Location (Day)",
   "RNGModifier_escape_cafe_day_escape_1": "Cafe right",
   "RNGModifier_escape_cafe_day_escape_2": "Far from cafe",
-  "RNGModifier_escape_cafe_day_time_title": "Escape arrives in (Day)"
+  "RNGModifier_escape_cafe_day_time_title": "Escape arrives in (Day)",
   "RNGModifier_escape_cafe_day_time_1": "2 minutes",
   "RNGModifier_escape_cafe_day_time_2": "3 minutes",
   "RNGModifier_escape_garage_escape_title": "Escape Location",
@@ -1412,7 +1412,7 @@
   "RNGModifier_escape_park_escape_1": "Northeast",
   "RNGModifier_escape_park_escape_2": "Southwest",
   "RNGModifier_escape_park_escape_3": "Southeast",
-  "RNGModifier_escape_park_time_title": "Escape arrives in"
+  "RNGModifier_escape_park_time_title": "Escape arrives in",
   "RNGModifier_escape_park_time_1": "3 minutes",
   "RNGModifier_escape_park_time_2": "4 minutes",
   "RNGModifier_escape_park_time_3": "5 minutes",
@@ -1426,7 +1426,7 @@
   "RNGModifier_escape_park_day_escape_1": "Northeast",
   "RNGModifier_escape_park_day_escape_2": "Southwest",
   "RNGModifier_escape_park_day_escape_3": "Southeast",
-  "RNGModifier_escape_park_day_time_title": "Escape arrives in (Day)"
+  "RNGModifier_escape_park_day_time_title": "Escape arrives in (Day)",
   "RNGModifier_escape_park_day_time_1": "3 minutes",
   "RNGModifier_escape_park_day_time_2": "4 minutes",
   "RNGModifier_escape_park_day_time_3": "5 minutes",
