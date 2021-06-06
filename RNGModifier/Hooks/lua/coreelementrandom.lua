@@ -1512,8 +1512,6 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_escape")
 			elseif self._id == 102230 then
 				rand = PickRandomFromList(rand, "_time")
-			elseif self._id == 100470 then
-				rand = PickRandomFromList(rand, "_wait")
 			end
 		elseif _level_id == "escape_garage" then
 			if self._id == 102408 then
