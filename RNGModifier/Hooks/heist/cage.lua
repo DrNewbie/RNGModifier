@@ -79,3 +79,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_choose_storage"),
 	menu_id = "RNGModifier_cage_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_cage_choose_spawn = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_choose_spawn")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_cage_choose_spawn",
+	title = "RNGModifier_cage_choose_spawn_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_cage_choose_spawn",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_cage_choose_spawn_001",
+		"RNGModifier_cage_choose_spawn_002"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_choose_spawn"),
+	menu_id = "RNGModifier_cage_Options_Menu"
+})
