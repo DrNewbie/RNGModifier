@@ -108,6 +108,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_choose_storage")
 			elseif self._id == 102326 then
 				rand = PickRandomFromList(rand, "_manager")
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_choose_spawn")
 			end
 		elseif _level_id == "framing_frame_1" then
 			if self._id == 103010 then
