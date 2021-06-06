@@ -1505,6 +1505,60 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 102261 then
 				rand = PickRandomFromList(rand, "_pick_1")
 			end
+		elseif _level_id == "escape_overpass" then
+			if self._id == 101984 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 101976 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 102230 then
+				rand = PickRandomFromList(rand, "_time")
+			elseif self._id == 100470 then
+				rand = PickRandomFromList(rand, "_wait")
+			end
+		elseif _level_id == "escape_garage" then
+			if self._id == 102408 then
+				rand = PickRandomFromList(rand, "_escape")
+			end
+		elseif _level_id == "escape_street" then
+			if self._id == 100933 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 101956 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 101960 then
+				rand = PickRandomFromList(rand, "_time")
+			end
+		elseif _level_id == "escape_cafe" then
+			if self._id == 100942 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100253 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 100245 then
+				rand = PickRandomFromList(rand, "_time")
+			end
+		elseif _level_id == "escape_cafe_day" then
+			if self._id == 100942 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100253 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 100245 then
+				rand = PickRandomFromList(rand, "_time")
+			end
+		elseif _level_id == "escape_park" then
+			if self._id == 101106 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100210 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 102447 then
+				rand = PickRandomFromList(rand, "_time")
+			end
+		elseif _level_id == "escape_park_day" then
+			if self._id == 101106 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100210 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 102447 then
+				rand = PickRandomFromList(rand, "_time")
+			end
 		end
 	end
 	return table.remove(self._unused_randoms, rand)
