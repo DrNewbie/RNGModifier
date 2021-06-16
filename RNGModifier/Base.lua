@@ -53,6 +53,7 @@ RNGModifier._heistlist = {
 	"mad",--Jimmy -  Boiling Point
 	"dark",--Jimmy -  Murky Station
 	"chas",--Jiu Feng - Dragon Heist
+	"sand",--Jiu Feng - The Ukrainian Prisoner
 	"wwh",--Locke - Alaskan Deal
 	"pbr",--Locke - Beneath The Mountain
 	"mex",--Locke - Border Crossing
