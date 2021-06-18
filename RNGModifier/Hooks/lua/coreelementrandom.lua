@@ -543,6 +543,45 @@ function ElementRandom:_get_random_elements()
 					rand = ids_for_1[self._id] or rand
 				end
 			end
+		elseif _level_id == "sand" then
+			if self._id == 103140 then
+				rand = PickRandomFromList(rand, "_sb1")
+			elseif self._id == 103149 then
+				rand = PickRandomFromList(rand, "_sb2")
+			elseif self._id == 103170 then
+				rand = PickRandomFromList(rand, "_sb3")
+			elseif self._id == 103957 then
+				rand = PickRandomFromList(rand, "_blowtorch")
+			elseif self._id == 103650 then
+				rand = PickRandomFromList(rand, "_gas")
+			elseif self._id == 102004 then
+				rand = PickRandomFromList(rand, "_docs")
+			elseif self._id == 104010 then
+				rand = PickRandomFromList(rand, "_spray")
+			elseif self._id == 104014 then
+				rand = PickRandomFromList(rand, "_notepad")
+			elseif self._id == 105377 then
+				rand = PickRandomFromList(rand, "_crane")
+			elseif self._id == 102015 then
+				rand = PickRandomFromList(rand, "_pads")
+			elseif self._id == 101883 then
+				rand = PickRandomFromList(rand, "_it")
+			elseif self._id == 104106 then
+				rand = PickRandomFromList(rand, "_vlad")
+			elseif self._id == 101693 then
+				rand = PickRandomFromList(rand, "_vlad_a")
+			elseif self._id == 101694 then
+				rand = PickRandomFromList(rand, "_vlad_b")
+			elseif self._id == 101695 then
+				rand = PickRandomFromList(rand, "_vlad_c")
+			elseif self._id == 102060 or self._id == 102061 or self._id == 102062 or self._id == 102063 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[102060] = 2, [102061] = 2 , [102062] = 2 , [102063] = 2}
+					rand = ids_for_1[self._id] or rand
+				end
+			end
 		elseif _level_id == "family" then
 			if self._id == 100028 then
 				rand = PickRandomFromList(rand, "_rand_keypad")
