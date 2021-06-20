@@ -147,6 +147,14 @@ function ElementLogicChance:on_executed(...)
 				else
 					self._chance = 999
 				end
+			elseif self._id == 101648 then
+				local _vault = RNGModifier:SafeGetData(_level_id, "_vault") or 0
+				_vault = _vault - 1
+				if _vault == 1 then
+					self._chance = -999
+				elseif _vault == 2 then
+					self._chance = 999
+				end
 			end
 		elseif _level_id == "dah" then
 			if self._id == 104079 or self._id == 104082 or self._id == 101467 then
