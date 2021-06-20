@@ -140,15 +140,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_big_keycard_25",
 		"RNGModifier_big_keycard_26",
 		"RNGModifier_big_keycard_27",
-		"RNGModifier_big_keycard_28",
-		"RNGModifier_big_keycard_29",
-		"RNGModifier_big_keycard_30",
-		"RNGModifier_big_keycard_31",
-		"RNGModifier_big_keycard_32",
-		"RNGModifier_big_keycard_33",
-		"RNGModifier_big_keycard_34",
-		"RNGModifier_big_keycard_35",
-		"RNGModifier_big_keycard_36"
+		"RNGModifier_big_keycard_28"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_keycard"),
 	menu_id = "RNGModifier_big_Options_Menu"
