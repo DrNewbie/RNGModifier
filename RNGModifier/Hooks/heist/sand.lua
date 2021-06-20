@@ -344,3 +344,80 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("sand", "_easy_code"),
 	menu_id = "RNGModifier_sand_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_sand_fireworks = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_fireworks")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_sand_fireworks",
+	title = "RNGModifier_sand_fireworks_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_sand_fireworks",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sand_fireworks_1",
+		"RNGModifier_sand_fireworks_2",
+		"RNGModifier_sand_fireworks_3",
+		"RNGModifier_sand_fireworks_4"
+	},
+	value = RNGModifier:SafeGetData("sand", "_fireworks"),
+	menu_id = "RNGModifier_sand_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sand_defibrillator_a = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_defibrillator_a")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_sand_defibrillator_a",
+	title = "RNGModifier_sand_defibrillator_a_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_sand_defibrillator_a",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sand_defibrillator_a_1",
+		"RNGModifier_sand_defibrillator_a_2",
+		"RNGModifier_sand_defibrillator_a_3"
+	},
+	value = RNGModifier:SafeGetData("sand", "_defibrillator_a"),
+	menu_id = "RNGModifier_sand_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sand_defibrillator_b = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_defibrillator_b")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_sand_defibrillator_b",
+	title = "RNGModifier_sand_defibrillator_b_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_sand_defibrillator_b",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sand_defibrillator_b_1",
+		"RNGModifier_sand_defibrillator_b_2",
+		"RNGModifier_sand_defibrillator_b_3"
+	},
+	value = RNGModifier:SafeGetData("sand", "_defibrillator_b"),
+	menu_id = "RNGModifier_sand_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sand_defibrillator_c = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_defibrillator_c")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_sand_defibrillator_c",
+	title = "RNGModifier_sand_defibrillator_c_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_sand_defibrillator_c",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sand_defibrillator_c_1",
+		"RNGModifier_sand_defibrillator_c_2",
+		"RNGModifier_sand_defibrillator_c_3"
+	},
+	value = RNGModifier:SafeGetData("sand", "_defibrillator_c"),
+	menu_id = "RNGModifier_sand_Options_Menu"
+})

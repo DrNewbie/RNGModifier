@@ -330,6 +330,12 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_pick_rand_floor")
 			elseif self._id == 100697 then
 				rand = PickRandomFromList(rand, "_rand_room")
+			elseif self._id == 102540 then
+				rand = PickRandomFromList(rand, "_keycard")
+			elseif self._id == 103874 then
+				rand = PickRandomFromList(rand, "_keybox")
+			elseif self._id == 102721 then
+				rand = PickRandomFromList(rand, "_manager")
 			end
 		elseif _level_id == "wwh" then
 		--[[
@@ -552,6 +558,12 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_sb3")
 			elseif self._id == 103957 then
 				rand = PickRandomFromList(rand, "_blowtorch")
+			elseif self._id == 101890 then
+				rand = PickRandomFromList(rand, "_defibrillator_a")
+			elseif self._id == 104483 then
+				rand = PickRandomFromList(rand, "_defibrillator_b")
+			elseif self._id == 104487 then
+				rand = PickRandomFromList(rand, "_defibrillator_c")
 			elseif self._id == 103650 then
 				rand = PickRandomFromList(rand, "_gas")
 			elseif self._id == 102004 then
@@ -566,6 +578,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_pads")
 			elseif self._id == 101883 then
 				rand = PickRandomFromList(rand, "_it")
+			elseif self._id == 103879 then
+				rand = PickRandomFromList(rand, "_fireworks")
 			elseif self._id == 104106 then
 				rand = PickRandomFromList(rand, "_vlad")
 			elseif self._id == 101693 then
@@ -658,6 +672,22 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_spawn")
 			elseif self._id == 100345 then
 				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 100645 then
+				rand = PickRandomFromList(rand, "_keycard")
+			elseif self._id == 100344 then
+				rand = PickRandomFromList(rand, "_case")
+			elseif self._id == 100761 then
+				rand = PickRandomFromList(rand, "_server")
+			elseif self._id == 100749 then
+				rand = PickRandomFromList(rand, "_gas")
+			elseif self._id == 100631 then
+				rand = PickRandomFromList(rand, "_hand_1")
+			elseif self._id == 100632 then
+				rand = PickRandomFromList(rand, "_hand_2")
+			elseif self._id == 100416 then
+				rand = PickRandomFromList(rand, "_box_1")
+			elseif self._id == 100417 then
+				rand = PickRandomFromList(rand, "_box_2")
 			end
 		elseif _level_id == "kosugi" then
 			if self._id == 101384 then
