@@ -101,3 +101,120 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_rand_room"),
 	menu_id = "RNGModifier_big_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_big_keycard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_keycard",
+	title = "RNGModifier_big_keycard_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_keycard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_big_keycard_1",
+		"RNGModifier_big_keycard_2",
+		"RNGModifier_big_keycard_3",
+		"RNGModifier_big_keycard_4",
+		"RNGModifier_big_keycard_5",
+		"RNGModifier_big_keycard_6",
+		"RNGModifier_big_keycard_7",
+		"RNGModifier_big_keycard_8",
+		"RNGModifier_big_keycard_9",
+		"RNGModifier_big_keycard_10",
+		"RNGModifier_big_keycard_11",
+		"RNGModifier_big_keycard_12",
+		"RNGModifier_big_keycard_13",
+		"RNGModifier_big_keycard_14",
+		"RNGModifier_big_keycard_15",
+		"RNGModifier_big_keycard_16",
+		"RNGModifier_big_keycard_17",
+		"RNGModifier_big_keycard_18",
+		"RNGModifier_big_keycard_19",
+		"RNGModifier_big_keycard_20",
+		"RNGModifier_big_keycard_21",
+		"RNGModifier_big_keycard_22",
+		"RNGModifier_big_keycard_23",
+		"RNGModifier_big_keycard_24",
+		"RNGModifier_big_keycard_25",
+		"RNGModifier_big_keycard_26",
+		"RNGModifier_big_keycard_27",
+		"RNGModifier_big_keycard_28",
+		"RNGModifier_big_keycard_29",
+		"RNGModifier_big_keycard_30",
+		"RNGModifier_big_keycard_31",
+		"RNGModifier_big_keycard_32",
+		"RNGModifier_big_keycard_33",
+		"RNGModifier_big_keycard_34",
+		"RNGModifier_big_keycard_35",
+		"RNGModifier_big_keycard_36"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_keycard"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_big_manager = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_manager")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_manager",
+	title = "RNGModifier_big_manager_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_manager",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_big_manager_1",
+		"RNGModifier_big_manager_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_manager"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_big_keybox = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keybox")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_keybox",
+	title = "RNGModifier_big_keybox_title",
+	desc = "RNGModifier_big_keybox_desc",
+	callback = "RNGModifier_big_keybox",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_big_keybox_1",
+		"RNGModifier_big_keybox_2",
+		"RNGModifier_big_keybox_3",
+		"RNGModifier_big_keybox_4",
+		"RNGModifier_big_keybox_5",
+		"RNGModifier_big_keybox_6",
+		"RNGModifier_big_keybox_7",
+		"RNGModifier_big_keybox_8",
+		"RNGModifier_big_keybox_9",
+		"RNGModifier_big_keybox_10",
+		"RNGModifier_big_keybox_11",
+		"RNGModifier_big_keybox_12",
+		"RNGModifier_big_keybox_13"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_keybox"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_big_vault = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vault")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_vault",
+	title = "RNGModifier_big_vault_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_vault",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_big_vault_1",
+		"RNGModifier_big_vault_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_vault"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
