@@ -69,3 +69,59 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("nightclub", "_logic_random_003"),
 	menu_id = "RNGModifier_nightclub_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_nightclub_cash_safe = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_cash_safe")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_cash_safe",
+	title = "RNGModifier_nightclub_cash_safe_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_nightclub_cash_safe",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_nightclub_cash_safe_1",
+		"RNGModifier_nightclub_cash_safe_2",
+		"RNGModifier_nightclub_cash_safe_3"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_cash_safe"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_nightclub_spawn = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_spawn",
+	title = "RNGModifier_nightclub_spawn_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_nightclub_spawn",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_nightclub_spawn_1",
+		"RNGModifier_nightclub_spawn_2",
+		"RNGModifier_nightclub_spawn_3"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_spawn"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_nightclub_office = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_office")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_office",
+	title = "RNGModifier_nightclub_office_title",
+	desc = "RNGModifier_nightclub_office_desc",
+	callback = "RNGModifier_nightclub_office",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_false",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_office"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
