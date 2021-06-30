@@ -421,3 +421,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("sand", "_defibrillator_c"),
 	menu_id = "RNGModifier_sand_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_sand_gate_power_box = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate_power_box")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_sand_gate_power_box",
+	title = "RNGModifier_sand_gate_power_box_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_sand_gate_power_box",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sand_gate_power_box_1",
+		"RNGModifier_sand_gate_power_box_2",
+		"RNGModifier_sand_gate_power_box_3"
+	},
+	value = RNGModifier:SafeGetData("sand", "_gate_power_box"),
+	menu_id = "RNGModifier_sand_Options_Menu"
+})

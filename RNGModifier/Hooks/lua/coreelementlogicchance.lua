@@ -69,6 +69,52 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "jewelry_store" then
+			if self._id == 102056 then
+				local _hotdog = RNGModifier:SafeGetData(_level_id, "_hotdog") or 0
+				_hotdog = _hotdog - 1
+				if _hotdog == 1 then
+					self._chance = 999
+				elseif _hotdog == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "ukrainian_job" then
+			if self._id == 102056 then
+				local _hotdog = RNGModifier:SafeGetData(_level_id, "_hotdog") or 0
+				_hotdog = _hotdog - 1
+				if _hotdog == 1 then
+					self._chance = 999
+				elseif _hotdog == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 100518 then
+				local _detector = RNGModifier:SafeGetData(_level_id, "_detector") or 0
+				_detector = _detector - 1
+				if _detector == 1 then
+					self._chance = 999
+				elseif _detector == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "crojob2" then
+			if self._id == 103308 then
+				local _truck = RNGModifier:SafeGetData(_level_id, "_truck") or 0
+				_truck = _truck - 1
+				if _truck == 1 then
+					self._chance = 999
+				elseif _truck == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 103376 then
+				local _truck_loot = RNGModifier:SafeGetData(_level_id, "_truck_loot") or 0
+				_truck_loot = _truck_loot - 1
+				if _truck_loot == 1 then
+					self._chance = 999
+				elseif _truck_loot == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "framing_frame_2" then
 			if self._id == 101781 then
 				local _chanceForAAmbush = RNGModifier:SafeGetData(_level_id, "_chanceForAAmbush") or 0

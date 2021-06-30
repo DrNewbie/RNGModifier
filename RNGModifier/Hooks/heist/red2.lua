@@ -107,3 +107,24 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("red2", "_server_room"),
 	menu_id = "RNGModifier_red2_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_red2_keycard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_red2_keycard",
+	title = "RNGModifier_red2_keycard_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_red2_keycard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_red2_keycard_1",
+		"RNGModifier_red2_keycard_2",
+		"RNGModifier_red2_keycard_3",
+		"RNGModifier_red2_keycard_4",
+		"RNGModifier_red2_keycard_5"
+	},
+	value = RNGModifier:SafeGetData("red2", "_keycard"),
+	menu_id = "RNGModifier_red2_Options_Menu"
+})

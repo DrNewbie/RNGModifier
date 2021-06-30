@@ -24,6 +24,7 @@ RNGModifier._heistlist = {
 	"rat",--Bain - Cook Off
 	"family",--Bain - Diamond Store
 	"roberts",--Bain - GO Bank
+	"jewelry_store",--Bain - Jewelry Store
 	"rvd1",--Bain - Reservoir Dogs 1
 	"rvd2",--Bain - Reservoir Dogs 2
 	"kosugi",--Bain - Shadow Raid
