@@ -18,7 +18,7 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_kenaz_gambler_1",
-		"RNGModifier_kenaz_gambler_2",
+		"RNGModifier_kenaz_gambler_2"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_gambler"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
@@ -56,7 +56,7 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_kenaz_vomit_spot_1",
-		"RNGModifier_kenaz_vomit_spot_2",
+		"RNGModifier_kenaz_vomit_spot_2"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_vomit_spot"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
@@ -73,7 +73,7 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_kenaz_easy_code",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_true"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_easy_code"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
@@ -93,7 +93,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_kenaz_gear_location_1",
 		"RNGModifier_kenaz_gear_location_2",
 		"RNGModifier_kenaz_gear_location_3",
-		"RNGModifier_kenaz_gear_location_4",
+		"RNGModifier_kenaz_gear_location_4"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_gear_location"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
@@ -117,7 +117,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_kenaz_hotel_room_5",
 		"RNGModifier_kenaz_hotel_room_6",
 		"RNGModifier_kenaz_hotel_room_7",
-		"RNGModifier_kenaz_hotel_room_8",
+		"RNGModifier_kenaz_hotel_room_8"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_hotel_room"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
@@ -137,7 +137,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_kenaz_bottle_location_1",
 		"RNGModifier_kenaz_bottle_location_2",
 		"RNGModifier_kenaz_bottle_location_3",
-		"RNGModifier_kenaz_bottle_location_4",
+		"RNGModifier_kenaz_bottle_location_4"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_bottle_location"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
@@ -155,8 +155,64 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_kenaz_random_weak_floor_1",
-		"RNGModifier_kenaz_random_weak_floor_2",
+		"RNGModifier_kenaz_random_weak_floor_2"
 	},
 	value = RNGModifier:SafeGetData("kenaz", "_random_weak_floor"),
+	menu_id = "RNGModifier_kenaz_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_kenaz_skylight = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_skylight")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_kenaz_skylight",
+	title = "RNGModifier_kenaz_skylight_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_kenaz_skylight",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_kenaz_skylight_1",
+		"RNGModifier_kenaz_skylight_2"
+	},
+	value = RNGModifier:SafeGetData("kenaz", "_skylight"),
+	menu_id = "RNGModifier_kenaz_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_kenaz_boss = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_boss")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_kenaz_boss",
+	title = "RNGModifier_kenaz_boss_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_kenaz_boss",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_kenaz_boss_1",
+		"RNGModifier_kenaz_boss_2",
+		"RNGModifier_kenaz_boss_3"
+	},
+	value = RNGModifier:SafeGetData("kenaz", "_boss"),
+	menu_id = "RNGModifier_kenaz_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_kenaz_stairs = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_stairs")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_kenaz_stairs",
+	title = "RNGModifier_kenaz_stairs_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_kenaz_stairs",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_kenaz_stairs_1",
+		"RNGModifier_kenaz_stairs_2",
+		"RNGModifier_kenaz_stairs_3"
+	},
+	value = RNGModifier:SafeGetData("kenaz", "_stairs"),
 	menu_id = "RNGModifier_kenaz_Options_Menu"
 })
