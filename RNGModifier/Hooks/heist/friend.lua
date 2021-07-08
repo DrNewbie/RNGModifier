@@ -172,6 +172,27 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_friend_money_A = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_money_A")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_friend_money_A",
+	title = "RNGModifier_friend_money_A_title",
+	desc = "RNGModifier_friend_money_A_desc",
+	callback = "RNGModifier_friend_money_A",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_money_A"),
+	menu_id = "RNGModifier_friend_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_friend_money_B = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_money_B")
 	RNGModifier:Save()
