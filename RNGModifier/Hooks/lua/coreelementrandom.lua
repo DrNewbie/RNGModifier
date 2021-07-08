@@ -161,6 +161,32 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_coke")
 			elseif self._id == 102725 then
 				rand = PickRandomFromList(rand, "_coke_mic")
+			elseif self._id == 102049 then
+				rand = PickRandomFromList(rand, "_button")
+			elseif self._id == 102406 then
+				local _camera = RNGModifier:SafeGetData(_level_id, "_camera") or 0
+				_camera = _camera - 1
+				if _camera > 0 then
+					local ids_for_1 = {[102406] = 3}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 102891 then
+				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
+				_tmp_data[_level_id]["select_two_money_bundles"] = _tmp_data[_level_id]["select_two_money_bundles"] or 0
+				_tmp_data[_level_id]["select_two_money_bundles"] = _tmp_data[_level_id]["select_two_money_bundles"] + 1
+				if _tmp_data[_level_id]["select_two_bomb_crates"] == 1 then
+					local _money_A = RNGModifier:SafeGetData(_level_id, "_money_A") or 0
+					_money_A = _money_A - 1
+					if _money_A > 0 then
+						rand = _money_A
+					end
+				else
+					local _money_B = RNGModifier:SafeGetData(_level_id, "_money_B") or 0
+					_money_B = _money_B - 1
+					if _money_B > 0 then
+						rand = _money_B
+					end
+				end
 			end
 		elseif _level_id == "watchdogs_1" or _level_id == "watchdogs_1_night" then
 			if self._id == 100770 then
@@ -382,6 +408,15 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_rnd_Security_Rooms")
 			elseif self._id == 103088 then
 				rand = PickRandomFromList(rand, "_Randomize_Hackboxes")
+			elseif self._id == 103304 then
+				rand = PickRandomFromList(rand, "_cfo")
+			elseif self._id == 103052 or self._id == 103054 or self._id == 103053 then
+				local _laptops = RNGModifier:SafeGetData(_level_id, "_laptops") or 0
+				_laptops = _laptops - 1
+				if _laptops > 0 then
+					local ids_for_1 = {[103052] = 2, [103054] = 5, [103053] = 4}
+					rand = ids_for_1[self._id] or rand
+				end
 			elseif self._id == 103267 or self._id == 103268 or self._id == 103269 then
 				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
 				_easy_code = _easy_code - 1
@@ -1278,6 +1313,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_hatch")
 			elseif self._id == 106138 then
 				rand = PickRandomFromList(rand, "_bile_location")
+			elseif self._id == 100040 then
+				rand = PickRandomFromList(rand, "_meth_lab")
 			elseif self._id == 101547 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random-gascan_positions"] = _tmp_data[_level_id]["random-gascan_positions"] or 0
@@ -1612,6 +1649,12 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_pick_1")
 			elseif self._id == 102261 then
 				rand = PickRandomFromList(rand, "_pick_1")
+			elseif self._id == 104132 then
+				rand = PickRandomFromList(rand, "_van")
+			elseif self._id == 101882 then
+				rand = PickRandomFromList(rand, "_chavez")
+			elseif self._id == 102715 then
+				rand = PickRandomFromList(rand, "_door")
 			end
 		elseif _level_id == "escape_overpass" then
 			if self._id == 101984 then
