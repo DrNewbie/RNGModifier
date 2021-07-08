@@ -174,7 +174,7 @@ function ElementRandom:_get_random_elements()
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_two_money_bundles"] = _tmp_data[_level_id]["select_two_money_bundles"] or 0
 				_tmp_data[_level_id]["select_two_money_bundles"] = _tmp_data[_level_id]["select_two_money_bundles"] + 1
-				if _tmp_data[_level_id]["select_two_bomb_crates"] == 1 then
+				if _tmp_data[_level_id]["select_two_money_bundles"] == 1 then
 					local _money_A = RNGModifier:SafeGetData(_level_id, "_money_A") or 0
 					_money_A = _money_A - 1
 					if _money_A > 0 then
