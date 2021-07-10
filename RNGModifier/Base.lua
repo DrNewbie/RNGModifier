@@ -39,6 +39,7 @@ RNGModifier._heistlist = {
 	"dah",--Classics -  Diamond Heist
 	"red2",--Classics -  First World Bank
 	"glace",--Classics -  Green Bridge
+	"run",--Classics -  Heat Street
 	"nmh",--Classics -  No Mercy
 	"flat",--Classics - Panic Room
 	"man",--Classics -  Undercover
@@ -137,6 +138,11 @@ function RNGModifier:Save()
 	local BTM_bomb_crate_B = self:SafeGetOpt("pbr", "_bomb_crate_B")
 	if BTM_bomb_crate_A ~= 0 and BTM_bomb_crate_A == BTM_bomb_crate_B then
 		self:SafeSetData(0, "pbr", "_bomb_crate_A")
+	end
+	local FRIEND_money_A = self:SafeGetOpt("friend", "_money_A")
+	local FRIEND_money_B = self:SafeGetOpt("friend", "_money_B")
+	if FRIEND_money_A ~= 0 and FRIEND_money_A == FRIEND_money_B then
+		self:SafeSetData(0, "friend", "_money_A")
 	end
 	local F1_hangar_1 = self:SafeGetOpt("firestater_1", "_hangar_1")
 	local F1_hangar_1 = self:SafeGetOpt("firestater_1", "_hangar_1")

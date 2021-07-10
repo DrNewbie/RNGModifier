@@ -360,3 +360,23 @@ MenuHelper:AddMultipleChoice({
     value = RNGModifier:SafeGetData("mia_1", "_bile_location"),
     menu_id = "RNGModifier_mia_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mia_1_meth_lab = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_meth_lab")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_1_meth_lab",
+	title = "RNGModifier_mia_1_meth_lab_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_1_meth_lab",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mia_1_meth_lab_1",
+		"RNGModifier_mia_1_meth_lab_2",
+		"RNGModifier_mia_1_meth_lab_3"
+	},
+	value = RNGModifier:SafeGetData("mia_1", "_meth_lab"),
+	menu_id = "RNGModifier_mia_1_Options_Menu"
+})

@@ -24,6 +24,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_pick_rand_escape_vehicle"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_friend_random_phone_location = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_phone_location")
 	RNGModifier:Save()
@@ -44,6 +45,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_random_phone_location"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_friend_laptop_location = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_laptop_location")
 	RNGModifier:Save()
@@ -80,6 +82,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_usb_boss"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_friend_coke_mic = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_coke_mic")
 	RNGModifier:Save()
@@ -96,6 +99,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_coke_mic"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_friend_coke = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_coke")
 	RNGModifier:Save()
@@ -129,5 +133,83 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_friend_coke_0020"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_coke"),
+	menu_id = "RNGModifier_friend_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_friend_button = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_button")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_friend_button",
+	title = "RNGModifier_friend_button_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_friend_button",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_friend_button_1",
+		"RNGModifier_friend_button_2",
+		"RNGModifier_friend_button_3"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_button"),
+	menu_id = "RNGModifier_friend_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_friend_camera = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_friend_camera",
+	title = "RNGModifier_friend_camera_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_friend_camera",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
+	menu_id = "RNGModifier_friend_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_friend_money_A = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_money_A")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_friend_money_A",
+	title = "RNGModifier_friend_money_A_title",
+	desc = "RNGModifier_friend_money_A_desc",
+	callback = "RNGModifier_friend_money_A",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_money_A"),
+	menu_id = "RNGModifier_friend_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_friend_money_B = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_money_B")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_friend_money_B",
+	title = "RNGModifier_friend_money_B_title",
+	desc = "RNGModifier_friend_money_B_desc",
+	callback = "RNGModifier_friend_money_B",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_money_B"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
