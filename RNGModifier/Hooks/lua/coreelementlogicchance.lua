@@ -398,6 +398,13 @@ function ElementLogicChance:on_executed(...)
 					self._chance = new_chance
 				end
 			end
+		elseif _level_id == "vit" then
+			if self._id == 102840 then
+				local _interrupt_chance = RNGModifier:SafeGetData(_level_id, "_interrupt_chance") or 0
+				if _interrupt_chance = 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "peta2" then
 			if self._editor_name == "x_chance" then -- cage pickup success
 				local _cage_success = RNGModifier:SafeGetData(_level_id, "_cage_success") or 0
