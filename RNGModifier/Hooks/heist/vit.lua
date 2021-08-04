@@ -364,7 +364,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_vit_interrupt_chance",
 	title = "RNGModifier_vit_interrupt_chance_title",
-	desc = "RNGModifier_vit_safe_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_vit_interrupt_chance",
 	items = {
 		"RNGModifier_Default_One_Item",
