@@ -1054,6 +1054,35 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_third_number")
 			elseif self._id == 102664 then
 				rand = PickRandomFromList(rand, "_fourth_number")
+			elseif self._id == 100786 then
+				rand = PickRandomFromList(rand, "_wirebox_location1")
+			elseif self._id == 100910 then
+				rand = PickRandomFromList(rand, "_wirebox_location2")
+			elseif self._id == 100911 then
+				rand = PickRandomFromList(rand, "_wirebox_location3")
+			elseif self._id == 100912 then
+				rand = PickRandomFromList(rand, "_wirebox_location4")
+			elseif self._id == 102359 then
+				rand = PickRandomFromList(rand, "_thermite_room")
+			elseif self._id == 100206 then
+				_tmp_data["vit"] = _tmp_data["vit"] or {}
+				_tmp_data["vit"]["_rnd_wirebox"] = _tmp_data["vit"]["_rnd_wirebox"] or 0
+				_tmp_data["vit"]["_rnd_wirebox"] = _tmp_data["vit"]["_rnd_wirebox"] + 1
+				local _rnd_wirebox = _tmp_data["vit"]["_rnd_wirebox"]
+				local _eID = {}
+				for _, _name in pairs({"_wirebox_A", "_wirebox_B"}) do
+					local _var = RNGModifier:SafeGetData("vit", _name) or 0
+					if _var > 1 then
+						table.insert(_eID, _var - 1)
+					end
+				end
+				_rnd_wirebox = _eID[_rnd_wirebox]
+				if type(_rnd_wirebox) == 'number' and _rnd_wirebox > 0 then
+					_rnd_wirebox = table.index_of(self._unused_randoms, _rnd_wirebox)
+					if _rnd_wirebox > 0 then
+						rand = _rnd_wirebox
+					end
+				end
 			end
 		elseif _level_id == "welcome_to_the_jungle_1" or _level_id == "welcome_to_the_jungle_1_night" then
 			if self._id == 100321 then
