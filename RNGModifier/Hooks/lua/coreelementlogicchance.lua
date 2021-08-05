@@ -401,7 +401,7 @@ function ElementLogicChance:on_executed(...)
 		elseif _level_id == "vit" then
 			if self._id == 102840 then
 				local _interrupt_chance = RNGModifier:SafeGetData(_level_id, "_interrupt_chance") or 0
-				if _interrupt_chance = 2 then
+				if _interrupt_chance == 2 then
 					self._chance = -999
 				end
 			end
