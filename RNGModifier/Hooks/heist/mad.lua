@@ -171,3 +171,169 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("mad", "_escape"),
 	menu_id = "RNGModifier_mad_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mad_keycard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_keycard",
+	title = "RNGModifier_mad_keycard_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mad_keycard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_keycard_1",
+		"RNGModifier_mad_keycard_2",
+		"RNGModifier_mad_keycard_3",
+		"RNGModifier_mad_keycard_4",
+		"RNGModifier_mad_keycard_5",
+		"RNGModifier_mad_keycard_6",
+		"RNGModifier_mad_keycard_7",
+		"RNGModifier_mad_keycard_8"
+	},
+	value = RNGModifier:SafeGetData("mad", "_keycard"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_case = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_case")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_case",
+	title = "RNGModifier_mad_case_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mad_case",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_case_1",
+		"RNGModifier_mad_case_2",
+		"RNGModifier_mad_case_3",
+		"RNGModifier_mad_case_4"
+	},
+	value = RNGModifier:SafeGetData("mad", "_case"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_server = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_server")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_server",
+	title = "RNGModifier_mad_server_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mad_server",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_server_1",
+		"RNGModifier_mad_server_2",
+		"RNGModifier_mad_server_3",
+		"RNGModifier_mad_server_4"
+	},
+	value = RNGModifier:SafeGetData("mad", "_server"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_gas = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gas")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_gas",
+	title = "RNGModifier_mad_gas_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mad_gas",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_gas_1",
+		"RNGModifier_mad_gas_2",
+		"RNGModifier_mad_gas_3"
+	},
+	value = RNGModifier:SafeGetData("mad", "_gas"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_hand_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_hand_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_hand_1",
+	title = "RNGModifier_mad_hand_1_title",
+	desc = "RNGModifier_mad_hand_1_desc",
+	callback = "RNGModifier_mad_hand_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_hand_1_1",
+		"RNGModifier_mad_hand_1_2",
+		"RNGModifier_mad_hand_1_3",
+		"RNGModifier_mad_hand_1_4"
+	},
+	value = RNGModifier:SafeGetData("mad", "_hand_1"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_hand_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_hand_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_hand_2",
+	title = "RNGModifier_mad_hand_2_title",
+	desc = "RNGModifier_mad_hand_2_desc",
+	callback = "RNGModifier_mad_hand_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_hand_2_1",
+		"RNGModifier_mad_hand_2_2",
+		"RNGModifier_mad_hand_2_3",
+		"RNGModifier_mad_hand_2_4"
+	},
+	value = RNGModifier:SafeGetData("mad", "_hand_2"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_box_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_box_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_box_1",
+	title = "RNGModifier_mad_box_1_title",
+	desc = "RNGModifier_mad_box_1_desc",
+	callback = "RNGModifier_mad_box_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_box_1_1",
+		"RNGModifier_mad_box_1_2",
+		"RNGModifier_mad_box_1_3",
+		"RNGModifier_mad_box_1_4",
+		"RNGModifier_mad_box_1_5"
+	},
+	value = RNGModifier:SafeGetData("mad", "_box_1"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mad_box_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_box_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mad_box_2",
+	title = "RNGModifier_mad_box_2_title",
+	desc = "RNGModifier_mad_box_2_desc",
+	callback = "RNGModifier_mad_box_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mad_box_2_1",
+		"RNGModifier_mad_box_2_2",
+		"RNGModifier_mad_box_2_3",
+		"RNGModifier_mad_box_2_4",
+		"RNGModifier_mad_box_2_5",
+		"RNGModifier_mad_box_2_6"
+	},
+	value = RNGModifier:SafeGetData("mad", "_box_2"),
+	menu_id = "RNGModifier_mad_Options_Menu"
+})

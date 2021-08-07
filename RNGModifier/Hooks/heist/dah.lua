@@ -82,9 +82,64 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dah_easy_code",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_true"
 	},
 	value = RNGModifier:SafeGetData("dah", "_easy_code"),
+	menu_id = "RNGModifier_dah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_dah_cfo = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_cfo")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dah_cfo",
+	title = "RNGModifier_dah_cfo_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_dah_cfo",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_dah_cfo_1",
+		"RNGModifier_dah_cfo_2",
+		"RNGModifier_dah_cfo_3",
+		"RNGModifier_dah_cfo_4"
+	},
+	value = RNGModifier:SafeGetData("dah", "_cfo"),
+	menu_id = "RNGModifier_dah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_dah_laptops = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_laptops")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dah_laptops",
+	title = "RNGModifier_dah_laptops_title",
+	desc = "RNGModifier_dah_laptops_desc",
+	callback = "RNGModifier_dah_laptops",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("dah", "_laptops"),
+	menu_id = "RNGModifier_dah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_dah_party = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_party")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dah_party",
+	title = "RNGModifier_dah_party_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_dah_party",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("dah", "_party"),
 	menu_id = "RNGModifier_dah_Options_Menu"
 })
 

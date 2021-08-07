@@ -49,6 +49,32 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
+		elseif _level_id == "flat" then
+			if self._id == 102720 then
+				local _ambush = RNGModifier:SafeGetData(_level_id, "_ambush") or 0
+				_ambush = _ambush - 1
+				if _ambush == 1 then
+					self._chance = 999
+				elseif _ambush == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 102827 then
+				local _ambush = RNGModifier:SafeGetData(_level_id, "_ambush") or 0
+				_ambush = _ambush - 1
+				if _ambush == 1 then
+					self._chance = 999
+				elseif _ambush == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 103300 then
+				local _ambush = RNGModifier:SafeGetData(_level_id, "_basement_ambush") or 0
+				_ambush = _ambush - 1
+				if _ambush == 1 then
+					self._chance = 999
+				elseif _ambush == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "brb" then
 			if self._id == 100640 then
 				local _is_2_train = RNGModifier:SafeGetData(_level_id, "_is_2_train") or 0
@@ -66,6 +92,60 @@ function ElementLogicChance:on_executed(...)
 				if _van_rush_in == 1 then
 					self._chance = 999
 				elseif _van_rush_in == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "run" then
+			if self._id == 103347 then
+				local _money = RNGModifier:SafeGetData(_level_id, "_money") or 0
+				_money = _money - 1
+				if _money == 1 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "jewelry_store" then
+			if self._id == 102056 then
+				local _hotdog = RNGModifier:SafeGetData(_level_id, "_hotdog") or 0
+				_hotdog = _hotdog - 1
+				if _hotdog == 1 then
+					self._chance = 999
+				elseif _hotdog == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "ukrainian_job" then
+			if self._id == 102056 then
+				local _hotdog = RNGModifier:SafeGetData(_level_id, "_hotdog") or 0
+				_hotdog = _hotdog - 1
+				if _hotdog == 1 then
+					self._chance = 999
+				elseif _hotdog == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 100518 then
+				local _detector = RNGModifier:SafeGetData(_level_id, "_detector") or 0
+				_detector = _detector - 1
+				if _detector == 1 then
+					self._chance = 999
+				elseif _detector == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "crojob2" then
+			if self._id == 103308 then
+				local _truck = RNGModifier:SafeGetData(_level_id, "_truck") or 0
+				_truck = _truck - 1
+				if _truck == 1 then
+					self._chance = 999
+				elseif _truck == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 103376 then
+				local _truck_loot = RNGModifier:SafeGetData(_level_id, "_truck_loot") or 0
+				_truck_loot = _truck_loot - 1
+				if _truck_loot == 1 then
+					self._chance = 999
+				elseif _truck_loot == 2 then
 					self._chance = -999
 				end
 			end
@@ -130,6 +210,14 @@ function ElementLogicChance:on_executed(...)
 				else
 					self._chance = 999
 				end
+			elseif self._id == 103356 then
+				local _shock = RNGModifier:SafeGetData(_level_id, "_shock") or 0
+				_shock = _shock - 1
+				if _shock == 1 then
+					self._chance = -999
+				elseif _shock == 2 then
+					self._chance = 999
+				end
 			end
 		elseif _level_id == "big" then
 			if self._id == 104494 then
@@ -137,6 +225,14 @@ function ElementLogicChance:on_executed(...)
 				if _chance_to_work == 0 then 
 				
 				else
+					self._chance = 999
+				end
+			elseif self._id == 101648 then
+				local _vault = RNGModifier:SafeGetData(_level_id, "_vault") or 0
+				_vault = _vault - 1
+				if _vault == 1 then
+					self._chance = -999
+				elseif _vault == 2 then
 					self._chance = 999
 				end
 			end
@@ -147,6 +243,14 @@ function ElementLogicChance:on_executed(...)
 				
 				else
 					self._chance = 99999999
+				end
+			elseif self._id == 104110 then
+				local _party = RNGModifier:SafeGetData(_level_id, "_party") or 0
+				_party = _party - 1
+				if _party == 1 then
+					self._chance = 999
+				elseif _party == 2 then
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "dark" then
@@ -292,6 +396,13 @@ function ElementLogicChance:on_executed(...)
 				local new_chance = RNGModifier:SafeGetData(_level_id, "_vile_chance") or -1
 				if new_chance > 0 then
 					self._chance = new_chance
+				end
+			end
+		elseif _level_id == "vit" then
+			if self._id == 102840 then
+				local _interrupt_chance = RNGModifier:SafeGetData(_level_id, "_interrupt_chance") or 0
+				if _interrupt_chance == 2 then
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "peta2" then

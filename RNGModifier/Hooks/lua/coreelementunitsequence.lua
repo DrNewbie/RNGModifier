@@ -27,6 +27,15 @@ function ElementUnitSequence:on_executed(...)
 					return
 				end
 			end
+		elseif _level_id == "firestarter_3" then
+			if self._id == 105193 then
+				local _hideOfficeCard = RNGModifier:SafeGetData("firestarter_3", "_hideOfficeCard") or 1
+				if _hideOfficeCard == 1 then
+				
+				elseif _hideOfficeCard == 2 then
+					return
+				end
+			end
 		end
 	end
 	return RNGModifier_ElementUnitSequence_on_executed(self, ...)

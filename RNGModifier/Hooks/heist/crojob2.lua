@@ -29,6 +29,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_radio"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_computer_side = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_computer_side")
 	RNGModifier:Save()
@@ -46,6 +47,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_computer_side"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_keycard1 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard1")
 	RNGModifier:Save()
@@ -77,6 +79,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_keycard1"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_keycard2 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard2")
 	RNGModifier:Save()
@@ -108,6 +111,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_keycard2"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_keycard3 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard3")
 	RNGModifier:Save()
@@ -139,6 +143,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_keycard3"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_captain_number = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_captain_number")
 	RNGModifier:Save()
@@ -162,6 +167,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_captain_number"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_spawn = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn")
 	RNGModifier:Save()
@@ -180,6 +186,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_spawn"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_activate_bomb = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_activate_bomb")
 	RNGModifier:Save()
@@ -196,6 +203,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_activate_bomb"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_crojob2_bomb_location = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bomb_location")
 	RNGModifier:Save()
@@ -221,5 +229,151 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_12"
 	},
 	value = RNGModifier:SafeGetData("crojob2", "_bomb_location"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_loot_container = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_loot_container")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_loot_container",
+	title = "RNGModifier_crojob2_loot_container_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_crojob2_loot_container",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_loot_container"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_manifest = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_manifest")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_manifest",
+	title = "RNGModifier_crojob2_manifest_title",
+	desc = "RNGModifier_crojob2_manifest_desc",
+	callback = "RNGModifier_crojob2_manifest",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_manifest"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_meth_lab = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_meth_lab")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_meth_lab",
+	title = "RNGModifier_crojob2_meth_lab_title",
+	desc = "RNGModifier_crojob2_meth_lab_desc",
+	callback = "RNGModifier_crojob2_meth_lab",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5",
+		"RNGModifier_number_4_use_6",
+		"RNGModifier_number_4_use_7",
+		"RNGModifier_number_4_use_8",
+		"RNGModifier_number_4_use_9",
+		"RNGModifier_number_4_use_10",
+		"RNGModifier_number_4_use_11",
+		"RNGModifier_number_4_use_12"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_meth_lab"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_gate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_gate",
+	title = "RNGModifier_crojob2_gate_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_crojob2_gate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_crojob2_gate_1",
+		"RNGModifier_crojob2_gate_2"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_gate"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_crowbar = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_crowbar",
+	title = "RNGModifier_crojob2_crowbar_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_crojob2_crowbar",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_crojob2_crowbar_1",
+		"RNGModifier_crojob2_crowbar_2",
+		"RNGModifier_crojob2_crowbar_3",
+		"RNGModifier_crojob2_crowbar_4",
+		"RNGModifier_crojob2_crowbar_5",
+		"RNGModifier_crojob2_crowbar_6",
+		"RNGModifier_crojob2_crowbar_7",
+		"RNGModifier_crojob2_crowbar_8",
+		"RNGModifier_crojob2_crowbar_9",
+		"RNGModifier_crojob2_crowbar_10",
+		"RNGModifier_crojob2_crowbar_11",
+		"RNGModifier_crojob2_crowbar_12",
+		"RNGModifier_crojob2_crowbar_13",
+		"RNGModifier_crojob2_crowbar_14"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_crowbar"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_truck = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_truck")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_truck",
+	title = "RNGModifier_crojob2_truck_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_crojob2_truck",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_truck"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_crojob2_truck_loot = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_truck_loot")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_truck_loot",
+	title = "RNGModifier_crojob2_truck_loot_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_crojob2_truck_loot",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_crojob2_truck_loot_1",
+		"RNGModifier_crojob2_truck_loot_2"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_truck_loot"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
