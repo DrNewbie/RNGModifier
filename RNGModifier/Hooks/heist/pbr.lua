@@ -313,3 +313,102 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_deny"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_pbr_roof_satellite = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_roof_satellite")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pbr_roof_satellite",
+	title = "RNGModifier_pbr_roof_satellite_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pbr_roof_satellite",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pbr_pos_lower",
+		"RNGModifier_pbr_pos_upper"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_roof_satellite"),
+	menu_id = "RNGModifier_pbr_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pbr_behind_satellite = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_behind_satellite")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pbr_behind_satellite",
+	title = "RNGModifier_pbr_behind_satellite_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pbr_behind_satellite",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pbr_pos_lower",
+		"RNGModifier_pbr_pos_upper"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_behind_satellite"),
+	menu_id = "RNGModifier_pbr_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pbr_three_satellites_A = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_three_satellites_A")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pbr_three_satellites_A",
+	title = "RNGModifier_pbr_three_satellites_A_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pbr_three_satellites_A",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_three_satellites_A"),
+	menu_id = "RNGModifier_pbr_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pbr_three_satellites_B = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_three_satellites_B")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pbr_three_satellites_B",
+	title = "RNGModifier_pbr_three_satellites_B_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pbr_three_satellites_B",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_three_satellites_B"),
+	menu_id = "RNGModifier_pbr_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pbr_three_satellites_C = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_three_satellites_C")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pbr_three_satellites_C",
+	title = "RNGModifier_pbr_three_satellites_C_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pbr_three_satellites_C",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_three_satellites_C"),
+	menu_id = "RNGModifier_pbr_Options_Menu"
+})

@@ -1184,6 +1184,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_deny")
 			elseif self._id == 101367 then
 				rand = PickRandomFromList(rand,"_helipad")
+			elseif self._id == 101386 then
+				rand = PickRandomFromList(rand, "_roof_satellite")
+			elseif self._id == 101387 then
+				rand = PickRandomFromList(rand, "_behind_satellite")
 			elseif self._id == 101436 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_two_bomb_crates"] = _tmp_data[_level_id]["select_two_bomb_crates"] or 0
@@ -1199,6 +1203,25 @@ function ElementRandom:_get_random_elements()
 					_bomb_crate_B = _bomb_crate_B - 1
 					if _bomb_crate_B > 0 then
 						rand = _bomb_crate_B
+					end
+				end
+			elseif self._id == 101374 then
+				_tmp_data["pbr"] = _tmp_data["pbr"] or {}
+				_tmp_data["pbr"]["_three_rnd_satellites"] = _tmp_data["pbr"]["_three_rnd_satellites"] or 0
+				_tmp_data["pbr"]["_three_rnd_satellites"] = _tmp_data["pbr"]["_three_rnd_satellites"] + 1
+				local _three_rnd_satellites = _tmp_data["pbr"]["_three_rnd_satellites"]
+				local _eID = {}
+				for _, _name in pairs({"_three_satellites_A", "_three_satellites_B", "_three_satellites_C"}) do
+					local _var = RNGModifier:SafeGetData("pbr", _name) or 0
+					if _var > 1 then
+						table.insert(_eID, _var - 1)
+					end
+				end
+				_three_rnd_satellites = _eID[_three_rnd_satellites]
+				if type(_three_rnd_satellites) == 'number' and _three_rnd_satellites > 0 then
+					_three_rnd_satellites = table.index_of(self._unused_randoms, _three_rnd_satellites)
+					if _three_rnd_satellites > 0 then
+						rand = _three_rnd_satellites
 					end
 				end
 			end
