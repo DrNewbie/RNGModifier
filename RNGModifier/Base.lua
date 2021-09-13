@@ -42,6 +42,7 @@ RNGModifier._heistlist = {
 	"run",--Classics -  Heat Street
 	"nmh",--Classics -  No Mercy
 	"flat",--Classics - Panic Room
+	"dinner",--Classics - Slaughterhouse
 	"man",--Classics -  Undercover
 	"hvh",--Events -  Cursed Kill Room
 	"help",--Events -  Prison Nightmare
@@ -58,6 +59,7 @@ RNGModifier._heistlist = {
 	"sand",--Jiu Feng - The Ukrainian Prisoner
 	"wwh",--Locke - Alaskan Deal
 	"pbr",--Locke - Beneath The Mountain
+	"pbr2",--Locke - Birth Of Sky
 	"mex",--Locke - Border Crossing
 	"mex_cooking",--Locke - Border Crystals
 	"pex",--Locke - Breakfast In Tijuana
