@@ -41,6 +41,36 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "four_stores" then
+			if self._id == 102422 or self._id == 102423 or self._id == 102424 then
+				local _force_safe = RNGModifier:SafeGetData(_level_id, "_force_safe") or 0
+				_force_safe = _force_safe - 1
+				if _force_safe == 1 then
+					self._chance = 999
+				elseif _force_safe == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "branchbank" then
+			if self._id == 102194 then
+				local _safe = RNGModifier:SafeGetData(_level_id, "_safe") or 0
+				_safe = _safe - 1
+				if _safe == 1 then
+					self._chance = -999
+				elseif _safe == 2 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "firestarter_3" then
+			if self._id == 102194 then
+				local _safe = RNGModifier:SafeGetData(_level_id, "_safe") or 0
+				_safe = _safe - 1
+				if _safe == 1 then
+					self._chance = -999
+				elseif _safe == 2 then
+					self._chance = 999
+				end
+			end
 		elseif _level_id == "glace" then
 			if self._id == 100616 then
 				local _logic_chance_001 = RNGModifier:SafeGetData(_level_id, "_logic_chance_001") or 0 
@@ -216,6 +246,14 @@ function ElementLogicChance:on_executed(...)
 				if _shock == 1 then
 					self._chance = -999
 				elseif _shock == 2 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "welcome_to_the_jungle_2" or _level_id == "welcome_to_the_jungle_2_night" then
+			if self._id == 103241 then
+				local _ammo_bag = RNGModifier:SafeGetData(_level_id, "_ammo_bag") or 0
+				_ammo_bag = _ammo_bag - 1
+				if _ammo_bag == 1 then
 					self._chance = 999
 				end
 			end
