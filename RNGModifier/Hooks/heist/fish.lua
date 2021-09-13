@@ -166,3 +166,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("fish", "_aquarium"),
 	menu_id = "RNGModifier_fish_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_fish_body_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_body_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_fish_body_bag",
+	title = "RNGModifier_fish_body_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_fish_body_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_fish_body_bag_1",
+		"RNGModifier_fish_body_bag_2",
+		"RNGModifier_fish_body_bag_3"
+	},
+	value = RNGModifier:SafeGetData("fish", "_body_bag"),
+	menu_id = "RNGModifier_fish_Options_Menu"
+})
