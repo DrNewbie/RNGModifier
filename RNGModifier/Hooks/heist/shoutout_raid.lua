@@ -194,3 +194,72 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_70_chance"),
 	menu_id = "RNGModifier_shoutout_raid_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_shoutout_raid_loot = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_loot")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_shoutout_raid_loot",
+	title = "RNGModifier_shoutout_raid_loot_title",
+	desc = "RNGModifier_shoutout_raid_loot_desc",
+	callback = "RNGModifier_shoutout_raid_loot",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2",
+		"RNGModifier_number_4_use_3",
+		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_5",
+		"RNGModifier_number_4_use_6",
+		"RNGModifier_number_4_use_7",
+		"RNGModifier_number_4_use_8",
+		"RNGModifier_number_4_use_9",
+		"RNGModifier_number_4_use_10",
+		"RNGModifier_number_4_use_11",
+		"RNGModifier_number_4_use_12",
+		"RNGModifier_number_4_use_13"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_loot"),
+	menu_id = "RNGModifier_shoutout_raid_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_shoutout_raid_ammo_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ammo_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_shoutout_raid_ammo_bag",
+	title = "RNGModifier_shoutout_raid_ammo_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_shoutout_raid_ammo_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_shoutout_raid_ammo_bag_1",
+		"RNGModifier_shoutout_raid_ammo_bag_2",
+		"RNGModifier_shoutout_raid_ammo_bag_3",
+		"RNGModifier_shoutout_raid_ammo_bag_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_ammo_bag"),
+	menu_id = "RNGModifier_shoutout_raid_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_shoutout_raid_doctor_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_doctor_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_shoutout_raid_doctor_bag",
+	title = "RNGModifier_shoutout_raid_doctor_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_shoutout_raid_doctor_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_shoutout_raid_doctor_bag_1",
+		"RNGModifier_shoutout_raid_doctor_bag_2",
+		"RNGModifier_shoutout_raid_doctor_bag_3",
+		"RNGModifier_shoutout_raid_doctor_bag_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_doctor_bag"),
+	menu_id = "RNGModifier_shoutout_raid_Options_Menu"
+})
