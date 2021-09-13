@@ -77,3 +77,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_hideOfficeCard"),
 	menu_id = "RNGModifier_branchbank_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_branchbank_safe = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_safe")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_branchbank_safe",
+	title = "RNGModifier_branchbank_safe_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_branchbank_safe",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe"),
+	menu_id = "RNGModifier_branchbank_Options_Menu"
+})
