@@ -110,6 +110,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_manager")
 			elseif self._id == 100126 then
 				rand = PickRandomFromList(rand, "_choose_spawn")
+			elseif self._id == 103432 then
+				rand = PickRandomFromList(rand, "_body_bag")
 			end
 		elseif _level_id == "framing_frame_1" then
 			if self._id == 103010 then
@@ -163,6 +165,14 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_coke_mic")
 			elseif self._id == 102049 then
 				rand = PickRandomFromList(rand, "_button")
+			elseif self._id == 101390 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 101393 then
+				rand = PickRandomFromList(rand, "_body_bag")
+			elseif self._id == 101392 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 101391 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			elseif self._id == 102406 then
 				local _camera = RNGModifier:SafeGetData(_level_id, "_camera") or 0
 				_camera = _camera - 1
@@ -295,9 +305,23 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_random_flare")
 			elseif self._id == 100337 then
 				rand = PickRandomFromList(rand, "_chose_methlab_position")
+			elseif self._id == 102311 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 102403 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 102408 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "arena" then
-			if self._id == 134971 then
+			if self._id == 101971 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 101974 then
+				rand = PickRandomFromList(rand, "_body_bag")
+			elseif self._id == 101977 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 101980 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			elseif self._id == 134971 then
 				local _are_pyro_booth = RNGModifier:SafeGetData(_level_id, "_are_pyro_booth") or 0
 				_are_pyro_booth = _are_pyro_booth - 1
 				if _are_pyro_booth > 0 then
@@ -438,6 +462,22 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_power_boxes")
 			elseif self._id == 106497 then
 				rand = PickRandomFromList(rand, "_keycard")
+			elseif self._id == 105709 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 105763 then
+				rand = PickRandomFromList(rand, "_body_bag")
+			elseif self._id == 105725 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 105724 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			end
+		elseif _level_id == "run" then
+			if self._id == 100611 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 100618 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 100616 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "chill_combat" then
 			if self._id == 101335 then
@@ -454,6 +494,12 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "help" then
 			if self._id == 100854 then
 				rand = PickRandomFromList(rand, "_c4")
+			elseif self._id == 101850 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 101851 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 101849 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "rvd1" then
 			if self._id == 101365 then
@@ -474,6 +520,8 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100730 then
 				-- there are 4 positions, but some things can make them unusable, like if the gate is closed for example.
 				rand = PickValueFromList(rand, "_car_crash_drive_in")
+			elseif self._id == 100962 then
+				rand = PickRandomFromList(rand, "_assets")
 			end
 		elseif _level_id == "rvd2" then
 			if self._id == 100442 then
@@ -526,6 +574,12 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "mex_cooking" then
 			if self._id == 102820 then
 				rand = PickRandomFromList(rand, "_methlab")
+			elseif self._id == 101844 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 103636 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 103637 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "fex" then
 			if self._id == 101409 then
@@ -695,6 +749,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_pick_keycard_upper")
 			elseif self._id == 101862 then
 				rand = PickRandomFromList(rand, "_pick_keycard_lower")
+			elseif self._id == 102246 then
+				rand = PickRandomFromList(rand, "_body_bag")
 			end
 		elseif _level_id == "mad" then
 			if self._id == 100214 then
@@ -961,11 +1017,15 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 100892 then
 				rand = PickRandomFromList(rand, "_randomize_security_rooms")
 			elseif self._id == 101197 then
-				rand = PickRandomFromList(rand, "_randomzize_electrical_boxes")
+				rand = PickRandomFromList(rand, "_randomize_electrical_boxes")
+			elseif self._id == 101293 then
+				rand = PickRandomFromList(rand, "_randomize_ladder")
 			end
 		elseif _level_id == "nmh" then
 			if self._id == 102309 then
 				rand = PickRandomFromList(rand, "_chooseRandomRoom")
+			elseif self._id == 105361 then
+				rand = PickRandomFromList(rand, "_assets")
 			end
 		elseif _level_id == "firestarter_1" then
 			if self._id == 102208 then
@@ -1005,6 +1065,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_boss")
 			elseif self._id == 101710 then
 				rand = PickRandomFromList(rand, "_setup")
+			elseif self._id == 103006 then
+				rand = PickRandomFromList(rand, "_assets")
+			elseif self._id == 103010 then
+				rand = PickRandomFromList(rand, "_body_bag")
 			elseif self._id == 101899 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_keycard_003"] = _tmp_data[_level_id]["select_keycard_003"] or 0
@@ -1115,12 +1179,20 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_upper_van_spawn")
 			elseif self._id == 101255 then
 				rand = PickRandomFromList(rand,"_c4")
+			elseif self._id == 101506 then
+				rand = PickRandomFromList(rand,"_ammo_bag")
+			elseif self._id == 101515 then
+				rand = PickRandomFromList(rand,"_grenade_case")
+			elseif self._id == 100687 then
+				rand = PickRandomFromList(rand,"_doctor_bag")
 			end
 		elseif _level_id == "four_stores" then
 			if self._id == 101205 then
 				rand = PickRandomFromList(rand,"_escape")
 			elseif self._id == 103591 then
 				rand = PickRandomFromList(rand,"_time")
+			elseif self._id == 101106 then
+				rand = PickRandomFromList(rand,"_spawn")
 			end
 		elseif _level_id == "pal" then
 			if self._id == 100026 then
@@ -1133,6 +1205,12 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_valve")
 			elseif self._id == 101325 then
 				rand = PickRandomFromList(rand,"_manhole")
+			elseif self._id == 102111 then
+				rand = PickRandomFromList(rand,"_ammo_bag")
+			elseif self._id == 102249 then
+				rand = PickRandomFromList(rand,"_grenade_case")
+			elseif self._id == 101871 then
+				rand = PickRandomFromList(rand,"_doctor_bag")
 			elseif self._id == 100127 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["crowbar_street"] = _tmp_data[_level_id]["crowbar_street"] or 0
@@ -1225,6 +1303,14 @@ function ElementRandom:_get_random_elements()
 					end
 				end
 			end
+		elseif _level_id == "pbr2" then
+			if self._id == 102072 then
+				rand = PickRandomFromList(rand,"_ammo_bag")
+			elseif self._id == 102073 then
+				rand = PickRandomFromList(rand,"_grenade_case")
+			elseif self._id == 102071 then
+				rand = PickRandomFromList(rand,"_doctor_bag")
+			end
 		elseif _level_id == "man" then
 			if self._id == 102026 then
 				rand = PickRandomFromList(rand,"_roof_boxes")
@@ -1234,6 +1320,12 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_spawn")
 			elseif self._id == 101786 then
 				rand = PickRandomFromList(rand,"_limo")
+			elseif self._id == 103130 then
+				rand = PickRandomFromList(rand,"_ammo_bag")
+			elseif self._id == 103132 then
+				rand = PickRandomFromList(rand,"_grenade_case")
+			elseif self._id == 103128 then
+				rand = PickRandomFromList(rand,"_doctor_bag")
 			elseif self._id == 101647 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["random_crowbar"] = _tmp_data[_level_id]["random_crowbar"] or 0
@@ -1257,6 +1349,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_truck")
 			elseif self._id == 103714 then
 				rand = PickRandomFromList(rand, "_gate")
+			elseif self._id == 101321 then
+				rand = PickRandomFromList(rand, "_pc")
 			end
 		elseif _level_id == "election_day_2" then
 			if self._id == 101027 then
@@ -1420,6 +1514,12 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_cage")
 			elseif self._id == 106081 then
 				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 107061 then
+				rand = PickRandomFromList(rand, "_loot")
+			elseif self._id == 105515 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 105514 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end	
 		elseif _level_id == "fish" then
 			if self._id == 100332 then
@@ -1440,12 +1540,20 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_fridge")
 			elseif self._id == 100313 then
 				rand = PickRandomFromList(rand, "_aquarium")
+			elseif self._id == 100708 then
+				rand = PickRandomFromList(rand, "_body_bag")
 			end
 		elseif _level_id == "spa" then
 			if self._id == 100466 then
 				rand = PickRandomFromList(rand, "_briefcase")
 			elseif self._id == 100490 then
 				rand = PickRandomFromList(rand, "_ammo")
+			elseif self._id == 100798 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 100800 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 100797 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "peta" then
 			if self._id == 100190 then
@@ -1579,7 +1687,9 @@ function ElementRandom:_get_random_elements()
 				end
 			end
 		elseif _level_id == "moon" then
-			if self._id == 100240 then
+			if self._id == 102082 then
+				rand = PickRandomFromList(rand,"_assets")
+			elseif self._id == 100240 then
 				_tmp_data["moon"] = _tmp_data["moon"] or {}
 				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] or 0
 				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] + 1
@@ -1677,6 +1787,12 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "born" then
 			if self._id == 101147 then
 				rand = PickRandomFromList(rand, "_random_truck_location")
+			elseif self._id == 100285 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 100412 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 100404 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "bph" then
 			if self._id == 103388 then
@@ -1707,6 +1823,29 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_chavez")
 			elseif self._id == 102715 then
 				rand = PickRandomFromList(rand, "_door")
+			elseif self._id == 102307 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 102202 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 102767 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			end
+		elseif _level_id == "dinner" then
+			if self._id == 105038 then
+				rand = PickRandomFromList(rand, "_keycard")
+			elseif self._id == 104404 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 104403 then
+				rand = PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 104402 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			elseif self._id == 101288 then
+				local _pig = RNGModifier:SafeGetData(_level_id, "_pig") or 0
+				_pig = _pig - 1
+				if _pig > 0 then
+					local ids_for_1 = {[101288] = 14}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "escape_overpass" then
 			if self._id == 101984 then
