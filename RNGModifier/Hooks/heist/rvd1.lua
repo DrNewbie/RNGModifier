@@ -159,3 +159,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("rvd1", "_saw"),
 	menu_id = "RNGModifier_rvd1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_rvd1_assets = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_assets")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_rvd1_assets",
+	title = "RNGModifier_rvd1_assets_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_rvd1_assets",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_rvd1_assets_1",
+		"RNGModifier_rvd1_assets_2",
+		"RNGModifier_rvd1_assets_3",
+		"RNGModifier_rvd1_assets_4"
+	},
+	value = RNGModifier:SafeGetData("rvd1", "_assets"),
+	menu_id = "RNGModifier_rvd1_Options_Menu"
+})
