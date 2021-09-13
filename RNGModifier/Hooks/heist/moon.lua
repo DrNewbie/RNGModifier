@@ -68,3 +68,24 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_select_excursion_C"),
 	menu_id = "RNGModifier_moon_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_moon_assets = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_assets")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_moon_assets",
+	title = "RNGModifier_moon_assets_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_moon_assets",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_moon_assets_1",
+		"RNGModifier_moon_assets_2",
+		"RNGModifier_moon_assets_3",
+		"RNGModifier_moon_assets_4",
+		"RNGModifier_moon_assets_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_assets"),
+	menu_id = "RNGModifier_moon_Options_Menu"
+})
