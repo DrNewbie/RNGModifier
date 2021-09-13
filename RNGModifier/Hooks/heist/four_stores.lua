@@ -43,3 +43,38 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_four_stores_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_four_stores_spawn = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_four_stores_spawn",
+	title = "RNGModifier_four_stores_spawn_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_four_stores_spawn",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_four_stores_spawn_1",
+		"RNGModifier_four_stores_spawn_2"
+	},
+	value = RNGModifier:SafeGetData("four_stores", "_spawn"),
+	menu_id = "RNGModifier_four_stores_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_four_stores_force_safe = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_safe")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_four_stores_force_safe",
+	title = "RNGModifier_four_stores_force_safe_title",
+	desc = "RNGModifier_four_stores_force_safe_desc",
+	callback = "RNGModifier_four_stores_force_safe",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("four_stores", "_force_safe"),
+	menu_id = "RNGModifier_four_stores_Options_Menu"
+})
