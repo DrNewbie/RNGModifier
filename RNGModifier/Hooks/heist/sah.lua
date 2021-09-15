@@ -146,21 +146,40 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_sah_Options_Menu"
 })
 
-MenuCallbackHandler.RNGModifier_sah_randomzize_electrical_boxes = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomzize_electrical_boxes")
+MenuCallbackHandler.RNGModifier_sah_randomize_electrical_boxes = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_electrical_boxes")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
 	priority = 93,
-	id = "RNGModifier_sah_randomzize_electrical_boxes",
-	title = "RNGModifier_sah_randomzize_electrical_boxes_title",
+	id = "RNGModifier_sah_randomize_electrical_boxes",
+	title = "RNGModifier_sah_randomize_electrical_boxes_title",
 	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_sah_randomzize_electrical_boxes",
+	callback = "RNGModifier_sah_randomize_electrical_boxes",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_sah_randomzize_electrical_boxes_1",
-		"RNGModifier_sah_randomzize_electrical_boxes_2"
+		"RNGModifier_sah_randomize_electrical_boxes_1",
+		"RNGModifier_sah_randomize_electrical_boxes_2"
 	},
-	value = RNGModifier:SafeGetData("sah", "_randomzize_electrical_boxes"),
+	value = RNGModifier:SafeGetData("sah", "_randomize_electrical_boxes"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_ladder = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_ladder")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 92,
+	id = "RNGModifier_sah_randomize_ladder",
+	title = "RNGModifier_sah_randomize_ladder_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_sah_randomize_ladder",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_ladder_1",
+		"RNGModifier_sah_randomize_ladder_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_ladder"),
 	menu_id = "RNGModifier_sah_Options_Menu"
 })

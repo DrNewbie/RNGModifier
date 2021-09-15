@@ -295,3 +295,41 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_hox_3_assets = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_assets")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_assets",
+	title = "RNGModifier_hox_3_assets_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_assets",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_assets_1",
+		"RNGModifier_hox_3_assets_2",
+		"RNGModifier_hox_3_assets_3"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_assets"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_body_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_body_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_body_bag",
+	title = "RNGModifier_hox_3_body_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_body_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_body_bag_1",
+		"RNGModifier_hox_3_body_bag_2",
+		"RNGModifier_hox_3_body_bag_3"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_body_bag"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})

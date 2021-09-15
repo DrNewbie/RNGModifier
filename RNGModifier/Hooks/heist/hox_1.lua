@@ -51,20 +51,3 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_logic_random_007"),
 	menu_id = "RNGModifier_hox_1_Options_Menu"
 })
-
-MenuCallbackHandler.RNGModifier_hox_1_spike = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spike")
-	RNGModifier:Save()
-end
-MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_hox_1_spike",
-	title = "RNGModifier_hox_1_spike_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_hox_1_spike",
-	items = {
-		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1"
-	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "_spike"),
-	menu_id = "RNGModifier_hox_1_Options_Menu"
-})

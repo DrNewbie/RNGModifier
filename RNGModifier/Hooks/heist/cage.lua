@@ -97,3 +97,24 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_choose_spawn"),
 	menu_id = "RNGModifier_cage_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_cage_body_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_body_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_cage_body_bag",
+	title = "RNGModifier_cage_body_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_cage_body_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_cage_body_bag_1",
+		"RNGModifier_cage_body_bag_2",
+		"RNGModifier_cage_body_bag_3",
+		"RNGModifier_cage_body_bag_4",
+		"RNGModifier_cage_body_bag_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_body_bag"),
+	menu_id = "RNGModifier_cage_Options_Menu"
+})

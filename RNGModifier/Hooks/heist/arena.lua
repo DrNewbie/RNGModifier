@@ -21,9 +21,84 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_number_4_use_1",
 		"RNGModifier_number_4_use_2",
 		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
+		"RNGModifier_number_4_use_4"
 	},
 	value = RNGModifier:SafeGetData("arena", "_select_security_room"),
 	menu_id = "RNGModifier_arena_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_arena_ammo_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ammo_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arena_ammo_bag",
+	title = "RNGModifier_arena_ammo_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arena_ammo_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arena_ammo_bag_1",
+		"RNGModifier_arena_ammo_bag_2",
+		"RNGModifier_arena_ammo_bag_3"
+	},
+	value = RNGModifier:SafeGetData("arena", "_ammo_bag"),
+	menu_id = "RNGModifier_arena_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_arena_body_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_body_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arena_body_bag",
+	title = "RNGModifier_arena_body_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arena_body_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arena_body_bag_1",
+		"RNGModifier_arena_body_bag_2",
+		"RNGModifier_arena_body_bag_3"
+	},
+	value = RNGModifier:SafeGetData("arena", "_body_bag"),
+	menu_id = "RNGModifier_arena_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_arena_grenade_case = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_grenade_case")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arena_grenade_case",
+	title = "RNGModifier_arena_grenade_case_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arena_grenade_case",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arena_grenade_case_1",
+		"RNGModifier_arena_grenade_case_2",
+		"RNGModifier_arena_grenade_case_3"
+	},
+	value = RNGModifier:SafeGetData("arena", "_grenade_case"),
+	menu_id = "RNGModifier_arena_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_arena_doctor_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_doctor_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arena_doctor_bag",
+	title = "RNGModifier_arena_doctor_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arena_doctor_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arena_doctor_bag_1",
+		"RNGModifier_arena_doctor_bag_2",
+		"RNGModifier_arena_doctor_bag_3"
+	},
+	value = RNGModifier:SafeGetData("arena", "_doctor_bag"),
+	menu_id = "RNGModifier_arena_Options_Menu"
+})

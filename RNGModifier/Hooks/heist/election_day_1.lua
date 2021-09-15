@@ -27,6 +27,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_truck"),
 	menu_id = "RNGModifier_election_day_1_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_1_gate = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate")
 	RNGModifier:Save()
@@ -44,6 +45,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_gate"),
 	menu_id = "RNGModifier_election_day_1_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_1_chance_of_container = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chance_of_container")
 	RNGModifier:Save()
@@ -61,3 +63,24 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_election_day_1_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_election_day_1_pc = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pc")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_election_day_1_pc",
+	title = "RNGModifier_election_day_1_pc_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_election_day_1_pc",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_election_day_1_pc_1",
+		"RNGModifier_election_day_1_pc_2",
+		"RNGModifier_election_day_1_pc_3",
+		"RNGModifier_election_day_1_pc_4",
+		"RNGModifier_election_day_1_pc_5",
+		"RNGModifier_election_day_1_pc_6"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_pc"),
+	menu_id = "RNGModifier_election_day_1_Options_Menu"
+})
