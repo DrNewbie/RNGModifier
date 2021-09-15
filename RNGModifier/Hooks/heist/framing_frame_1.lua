@@ -23,3 +23,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
 	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_framing_frame_1_paintings = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_paintings")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_1_paintings",
+	title = "RNGModifier_framing_frame_1_paintings_title",
+	desc = "RNGModifier_framing_frame_1_paintings_desc",
+	callback = "RNGModifier_framing_frame_1_paintings",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_paintings"),
+	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
+})
