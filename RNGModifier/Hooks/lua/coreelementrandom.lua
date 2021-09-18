@@ -104,35 +104,7 @@ function ElementRandom:_get_random_elements()
 				local _paintings = RNGModifier:SafeGetData(_level_id, "_paintings") or 0
 				_paintings = _paintings - 1
 				if _paintings > 0 then
-					local ids_for_1 = {[100515] = 37}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 38}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 39}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 40}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 41}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 42}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 43}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 44}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 45}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 46}
-					rand = ids_for_1[self._id] or rand
+					rand = 35
 				end
 			end
 		elseif _level_id == "cage" then
@@ -154,35 +126,7 @@ function ElementRandom:_get_random_elements()
 				local _paintings = RNGModifier:SafeGetData(_level_id, "_paintings") or 0
 				_paintings = _paintings - 1
 				if _paintings > 0 then
-					local ids_for_1 = {[100515] = 37}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 38}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 39}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 40}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 41}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 42}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 43}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 44}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 45}
-					rand = ids_for_1[self._id] or rand
-				elseif _paintings > 0 then
-					local ids_for_1 = {[100515] = 46}
-					rand = ids_for_1[self._id] or rand
+					rand = 35
 				end
 			end
 		elseif _level_id == "framing_frame_3" then
@@ -393,20 +337,7 @@ function ElementRandom:_get_random_elements()
 				local _easy_c4 = RNGModifier:SafeGetData(_level_id, "_easy_c4") or 0
 				_easy_c4 = _easy_c4 - 1
 				if _easy_c4 > 0 then
-					local ids_for_1 = {[103714] = 1}
-					rand = ids_for_1[self._id] or rand
-				elseif _easy_c4 > 0 then
-					local ids_for_1 = {[103714] = 2}
-					rand = ids_for_1[self._id] or rand
-				elseif _easy_c4 > 0 then
-					local ids_for_1 = {[103714] = 3}
-					rand = ids_for_1[self._id] or rand
-				elseif _easy_c4 > 0 then
-					local ids_for_1 = {[103714] = 4}
-					rand = ids_for_1[self._id] or rand
-				elseif _easy_c4 > 0 then
-					local ids_for_1 = {[103714] = 5}
-					rand = ids_for_1[self._id] or rand
+					rand = 1
 				end
 			elseif self._id == 134971 then
 				local _are_pyro_booth = RNGModifier:SafeGetData(_level_id, "_are_pyro_booth") or 0
