@@ -100,6 +100,40 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "gallery" then
 			if self._id == 103010 then
 				rand = PickRandomFromList(rand, "_camera")
+			elseif self._id == 100515 then
+				local _paintings = RNGModifier:SafeGetData(_level_id, "_paintings") or 0
+				_paintings = _paintings - 1
+				if _paintings > 0 then
+					local ids_for_1 = {[100515] = 37}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 38}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 39}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 40}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 41}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 42}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 43}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 44}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 45}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 46}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "cage" then
 			if self._id == 104929 then
@@ -116,6 +150,40 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "framing_frame_1" then
 			if self._id == 103010 then
 				rand = PickRandomFromList(rand, "_camera")
+			elseif self._id == 100515 then
+				local _paintings = RNGModifier:SafeGetData(_level_id, "_paintings") or 0
+				_paintings = _paintings - 1
+				if _paintings > 0 then
+					local ids_for_1 = {[100515] = 37}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 38}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 39}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 40}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 41}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 42}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 43}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 44}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 45}
+					rand = ids_for_1[self._id] or rand
+				elseif _paintings > 0 then
+					local ids_for_1 = {[100515] = 46}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "framing_frame_3" then
 			if self._id == 105506 then
@@ -321,6 +389,25 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_grenade_case")
 			elseif self._id == 101980 then
 				rand = PickRandomFromList(rand, "_doctor_bag")
+			elseif self._id == 103714 then
+				local _easy_c4 = RNGModifier:SafeGetData(_level_id, "_easy_c4") or 0
+				_easy_c4 = _easy_c4 - 1
+				if _easy_c4 > 0 then
+					local ids_for_1 = {[103714] = 1}
+					rand = ids_for_1[self._id] or rand
+				elseif _easy_c4 > 0 then
+					local ids_for_1 = {[103714] = 2}
+					rand = ids_for_1[self._id] or rand
+				elseif _easy_c4 > 0 then
+					local ids_for_1 = {[103714] = 3}
+					rand = ids_for_1[self._id] or rand
+				elseif _easy_c4 > 0 then
+					local ids_for_1 = {[103714] = 4}
+					rand = ids_for_1[self._id] or rand
+				elseif _easy_c4 > 0 then
+					local ids_for_1 = {[103714] = 5}
+					rand = ids_for_1[self._id] or rand
+				end
 			elseif self._id == 134971 then
 				local _are_pyro_booth = RNGModifier:SafeGetData(_level_id, "_are_pyro_booth") or 0
 				_are_pyro_booth = _are_pyro_booth - 1
@@ -478,6 +565,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_grenade_case")
 			elseif self._id == 100616 then
 				rand = PickRandomFromList(rand, "_doctor_bag")
+			elseif self._id == 100427 then
+				rand = PickRandomFromList(rand, "_turret_1")
+			elseif self._id == 100507 then
+				rand = PickRandomFromList(rand, "_turret_2")
 			end
 		elseif _level_id == "chill_combat" then
 			if self._id == 101335 then
@@ -528,6 +619,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_hack")
 			elseif self._id == 100581 then
 				rand = PickRandomFromList(rand, "_vehicle")
+			elseif self._id == 101114 then
+				rand = PickRandomFromList(rand, "_gensec")
 			end
 		elseif _level_id == "brb" then
 			if self._id == 100619 then

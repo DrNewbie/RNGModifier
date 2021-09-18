@@ -80,3 +80,45 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("run", "_doctor_bag"),
 	menu_id = "RNGModifier_run_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_run_turret_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_turret_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_run_turret_1",
+	title = "RNGModifier_run_turret_1_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_run_turret_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_run_turret_1_1",
+		"RNGModifier_run_turret_1_2",
+		"RNGModifier_run_turret_1_3",
+		"RNGModifier_run_turret_1_4",
+		"RNGModifier_run_turret_1_5"
+	},
+	value = RNGModifier:SafeGetData("run", "_turret_1"),
+	menu_id = "RNGModifier_run_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_run_turret_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_turret_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_run_turret_2",
+	title = "RNGModifier_run_turret_2_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_run_turret_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_run_turret_2_1",
+		"RNGModifier_run_turret_2_2",
+		"RNGModifier_run_turret_2_3",
+		"RNGModifier_run_turret_2_4",
+		"RNGModifier_run_turret_2_5"
+	},
+	value = RNGModifier:SafeGetData("run", "_turret_2"),
+	menu_id = "RNGModifier_run_Options_Menu"
+})

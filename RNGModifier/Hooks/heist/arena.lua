@@ -102,3 +102,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("arena", "_doctor_bag"),
 	menu_id = "RNGModifier_arena_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_arena_easy_c4 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_c4")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arena_easy_c4",
+	title = "RNGModifier_arena_easy_c4_title",
+	desc = "RNGModifier_arena_easy_c4_desc",
+	callback = "RNGModifier_arena_easy_c4",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("arena", "_easy_c4"),
+	menu_id = "RNGModifier_arena_Options_Menu"
+})
