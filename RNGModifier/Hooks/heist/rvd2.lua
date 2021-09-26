@@ -41,3 +41,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("rvd2", "_vehicle"),
 	menu_id = "RNGModifier_rvd2_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_rvd2_gensec = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gensec")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_rvd2_gensec",
+	title = "RNGModifier_rvd2_gensec_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_rvd2_gensec",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_rvd2_gensec_1",
+		"RNGModifier_rvd2_gensec_2"
+	},
+	value = RNGModifier:SafeGetData("rvd2", "_gensec"),
+	menu_id = "RNGModifier_rvd2_Options_Menu"
+})

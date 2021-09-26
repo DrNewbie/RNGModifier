@@ -294,7 +294,7 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN",
+		"RNGModifier_switch_4_DOWN"
 	},
 	value = RNGModifier:SafeGetData("dark", "_thermite_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -313,7 +313,7 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN",
+		"RNGModifier_switch_4_DOWN"
 	},
 	value = RNGModifier:SafeGetData("dark", "_blowtorch_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -332,7 +332,7 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN",
+		"RNGModifier_switch_4_DOWN"
 	},
 	value = RNGModifier:SafeGetData("dark", "_hd_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -351,9 +351,27 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN",
+		"RNGModifier_switch_4_DOWN"
 	},
 	value = RNGModifier:SafeGetData("dark", "_keycard_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_dark_body_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_body_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_dark_body_bag",
+	title = "RNGModifier_dark_body_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_dark_body_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_dark_body_bag_1",
+		"RNGModifier_dark_body_bag_2",
+		"RNGModifier_dark_body_bag_3"
+	},
+	value = RNGModifier:SafeGetData("dark", "_body_bag"),
+	menu_id = "RNGModifier_dark_Options_Menu"
+})

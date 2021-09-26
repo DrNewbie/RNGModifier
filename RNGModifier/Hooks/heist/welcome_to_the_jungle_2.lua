@@ -106,4 +106,19 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
 })
 
-
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_ammo_bag = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ammo_bag")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_2_ammo_bag",
+	title = "RNGModifier_welcome_to_the_jungle_2_ammo_bag_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_2_ammo_bag",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_2_ammo_bag_1"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_ammo_bag"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
+})
