@@ -406,6 +406,7 @@ function ElementLogicChance:on_executed(...)
 		elseif _level_id == "shoutout_raid" then
 			if self._id == 100326 then
 				local _70_chance = RNGModifier:SafeGetData(_level_id, "_70_chance") or 0
+				_70_chance = _70_chance - 1
 				if _70_chance == 1 then
 					self._chance = -999
 				elseif _70_chance == 2 then
