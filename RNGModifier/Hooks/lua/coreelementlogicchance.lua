@@ -416,6 +416,7 @@ function ElementLogicChance:on_executed(...)
 		elseif _level_id == "hox_3" then
 			if self._id == 103347 then
 				local _fake_boss = RNGModifier:SafeGetData(_level_id, "_fake_boss") or 0
+				_fake_boss = _fake_boss - 1
 				if _fake_boss == 1 then
 					self._chance = -999
 				end
