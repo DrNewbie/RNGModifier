@@ -406,6 +406,7 @@ function ElementLogicChance:on_executed(...)
 		elseif _level_id == "shoutout_raid" then
 			if self._id == 100326 then
 				local _70_chance = RNGModifier:SafeGetData(_level_id, "_70_chance") or 0
+				_70_chance = _70_chance - 1
 				if _70_chance == 1 then
 					self._chance = -999
 				elseif _70_chance == 2 then
@@ -415,6 +416,7 @@ function ElementLogicChance:on_executed(...)
 		elseif _level_id == "hox_3" then
 			if self._id == 103347 then
 				local _fake_boss = RNGModifier:SafeGetData(_level_id, "_fake_boss") or 0
+				_fake_boss = _fake_boss - 1
 				if _fake_boss == 1 then
 					self._chance = -999
 				end
