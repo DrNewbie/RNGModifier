@@ -717,6 +717,31 @@ function ElementRandom:_get_random_elements()
 					rand = ids_for_1[self._id] or rand
 				end
 			end
+		elseif _level_id == "chca" then
+			if self._id == 101094 then
+				rand = PickRandomFromList(rand, "_massage_safe")
+			elseif self._id == 103022 then
+				rand = PickRandomFromList(rand, "_insider")
+			elseif self._id == 100697 then
+				rand = PickRandomFromList(rand, "_camera_room")
+			elseif self._id == 101541 then
+				rand = PickRandomFromList(rand, "_cabin_safe")
+			elseif self._id == 101574 then
+				rand = PickRandomFromList(rand, "_cabin_loot")
+			elseif self._id == 103121 then
+				rand = PickRandomFromList(rand, "_wires")
+			elseif self._id == 102457 then
+				rand = PickRandomFromList(rand, "_hack")
+			elseif self._id == 101767 then
+				rand = PickRandomFromList(rand, "_control")
+			elseif self._id == 101398 or self._id == 101726 or self._id == 101736 or self._id == 101747 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[101398] = 1, [101726] = 1, [101736] = 1, [101747] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			end
 		elseif _level_id == "family" then
 			if self._id == 100028 then
 				rand = PickRandomFromList(rand, "_rand_keypad")
