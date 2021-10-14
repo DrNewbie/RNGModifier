@@ -92,6 +92,7 @@ RNGModifier._heistlist = {
 	"framing_frame_3",--The Elephant - Framing Frame 3
 	"born",--The Elephant - Biker Heist
 	"jolly",--Vlad - Aftershock
+	"chca",--Vlad - Black Cat
 	"fex",--Vlad - Buluc's Mansion
 	"four_stores",--Vlad - Four Stores
 	"peta",--Vlad - Goat Simulator 1
