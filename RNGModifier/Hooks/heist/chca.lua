@@ -175,6 +175,123 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_chca_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_chca_cleaner = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_cleaner")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_cleaner",
+	title = "RNGModifier_chca_cleaner_title",
+	desc = "RNGModifier_chca_cleaner_desc",
+	callback = "RNGModifier_chca_cleaner",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_cleaner_1",
+		"RNGModifier_chca_cleaner_2"
+	},
+	value = RNGModifier:SafeGetData("chca", "_cleaner"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_chca_gear_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gear_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_gear_1",
+	title = "RNGModifier_chca_gear_1_title",
+	desc = "RNGModifier_chca_gear_1_desc",
+	callback = "RNGModifier_chca_gear_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_gear_1_1",
+		"RNGModifier_chca_gear_1_2"
+	},
+	value = RNGModifier:SafeGetData("chca", "_gear_1"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_chca_gear_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gear_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_gear_2",
+	title = "RNGModifier_chca_gear_2_title",
+	desc = "RNGModifier_chca_gear_2_desc",
+	callback = "RNGModifier_chca_gear_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_gear_2_1",
+		"RNGModifier_chca_gear_2_2"
+	},
+	value = RNGModifier:SafeGetData("chca", "_gear_2"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_chca_keycard_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard_1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_keycard_1",
+	title = "RNGModifier_chca_keycard_1_title",
+	desc = "RNGModifier_chca_keycard_1_desc",
+	callback = "RNGModifier_chca_keycard_1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_keycard_1_1",
+		"RNGModifier_chca_keycard_1_2",
+		"RNGModifier_chca_keycard_1_3",
+		"RNGModifier_chca_keycard_1_4"
+	},
+	value = RNGModifier:SafeGetData("chca", "_keycard_1"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_chca_keycard_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_keycard_2",
+	title = "RNGModifier_chca_keycard_2_title",
+	desc = "RNGModifier_chca_keycard_2_desc",
+	callback = "RNGModifier_chca_keycard_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_keycard_2_1",
+		"RNGModifier_chca_keycard_2_2",
+		"RNGModifier_chca_keycard_2_3",
+		"RNGModifier_chca_keycard_2_4",
+		"RNGModifier_chca_keycard_2_5"
+	},
+	value = RNGModifier:SafeGetData("chca", "_keycard_2"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_chca_keycard_3 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard_3")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_keycard_3",
+	title = "RNGModifier_chca_keycard_3_title",
+	desc = "RNGModifier_chca_keycard_3_desc",
+	callback = "RNGModifier_chca_keycard_3",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_keycard_3_1",
+		"RNGModifier_chca_keycard_3_2",
+		"RNGModifier_chca_keycard_3_3",
+		"RNGModifier_chca_keycard_3_4",
+		"RNGModifier_chca_keycard_3_5",
+		"RNGModifier_chca_keycard_3_6"
+	},
+	value = RNGModifier:SafeGetData("chca", "_keycard_3"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_chca_easy_code = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_code")
 	RNGModifier:Save()
