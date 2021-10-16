@@ -740,6 +740,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_gear_1")
 			elseif self._id == 103278 then
 				rand = PickRandomFromList(rand, "_gear_2")
+			elseif self._id == 103057 then
+				rand = PickRandomFromList(rand, "_gear_3")
 			elseif self._id == 102711 then
 				rand = PickRandomFromList(rand, "_keycard_1")
 			elseif self._id == 102712 then
