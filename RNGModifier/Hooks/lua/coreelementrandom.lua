@@ -734,6 +734,18 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_hack")
 			elseif self._id == 101767 then
 				rand = PickRandomFromList(rand, "_control")
+			elseif self._id == 100549 then
+				rand = PickRandomFromList(rand, "_cleaner")
+			elseif self._id == 101480 then
+				rand = PickRandomFromList(rand, "_gear_1")
+			elseif self._id == 103278 then
+				rand = PickRandomFromList(rand, "_gear_2")
+			elseif self._id == 102711 then
+				rand = PickRandomFromList(rand, "_keycard_1")
+			elseif self._id == 102712 then
+				rand = PickRandomFromList(rand, "_keycard_2")
+			elseif self._id == 102713 then
+				rand = PickRandomFromList(rand, "_keycard_3")
 			elseif self._id == 101398 or self._id == 101726 or self._id == 101736 or self._id == 101747 then
 				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
 				_easy_code = _easy_code - 1
