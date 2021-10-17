@@ -229,6 +229,24 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_chca_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_chca_gear_3 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gear_3")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_chca_gear_3",
+	title = "RNGModifier_chca_gear_3_title",
+	desc = "RNGModifier_chca_gear_3_desc",
+	callback = "RNGModifier_chca_gear_3",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_chca_gear_3_1",
+		"RNGModifier_chca_gear_3_2"
+	},
+	value = RNGModifier:SafeGetData("chca", "_gear_3"),
+	menu_id = "RNGModifier_chca_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_chca_keycard_1 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard_1")
 	RNGModifier:Save()
