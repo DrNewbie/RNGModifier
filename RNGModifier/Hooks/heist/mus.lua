@@ -134,4 +134,19 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_mus_Options_Menu"
 })
 
-
+MenuCallbackHandler.RNGModifier_mus_guard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_guard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mus_guard",
+	title = "RNGModifier_mus_guard_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mus_guard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_guard"),
+	menu_id = "RNGModifier_mus_Options_Menu"
+})
