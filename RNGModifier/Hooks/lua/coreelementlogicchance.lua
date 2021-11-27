@@ -51,6 +51,14 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "nightclub" then
+			if self._id == 104082 then
+				local _force_keycard = RNGModifier:SafeGetData(_level_id, "_force_keycard") or 0
+				_force_keycard = _force_keycard - 1
+				if _force_keycard == 1 then
+					self._chance = 999
+				end
+			end
 		elseif _level_id == "branchbank" then
 			if self._id == 102194 then
 				local _safe = RNGModifier:SafeGetData(_level_id, "_safe") or 0
