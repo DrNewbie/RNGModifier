@@ -303,6 +303,13 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_box_at_left_side")
 			elseif self._id == 101689 then
 				rand = PickRandomFromList(rand,"_box_in_room_right")
+			elseif self._id == 101271 then
+				local _guard = RNGModifier:SafeGetData(_level_id, "_guard") or 0
+				_guard = _guard - 1
+				if _guard > 0 then
+					local ids_for_1 = {[101271] = 2}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "roberts" then
 			if self._id == 101946 then
@@ -946,6 +953,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_spawn")
 			elseif self._id == 100568 then
 				rand = PickRandomFromList(rand, "_office")
+			elseif self._id == 104084 then
+				rand = PickRandomFromList(rand, "_keycard")
 			end
 		elseif _level_id == "tag" then
 			local _tag_board = RNGModifier:SafeGetData(_level_id, "_tag_board") or 0
