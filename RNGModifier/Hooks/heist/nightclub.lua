@@ -125,3 +125,40 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("nightclub", "_office"),
 	menu_id = "RNGModifier_nightclub_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_nightclub_force_keycard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_keycard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_force_keycard",
+	title = "RNGModifier_nightclub_force_keycard_title",
+	desc = "RNGModifier_nightclub_force_keycard_desc",
+	callback = "RNGModifier_nightclub_force_keycard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_force_keycard"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_nightclub_keycard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_keycard",
+	title = "RNGModifier_nightclub_keycard_title",
+	desc = "RNGModifier_nightclub_keycard_desc",
+	callback = "RNGModifier_nightclub_keycard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_nightclub_keycard_1",
+		"RNGModifier_nightclub_keycard_2",
+		"RNGModifier_nightclub_keycard_3",
+		"RNGModifier_nightclub_keycard_4"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_keycard"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
