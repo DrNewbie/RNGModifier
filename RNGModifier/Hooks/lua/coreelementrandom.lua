@@ -375,6 +375,19 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "firestarter_2" then
 			if self._id == 104539 then
 				rand = PickRandomFromList(rand, "_randServerRoom")
+			elseif self._id == 102508 then
+				rand = PickRandomFromList(rand, "_computer")
+			elseif self._id == 102748 or self._id == 102749 or self._id == 102750 or self._id == 102751 then
+				local _loot = RNGModifier:SafeGetData(_level_id, "_loot") or 0
+				_loot = _loot - 1
+				if _loot <= 0 or _loot > 4 then
+				
+				else
+					local _loot_list = {
+						1
+					}
+					rand = _loot_list[_loot]
+				end
 			end
 		elseif _level_id == "firestarter_3" then
 			if self._id == 105112 then
