@@ -13,14 +13,14 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_arm_und_rand_truck_amount",
 	title = "RNGModifier_arm_rand_truck_amount_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_arm_rand_truck_amount_desc",
 	callback = "RNGModifier_arm_und_rand_truck_amount",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
+		"RNGModifier_arm_rand_truck_amount_1",
+		"RNGModifier_arm_rand_truck_amount_2",
+		"RNGModifier_arm_rand_truck_amount_3",
+		"RNGModifier_arm_rand_truck_amount_4"
 	},
 	value = RNGModifier:SafeGetData("arm_und", "_rand_truck_amount"),
 	menu_id = "RNGModifier_arm_und_Options_Menu"
