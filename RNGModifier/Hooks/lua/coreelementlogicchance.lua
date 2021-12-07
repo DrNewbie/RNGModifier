@@ -69,6 +69,22 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
+		elseif _level_id == "firestarter_2" then
+			if self._id == 102658 then
+				local _safe = RNGModifier:SafeGetData(_level_id, "_safe") or 0
+				_safe = _safe - 1
+				if _safe == 1 then
+					self._chance = -999
+				elseif _safe == 2 then
+					self._chance = 999
+				end
+			elseif self._id == 102728 or self._id == 102731 or self._id == 102743 or self._id == 102747 then
+				local _loot = RNGModifier:SafeGetData(_level_id, "_loot") or 0
+				_loot = _loot - 1
+				if _loot == 1 then
+					self._chance = 999
+				end
+			end
 		elseif _level_id == "firestarter_3" then
 			if self._id == 102194 then
 				local _safe = RNGModifier:SafeGetData(_level_id, "_safe") or 0
