@@ -1774,7 +1774,7 @@ function ElementRandom:_get_random_elements()
 		elseif _level_id == "moon" then
 			if self._id == 102082 then
 				rand = PickRandomFromList(rand,"_assets")
-			elseif self._id == 100238 or 100240 then
+			elseif self._id == 100238 or self._id == 100240 then
 				_tmp_data["moon"] = _tmp_data["moon"] or {}
 				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] or 0
 				_tmp_data["moon"]["_rnd_excursion"] = _tmp_data["moon"]["_rnd_excursion"] + 1
