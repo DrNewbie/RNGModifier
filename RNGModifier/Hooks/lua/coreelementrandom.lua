@@ -446,6 +446,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_random_ammo_bag")
 			elseif self._id == 101080 then
 				rand = PickRandomFromList(rand, "_random_grenade_crate")
+			elseif self._id == 100187 or self._id == 100188 or self._id == 100189 then
+				rand = PickRandomFromList(rand, "_random_pump_location")
 			end
 		elseif _level_id == "glace" then
 			if self._id == 100074 then
