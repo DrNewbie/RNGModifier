@@ -45,6 +45,24 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_wwh_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_wwh_random_pump_location = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_pump_location")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_random_pump_location",
+	title = "RNGModifier_wwh_random_pump_location_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_wwh_random_pump_location",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_1",
+		"RNGModifier_number_4_use_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_random_pump_location"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_wwh_random_health_bag = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_random_health_bag")
 	RNGModifier:Save()
