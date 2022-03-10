@@ -321,3 +321,20 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_kosugi_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_kosugi_ladder = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ladder")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_kosugi_ladder",
+	title = "RNGModifier_kosugi_ladder_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_kosugi_ladder",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("kosugi", "_ladder"),
+	menu_id = "RNGModifier_kosugi_Options_Menu"
+})
