@@ -41,6 +41,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "kosugi" then
+			if self._id == 103674 or self._id == 103676 or self._id == 103677 or self._id == 103678 then
+				local _ladder = RNGModifier:SafeGetData(_level_id, "_ladder") or 0
+				_ladder = _ladder - 1
+				if _ladder == 1 then
+					self._chance = -999
+				elseif _ladder == 2 then
+					self._chance = 999
+				end
+			end
 		elseif _level_id == "four_stores" then
 			if self._id == 102422 or self._id == 102423 or self._id == 102424 then
 				local _force_safe = RNGModifier:SafeGetData(_level_id, "_force_safe") or 0

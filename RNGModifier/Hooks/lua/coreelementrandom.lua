@@ -425,6 +425,35 @@ function ElementRandom:_get_random_elements()
 			elseif self._id == 102721 then
 				rand = PickRandomFromList(rand, "_manager")
 			end
+		elseif _level_id == "pent" then
+			if self._id == 101651 then
+				rand = PickRandomFromList(rand, "_detector")
+			elseif self._id == 101286 then
+				rand = PickRandomFromList(rand, "_elevator")
+			elseif self._id == 100239 then
+				rand = PickRandomFromList(rand, "_van")
+			elseif self._id == 103981 then
+				rand = PickRandomFromList(rand, "_empty_van")
+			elseif self._id == 101041 then
+				rand = PickRandomFromList(rand, "_lights")
+			elseif self._id == 101969 then
+				rand = PickRandomFromList(rand, "_keys")
+			elseif self._id == 100697 then
+				rand = PickRandomFromList(rand, "_camera")
+			elseif self._id == 101804 then
+				rand = PickRandomFromList(rand, "_keycard")
+			elseif self._id == 101679 then
+				rand = PickRandomFromList(rand, "_notepad")
+			elseif self._id == 101794 then
+				rand = PickRandomFromList(rand, "_loot")
+			elseif self._id == 101428 or self._id == 101429 or self._id == 101454 or self._id == 101455 then
+				local _easy_code = RNGModifier:SafeGetData(_level_id, "_easy_code") or 0
+				_easy_code = _easy_code - 1
+				if _easy_code > 0 then
+					local ids_for_1 = {[101428] = 2, [101429] = 2 , [101454] = 2 , [101455] = 2}
+					rand = ids_for_1[self._id] or rand
+				end
+			end
 		elseif _level_id == "wwh" then
 		--[[
 			local _wwh_container = RNGModifier:SafeGetData(_level_id, "_wwh_container") or 0

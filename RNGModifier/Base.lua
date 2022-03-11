@@ -69,6 +69,7 @@ RNGModifier._heistlist = {
 	"des",--Locke - Henry's Rock
 	"sah",--Locke - Shaklethorne Auction
 	"vit",--Locke - White House
+	"pent",--Shayu - Mountain Master
 	"friend",--The Butcher - Scarface Mansion
 	"crojob2",--The Butcher - The Bomb: Dockyard
 	--"crojob3",--The Butcher - The Bomb: Forest
