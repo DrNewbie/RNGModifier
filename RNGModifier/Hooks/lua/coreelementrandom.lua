@@ -1942,6 +1942,24 @@ function ElementRandom:_get_random_elements()
 					rand = ids_for_1[self._id] or rand
 				end
 			end
+		elseif _level_id == "ranc" then
+			if self._id == 101230 then
+				rand = PickRandomFromList(rand, "_code")
+			elseif self._id == 102237 then
+				rand = PickRandomFromList(rand, "_phone")
+			elseif self._id == 102236 then
+				rand = PickRandomFromList(rand, "_tape")
+			elseif self._id == 101282 then
+				rand = PickRandomFromList(rand, "_notepad")
+			elseif self._id == 101208 then
+				rand = PickRandomFromList(rand, "_keycard")
+			elseif self._id == 103255 then
+				rand = PickRandomFromList(rand, "_hammer")
+			elseif self._id == 103262 then
+				rand = PickRandomFromList(rand, "_mould")
+			elseif self._id == 101157 then
+				rand = PickRandomFromList(rand, "_laptop")
+			end
 		elseif _level_id == "escape_overpass" then
 			if self._id == 101984 then
 				rand = PickRandomFromList(rand, "_spawn")
