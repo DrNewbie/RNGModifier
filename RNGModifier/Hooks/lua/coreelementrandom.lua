@@ -81,7 +81,7 @@ function ElementRandom:_get_random_elements()
 					rand = 3
 				end
 			end
-		elseif _level_id == "arm_fac" or _level_id == "arm_par" or _level_id == "arm_und" or _level_id == "arm_cro" or _level_id == "arm_hcm" then
+		elseif _level_id == "arm_fac" then
 			if self._id == 100028 then
 				local _rand_truck_amount = RNGModifier:SafeGetData(_level_id, "_rand_truck_amount") or 0
 				_rand_truck_amount = _rand_truck_amount - 1
@@ -96,6 +96,106 @@ function ElementRandom:_get_random_elements()
 					}
 					rand = _truck_list[_rand_truck_amount]
 				end
+			elseif self._id == 101631 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 104929 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 104928 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			end
+		elseif _level_id == "arm_par" then
+			if self._id == 100028 then
+				local _rand_truck_amount = RNGModifier:SafeGetData(_level_id, "_rand_truck_amount") or 0
+				_rand_truck_amount = _rand_truck_amount - 1
+				if _rand_truck_amount <= 0 or _rand_truck_amount > 4 then
+				
+				else
+					local _truck_list = {
+						3,
+						2,
+						1,
+						4
+					}
+					rand = _truck_list[_rand_truck_amount]
+				end
+			elseif self._id == 101336 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 102341 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 102340 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			end
+		elseif _level_id == "arm_und" then
+			if self._id == 100028 then
+				local _rand_truck_amount = RNGModifier:SafeGetData(_level_id, "_rand_truck_amount") or 0
+				_rand_truck_amount = _rand_truck_amount - 1
+				if _rand_truck_amount <= 0 or _rand_truck_amount > 4 then
+				
+				else
+					local _truck_list = {
+						3,
+						2,
+						1,
+						4
+					}
+					rand = _truck_list[_rand_truck_amount]
+				end
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 103168 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 103169 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			end
+		elseif _level_id == "arm_cro" then
+			if self._id == 100028 then
+				local _rand_truck_amount = RNGModifier:SafeGetData(_level_id, "_rand_truck_amount") or 0
+				_rand_truck_amount = _rand_truck_amount - 1
+				if _rand_truck_amount <= 0 or _rand_truck_amount > 4 then
+				
+				else
+					local _truck_list = {
+						3,
+						2,
+						1,
+						4
+					}
+					rand = _truck_list[_rand_truck_amount]
+				end
+			elseif self._id == 101625 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 102196 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 102202 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
+			end
+		elseif _level_id == "arm_hcm" then
+			if self._id == 100028 then
+				local _rand_truck_amount = RNGModifier:SafeGetData(_level_id, "_rand_truck_amount") or 0
+				_rand_truck_amount = _rand_truck_amount - 1
+				if _rand_truck_amount <= 0 or _rand_truck_amount > 4 then
+				
+				else
+					local _truck_list = {
+						3,
+						2,
+						1,
+						4
+					}
+					rand = _truck_list[_rand_truck_amount]
+				end
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_escape")
+			elseif self._id == 103910 then
+				rand = PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 103911 then
+				rand = PickRandomFromList(rand, "_doctor_bag")
 			end
 		elseif _level_id == "gallery" then
 			if self._id == 103010 then
@@ -1364,14 +1464,13 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand,"_control_room2")
 			elseif self._id == 100357 then
 				rand = PickRandomFromList(rand,"_control_room3")
-			elseif self._id == 101060 then
-				rand = PickRandomFromList(rand,"_server")
-			elseif self._id == 101061 then
-				rand = PickRandomFromList(rand,"_weapon")
-			elseif self._id == 101062 then
-				rand = PickRandomFromList(rand,"_painting")
-			elseif self._id == 101690 then
-				rand = PickRandomFromList(rand,"_artifact")
+			elseif self._id == 101060 or self._id == 101061 or self._id == 101062 or self._id == 101690 then-- server weapon painting artifact
+				local _vault = RNGModifier:SafeGetData(_level_id, "_vault") or 0
+				_vault = _vault - 1
+				if _vault > 0 then
+					local ids_for_1 = {[101060] = 1, [101061] = 1, [101062] = 2, [101690] = 3}
+					rand = ids_for_1[self._id] or rand
+				end
 			elseif self._id == 101350 then
 				rand = PickRandomFromList(rand,"_deny")
 			elseif self._id == 101367 then
@@ -1959,6 +2058,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_mould")
 			elseif self._id == 101157 then
 				rand = PickRandomFromList(rand, "_laptop")
+			elseif self._id == 100697 then
+				rand = PickRandomFromList(rand, "_mic")
+			elseif self._id == 101199 then
+				rand = PickRandomFromList(rand, "_camera")
 			end
 		elseif _level_id == "escape_overpass" then
 			if self._id == 101984 then
