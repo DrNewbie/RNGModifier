@@ -161,3 +161,40 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_laptop"),
 	menu_id = "RNGModifier_ranc_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_ranc_mic = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_mic")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_ranc_mic",
+	title = "RNGModifier_ranc_mic_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_ranc_mic",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_ranc_mic_1",
+		"RNGModifier_ranc_mic_2",
+		"RNGModifier_ranc_mic_3"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_mic"),
+	menu_id = "RNGModifier_ranc_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_ranc_camera = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_ranc_camera",
+	title = "RNGModifier_ranc_camera_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_ranc_camera",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_ranc_camera_1",
+		"RNGModifier_ranc_camera_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
+	menu_id = "RNGModifier_ranc_Options_Menu"
+})
