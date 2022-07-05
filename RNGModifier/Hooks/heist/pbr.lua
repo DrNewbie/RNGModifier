@@ -24,6 +24,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_entrance"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_tools = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_tools")
 	RNGModifier:Save()
@@ -62,6 +63,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_tools"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_bomb_crate_A = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bomb_crate_A")
 	RNGModifier:Save()
@@ -100,6 +102,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_bomb_crate_A"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_bomb_crate_B = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_bomb_crate_B")
 	RNGModifier:Save()
@@ -138,6 +141,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_bomb_crate_B"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_helipad = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_helipad")
 	RNGModifier:Save()
@@ -156,6 +160,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_helipad"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_gate1 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate1")
 	RNGModifier:Save()
@@ -175,6 +180,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_gate1"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_gate2 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate2")
 	RNGModifier:Save()
@@ -194,6 +200,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_gate2"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_gate3 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate3")
 	RNGModifier:Save()
@@ -213,6 +220,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_gate3"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_control_room1 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_control_room1")
 	RNGModifier:Save()
@@ -234,6 +242,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_control_room1"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_control_room2 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_control_room2")
 	RNGModifier:Save()
@@ -254,6 +263,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_control_room2"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_pbr_control_room3 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_control_room3")
 	RNGModifier:Save()
@@ -275,20 +285,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_control_room3"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
-MenuCallbackHandler.RNGModifier_pbr_artifact = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_artifact")
+
+MenuCallbackHandler.RNGModifier_pbr_vault = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vault")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_pbr_artifact",
-	title = "RNGModifier_pbr_artifact_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_pbr_artifact",
+	id = "RNGModifier_pbr_vault",
+	title = "RNGModifier_pbr_vault_title",
+	desc = "RNGModifier_pbr_vault_desc",
+	callback = "RNGModifier_pbr_vault",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_pbr_artifact_1"
+		"RNGModifier_bool_4_true"
 	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "_artifact"),
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_vault"),
 	menu_id = "RNGModifier_pbr_Options_Menu"
 })
 
