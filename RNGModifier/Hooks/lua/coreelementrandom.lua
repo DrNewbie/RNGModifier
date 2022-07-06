@@ -2058,7 +2058,7 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_mould")
 			elseif self._id == 101157 then
 				rand = PickRandomFromList(rand, "_laptop")
-			elseif self._id == 100697 then
+			elseif self._id == 102421 then
 				rand = PickRandomFromList(rand, "_mic")
 			elseif self._id == 101199 then
 				rand = PickRandomFromList(rand, "_camera")
