@@ -123,7 +123,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_vit_second_number",
 	title = "RNGModifier_vit_second_number_title",
-	desc = "RNGModifier_vit_safe_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_vit_second_number",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -139,7 +139,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_vit_third_number",
 	title = "RNGModifier_vit_third_number_title",
-	desc = "RNGModifier_vit_safe_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_vit_third_number",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -155,7 +155,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_vit_fourth_number",
 	title = "RNGModifier_vit_fourth_number_title",
-	desc = "RNGModifier_vit_safe_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_vit_fourth_number",
 	items = {
 		"RNGModifier_Default_One_Item",

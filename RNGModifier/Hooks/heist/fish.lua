@@ -17,7 +17,11 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_fish_color",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_fish_color_1"
+		"RNGModifier_fish_color_1",
+		"RNGModifier_fish_color_2",
+		"RNGModifier_fish_color_3",
+		"RNGModifier_fish_color_4",
+		"RNGModifier_fish_color_5"
 	},
 	value = RNGModifier:SafeGetData("fish", "_color"),
 	menu_id = "RNGModifier_fish_Options_Menu"
@@ -110,7 +114,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_fish_cigar",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_fish_cigar_1"
+		"RNGModifier_fish_cigar_1",
+		"RNGModifier_fish_cigar_2",
+		"RNGModifier_fish_cigar_3",
+		"RNGModifier_fish_cigar_4"
 	},
 	value = RNGModifier:SafeGetData("fish", "_cigar"),
 	menu_id = "RNGModifier_fish_Options_Menu"
@@ -127,7 +134,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_fish_room",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_fish_room_1"
+		"RNGModifier_fish_room_1",
+		"RNGModifier_fish_room_2",
+		"RNGModifier_fish_room_3",
+		"RNGModifier_fish_room_4"
 	},
 	value = RNGModifier:SafeGetData("fish", "_room"),
 	menu_id = "RNGModifier_fish_Options_Menu"
@@ -144,7 +154,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_fish_fridge",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_fish_fridge_1"
+		"RNGModifier_fish_fridge_1",
+		"RNGModifier_fish_fridge_2",
+		"RNGModifier_fish_fridge_3",
+		"RNGModifier_fish_fridge_4"
 	},
 	value = RNGModifier:SafeGetData("fish", "_fridge"),
 	menu_id = "RNGModifier_fish_Options_Menu"
