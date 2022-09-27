@@ -58,8 +58,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_bph_pick_random_cell",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_bph_pick_random_cell_2",
 		"RNGModifier_bph_pick_random_cell_1",
+		"RNGModifier_bph_pick_random_cell_2",
 		"RNGModifier_bph_pick_random_cell_3",
 		"RNGModifier_bph_pick_random_cell_4",
 	},
@@ -79,8 +79,8 @@ MenuHelper:AddMultipleChoice({
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_bph_random_thermite_1",
-		"RNGModifier_bph_random_thermite_3",
-		"RNGModifier_bph_random_thermite_2"
+		"RNGModifier_bph_random_thermite_2",
+		"RNGModifier_bph_random_thermite_3"
 	},
 	value = RNGModifier:SafeGetData("bph", "_pick_random_thermite"),
 	menu_id = "RNGModifier_bph_Options_Menu"
