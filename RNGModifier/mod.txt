@@ -40,7 +40,9 @@
     {
       "identifier": "RNGModifierGitHubUpdate",
       "host": {
-        "meta": "https://drnewbie.github.io/RNGModifier/RNGModifier.meta.json"
+        "meta": "https://drnewbie.github.io/RNGModifier/RNGModifier.meta.json",
+        "patchnotes": "https://github.com/DrNewbie/RNGModifier/commits/master",
+        "download": "https://drnewbie.github.io/RNGModifier/RNGModifier.zip"
       }
     }
   ]
