@@ -207,3 +207,61 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("red2", "_grenade_case"),
 	menu_id = "RNGModifier_red2_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_red2_hack_pc = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_hack_pc")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_red2_hack_pc",
+	title = "RNGModifier_red2_hack_pc_title",
+	desc = "RNGModifier_red2_hack_pc_desc",
+	callback = "RNGModifier_red2_hack_pc",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_red2_hack_pc_1",
+		"RNGModifier_red2_hack_pc_2",
+		"RNGModifier_red2_hack_pc_3",
+		"RNGModifier_red2_hack_pc_4"
+	},
+	value = RNGModifier:SafeGetData("red2", "_hack_pc"),
+	menu_id = "RNGModifier_red2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_red2_titan_safe = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_titan_safe")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_red2_titan_safe",
+	title = "RNGModifier_red2_titan_safe_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_red2_titan_safe",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_red2_titan_safe_1",
+		"RNGModifier_red2_titan_safe_2",
+		"RNGModifier_red2_titan_safe_3",
+		"RNGModifier_red2_titan_safe_4",
+		"RNGModifier_red2_titan_safe_5"
+	},
+	value = RNGModifier:SafeGetData("red2", "_titan_safe"),
+	menu_id = "RNGModifier_red2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_red2_code_pc = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_code_pc")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_red2_code_pc",
+	title = "RNGModifier_red2_code_pc_title",
+	desc = "RNGModifier_red2_code_pc_desc",
+	callback = "RNGModifier_red2_code_pc",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("red2", "_code_pc"),
+	menu_id = "RNGModifier_red2_Options_Menu"
+})
