@@ -380,3 +380,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("mia_1", "_meth_lab"),
 	menu_id = "RNGModifier_mia_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mia_1_wall = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_wall")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_1_wall",
+	title = "RNGModifier_mia_1_wall_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_1_wall",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("mia_1", "_wall"),
+	menu_id = "RNGModifier_mia_1_Options_Menu"
+})
