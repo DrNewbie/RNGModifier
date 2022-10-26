@@ -210,3 +210,57 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_vault"),
 	menu_id = "RNGModifier_big_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_big_walkway = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_walkway")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_walkway",
+	title = "RNGModifier_big_walkway_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_walkway",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_big_walkway_1",
+		"RNGModifier_big_walkway_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_walkway"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_big_corridor = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_corridor")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_corridor",
+	title = "RNGModifier_big_corridor_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_corridor",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_corridor"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_big_printing_room = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_printing_room")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_printing_room",
+	title = "RNGModifier_big_printing_room_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_printing_room",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_printing_room"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})

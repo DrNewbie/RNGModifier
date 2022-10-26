@@ -41,6 +41,24 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "mia_1" then
+			if self._id == 103728 then
+				local _wall = RNGModifier:SafeGetData(_level_id, "_wall") or 0
+				_wall = _wall - 1
+				if _wall == 1 then
+					self._chance = -999
+				elseif _wall == 2 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "red2" then
+			if self._id == 102556 then
+				local _code_pc = RNGModifier:SafeGetData(_level_id, "_code_pc") or 0
+				_code_pc = _code_pc - 1
+				if _code_pc == 1 then
+					self._chance = 999
+				end
+			end
 		elseif _level_id == "kosugi" then
 			if self._id == 103674 or self._id == 103676 or self._id == 103677 or self._id == 103678 then
 				local _ladder = RNGModifier:SafeGetData(_level_id, "_ladder") or 0
@@ -289,6 +307,30 @@ function ElementLogicChance:on_executed(...)
 				if _chance_to_work == 0 then 
 				
 				else
+					self._chance = 999
+				end
+			elseif self._id == 103719 then
+				local _walkway = RNGModifier:SafeGetData(_level_id, "_walkway") or 0
+				_walkway = _walkway - 1
+				if _walkway == 1 then
+					self._chance = 999
+				elseif _walkway == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 103729 then
+				local _spare_rooms = RNGModifier:SafeGetData(_level_id, "_corridor") or 0
+				_spare_rooms = _spare_rooms - 1
+				if _spare_rooms == 1 then
+					self._chance = 999
+				elseif _spare_rooms == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 103509 then
+				local _spare_rooms = RNGModifier:SafeGetData(_level_id, "_printing_room") or 0
+				_spare_rooms = _spare_rooms - 1
+				if _spare_rooms == 1 then
+					self._chance = -999
+				elseif _spare_rooms == 2 then
 					self._chance = 999
 				end
 			elseif self._id == 101648 then

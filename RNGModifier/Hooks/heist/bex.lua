@@ -400,19 +400,43 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_bex_Options_Menu"
 })
 
-MenuCallbackHandler.RNGModifier_bex_test = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_test")
+MenuCallbackHandler.RNGModifier_bex_server = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_server")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_bex_test",
-	title = "RNGModifier_bex_test_title",
+	id = "RNGModifier_bex_server",
+	title = "RNGModifier_bex_server_title",
 	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_bex_test",
+	callback = "RNGModifier_bex_server",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_bool_4_true"
+		"RNGModifier_bex_server_1",
+		"RNGModifier_bex_server_2",
+		"RNGModifier_bex_server_3",
+		"RNGModifier_bex_server_4"
 	},
-	value = RNGModifier:SafeGetData("bex", "_test"),
+	value = RNGModifier:SafeGetData("bex", "_server"),
+	menu_id = "RNGModifier_bex_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_bex_it = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_it")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_bex_it",
+	title = "RNGModifier_bex_it_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_bex_it",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bex_it_1",
+		"RNGModifier_bex_it_2",
+		"RNGModifier_bex_it_3",
+		"RNGModifier_bex_it_4",
+		"RNGModifier_bex_it_5"
+	},
+	value = RNGModifier:SafeGetData("bex", "_it"),
 	menu_id = "RNGModifier_bex_Options_Menu"
 })

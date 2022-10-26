@@ -47,6 +47,7 @@ RNGModifier._heistlist = {
 	"hvh",--Events -  Cursed Kill Room
 	"help",--Events -  Prison Nightmare
 	"chill_combat",--Events -  Safehouse Raid
+	"trai",--Gemma McShay - Lost In Transit
 	"ranc",--Gemma McShay - Midland Ranch
 	"firestarter_1",--Hector - Firestarter 1
 	"firestarter_2",--Hector - Firestarter 2

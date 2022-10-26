@@ -637,6 +637,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_grenade_case")
 			elseif self._id == 105724 then
 				rand = PickRandomFromList(rand, "_doctor_bag")
+			elseif self._id == 101415 then
+				rand = PickRandomFromList(rand, "_hack_pc")
+			elseif self._id == 106985 then
+				rand = PickRandomFromList(rand, "_titan_safe")
 			end
 		elseif _level_id == "run" then
 			if self._id == 100611 then
@@ -1844,6 +1848,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_manual")
 			elseif self._id == 100697 then
 				rand = PickRandomFromList(rand, "_security")
+			elseif self._id == 101757 then
+				rand = PickRandomFromList(rand, "_server")
+			elseif self._id == 102296 then
+				rand = PickRandomFromList(rand, "_it")
 			end
 			if self._id == 100308 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
@@ -2062,6 +2070,49 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_mic")
 			elseif self._id == 101199 then
 				rand = PickRandomFromList(rand, "_camera")
+			end
+		elseif _level_id == "trai" then
+			if self._id == 100549 then
+				rand = PickRandomFromList(rand, "_walkietalkie")
+			elseif self._id == 102018 then
+				rand = PickRandomFromList(rand, "_c4")
+			elseif self._id == 100962 then
+				rand = PickRandomFromList(rand, "_pc")
+			elseif self._id == 101992 then
+				rand = PickRandomFromList(rand, "_keygen")
+			elseif self._id == 100899 then
+				rand = PickRandomFromList(rand, "_sensor")
+			elseif self._id == 100126 then
+				rand = PickRandomFromList(rand, "_spawn")
+			elseif self._id == 100928 then
+				rand = PickRandomFromList(rand, "_thermite")
+			elseif self._id == 103008 then
+				rand = PickRandomFromList(rand, "_company")
+			elseif self._id == 102474 then
+				rand = PickRandomFromList(rand, "_fence_circuit")
+			elseif self._id == 100618 then
+				rand = PickRandomFromList(rand, "_notepad")
+			elseif self._id == 102109 or self._id == 102158 or self._id == 102179 or self._id == 102214 or self._id == 102249 or self._id == 102284 or self._id == 102319 or self._id == 102354 or self._id == 102389 then
+				local _easy_colors = RNGModifier:SafeGetData(_level_id, "_easy_colors") or 0
+				_easy_colors = _easy_colors - 1
+				if _easy_colors > 0 then
+					local ids_for_1 = {[102109] = 1, [102158] = 1, [102179] = 1, [102214] = 1, [102249] = 1, [102284] = 1, [102319] = 1, [102354] = 1, [102389] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101867 or self._id == 101869 or self._id == 101870 or self._id == 101871 then
+				local _easy_notepad = RNGModifier:SafeGetData(_level_id, "_easy_notepad") or 0
+				_easy_notepad = _easy_notepad - 1
+				if _easy_notepad > 0 then
+					local ids_for_1 = {[101867] = 1, [101869] = 1, [101870] = 1, [101871] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101903 or self._id == 101904 or self._id == 101905 or self._id == 101906 then
+				local _easy_sensor = RNGModifier:SafeGetData(_level_id, "_easy_sensor") or 0
+				_easy_sensor = _easy_sensor - 1
+				if _easy_sensor > 0 then
+					local ids_for_1 = {[101903] = 1, [101904] = 1, [101905] = 1, [101906] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
 			end
 		elseif _level_id == "escape_overpass" then
 			if self._id == 101984 then
