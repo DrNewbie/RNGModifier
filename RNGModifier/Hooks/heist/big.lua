@@ -264,3 +264,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_printing_room"),
 	menu_id = "RNGModifier_big_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_big_elevator = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_elevator")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_big_elevator",
+	title = "RNGModifier_big_elevator_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_big_elevator",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_elevator"),
+	menu_id = "RNGModifier_big_Options_Menu"
+})
