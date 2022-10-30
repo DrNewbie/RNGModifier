@@ -377,3 +377,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("crojob2", "_truck_loot"),
 	menu_id = "RNGModifier_crojob2_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_crojob2_fence = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_fence")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_crojob2_fence",
+	title = "RNGModifier_crojob2_fence_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_crojob2_fence",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_crojob2_fence_1",
+		"RNGModifier_crojob2_fence_2"
+	},
+	value = RNGModifier:SafeGetData("crojob2", "_fence"),
+	menu_id = "RNGModifier_crojob2_Options_Menu"
+})

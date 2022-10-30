@@ -180,3 +180,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_doctor_bag"),
 	menu_id = "RNGModifier_jolly_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_jolly_vans = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vans")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_jolly_vans",
+	title = "RNGModifier_jolly_vans_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_jolly_vans",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_jolly_vans_1",
+		"RNGModifier_jolly_vans_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_vans"),
+	menu_id = "RNGModifier_jolly_Options_Menu"
+})

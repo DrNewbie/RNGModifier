@@ -524,6 +524,8 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_keybox")
 			elseif self._id == 102721 then
 				rand = PickRandomFromList(rand, "_manager")
+			elseif self._id == 106590 then
+				rand = PickRandomFromList(rand, "_elevator")
 			end
 		elseif _level_id == "pent" then
 			if self._id == 101651 then
@@ -771,6 +773,10 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_code_3")
 			elseif self._id == 101295 then
 				rand = PickRandomFromList(rand, "_code_4")
+			elseif self._id == 101373 then
+				rand = PickRandomFromList(rand, "_camera")
+			elseif self._id == 100968 then
+				rand = PickRandomFromList(rand, "_sanctum")
 			end
 		elseif _level_id == "chas" then
 			if self._id == 101823 then
@@ -1287,6 +1293,28 @@ function ElementRandom:_get_random_elements()
 				rand = PickRandomFromList(rand, "_assets")
 			elseif self._id == 103010 then
 				rand = PickRandomFromList(rand, "_body_bag")
+			elseif self._id == 101779 then
+				rand = PickRandomFromList(rand, "_pole")
+			elseif self._id == 102225 then
+				rand = PickRandomFromList(rand, "_l_fence")
+			elseif self._id == 102226 then
+				rand = PickRandomFromList(rand, "_r_fence")
+			elseif self._id == 102141 then
+				rand = PickRandomFromList(rand, "_entry")
+			elseif self._id == 101691 or self._id == 101724 or self._id == 101726 or self._id == 101727 or self._id == 101728 or self._id == 101729 then
+				local _easy_laptop = RNGModifier:SafeGetData(_level_id, "_easy_laptop") or 0
+				_easy_laptop = _easy_laptop - 1
+				if _easy_laptop > 0 then
+					local ids_for_1 = {[101691] = 3, [101724] = 6, [101726] = 8, [101727] = 8, [101728] = 7, [101729] = 8}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 102309 or self._id == 102310 or self._id == 102311 or self._id == 102312 or self._id == 102313 or self._id == 102314 then
+				local _drill = RNGModifier:SafeGetData(_level_id, "_drill") or 0
+				_drill = _drill - 1
+				if _drill > 0 then
+					local ids_for_1 = {[102309] = 7, [102310] = 7, [102311] = 6, [102312] = 6, [102313] = 6, [102314] = 6}
+					rand = ids_for_1[self._id] or rand
+				end
 			elseif self._id == 101899 then
 				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
 				_tmp_data[_level_id]["select_keycard_003"] = _tmp_data[_level_id]["select_keycard_003"] or 0
@@ -2111,6 +2139,13 @@ function ElementRandom:_get_random_elements()
 				_easy_sensor = _easy_sensor - 1
 				if _easy_sensor > 0 then
 					local ids_for_1 = {[101903] = 1, [101904] = 1, [101905] = 1, [101906] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 102101 or self._id == 102166 or self._id == 102201 or self._id == 102236 or self._id == 102271 or self._id == 102306 or self._id == 102341 or self._id == 102376 or self._id == 102411 then
+				local _easy_wires = RNGModifier:SafeGetData(_level_id, "_easy_wires") or 0
+				_easy_wires = _easy_wires - 1
+				if _easy_wires > 0 then
+					local ids_for_1 = {[102101] = 3, [102166] = 3, [102201] = 1, [102236] = 3, [102271] = 3, [102306] = 1, [102341] = 3, [102376] = 1, [102411] = 1}
 					rand = ids_for_1[self._id] or rand
 				end
 			end
