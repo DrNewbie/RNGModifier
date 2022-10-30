@@ -41,6 +41,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "jolly" then
+			if self._id == 100127 then
+				local _vans = RNGModifier:SafeGetData(_level_id, "_vans") or 0
+				_vans = _vans - 1
+				if _vans == 1 then
+					self._chance = 999
+				elseif _vans == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "mia_1" then
 			if self._id == 103728 then
 				local _wall = RNGModifier:SafeGetData(_level_id, "_wall") or 0
@@ -221,6 +231,14 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				elseif _truck_loot == 2 then
 					self._chance = -999
+				end
+			elseif self._id == 100877 then
+				local _fence = RNGModifier:SafeGetData(_level_id, "_fence") or 0
+				_fence = _fence - 1
+				if _fence == 1 then
+					self._chance = -999
+				elseif _fence == 2 then
+					self._chance = 999
 				end
 			end
 		elseif _level_id == "framing_frame_2" then
