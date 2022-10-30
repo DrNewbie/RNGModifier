@@ -28,6 +28,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_panic_hector"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_hox_3_alarm_box = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_alarm_box")
 	RNGModifier:Save()
@@ -39,28 +40,26 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_hox_3_alarm_box",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7",
-		"RNGModifier_number_4_use_8",
-		"RNGModifier_number_4_use_9",
-		"RNGModifier_number_4_use_10",
-		"RNGModifier_number_4_use_11",
-		"RNGModifier_number_4_use_12",
-		"RNGModifier_number_4_use_13",
-		"RNGModifier_number_4_use_14",
-		"RNGModifier_number_4_use_15",
-		"RNGModifier_number_4_use_16",
-		"RNGModifier_number_4_use_17",
-		"RNGModifier_number_4_use_18",
-		"RNGModifier_number_4_use_19",
-		"RNGModifier_number_4_use_20",
-		"RNGModifier_number_4_use_21",
-		"RNGModifier_number_4_use_22"
+		"RNGModifier_hox_3_alarm_box_1",
+		"RNGModifier_hox_3_alarm_box_2",
+		"RNGModifier_hox_3_alarm_box_3",
+		"RNGModifier_hox_3_alarm_box_4",
+		"RNGModifier_hox_3_alarm_box_5",
+		"RNGModifier_hox_3_alarm_box_6",
+		"RNGModifier_hox_3_alarm_box_7",
+		"RNGModifier_hox_3_alarm_box_8",
+		"RNGModifier_hox_3_alarm_box_9",
+		"RNGModifier_hox_3_alarm_box_10",
+		"RNGModifier_hox_3_alarm_box_11",
+		"RNGModifier_hox_3_alarm_box_12",
+		"RNGModifier_hox_3_alarm_box_13",
+		"RNGModifier_hox_3_alarm_box_14",
+		"RNGModifier_hox_3_alarm_box_15",
+		"RNGModifier_hox_3_alarm_box_16",
+		"RNGModifier_hox_3_alarm_box_17",
+		"RNGModifier_hox_3_alarm_box_18",
+		"RNGModifier_hox_3_alarm_box_19",
+		"RNGModifier_hox_3_alarm_box_20"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_alarm_box"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
@@ -217,7 +216,6 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
 
-
 MenuCallbackHandler.RNGModifier_hox_3_rock = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_rock")
 	RNGModifier:Save()
@@ -331,5 +329,119 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_hox_3_body_bag_3"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_body_bag"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_pole = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pole")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_pole",
+	title = "RNGModifier_hox_3_pole_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_pole",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_pole_1",
+		"RNGModifier_hox_3_pole_2",
+		"RNGModifier_hox_3_pole_3",
+		"RNGModifier_hox_3_pole_4",
+		"RNGModifier_hox_3_pole_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_pole"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_easy_laptop = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_laptop")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_easy_laptop",
+	title = "RNGModifier_hox_3_easy_laptop_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_easy_laptop",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_easy_laptop"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_drill = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_drill")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_drill",
+	title = "RNGModifier_hox_3_drill_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_drill",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_drill_1"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_drill"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_entry = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_entry")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_entry",
+	title = "RNGModifier_hox_3_entry_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_entry",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_entry_1",
+		"RNGModifier_hox_3_entry_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_entry"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_l_fence = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_l_fence")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_l_fence",
+	title = "RNGModifier_hox_3_l_fence_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_l_fence",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_l_fence_1",
+		"RNGModifier_hox_3_l_fence_2",
+		"RNGModifier_hox_3_l_fence_3",
+		"RNGModifier_hox_3_l_fence_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_l_fence"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_r_fence = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_r_fence")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_r_fence",
+	title = "RNGModifier_hox_3_r_fence_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_r_fence",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_r_fence_1",
+		"RNGModifier_hox_3_r_fence_2",
+		"RNGModifier_hox_3_r_fence_3",
+		"RNGModifier_hox_3_r_fence_4",
+		"RNGModifier_hox_3_r_fence_5"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_r_fence"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
