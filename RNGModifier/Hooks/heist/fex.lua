@@ -213,3 +213,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("fex", "_code_4"),
 	menu_id = "RNGModifier_fex_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_fex_camera = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_fex_camera",
+	title = "RNGModifier_fex_camera_title",
+	desc = "RNGModifier_fex_camera_desc",
+	callback = "RNGModifier_fex_camera",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_fex_camera_1",
+		"RNGModifier_fex_camera_2"
+	},
+	value = RNGModifier:SafeGetData("fex", "_camera"),
+	menu_id = "RNGModifier_fex_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_fex_sanctum = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_sanctum")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_fex_sanctum",
+	title = "RNGModifier_fex_sanctum_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_fex_sanctum",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_fex_sanctum_1",
+		"RNGModifier_fex_sanctum_2"
+	},
+	value = RNGModifier:SafeGetData("fex", "_sanctum"),
+	menu_id = "RNGModifier_fex_Options_Menu"
+})
