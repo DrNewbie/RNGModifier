@@ -245,3 +245,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("trai", "_easy_sensor"),
 	menu_id = "RNGModifier_trai_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_trai_easy_wires = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_wires")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_trai_easy_wires",
+	title = "RNGModifier_trai_easy_wires_title",
+	desc = "RNGModifier_trai_easy_wires_desc",
+	callback = "RNGModifier_trai_easy_wires",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("trai", "_easy_wires"),
+	menu_id = "RNGModifier_trai_Options_Menu"
+})
