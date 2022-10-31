@@ -291,7 +291,7 @@ RNGModifier:Load()
 Hooks:Add('LocalizationManagerPostInit', 'LocalizationManagerPostInit_RNGModifier', function(self)
 	self:load_localization_file(RNGModifier._path..'Loc/EN.json', false)
 	if SystemInfo:language():key() == Idstring("schinese"):key() then
-		self:load_localization_file(RNGModifier._path..'Loc/CN.json', false)
+		self:load_localization_file(RNGModifier._path..'Loc/CN.json', true)
 	end
 end)
 
