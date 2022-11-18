@@ -35,18 +35,19 @@ RNGModifier._heistlist = {
 	"arm_par",--Bain - Transport: Park
 	"arm_for",--Bain - Transport: Train Heist
 	"arm_und",--Bain - Transport: Underpass
-	"pal",--Classics -  Counterfeit
-	"dah",--Classics -  Diamond Heist
-	"red2",--Classics -  First World Bank
-	"glace",--Classics -  Green Bridge
-	"run",--Classics -  Heat Street
-	"nmh",--Classics -  No Mercy
+	"pal",--Classics - Counterfeit
+	"dah",--Classics - Diamond Heist
+	"red2",--Classics - First World Bank
+	"glace",--Classics - Green Bridge
+	"run",--Classics - Heat Street
+	"nmh",--Classics - No Mercy
 	"flat",--Classics - Panic Room
 	"dinner",--Classics - Slaughterhouse
-	"man",--Classics -  Undercover
-	"hvh",--Events -  Cursed Kill Room
-	"help",--Events -  Prison Nightmare
-	"chill_combat",--Events -  Safehouse Raid
+	"man",--Classics - Undercover
+	"hvh",--Events - Cursed Kill Room
+	"help",--Events - Prison Nightmare
+	"haunted",--Events - Safehouse Nightmare
+	"chill_combat",--Events - Safehouse Raid
 	"trai",--Gemma McShay - Lost In Transit
 	"ranc",--Gemma McShay - Midland Ranch
 	"firestarter_1",--Hector - Firestarter 1
@@ -55,8 +56,9 @@ RNGModifier._heistlist = {
 	"alex_2",--Hector - Rats 2
 	"alex_3",--Hector - Rats 3
 	"watchdogs_1",--Hector - Watchdogs 1
-	"mad",--Jimmy -  Boiling Point
-	"dark",--Jimmy -  Murky Station
+	"watchdogs_2",--Hector - Watchdogs 2
+	"mad",--Jimmy - Boiling Point
+	"dark",--Jimmy - Murky Station
 	"chas",--Jiu Feng - Dragon Heist
 	"sand",--Jiu Feng - The Ukrainian Prisoner
 	"wwh",--Locke - Alaskan Deal
@@ -109,7 +111,8 @@ RNGModifier._heistlist = {
 	"escape_cafe",--Escape Days - Cafe Escape
 	"escape_cafe_day",--Escape Days - Cafe Escape (Day)
 	"escape_garage",--Escape Days - Garage Escape
-	"escape_overpass",-- Escape Days - Overpass Escape
+	--"escape_overpass",-- Escape Days - Overpass Escape
+	"escape_overpass_night",-- Escape Days - Overpass Escape (NIGHT)
 	"escape_park",--Escape Days - Park Escape
 	"escape_park_day",--Escape Days - Park Escape (Day)
 	"escape_street"--Escape Days - Street Escape
@@ -155,10 +158,40 @@ function RNGModifier:Save()
 	if F1_hangar_1 ~= 0 and F1_hangar_1 == F1_hangar_1 then
 		self:SafeSetData(0, "firestater_1", "_hangar_1")
 	end
+	local FF3_2keycard_A = self:SafeGetOpt("framing_frame_3", "_2keycard_A")
+	local FF3_2keycard_B = self:SafeGetOpt("framing_frame_3", "_2keycard_B")
+	if FF3_2keycard_A ~= 0 and FF3_2keycard_A == FF3_2keycard_B then
+		self:SafeSetData(0, "framing_frame_3", "_2keycard_A")
+	end
 	local FF3_spawnRandomHarrdDrive_A = self:SafeGetOpt("framing_frame_3", "_spawnRandomHarrdDrive_A")
 	local FF3_spawnRandomHarrdDrive_B = self:SafeGetOpt("framing_frame_3", "_spawnRandomHarrdDrive_B")
 	if FF3_spawnRandomHarrdDrive_A ~= 0 and FF3_spawnRandomHarrdDrive_A == FF3_spawnRandomHarrdDrive_B then
 		self:SafeSetData(0, "framing_frame_3", "_spawnRandomHarrdDrive_A")
+	end
+	local BORN_big_part_A = self:SafeGetOpt("born", "_big_part_A")
+	local BORN_big_part_B = self:SafeGetOpt("born", "_big_part_B")
+	if BORN_big_part_A ~= 0 and BORN_big_part_A == BORN_big_part_B then
+		self:SafeSetData(0, "born", "_big_part_A")
+	end
+	local DINNER_gas1_A = self:SafeGetOpt("dinner", "_gas1_A")
+	local DINNER_gas1_B = self:SafeGetOpt("dinner", "_gas1_B")
+	if DINNER_gas_A ~= 0 and DINNER_gas1_A == DINNER_gas1_B then
+		self:SafeSetData(0, "dinner", "_gas1_A")
+	end
+	local DINNER_gas2_A = self:SafeGetOpt("dinner", "_gas2_A")
+	local DINNER_gas2_B = self:SafeGetOpt("dinner", "_gas2_B")
+	if DINNER_gas_A ~= 0 and DINNER_gas2_A == DINNER_gas2_B then
+		self:SafeSetData(0, "dinner", "_gas2_A")
+	end
+	local DINNER_gas3_A = self:SafeGetOpt("dinner", "_gas3_A")
+	local DINNER_gas3_B = self:SafeGetOpt("dinner", "_gas3_B")
+	if DINNER_gas_A ~= 0 and DINNER_gas3_A == DINNER_gas3_B then
+		self:SafeSetData(0, "dinner", "_gas3_A")
+	end
+	local CHAS_crate_A = self:SafeGetOpt("chas", "_crate_A")
+	local CHAS_crate_B = self:SafeGetOpt("chas", "_crate_B")
+	if CHAS_crate_A ~= 0 and CHAS_crate_A == CHAS_crate_B then
+		self:SafeSetData(0, "chas", "_crate_A")
 	end
 	local ED2_spawncrate_A = self:SafeGetOpt("election_day_2", "_spawncrate_A")
 	local ED2_spawncrate_B = self:SafeGetOpt("election_day_2", "_spawncrate_B")
