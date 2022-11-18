@@ -41,8 +41,7 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_red2_power_boxes_4",
 		"RNGModifier_red2_power_boxes_5",
 		"RNGModifier_red2_power_boxes_6",
-		"RNGModifier_red2_power_boxes_7",
-		"RNGModifier_red2_power_boxes_8"
+		"RNGModifier_red2_power_boxes_7"
 	},
 	value = RNGModifier:SafeGetData("red2", "_power_boxes"),
 	menu_id = "RNGModifier_red2_Options_Menu"
