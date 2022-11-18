@@ -25,3 +25,39 @@ MenuHelper:AddToggle({
 	menu_id = "RNGModifier_framing_frame_2_Options_Menu"
 })
 _bool = nil
+
+MenuCallbackHandler.RNGModifier_framing_frame_2_gate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_2_gate",
+	title = "RNGModifier_framing_frame_2_gate_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_2_gate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_gate"),
+	menu_id = "RNGModifier_framing_frame_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_framing_frame_2_doors = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_doors")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_2_doors",
+	title = "RNGModifier_framing_frame_2_doors_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_2_doors",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_doors"),
+	menu_id = "RNGModifier_framing_frame_2_Options_Menu"
+})
