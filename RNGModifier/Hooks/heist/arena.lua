@@ -17,11 +17,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_arena_select_security_room",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_arena_select_security_room_No_Lobby",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_arena_select_security_room_1",
+		"RNGModifier_arena_select_security_room_2",
+		"RNGModifier_arena_select_security_room_3"
 	},
 	value = RNGModifier:SafeGetData("arena", "_select_security_room"),
 	menu_id = "RNGModifier_arena_Options_Menu"
