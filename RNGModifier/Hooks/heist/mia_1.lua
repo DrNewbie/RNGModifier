@@ -399,3 +399,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("mia_1", "_wall"),
 	menu_id = "RNGModifier_mia_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mia_1_easy_money = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_money")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_1_easy_money",
+	title = "RNGModifier_mia_1_easy_money_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_1_easy_money",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mia_1_easy_money_1"
+	},
+	value = RNGModifier:SafeGetData("mia_1", "_easy_money"),
+	menu_id = "RNGModifier_mia_1_Options_Menu"
+})
