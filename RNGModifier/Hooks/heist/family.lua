@@ -51,7 +51,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_family_rand_escape",
 	title = "RNGModifier_family_rand_escape_title",
-	desc = "RNGModifier_family_rand_escape_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_family_rand_escape",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -71,7 +71,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_family_rand_safe",
 	title = "RNGModifier_family_rand_safe_title",
-	desc = "RNGModifier_family_rand_safe_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_family_rand_safe",
 	items = {
 		"RNGModifier_Default_One_Item",
