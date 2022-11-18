@@ -6,45 +6,6 @@ local _Curret_Heist = "sah"
 RNGModifier._data = RNGModifier._data or {}
 RNGModifier._data[_Curret_Heist] = RNGModifier._data[_Curret_Heist] or {}
 
-MenuCallbackHandler.RNGModifier_sah_pick_rand_escape = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pick_rand_escape")
-	RNGModifier:Save()
-end
-MenuHelper:AddMultipleChoice({
-	priority = 100,
-	id = "RNGModifier_sah_pick_rand_escape",
-	title = "RNGModifier_sah_pick_rand_escape_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_sah_pick_rand_escape",
-	items = {
-		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
-	},
-	value = RNGModifier:SafeGetData("sah", "_pick_rand_escape"),
-	menu_id = "RNGModifier_sah_Options_Menu"
-})
-
-MenuCallbackHandler.RNGModifier_sah_spawn_rand_walker = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn_rand_walker")
-	RNGModifier:Save()
-end
-MenuHelper:AddMultipleChoice({
-	priority = 99,
-	id = "RNGModifier_sah_spawn_rand_walker",
-	title = "RNGModifier_sah_spawn_rand_walker_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_sah_spawn_rand_walker",
-	items = {
-		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
-	},
-	value = RNGModifier:SafeGetData("sah", "_spawn_rand_walker"),
-	menu_id = "RNGModifier_sah_Options_Menu"
-})
-
 MenuCallbackHandler.RNGModifier_sah_randomize_hackbox_pairs = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_hackbox_pairs")
 	RNGModifier:Save()
@@ -78,9 +39,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_sah_randomize_vault",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_sah_randomize_vault_1",
+		"RNGModifier_sah_randomize_vault_2",
+		"RNGModifier_sah_randomize_vault_3"
 	},
 	value = RNGModifier:SafeGetData("sah", "_randomize_vault"),
 	menu_id = "RNGModifier_sah_Options_Menu"
@@ -98,9 +59,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_sah_randomize_breaker",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_sah_randomize_breaker_1",
+		"RNGModifier_sah_randomize_breaker_2",
+		"RNGModifier_sah_randomize_breaker_3"
 	},
 	value = RNGModifier:SafeGetData("sah", "_randomize_breaker"),
 	menu_id = "RNGModifier_sah_Options_Menu"
@@ -118,10 +79,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_sah_randomize_ziplines",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_sah_randomize_ziplines_1",
+		"RNGModifier_sah_randomize_ziplines_2",
+		"RNGModifier_sah_randomize_ziplines_3",
+		"RNGModifier_sah_randomize_ziplines_4"
 	},
 	value = RNGModifier:SafeGetData("sah", "_randomize_ziplines"),
 	menu_id = "RNGModifier_sah_Options_Menu"
@@ -181,5 +142,139 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_sah_randomize_ladder_2"
 	},
 	value = RNGModifier:SafeGetData("sah", "_randomize_ladder"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_tool1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_tool1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 91,
+	id = "RNGModifier_sah_randomize_tool1",
+	title = "RNGModifier_sah_randomize_tool1_title",
+	desc = "RNGModifier_sah_randomize_tool_desc",
+	callback = "RNGModifier_sah_randomize_tool1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_tool1_1",
+		"RNGModifier_sah_randomize_tool1_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_tool1"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_tool2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_tool2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 90,
+	id = "RNGModifier_sah_randomize_tool2",
+	title = "RNGModifier_sah_randomize_tool2_title",
+	desc = "RNGModifier_sah_randomize_tool_desc",
+	callback = "RNGModifier_sah_randomize_tool2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_tool2_1",
+		"RNGModifier_sah_randomize_tool2_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_tool2"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_tool3 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_tool3")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 89,
+	id = "RNGModifier_sah_randomize_tool3",
+	title = "RNGModifier_sah_randomize_tool3_title",
+	desc = "RNGModifier_sah_randomize_tool_desc",
+	callback = "RNGModifier_sah_randomize_tool3",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_tool3_1",
+		"RNGModifier_sah_randomize_tool3_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_tool3"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_office1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_office1")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 88,
+	id = "RNGModifier_sah_randomize_office1",
+	title = "RNGModifier_sah_randomize_office1_title",
+	desc = "RNGModifier_sah_randomize_office_desc",
+	callback = "RNGModifier_sah_randomize_office1",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_office1_1",
+		"RNGModifier_sah_randomize_office1_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_office1"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_office2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_office2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 87,
+	id = "RNGModifier_sah_randomize_office2",
+	title = "RNGModifier_sah_randomize_office2_title",
+	desc = "RNGModifier_sah_randomize_office_desc",
+	callback = "RNGModifier_sah_randomize_office2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_office2_1",
+		"RNGModifier_sah_randomize_office2_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_office2"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_office3 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_office3")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 86,
+	id = "RNGModifier_sah_randomize_office3",
+	title = "RNGModifier_sah_randomize_office3_title",
+	desc = "RNGModifier_sah_randomize_office_desc",
+	callback = "RNGModifier_sah_randomize_office3",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_office3_1",
+		"RNGModifier_sah_randomize_office3_2"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_office3"),
+	menu_id = "RNGModifier_sah_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_sah_randomize_office4 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_randomize_office4")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	priority = 85,
+	id = "RNGModifier_sah_randomize_office4",
+	title = "RNGModifier_sah_randomize_office4_title",
+	desc = "RNGModifier_sah_randomize_office_desc",
+	callback = "RNGModifier_sah_randomize_office4",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_sah_randomize_office4_1",
+		"RNGModifier_sah_randomize_office4_2",
+		"RNGModifier_sah_randomize_office4_3"
+	},
+	value = RNGModifier:SafeGetData("sah", "_randomize_office4"),
 	menu_id = "RNGModifier_sah_Options_Menu"
 })
