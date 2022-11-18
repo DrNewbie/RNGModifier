@@ -42,3 +42,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("glace", "_logic_chance_001"),
 	menu_id = "RNGModifier_glace_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_glace_loot = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_loot")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_glace_loot",
+	title = "RNGModifier_glace_loot_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_glace_loot",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_glace_loot_1",
+		"RNGModifier_glace_loot_2",
+		"RNGModifier_glace_loot_3",
+		"RNGModifier_glace_loot_4"
+	},
+	value = RNGModifier:SafeGetData("glace", "_loot"),
+	menu_id = "RNGModifier_glace_Options_Menu"
+})
