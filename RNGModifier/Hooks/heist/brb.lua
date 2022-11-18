@@ -72,8 +72,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_brb_vault_door_equipment",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_brb_vault_door_equipment_1",
+		"RNGModifier_brb_vault_door_equipment_2"
 	},
 	value = RNGModifier:SafeGetData("brb", "_vault_door_equipment"),
 	menu_id = "RNGModifier_brb_Options_Menu"
@@ -94,5 +94,82 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("brb", "_is_2_train"),
+	menu_id = "RNGModifier_brb_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_brb_saw_door = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_saw_door")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_brb_saw_door",
+	title = "RNGModifier_brb_saw_door_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_brb_saw_door",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_brb_saw_door_1",
+		"RNGModifier_brb_saw_door_2",
+		"RNGModifier_brb_saw_door_3"
+	},
+	value = RNGModifier:SafeGetData("brb", "_saw_door"),
+	menu_id = "RNGModifier_brb_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_brb_keycard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_brb_keycard",
+	title = "RNGModifier_brb_keycard_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_brb_keycard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_brb_keycard_1",
+		"RNGModifier_brb_keycard_2",
+		"RNGModifier_brb_keycard_3",
+		"RNGModifier_brb_keycard_4",
+		"RNGModifier_brb_keycard_5",
+		"RNGModifier_brb_keycard_6"
+	},
+	value = RNGModifier:SafeGetData("brb", "_keycard"),
+	menu_id = "RNGModifier_brb_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_brb_laptop = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_laptop")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_brb_laptop",
+	title = "RNGModifier_brb_laptop_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_brb_laptop",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("brb", "_laptop"),
+	menu_id = "RNGModifier_brb_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_brb_spawn = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawn")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_brb_spawn",
+	title = "RNGModifier_brb_spawn_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_brb_spawn",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_brb_spawn_1",
+		"RNGModifier_brb_spawn_2",
+		"RNGModifier_brb_spawn_3"
+	},
+	value = RNGModifier:SafeGetData("brb", "_spawn"),
 	menu_id = "RNGModifier_brb_Options_Menu"
 })
