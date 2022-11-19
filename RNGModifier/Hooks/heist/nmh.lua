@@ -40,16 +40,16 @@ MenuHelper:AddToggle({
 })
 
 
-MenuCallbackHandler.RNGModifier_nmh_vile_chance = function(self, item)
-    RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vile_chance")
+MenuCallbackHandler.RNGModifier_nmh_vial_chance = function(self, item)
+    RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vial_chance")
     RNGModifier:Save()
 end
 MenuHelper:AddSlider({
-    id = "RNGModifier_nmh_vile_chance",
-    title = "RNGModifier_nmh_vile_chance_title",
-    desc = "RNGModifier_nmh_vile_chance_desc",
-    callback = "RNGModifier_nmh_vile_chance",
-    value = RNGModifier:SafeGetData("nmh", "_vile_chance") or 28,
+    id = "RNGModifier_nmh_vial_chance",
+    title = "RNGModifier_nmh_vial_chance_title",
+    desc = "RNGModifier_nmh_vial_chance_desc",
+    callback = "RNGModifier_nmh_vial_chance",
+    value = RNGModifier:SafeGetData("nmh", "_vial_chance") or 28,
     min = 0,
     max = 100,
     step = 1,
