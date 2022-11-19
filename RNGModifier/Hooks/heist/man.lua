@@ -240,3 +240,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("man", "_doctor_bag"),
 	menu_id = "RNGModifier_man_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_man_block = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_block")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_man_block",
+	title = "RNGModifier_man_block_title",
+	desc = "RNGModifier_man_block_desc",
+	callback = "RNGModifier_man_block",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+	    "RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("man", "_block"),
+	menu_id = "RNGModifier_man_Options_Menu"
+})

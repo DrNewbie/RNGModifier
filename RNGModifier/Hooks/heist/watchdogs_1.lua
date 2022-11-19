@@ -42,3 +42,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_chooseRandomChopper"),
 	menu_id = "RNGModifier_watchdogs_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_watchdogs_1_door = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_door")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_watchdogs_1_door",
+	title = "RNGModifier_watchdogs_1_door_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_watchdogs_1_door",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_door"),
+	menu_id = "RNGModifier_watchdogs_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_watchdogs_1_gate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_watchdogs_1_gate",
+	title = "RNGModifier_watchdogs_1_gate_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_watchdogs_1_gate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_gate"),
+	menu_id = "RNGModifier_watchdogs_1_Options_Menu"
+})

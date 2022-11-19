@@ -308,3 +308,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("mex", "_chance_diffusible"),
 	menu_id = "RNGModifier_mex_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mex_garage = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_garage")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mex_garage",
+	title = "RNGModifier_mex_garage_title",
+	desc = "RNGModifier_mex_garage_desc",
+	callback = "RNGModifier_mex_garage",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mex_garage_1",
+		"RNGModifier_mex_garage_2"
+	},
+	value = RNGModifier:SafeGetData("mex", "_garage"),
+	menu_id = "RNGModifier_mex_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mex_crowbar = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mex_crowbar",
+	title = "RNGModifier_mex_crowbar_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mex_crowbar",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mex_crowbar_1",
+		"RNGModifier_mex_crowbar_2"
+	},
+	value = RNGModifier:SafeGetData("mex", "_crowbar"),
+	menu_id = "RNGModifier_mex_Options_Menu"
+})

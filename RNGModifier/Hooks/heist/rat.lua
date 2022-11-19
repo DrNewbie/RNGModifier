@@ -17,8 +17,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_rat_escape_position",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_rat_escape_position_1",
+		"RNGModifier_rat_escape_position_2"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_escape_position"),
 	menu_id = "RNGModifier_rat_Options_Menu"
@@ -35,9 +35,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_rat_random_flare",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_rat_random_flare_1",
+		"RNGModifier_rat_random_flare_2",
+		"RNGModifier_rat_random_flare_3"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_random_flare"),
 	menu_id = "RNGModifier_rat_Options_Menu"
@@ -50,13 +50,13 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_rat_chose_methlab_position",
 	title = "RNGModifier_rat_chose_methlab_position_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_rat_chose_methlab_position_desc",
 	callback = "RNGModifier_rat_chose_methlab_position",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_rat_chose_methlab_position_1",
+		"RNGModifier_rat_chose_methlab_position_2",
+		"RNGModifier_rat_chose_methlab_position_3"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_chose_methlab_position"),
 	menu_id = "RNGModifier_rat_Options_Menu"

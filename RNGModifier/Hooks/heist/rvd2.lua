@@ -59,3 +59,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("rvd2", "_gensec"),
 	menu_id = "RNGModifier_rvd2_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_rvd2_vault = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vault")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_rvd2_vault",
+	title = "RNGModifier_rvd2_vault_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_rvd2_vault",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_rvd2_vault_1",
+		"RNGModifier_rvd2_vault_2",
+		"RNGModifier_rvd2_vault_3",
+		"RNGModifier_rvd2_vault_4"
+	},
+	value = RNGModifier:SafeGetData("rvd2", "_vault"),
+	menu_id = "RNGModifier_rvd2_Options_Menu"
+})

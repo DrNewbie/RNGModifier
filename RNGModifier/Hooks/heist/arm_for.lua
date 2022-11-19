@@ -31,12 +31,12 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_arm_for_vault1",
 	title = "RNGModifier_arm_for_vault1_title",
-	desc = "RNGModifier_arm_for_turret_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_arm_for_vault1",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_arm_for_vault_1",
+		"RNGModifier_arm_for_vault_2"
 	},
 	value = RNGModifier:SafeGetData("arm_for", "_vault1"),
 	menu_id = "RNGModifier_arm_for_Options_Menu"
@@ -49,12 +49,12 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_arm_for_vault2",
 	title = "RNGModifier_arm_for_vault2_title",
-	desc = "RNGModifier_arm_for_turret_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_arm_for_vault2",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_arm_for_vault_1",
+		"RNGModifier_arm_for_vault_2"
 	},
 	value = RNGModifier:SafeGetData("arm_for", "_vault2"),
 	menu_id = "RNGModifier_arm_for_Options_Menu"
@@ -67,12 +67,12 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_arm_for_vault3",
 	title = "RNGModifier_arm_for_vault3_title",
-	desc = "RNGModifier_arm_for_turret_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_arm_for_vault3",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_arm_for_vault_1",
+		"RNGModifier_arm_for_vault_2"
 	},
 	value = RNGModifier:SafeGetData("arm_for", "_vault3"),
 	menu_id = "RNGModifier_arm_for_Options_Menu"
@@ -85,13 +85,13 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_arm_for_turret",
 	title = "RNGModifier_arm_for_turret_title",
-	desc = "RNGModifier_arm_for_turret_desc",
+	desc = "RNGModifier_empty_desc",
 	callback = "RNGModifier_arm_for_turret",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_arm_for_turret_1",
+		"RNGModifier_arm_for_turret_2",
+		"RNGModifier_arm_for_turret_3"
 	},
 	value = RNGModifier:SafeGetData("arm_for", "_turret"),
 	menu_id = "RNGModifier_arm_for_Options_Menu"

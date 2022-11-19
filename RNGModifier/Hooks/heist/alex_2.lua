@@ -11,7 +11,6 @@ MenuCallbackHandler.RNGModifier_alex_2_chance_of_fbi_interrupt = function(self, 
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chance_of_fbi_interrupt")
 	RNGModifier:Save()
 end
-
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_alex_2_chance_of_fbi_interrupt",
 	title = "RNGModifier_alex_2_chance_of_fbi_interrupt_title",
@@ -23,5 +22,23 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("alex_2", "_chance_of_fbi_interrupt"),
+	menu_id = "RNGModifier_alex_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_alex_2_betrayal = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_betrayal")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_alex_2_betrayal",
+	title = "RNGModifier_alex_2_betrayal_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_alex_2_betrayal",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("alex_2", "_betrayal"),
 	menu_id = "RNGModifier_alex_2_Options_Menu"
 })

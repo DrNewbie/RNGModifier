@@ -74,3 +74,38 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("nmh", "_assets"),
 	menu_id = "RNGModifier_nmh_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_nmh_cloaker = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_cloaker")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nmh_cloaker",
+	title = "RNGModifier_nmh_cloaker_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_nmh_cloaker",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("nmh", "_cloaker"),
+	menu_id = "RNGModifier_nmh_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_nmh_escape = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nmh_escape",
+	title = "RNGModifier_nmh_escape_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_nmh_escape",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("nmh", "_escape"),
+	menu_id = "RNGModifier_nmh_Options_Menu"
+})

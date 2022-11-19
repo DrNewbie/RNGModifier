@@ -18,6 +18,7 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_tag_chance_basement_escape",
 	items = {
 		"RNGModifier_Default_One_Item",
+		"RNGModifier_tag_chance_basement_escape_1",
 		"RNGModifier_tag_chance_basement_escape_2"
 	},
 	value = RNGModifier:SafeGetData("tag", "_chance_basement_escape"),
@@ -35,7 +36,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_tag_chance_keycard",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_tag_chance_keycard_1"
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("tag", "_chance_keycard"),
 	menu_id = "RNGModifier_tag_Options_Menu"
@@ -125,9 +127,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_tag_spawn",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_tag_spawn_1",
+		"RNGModifier_tag_spawn_2",
+		"RNGModifier_tag_spawn_3"
 	},
 	value = RNGModifier:SafeGetData("tag", "_spawn"),
 	menu_id = "RNGModifier_tag_Options_Menu"
@@ -300,7 +302,7 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_tag_tag_office",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1"
+		"RNGModifier_bool_4_true"
 	},
 	value = RNGModifier:SafeGetData("tag", "_tag_office"),
 	menu_id = "RNGModifier_tag_Options_Menu"
