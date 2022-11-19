@@ -1,5 +1,5 @@
-if _G.RNGModifier then 
-	return 
+if _G.RNGModifier then
+	return
 end
 _G.RNGModifier = {}
 RNGModifier._path = ModPath
@@ -10,7 +10,7 @@ for i, mod in pairs(BLT.Mods.mods) do
 	if _dump:find('RNGModifier') then
 		RNGModifier._data = {
 			["Version"] = tostring(mod.version)
-		}		
+		}
 		break
 	end
 end
@@ -339,7 +339,7 @@ Hooks:Add("MenuManagerSetupCustomMenus", "MenuManagerSetupCustomMenus_RNGModifie
 	end
 end)
 
-function get_contractor_from_level_id(level_id)
+local function get_contractor_from_level_id(level_id)
 	for job_id, job_data in pairs(tweak_data.narrative.jobs) do
 		for _, stage in ipairs(tweak_data.narrative:job_chain(job_id)) do
 			if stage.level_id == nil then -- it should mean that it's a list of stages?
@@ -392,17 +392,15 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 		end
 		RNGModifier:Save()
 	end
-	local _bool = tonumber(tostring(RNGModifier:SafeGetData("all_of_all", "_forced_escape_day"))) == 1 and true or false
 	MenuHelper:AddToggle({
 		id = "RNGModifier_all_of_all_forced_escape_day",
 		title = "RNGModifier_all_of_all_forced_escape_day_title",
 		desc = "RNGModifier_all_of_all_forced_escape_day_desc",
 		callback = "RNGModifier_all_of_all_forced_escape_day",
-		value = _bool,
+		value = tonumber(tostring(RNGModifier:SafeGetData("all_of_all", "_forced_escape_day"))) == 1,
 		menu_id = RNGModifier._menu_All_id
 	})
-	_bool = nil
-	
+
 	MenuCallbackHandler.RNGModifier_all_of_all_chancechange = function(self, item)
 		RNGModifier:SafeSetData(item:value(), "all_of_all", "_chancechange")
 		RNGModifier:Save()
@@ -426,7 +424,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 		value = RNGModifier:SafeGetData("all_of_all", "_chancechange"),
 		menu_id = RNGModifier._menu_All_id
 	})
-	
+
 	MenuCallbackHandler.RNGModifier_all_of_all_randomchange = function(self, item)
 		RNGModifier:SafeSetData(item:value(), "all_of_all", "_randomchange")
 		RNGModifier:Save()
