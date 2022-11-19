@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<mod>
+    <hooks script_path="Hooks/lua/">
+        <pre hook_id="core/lib/utils/coreapp" script_path="Base.lua"/>
+        <post hook_id="core/lib/managers/mission/coreelementrandom" :script_path="coreelementrandom.lua"/>
+        <post hook_id="core/lib/managers/mission/coreelementlogicchance" :script_path="coreelementlogicchance.lua"/>
+        <post hook_id="core/lib/managers/mission/coreelementtoggle" :script_path="coreelementtoggle.lua"/>
+        <post hook_id="core/lib/managers/mission/coreelementunitsequence" :script_path="coreelementunitsequence.lua"/>
+        <post hook_id="lib/managers/mission/elementjobvalue" :script_path="elementjobvalue.lua"/>
+        <post hook_id="lib/managers/group_ai_states/groupaistatebase" :script_path="ForcedEscapeDay.lua"/>
+    </hooks>
+</mod>
