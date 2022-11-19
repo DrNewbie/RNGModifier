@@ -3,10 +3,11 @@ core:module("CoreElementToggle")
 core:import("CoreMissionScriptElement")
 ElementToggle = ElementToggle or class(CoreMissionScriptElement.MissionScriptElement)
 dofile("mods/RNGModifier/Base.lua")
-_G.RNGModifier = _G.RNGModifier or {}
-RNGModifier = _G.RNGModifier or {}
-if not RNGModifier then
+local RNGModifier = _G.RNGModifier
+if RNGModifier._hooks.ElementToggle then
 	return
+else
+	RNGModifier._hooks.ElementToggle = true
 end
 
 RNG_ElementToggle = RNG_ElementToggle or ElementToggle.on_executed

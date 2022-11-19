@@ -4,12 +4,11 @@ core:import("CoreMissionScriptElement")
 ElementLogicChance = ElementLogicChance or class(CoreMissionScriptElement.MissionScriptElement)
 dofile("mods/RNGModifier/Base.lua")
 
-_G.RNGModifier = _G.RNGModifier or {}
-
-RNGModifier = _G.RNGModifier or {}
-
-if not RNGModifier  then
+local RNGModifier = _G.RNGModifier
+if RNGModifier._hooks.ElementLogicChance then
 	return
+else
+	RNGModifier._hooks.ElementLogicChance = true
 end
 
 RNGModifier_ElementLogicChance_on_executed = RNGModifier_ElementLogicChance_on_executed or ElementLogicChance.on_executed

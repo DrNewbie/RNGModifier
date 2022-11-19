@@ -4,10 +4,11 @@ core:import("CoreTable")
 ElementRandom = ElementRandom or class(CoreMissionScriptElement.MissionScriptElement)
 dofile("mods/RNGModifier/Base.lua")
 
-_G.RNGModifier = _G.RNGModifier or {}
-RNGModifier = _G.RNGModifier or {}
-if not RNGModifier or not RNGModifier.SafeGetData then
+local RNGModifier = _G.RNGModifier
+if RNGModifier._hooks.ElementRandom then
 	return
+else
+	RNGModifier._hooks.ElementRandom = true
 end
 local _tmp_data = {}
 

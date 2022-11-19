@@ -5,12 +5,11 @@ core:import("CoreCode")
 core:import("CoreUnit")
 dofile("mods/RNGModifier/Base.lua")
 
-_G.RNGModifier = _G.RNGModifier or {}
-
-RNGModifier = _G.RNGModifier or {}
-
-if not RNGModifier then
+local RNGModifier = _G.RNGModifier
+if RNGModifier._hooks.ElementUnitSequence then
 	return
+else
+	RNGModifier._hooks.ElementUnitSequence = true
 end
 
 RNGModifier_ElementUnitSequence_on_executed = RNGModifier_ElementUnitSequence_on_executed or ElementUnitSequence.on_executed
@@ -22,7 +21,7 @@ function ElementUnitSequence:on_executed(...)
 			if self._id == 105193 then
 				local _hideOfficeCard = RNGModifier:SafeGetData("branchbank", "_hideOfficeCard") or 1
 				if _hideOfficeCard == 1 then
-				
+
 				elseif _hideOfficeCard == 2 then
 					return
 				end
@@ -31,7 +30,7 @@ function ElementUnitSequence:on_executed(...)
 			if self._id == 105193 then
 				local _hideOfficeCard = RNGModifier:SafeGetData("firestarter_3", "_hideOfficeCard") or 1
 				if _hideOfficeCard == 1 then
-				
+
 				elseif _hideOfficeCard == 2 then
 					return
 				end
