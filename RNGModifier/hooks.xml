@@ -8,5 +8,6 @@
         <post hook_id="core/lib/managers/mission/coreelementunitsequence" :script_path="coreelementunitsequence.lua"/>
         <post hook_id="lib/managers/mission/elementjobvalue" :script_path="elementjobvalue.lua"/>
         <post hook_id="lib/managers/group_ai_states/groupaistatebase" :script_path="ForcedEscapeDay.lua"/>
+        <post hook_id="lib/tweak_data/levelstweakdata" :script_path="levelstweakdata.lua"/>
     </hooks>
 </mod>

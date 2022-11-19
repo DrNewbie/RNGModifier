@@ -4,16 +4,8 @@ end
 _G.RNGModifier = {}
 RNGModifier._path = ModPath
 RNGModifier._save_path = SavePath .. "RNGModifier_SaveFile.txt"
-RNGModifier._data = RNGModifier._data or {["Version"] = "Unknown"}
-for i, mod in pairs(BLT.Mods.mods) do
-	local _dump = tostring(json.encode(mod.json_data))
-	if _dump:find('RNGModifier') then
-		RNGModifier._data = {
-			["Version"] = tostring(mod.version)
-		}
-		break
-	end
-end
+RNGModifier._data = {}
+RNGModifier._data.Version = ModInstance and ModInstance:GetVersion() or "Unknown"
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._menu_Heist_id = "RNGModifier_menu_Heist_id"
 RNGModifier._menu_All_id = "RNGModifier_menu_All_id"
@@ -117,13 +109,6 @@ RNGModifier._heistlist = {
 	"escape_park_day",--Escape Days - Park Escape (Day)
 	"escape_street"--Escape Days - Street Escape
 }
-for _, _heist in pairs(RNGModifier._heistlist) do
-	if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
-		RNGModifier._data[_heist] = {
-			["name_id"] = tweak_data.levels[_heist].name_id
-		}
-	end
-end
 
 function RNGModifier:SafeGetData(_heist, _table1)
 	if not _heist or not self._data or not self._data[_heist] then
@@ -133,7 +118,6 @@ function RNGModifier:SafeGetData(_heist, _table1)
 end
 
 function RNGModifier:SafeSetData(_value, _heist, _table1)
-	self._data = self._data or {}
 	self._data[_heist] = self._data[_heist] or {}
 	self._data[_heist][_table1] = _value
 end
@@ -307,15 +291,15 @@ function RNGModifier:Load()
 	local _file = io.open(self._save_path, "r")
 	local _data = {}
 	if _file then
-		_data = json.decode(_file:read("*all" ))
+		_data = json.decode(_file:read("*all"))
 		_file:close()
 	end
-	if not _data or not _file or tostring(self._data["Version"]) < tostring(_data["Version"]) then -- this will break if version number count will change digits amount, but good enough for now
+	if not _data or not _file or tostring(self._data.Version) < tostring(_data.Version) then -- this will break if version number count will change digits amount, but good enough for now
 		self:Save()
 	else
-		local version = self._data["Version"]
+		local version = self._data.Version
 		self._data = _data
-		self._data["Version"] = version
+		self._data.Version = version
 	end
 end
 
