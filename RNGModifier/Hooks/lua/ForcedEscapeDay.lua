@@ -1,7 +1,8 @@
-_G.RNGModifier = _G.RNGModifier or {}
-RNGModifier = _G.RNGModifier or {}
-if not RNGModifier then
+local RNGModifier = _G.RNGModifier
+if RNGModifier._hooks.GroupAIStateBase then
 	return
+else
+	RNGModifier._hooks.GroupAIStateBase = true
 end
 
 local _forced_escape_day = false
