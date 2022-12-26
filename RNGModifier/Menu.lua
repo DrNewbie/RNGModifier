@@ -16,6 +16,7 @@ Hooks:Add("MenuManagerSetupCustomMenus", "MenuManagerSetupCustomMenus_RNGModifie
 	MenuHelper:NewMenu(RNGModifier._menu_id)
 	MenuHelper:NewMenu(RNGModifier._menu_Heist_id)
 	MenuHelper:NewMenu(RNGModifier._menu_All_id)
+	MenuHelper:NewMenu(RNGModifier._menu_HeistNow_id)
 	for _, _heist in pairs(RNGModifier._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
 			MenuHelper:NewMenu("RNGModifier_".. _heist .."_Options_Menu")
@@ -43,9 +44,11 @@ Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenus_RNGModifie
 	nodes[RNGModifier._menu_id] = MenuHelper:BuildMenu(RNGModifier._menu_id)
 	nodes[RNGModifier._menu_Heist_id] = MenuHelper:BuildMenu(RNGModifier._menu_Heist_id)
 	nodes[RNGModifier._menu_All_id] = MenuHelper:BuildMenu(RNGModifier._menu_All_id)
+	nodes[RNGModifier._menu_HeistNow_id] = MenuHelper:BuildMenu(RNGModifier._menu_HeistNow_id)
 	MenuHelper:AddMenuItem(nodes["blt_options"], RNGModifier._menu_id, "RNGModifier_menu_title", "RNGModifier_menu_desc")
 	MenuHelper:AddMenuItem(nodes[RNGModifier._menu_id], RNGModifier._menu_Heist_id, "RNGModifier_menu_Heist_title", "RNGModifier_empty_desc")
 	MenuHelper:AddMenuItem(nodes[RNGModifier._menu_id], RNGModifier._menu_All_id, "RNGModifier_menu_All_title", "RNGModifier_empty_desc")
+	MenuHelper:AddMenuItem(nodes[RNGModifier._menu_id], RNGModifier._menu_HeistNow_id, "RNGModifier_menu_HeistNow_title", "RNGModifier_menu_HeistNow_desc")
 	for index, _heist in pairs(RNGModifier._heistlist) do
 		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
 			local _new = "RNGModifier_".. _heist .."_Options_Menu"
@@ -128,4 +131,20 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 		value = RNGModifier:SafeGetData("all_of_all", "_randomchange"),
 		menu_id = RNGModifier._menu_All_id
 	})
+	
+	local Now_Heist = Global.game_settings.level_id
+	if managers.job and managers.job:current_level_id() then
+		Now_Heist = managers.job:current_level_id()
+	end
+	if Now_Heist and tweak_data.levels[Now_Heist] and tweak_data.levels[Now_Heist].name_id then
+		local Now_Heist_Menu_ID = "RNGModifier_"..Now_Heist.."_Options_Menu"
+		local Now_Heist_Data = MenuHelper:GetMenu(Now_Heist_Menu_ID)
+		local Current_Heist_Data = MenuHelper:GetMenu(RNGModifier._menu_HeistNow_id)
+		if type(Now_Heist_Data) == "table" and type(Now_Heist_Data._items_list) == "table" and type(Current_Heist_Data) == "table" then
+			MenuHelper:GetMenu(RNGModifier._menu_HeistNow_id)._items_list = Now_Heist_Data._items_list
+			managers.localization:add_localized_strings({
+				["RNGModifier_menu_HeistNow_desc"] = "--> "..managers.localization:text(tweak_data.levels[Now_Heist].name_id).." <--",
+			})
+		end
+	end
 end)

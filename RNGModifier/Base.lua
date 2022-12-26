@@ -9,6 +9,7 @@ RNGModifier._data.Version = ModInstance and ModInstance:GetVersion() or "Unknown
 RNGModifier._menu_id = "RNGModifier_menu_id"
 RNGModifier._menu_Heist_id = "RNGModifier_menu_Heist_id"
 RNGModifier._menu_All_id = "RNGModifier_menu_All_id"
+RNGModifier._menu_HeistNow_id = "RNGModifier_menu_HeistNow_id"
 RNGModifier._hooks = {}
 RNGModifier._heistlist = {
 	"gallery",--Bain - Art Gallery
