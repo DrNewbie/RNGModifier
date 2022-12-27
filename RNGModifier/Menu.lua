@@ -132,19 +132,22 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_RNGM
 		menu_id = RNGModifier._menu_All_id
 	})
 	
-	local Now_Heist = Global.game_settings.level_id
-	if managers.job and managers.job:current_level_id() then
-		Now_Heist = managers.job:current_level_id()
-	end
-	if Now_Heist and tweak_data.levels[Now_Heist] and tweak_data.levels[Now_Heist].name_id then
-		local Now_Heist_Menu_ID = "RNGModifier_"..Now_Heist.."_Options_Menu"
-		local Now_Heist_Data = MenuHelper:GetMenu(Now_Heist_Menu_ID)
-		local Current_Heist_Data = MenuHelper:GetMenu(RNGModifier._menu_HeistNow_id)
-		if type(Now_Heist_Data) == "table" and type(Now_Heist_Data._items_list) == "table" and type(Current_Heist_Data) == "table" then
-			MenuHelper:GetMenu(RNGModifier._menu_HeistNow_id)._items_list = Now_Heist_Data._items_list
-			managers.localization:add_localized_strings({
-				["RNGModifier_menu_HeistNow_desc"] = "--> "..managers.localization:text(tweak_data.levels[Now_Heist].name_id).." <--",
-			})
+	local function P_Now_Heist_load()	
+		local Now_Heist = Global.game_settings.level_id
+		if managers.job and managers.job:current_level_id() then
+			Now_Heist = managers.job:current_level_id()
 		end
-	end
+		if Now_Heist and tweak_data.levels[Now_Heist] and tweak_data.levels[Now_Heist].name_id and table.contains(RNGModifier._heistlist, Now_Heist) then
+			local Now_Heist_Menu_ID = "RNGModifier_"..Now_Heist.."_Options_Menu"
+			local Now_Heist_Data = MenuHelper:GetMenu(Now_Heist_Menu_ID)
+			local Current_Heist_Data = MenuHelper:GetMenu(RNGModifier._menu_HeistNow_id)
+			if type(Now_Heist_Data) == "table" and type(Now_Heist_Data._items_list) == "table" and type(Current_Heist_Data) == "table" then
+				MenuHelper:GetMenu(RNGModifier._menu_HeistNow_id)._items_list = Now_Heist_Data._items_list
+				managers.localization:add_localized_strings({
+					["RNGModifier_menu_HeistNow_desc"] = "--> "..managers.localization:text(tweak_data.levels[Now_Heist].name_id).." <--",
+				})
+			end
+		end
+	end	
+	pcall(P_Now_Heist_load)
 end)
