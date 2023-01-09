@@ -115,6 +115,24 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_flat_Options_Menu",
 })
 
+MenuCallbackHandler.RNGModifier_flat_basement_ambush_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_basement_ambush_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_flat_basement_ambush_2",
+	title = "RNGModifier_flat_basement_ambush_2_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_flat_basement_ambush_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("flat", "_basement_ambush_2"),
+	menu_id = "RNGModifier_flat_Options_Menu",
+})
+
 MenuCallbackHandler.RNGModifier_flat_ammo_bag = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ammo_bag")
 	RNGModifier:Save()
