@@ -18,8 +18,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_spawn",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_spawn_1",
+		"RNGModifier_mex_spawn_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_spawn"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -36,8 +36,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_red_door",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_red_door_1",
+		"RNGModifier_mex_red_door_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_red_door"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -149,9 +149,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_entrance",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_mex_entrance_1",
+		"RNGModifier_mex_entrance_2",
+		"RNGModifier_mex_entrance_3"
 	},
 	value = RNGModifier:SafeGetData("mex", "_entrance"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -187,8 +187,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_cam_usa",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_cam_usa_1",
+		"RNGModifier_mex_cam_usa_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_cam_usa"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -206,8 +206,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_cam_mexico",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_cam_mexico_1",
+		"RNGModifier_mex_cam_mexico_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_cam_mexico"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -245,8 +245,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_tank",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_tank_1",
+		"RNGModifier_mex_tank_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_tank"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -264,8 +264,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_pump",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_pump_1",
+		"RNGModifier_mex_pump_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_pump"),
 	menu_id = "RNGModifier_mex_Options_Menu"
@@ -283,8 +283,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mex_plane",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mex_plane_1",
+		"RNGModifier_mex_plane_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_plane"),
 	menu_id = "RNGModifier_mex_Options_Menu"
