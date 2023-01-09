@@ -18,8 +18,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mia_1_spawn",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_mia_1_spawn_1",
+		"RNGModifier_mia_1_spawn_2"
 	},
 	value = RNGModifier:SafeGetData("mia_1", "_spawn"),
 	menu_id = "RNGModifier_mia_1_Options_Menu"
@@ -37,11 +37,11 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_mia_1_hatch",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5"
+		"RNGModifier_mia_1_hatch_1",
+		"RNGModifier_mia_1_hatch_2",
+		"RNGModifier_mia_1_hatch_3",
+		"RNGModifier_mia_1_hatch_4",
+		"RNGModifier_mia_1_hatch_5"
 	},
 	value = RNGModifier:SafeGetData("mia_1", "_hatch"),
 	menu_id = "RNGModifier_mia_1_Options_Menu"
@@ -415,5 +415,59 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_mia_1_easy_money_1"
 	},
 	value = RNGModifier:SafeGetData("mia_1", "_easy_money"),
+	menu_id = "RNGModifier_mia_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mia_1_basement_loot = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_basement_loot")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_1_basement_loot",
+	title = "RNGModifier_mia_1_basement_loot_title",
+	desc = "RNGModifier_mia_1_basement_loot_desc",
+	callback = "RNGModifier_mia_1_basement_loot",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("mia_1", "_basement_loot"),
+	menu_id = "RNGModifier_mia_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mia_1_trunk_chance = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_trunk_chance")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_1_trunk_chance",
+	title = "RNGModifier_mia_1_trunk_chance_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_1_trunk_chance",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("mia_1", "_trunk_chance"),
+	menu_id = "RNGModifier_mia_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mia_1_trunk_money = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_trunk_money")
+	RNGModifier:Save()
+end
+
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mia_1_trunk_money",
+	title = "RNGModifier_mia_1_trunk_money_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mia_1_trunk_money",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mia_1_trunk_money_1"
+	},
+	value = RNGModifier:SafeGetData("mia_1", "_trunk_money"),
 	menu_id = "RNGModifier_mia_1_Options_Menu"
 })
