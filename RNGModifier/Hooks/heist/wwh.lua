@@ -37,9 +37,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_wwh_random_tanker_location",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_wwh_random_tanker_location_1",
+		"RNGModifier_wwh_random_tanker_location_2",
+		"RNGModifier_wwh_random_tanker_location_3"
 	},
 	value = RNGModifier:SafeGetData("wwh", "_random_tanker_location"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
@@ -56,8 +56,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_wwh_random_health_bag",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_wwh_random_health_bag_1",
+		"RNGModifier_wwh_random_health_bag_2"
 	},
 	value = RNGModifier:SafeGetData("wwh", "_random_health_bag"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
@@ -74,8 +74,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_wwh_random_ammo_bag",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_wwh_random_ammo_bag_1",
+		"RNGModifier_wwh_random_ammo_bag_2"
 	},
 	value = RNGModifier:SafeGetData("wwh", "_random_ammo_bag"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
@@ -92,12 +92,68 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_wwh_random_grenade_crate",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2"
+		"RNGModifier_wwh_random_grenade_crate_1",
+		"RNGModifier_wwh_random_grenade_crate_2"
 	},
 	value = RNGModifier:SafeGetData("wwh", "_random_grenade_crate"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_wwh_pump_A = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pump_A")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_pump_A",
+	title = "RNGModifier_wwh_pump_A_title",
+	desc = "RNGModifier_wwh_pump_A_desc",
+	callback = "RNGModifier_wwh_pump_A",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_wwh_pump_A_1",
+		"RNGModifier_wwh_pump_A_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_pump_A"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_wwh_pump_B = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pump_B")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_pump_B",
+	title = "RNGModifier_wwh_pump_B_title",
+	desc = "RNGModifier_wwh_pump_B_desc",
+	callback = "RNGModifier_wwh_pump_B",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_wwh_pump_B_1",
+		"RNGModifier_wwh_pump_B_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_pump_B"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_wwh_pump_C = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pump_C")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_wwh_pump_C",
+	title = "RNGModifier_wwh_pump_C_title",
+	desc = "RNGModifier_wwh_pump_C_desc",
+	callback = "RNGModifier_wwh_pump_C",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_wwh_pump_C_1",
+		"RNGModifier_wwh_pump_C_2"
+	},
+	value = RNGModifier:SafeGetData("wwh", "_pump_C"),
+	menu_id = "RNGModifier_wwh_Options_Menu"
+})
+
+--[[
 MenuCallbackHandler.RNGModifier_wwh_wwh_container = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_wwh_container")
 	RNGModifier:Save()
@@ -114,4 +170,4 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("wwh", "_wwh_container"),
 	menu_id = "RNGModifier_wwh_Options_Menu"
 })
-
+]]
