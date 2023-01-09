@@ -36,16 +36,16 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_framing_frame_3_spawnRandomHarrdDrive_A",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7",
-		"RNGModifier_number_4_use_8",
-		"RNGModifier_number_4_use_9",
-		"RNGModifier_number_4_use_10"
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_1",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_2",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_3",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_4",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_5",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_6",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_7",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_8",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_9",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_10"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomHarrdDrive_A"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
@@ -62,16 +62,16 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_framing_frame_3_spawnRandomHarrdDrive_B",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7",
-		"RNGModifier_number_4_use_8",
-		"RNGModifier_number_4_use_9",
-		"RNGModifier_number_4_use_10"
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_1",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_2",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_3",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_4",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_5",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_6",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_7",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_8",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_9",
+		"RNGModifier_framing_frame_3_spawnRandomHarrdDrive_10"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawnRandomHarrdDrive_B"),
 	menu_id = "RNGModifier_framing_frame_3_Options_Menu"
