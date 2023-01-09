@@ -95,3 +95,40 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe"),
 	menu_id = "RNGModifier_branchbank_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_branchbank_force_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_branchbank_force_escape_day",
+	title = "RNGModifier_branchbank_force_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_branchbank_force_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("branchbank", "_force_escape_day"),
+	menu_id = "RNGModifier_branchbank_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_branchbank_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_branchbank_escape_day",
+	title = "RNGModifier_branchbank_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_branchbank_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_branchbank_escape_day_1",
+		"RNGModifier_branchbank_escape_day_2",
+		"RNGModifier_branchbank_escape_day_3"
+	},
+	value = RNGModifier:SafeGetData("branchbank", "_escape_day"),
+	menu_id = "RNGModifier_branchbank_Options_Menu"
+})
