@@ -129,23 +129,23 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_man_crowbar_A",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-	    "RNGModifier_number_4_use_2",
-	    "RNGModifier_number_4_use_3",
-	    "RNGModifier_number_4_use_4",
-	    "RNGModifier_number_4_use_5",
-	    "RNGModifier_number_4_use_6",
-	    "RNGModifier_number_4_use_7",
-	    "RNGModifier_number_4_use_8",
-	    "RNGModifier_number_4_use_9",
-	    "RNGModifier_number_4_use_10",
-	    "RNGModifier_number_4_use_11",
-	    "RNGModifier_number_4_use_12",
-	    "RNGModifier_number_4_use_13",
-	    "RNGModifier_number_4_use_14",
-	    "RNGModifier_number_4_use_15",
-	    "RNGModifier_number_4_use_16",
-	    "RNGModifier_number_4_use_17"
+		"RNGModifier_man_crowbar_1",
+	    "RNGModifier_man_crowbar_2",
+	    "RNGModifier_man_crowbar_3",
+	    "RNGModifier_man_crowbar_4",
+	    "RNGModifier_man_crowbar_5",
+	    "RNGModifier_man_crowbar_6",
+	    "RNGModifier_man_crowbar_7",
+	    "RNGModifier_man_crowbar_8",
+	    "RNGModifier_man_crowbar_9",
+	    "RNGModifier_man_crowbar_10",
+	    "RNGModifier_man_crowbar_11",
+	    "RNGModifier_man_crowbar_12",
+	    "RNGModifier_man_crowbar_13",
+	    "RNGModifier_man_crowbar_14",
+	    "RNGModifier_man_crowbar_15",
+	    "RNGModifier_man_crowbar_16",
+	    "RNGModifier_man_crowbar_17"
 	},
 	value = RNGModifier:SafeGetData("man", "_crowbar_A"),
 	menu_id = "RNGModifier_man_Options_Menu"
@@ -162,23 +162,23 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_man_crowbar_B",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-	    "RNGModifier_number_4_use_2",
-	    "RNGModifier_number_4_use_3",
-	    "RNGModifier_number_4_use_4",
-	    "RNGModifier_number_4_use_5",
-	    "RNGModifier_number_4_use_6",
-	    "RNGModifier_number_4_use_7",
-	    "RNGModifier_number_4_use_8",
-	    "RNGModifier_number_4_use_9",
-	    "RNGModifier_number_4_use_10",
-	    "RNGModifier_number_4_use_11",
-	    "RNGModifier_number_4_use_12",
-	    "RNGModifier_number_4_use_13",
-	    "RNGModifier_number_4_use_14",
-	    "RNGModifier_number_4_use_15",
-	    "RNGModifier_number_4_use_16",
-	    "RNGModifier_number_4_use_17"
+		"RNGModifier_man_crowbar_1",
+	    "RNGModifier_man_crowbar_2",
+	    "RNGModifier_man_crowbar_3",
+	    "RNGModifier_man_crowbar_4",
+	    "RNGModifier_man_crowbar_5",
+	    "RNGModifier_man_crowbar_6",
+	    "RNGModifier_man_crowbar_7",
+	    "RNGModifier_man_crowbar_8",
+	    "RNGModifier_man_crowbar_9",
+	    "RNGModifier_man_crowbar_10",
+	    "RNGModifier_man_crowbar_11",
+	    "RNGModifier_man_crowbar_12",
+	    "RNGModifier_man_crowbar_13",
+	    "RNGModifier_man_crowbar_14",
+	    "RNGModifier_man_crowbar_15",
+	    "RNGModifier_man_crowbar_16",
+	    "RNGModifier_man_crowbar_17"
 	},
 	value = RNGModifier:SafeGetData("man", "_crowbar_B"),
 	menu_id = "RNGModifier_man_Options_Menu"
@@ -256,5 +256,43 @@ MenuHelper:AddMultipleChoice({
 	    "RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("man", "_block"),
+	menu_id = "RNGModifier_man_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_man_code = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_code")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_man_code",
+	title = "RNGModifier_man_code_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_man_code",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("man", "_code"),
+	menu_id = "RNGModifier_man_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_man_timer = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_timer")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_man_timer",
+	title = "RNGModifier_man_timer_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_man_timer",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_man_timer_1",
+	    "RNGModifier_man_timer_2",
+	    "RNGModifier_man_timer_3",
+		"RNGModifier_man_timer_4",
+		"RNGModifier_man_timer_5"
+	},
+	value = RNGModifier:SafeGetData("man", "_timer"),
 	menu_id = "RNGModifier_man_Options_Menu"
 })
