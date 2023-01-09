@@ -104,3 +104,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("arm_fac", "_doctor_bag"),
 	menu_id = "RNGModifier_arm_fac_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_arm_fac_force_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arm_fac_force_escape_day",
+	title = "RNGModifier_arm_fac_force_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arm_fac_force_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("arm_fac", "_force_escape_day"),
+	menu_id = "RNGModifier_arm_fac_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_arm_fac_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arm_fac_escape_day",
+	title = "RNGModifier_arm_fac_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arm_fac_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arm_fac_escape_day_1",
+		"RNGModifier_arm_fac_escape_day_2"
+	},
+	value = RNGModifier:SafeGetData("arm_fac", "_escape_day"),
+	menu_id = "RNGModifier_arm_fac_Options_Menu"
+})
