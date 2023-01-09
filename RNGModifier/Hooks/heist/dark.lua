@@ -17,13 +17,13 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_emp_train_1",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7"
+		"RNGModifier_dark_train_1",
+		"RNGModifier_dark_train_2",
+		"RNGModifier_dark_train_3",
+		"RNGModifier_dark_train_4",
+		"RNGModifier_dark_train_5",
+		"RNGModifier_dark_train_6",
+		"RNGModifier_dark_train_7"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_emp_train_1"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -40,13 +40,13 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_emp_train_2",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7"
+		"RNGModifier_dark_train_1",
+		"RNGModifier_dark_train_2",
+		"RNGModifier_dark_train_3",
+		"RNGModifier_dark_train_4",
+		"RNGModifier_dark_train_5",
+		"RNGModifier_dark_train_6",
+		"RNGModifier_dark_train_7"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_emp_train_2"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -63,13 +63,13 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_murky_train_1",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7"
+		"RNGModifier_dark_train_1",
+		"RNGModifier_dark_train_2",
+		"RNGModifier_dark_train_3",
+		"RNGModifier_dark_train_4",
+		"RNGModifier_dark_train_5",
+		"RNGModifier_dark_train_6",
+		"RNGModifier_dark_train_7"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_murky_train_1"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -87,13 +87,13 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_murky_train_2",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7"
+		"RNGModifier_dark_train_1",
+		"RNGModifier_dark_train_2",
+		"RNGModifier_dark_train_3",
+		"RNGModifier_dark_train_4",
+		"RNGModifier_dark_train_5",
+		"RNGModifier_dark_train_6",
+		"RNGModifier_dark_train_7"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_murky_train_2"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -128,10 +128,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_thermite_upper",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_dark_pick_thermite_upper_1",
+		"RNGModifier_dark_pick_thermite_upper_2",
+		"RNGModifier_dark_pick_thermite_upper_3",
+		"RNGModifier_dark_pick_thermite_upper_4"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_thermite_upper"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -148,10 +148,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_thermite_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_dark_pick_thermite_lower_1",
+		"RNGModifier_dark_pick_thermite_lower_2",
+		"RNGModifier_dark_pick_thermite_lower_3"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_thermite_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -168,10 +167,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_blowtorch_upper",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_dark_pick_blowtorch_upper_1",
+		"RNGModifier_dark_pick_blowtorch_upper_2",
+		"RNGModifier_dark_pick_blowtorch_upper_3",
+		"RNGModifier_dark_pick_blowtorch_upper_4"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_blowtorch_upper"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -188,13 +187,12 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_blowtorch_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7"
+		"RNGModifier_dark_pick_blowtorch_lower_1",
+		"RNGModifier_dark_pick_blowtorch_lower_2",
+		"RNGModifier_dark_pick_blowtorch_lower_3",
+		"RNGModifier_dark_pick_blowtorch_lower_4",
+		"RNGModifier_dark_pick_blowtorch_lower_5",
+		"RNGModifier_dark_pick_blowtorch_lower_6"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_blowtorch_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -211,10 +209,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_hd_upper",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_dark_pick_hd_upper_1",
+		"RNGModifier_dark_pick_hd_upper_2",
+		"RNGModifier_dark_pick_hd_upper_3",
+		"RNGModifier_dark_pick_hd_upper_4"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_hd_upper"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -231,10 +229,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_hd_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_dark_pick_hd_lower_1",
+		"RNGModifier_dark_pick_hd_lower_2",
+		"RNGModifier_dark_pick_hd_lower_3",
+		"RNGModifier_dark_pick_hd_lower_4"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_hd_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -251,10 +249,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_keycard_upper",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_dark_pick_keycard_upper_1",
+		"RNGModifier_dark_pick_keycard_upper_2",
+		"RNGModifier_dark_pick_keycard_upper_3",
+		"RNGModifier_dark_pick_keycard_upper_4"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_keycard_upper"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -271,11 +269,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_pick_keycard_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5"
+		"RNGModifier_dark_pick_keycard_lower_1",
+		"RNGModifier_dark_pick_keycard_lower_2",
+		"RNGModifier_dark_pick_keycard_lower_3",
+		"RNGModifier_dark_pick_keycard_lower_4"
 	},
 	value = RNGModifier:SafeGetData("dark", "_pick_keycard_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -293,8 +290,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_thermite_upper_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN"
+		"RNGModifier_dark_upper_lower_1",
+		"RNGModifier_dark_upper_lower_2"
 	},
 	value = RNGModifier:SafeGetData("dark", "_thermite_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -312,8 +309,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_blowtorch_upper_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN"
+		"RNGModifier_dark_upper_lower_1",
+		"RNGModifier_dark_upper_lower_2"
 	},
 	value = RNGModifier:SafeGetData("dark", "_blowtorch_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -331,8 +328,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_hd_upper_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN"
+		"RNGModifier_dark_upper_lower_1",
+		"RNGModifier_dark_upper_lower_2"
 	},
 	value = RNGModifier:SafeGetData("dark", "_hd_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
@@ -350,8 +347,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_dark_keycard_upper_lower",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_switch_4_UP",
-		"RNGModifier_switch_4_DOWN"
+		"RNGModifier_dark_upper_lower_1",
+		"RNGModifier_dark_upper_lower_2"
 	},
 	value = RNGModifier:SafeGetData("dark", "_keycard_upper_lower"),
 	menu_id = "RNGModifier_dark_Options_Menu"
