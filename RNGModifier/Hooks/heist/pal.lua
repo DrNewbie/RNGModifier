@@ -55,18 +55,14 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_pal_crowbar_A",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7",
-		"RNGModifier_number_4_use_8",
-		"RNGModifier_number_4_use_9",
-		"RNGModifier_number_4_use_10",
-		"RNGModifier_number_4_use_11",
-		"RNGModifier_number_4_use_12"
+		"RNGModifier_pal_crowbar_1",
+		"RNGModifier_pal_crowbar_2",
+		"RNGModifier_pal_crowbar_3",
+		"RNGModifier_pal_crowbar_4",
+		"RNGModifier_pal_crowbar_5",
+		"RNGModifier_pal_crowbar_6",
+		"RNGModifier_pal_crowbar_7",
+		"RNGModifier_pal_crowbar_8"
 	},
 	value = RNGModifier:SafeGetData("pal", "_crowbar_A"),
 	menu_id = "RNGModifier_pal_Options_Menu"
@@ -83,18 +79,14 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_pal_crowbar_B",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7",
-		"RNGModifier_number_4_use_8",
-		"RNGModifier_number_4_use_9",
-		"RNGModifier_number_4_use_10",
-		"RNGModifier_number_4_use_11",
-		"RNGModifier_number_4_use_12"
+		"RNGModifier_pal_crowbar_1",
+		"RNGModifier_pal_crowbar_2",
+		"RNGModifier_pal_crowbar_3",
+		"RNGModifier_pal_crowbar_4",
+		"RNGModifier_pal_crowbar_5",
+		"RNGModifier_pal_crowbar_6",
+		"RNGModifier_pal_crowbar_7",
+		"RNGModifier_pal_crowbar_8"
 	},
 	value = RNGModifier:SafeGetData("pal", "_crowbar_B"),
 	menu_id = "RNGModifier_pal_Options_Menu"
@@ -111,18 +103,14 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_pal_crowbar_C",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6",
-		"RNGModifier_number_4_use_7",
-		"RNGModifier_number_4_use_8",
-		"RNGModifier_number_4_use_9",
-		"RNGModifier_number_4_use_10",
-		"RNGModifier_number_4_use_11",
-		"RNGModifier_number_4_use_12"
+		"RNGModifier_pal_crowbar_1",
+		"RNGModifier_pal_crowbar_2",
+		"RNGModifier_pal_crowbar_3",
+		"RNGModifier_pal_crowbar_4",
+		"RNGModifier_pal_crowbar_5",
+		"RNGModifier_pal_crowbar_6",
+		"RNGModifier_pal_crowbar_7",
+		"RNGModifier_pal_crowbar_8"
 	},
 	value = RNGModifier:SafeGetData("pal", "_crowbar_C"),
 	menu_id = "RNGModifier_pal_Options_Menu"
@@ -260,5 +248,126 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_pal_doctor_bag_3"
 	},
 	value = RNGModifier:SafeGetData("pal", "_doctor_bag"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_ink_crate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_ink_crate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_ink_crate",
+	title = "RNGModifier_pal_ink_crate_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_pal_ink_crate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_ink_crate_1",
+		"RNGModifier_pal_ink_crate_2",
+		"RNGModifier_pal_ink_crate_3",
+		"RNGModifier_pal_ink_crate_4",
+		"RNGModifier_pal_ink_crate_5"
+	},
+	value = RNGModifier:SafeGetData("pal", "_ink_crate"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_paper_crate_A = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_paper_crate_A")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_paper_crate_A",
+	title = "RNGModifier_pal_paper_crate_A_title",
+	desc = "RNGModifier_pal_paper_crate_A_desc",
+	callback = "RNGModifier_pal_paper_crate_A",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_paper_crate_A_1",
+		"RNGModifier_pal_paper_crate_A_2",
+		"RNGModifier_pal_paper_crate_A_3",
+		"RNGModifier_pal_paper_crate_A_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_paper_crate_A"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_paper_crate_B = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_paper_crate_B")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_paper_crate_B",
+	title = "RNGModifier_pal_paper_crate_B_title",
+	desc = "RNGModifier_pal_paper_crate_B_desc",
+	callback = "RNGModifier_pal_paper_crate_B",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_paper_crate_B_1",
+		"RNGModifier_pal_paper_crate_B_2",
+		"RNGModifier_pal_paper_crate_B_3",
+		"RNGModifier_pal_paper_crate_B_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_paper_crate_B"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_paper_crate_C = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_paper_crate_C")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_paper_crate_C",
+	title = "RNGModifier_pal_paper_crate_C_title",
+	desc = "RNGModifier_pal_paper_crate_C_desc",
+	callback = "RNGModifier_pal_paper_crate_C",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_paper_crate_C_1",
+		"RNGModifier_pal_paper_crate_C_2",
+		"RNGModifier_pal_paper_crate_C_3",
+		"RNGModifier_pal_paper_crate_C_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_paper_crate_C"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_paper_crate_D = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_paper_crate_D")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_paper_crate_D",
+	title = "RNGModifier_pal_paper_crate_D_title",
+	desc = "RNGModifier_pal_paper_crate_D_desc",
+	callback = "RNGModifier_pal_paper_crate_D",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_paper_crate_D_1",
+		"RNGModifier_pal_paper_crate_D_2",
+		"RNGModifier_pal_paper_crate_D_3",
+		"RNGModifier_pal_paper_crate_D_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_paper_crate_D"),
+	menu_id = "RNGModifier_pal_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_pal_paper_crate_E = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_paper_crate_E")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_pal_paper_crate_E",
+	title = "RNGModifier_pal_paper_crate_E_title",
+	desc = "RNGModifier_pal_paper_crate_E_desc",
+	callback = "RNGModifier_pal_paper_crate_E",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_pal_paper_crate_E_1",
+		"RNGModifier_pal_paper_crate_E_2",
+		"RNGModifier_pal_paper_crate_E_3",
+		"RNGModifier_pal_paper_crate_E_4"
+	},
+	value = RNGModifier:SafeGetData("pal", "_paper_crate_E"),
 	menu_id = "RNGModifier_pal_Options_Menu"
 })
