@@ -39,8 +39,6 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_dah_rnd_Security_Rooms_1",
 		"RNGModifier_dah_rnd_Security_Rooms_2",
 		"RNGModifier_dah_rnd_Security_Rooms_3",
-		"RNGModifier_dah_rnd_Security_Rooms_4",
-		"RNGModifier_dah_rnd_Security_Rooms_5"
 	},
 	value = RNGModifier:SafeGetData("dah", "_rnd_Security_Rooms"),
 	menu_id = "RNGModifier_dah_Options_Menu"
