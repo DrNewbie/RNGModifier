@@ -162,3 +162,57 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("nightclub", "_keycard"),
 	menu_id = "RNGModifier_nightclub_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_nightclub_loot = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_loot")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_loot",
+	title = "RNGModifier_nightclub_loot_title",
+	desc = "RNGModifier_nightclub_loot_desc",
+	callback = "RNGModifier_nightclub_loot",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_loot"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_nightclub_force_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_force_escape_day",
+	title = "RNGModifier_nightclub_force_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_nightclub_force_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_force_escape_day"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_nightclub_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_nightclub_escape_day",
+	title = "RNGModifier_nightclub_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_nightclub_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_nightclub_escape_day_1",
+		"RNGModifier_nightclub_escape_day_2",
+		"RNGModifier_nightclub_escape_day_3"
+	},
+	value = RNGModifier:SafeGetData("nightclub", "_escape_day"),
+	menu_id = "RNGModifier_nightclub_Options_Menu"
+})
