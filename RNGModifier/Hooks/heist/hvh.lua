@@ -13,7 +13,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_hvh_rnd_world",
 	title = "RNGModifier_hvh_rnd_world_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_hvh_rnd_world_desc",
 	callback = "RNGModifier_hvh_rnd_world",
 	items = {
 		"RNGModifier_Default_One_Item",

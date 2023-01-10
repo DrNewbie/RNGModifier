@@ -47,6 +47,7 @@ RNGModifier._heistlist = {
 	"firestarter_1",--Hector - Firestarter 1
 	"firestarter_2",--Hector - Firestarter 2
 	"firestarter_3",--Hector - Firestarter 3
+	"alex_1",--Hector - Rats 1
 	"alex_2",--Hector - Rats 2
 	"alex_3",--Hector - Rats 3
 	"watchdogs_1",--Hector - Watchdogs 1
@@ -84,8 +85,10 @@ RNGModifier._heistlist = {
 	"welcome_to_the_jungle_1",--The Elephant - Big Oil 1
 	"welcome_to_the_jungle_2",--The Elephant - Big Oil 2
 	"election_day_1",--The Elephant - Election Day 1
-	"election_day_2",--The Elephant - Election Day 2 Stealth
-	"election_day_3",--The Elephant - Election Day 3 Loud
+	"election_day_2",--The Elephant - Election Day 2 (Stealth)
+	--"election_day_3",--The Elephant - Election Day 3 (???)
+	"election_day_3_skip1",--The Elephant - Election Day 3 (Day 1 Wrong Truck)
+	"election_day_3_skip2",--The Elephant - Election Day 3 (Day 1 Loud Incomplete Hack)
 	"framing_frame_1",--The Elephant - Framing Frame 1
 	"framing_frame_2",--The Elephant - Framing Frame 2
 	"framing_frame_3",--The Elephant - Framing Frame 3
@@ -102,11 +105,13 @@ RNGModifier._heistlist = {
 	"cane",--Vlad - Santa's Workshop
 	"moon",--Vlad - Stealing Xmas
 	"ukrainian_job",--Vlad - Ukrainian Job
+	"watchdogs_1_night",--Hector - Watchdogs 1 (Night)
+	"watchdogs_2_day",--Hector - Watchdogs 2 (Day)
 	"escape_cafe",--Escape Days - Cafe Escape
 	"escape_cafe_day",--Escape Days - Cafe Escape (Day)
 	"escape_garage",--Escape Days - Garage Escape
 	--"escape_overpass",-- Escape Days - Overpass Escape
-	"escape_overpass_night",-- Escape Days - Overpass Escape (NIGHT)
+	"escape_overpass_night",-- Escape Days - Overpass Escape (Night)
 	"escape_park",--Escape Days - Park Escape
 	"escape_park_day",--Escape Days - Park Escape (Day)
 	"escape_street"--Escape Days - Street Escape
@@ -219,6 +224,11 @@ function RNGModifier:Save()
 	local kosugi_weapon_B = self:SafeGetOpt("kosugi", "_weapon_B")
 	if kosugi_weapon_A ~= 0 and kosugi_weapon_A == kosugi_weapon_B then
 		self:SafeSetData(0, "kosugi", "_weapon_A")
+	end
+	local RED2_power_boxes_A = self:SafeGetOpt("red2", "_power_boxes_A")
+	local RED2_power_boxes_B = self:SafeGetOpt("red2", "_power_boxes_B")
+	if RED2_power_boxes_A ~= 0 and RED2_power_boxes_A == RED2_power_boxes_B then
+		self:SafeSetData(0, "red2", "_power_boxes_A")
 	end
 	local mus_spawnboxes_A = self:SafeGetOpt("mus", "_spawnboxes_A")
 	local mus_spawnboxes_B = self:SafeGetOpt("mus", "_spawnboxes_B")

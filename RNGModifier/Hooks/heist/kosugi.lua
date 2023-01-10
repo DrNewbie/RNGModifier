@@ -96,10 +96,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_kosugi_paintingDW",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_kosugi_painting_1",
+		"RNGModifier_kosugi_painting_2",
+		"RNGModifier_kosugi_painting_3",
+		"RNGModifier_kosugi_painting_4"
 	},
 	value = RNGModifier:SafeGetData("kosugi", "_paintingDW"),
 	menu_id = "RNGModifier_kosugi_Options_Menu"
@@ -256,12 +256,12 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_kosugi_weaponDW",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
-		"RNGModifier_number_4_use_5",
-		"RNGModifier_number_4_use_6"
+		"RNGModifier_kosugi_weapon_1",
+		"RNGModifier_kosugi_weapon_2",
+		"RNGModifier_kosugi_weapon_3",
+		"RNGModifier_kosugi_weapon_4",
+		"RNGModifier_kosugi_weapon_5",
+		"RNGModifier_kosugi_weapon_6"
 	},
 	value = RNGModifier:SafeGetData("kosugi", "_weaponDW"),
 	menu_id = "RNGModifier_kosugi_Options_Menu"
@@ -278,9 +278,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_kosugi_server",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_kosugi_server_1",
+		"RNGModifier_kosugi_server_2",
+		"RNGModifier_kosugi_server_3"
 	},
 	value = RNGModifier:SafeGetData("kosugi", "_server"),
 	menu_id = "RNGModifier_kosugi_Options_Menu"
@@ -336,5 +336,22 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("kosugi", "_ladder"),
+	menu_id = "RNGModifier_kosugi_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_kosugi_money_container = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_money_container")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_kosugi_money_container",
+	title = "RNGModifier_kosugi_money_container_title",
+	desc = "RNGModifier_kosugi_money_container_desc",
+	callback = "RNGModifier_kosugi_money_container",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("kosugi", "_money_container"),
 	menu_id = "RNGModifier_kosugi_Options_Menu"
 })

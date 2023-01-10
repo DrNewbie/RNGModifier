@@ -40,3 +40,40 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_paintings"),
 	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_framing_frame_1_force_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_1_force_escape_day",
+	title = "RNGModifier_framing_frame_1_force_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_1_force_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("framing_frame_1", "_force_escape_day"),
+	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_framing_frame_1_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_1_escape_day",
+	title = "RNGModifier_framing_frame_1_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_1_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_framing_frame_1_escape_day_1",
+		"RNGModifier_framing_frame_1_escape_day_2",
+		"RNGModifier_framing_frame_1_escape_day_3"
+	},
+	value = RNGModifier:SafeGetData("framing_frame_1", "_escape_day"),
+	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
+})

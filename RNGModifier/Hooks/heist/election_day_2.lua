@@ -27,6 +27,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_door"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_camera = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_camera")
 	RNGModifier:Save()
@@ -44,6 +45,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_camera"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_crowbar = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar")
 	RNGModifier:Save()
@@ -82,6 +84,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_crowbar"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_keycard = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keycard")
 	RNGModifier:Save()
@@ -109,6 +112,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_keycard"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_enable_crate = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_enable_crate")
 	RNGModifier:Save()
@@ -125,6 +129,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_enable_crate"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_enable_crate2 = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_enable_crate2")
 	RNGModifier:Save()
@@ -141,6 +146,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_enable_crate2"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_create_crate_A = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_create_crate_A")
 	RNGModifier:Save()
@@ -157,6 +163,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_create_crate_A"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_create_crateC = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_create_crateC")
 	RNGModifier:Save()
@@ -173,6 +180,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_create_crateC"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_chance_of_jackpot = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_chance_of_jackpot")
 	RNGModifier:Save()
@@ -189,6 +197,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_chance_of_jackpot"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_jackpot = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_jackpot")
 	RNGModifier:Save()
@@ -208,6 +217,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_jackpot"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_spawncrate_A = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawncrate_A")
 	RNGModifier:Save()
@@ -224,6 +234,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawncrate_A"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_spawncrate_B = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawncrate_B")
 	RNGModifier:Save()
@@ -240,6 +251,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawncrate_B"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_spawncrate_C = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawncrate_C")
 	RNGModifier:Save()
@@ -256,6 +268,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawncrate_C"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_spawncrate_D = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawncrate_D")
 	RNGModifier:Save()
@@ -272,6 +285,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawncrate_D"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_spawncrate_E = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawncrate_E")
 	RNGModifier:Save()
@@ -288,6 +302,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawncrate_E"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_election_day_2_spawncrate_F = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_spawncrate_F")
 	RNGModifier:Save()
@@ -302,5 +317,22 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_election_day_2_spawncrate_F_1"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_spawncrate_F"),
+	menu_id = "RNGModifier_election_day_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_election_day_2_easy_money = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_money")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_election_day_2_easy_money",
+	title = "RNGModifier_election_day_2_easy_money_title",
+	desc = "RNGModifier_election_day_2_easy_money_desc",
+	callback = "RNGModifier_election_day_2_easy_money",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_easy_money"),
 	menu_id = "RNGModifier_election_day_2_Options_Menu"
 })

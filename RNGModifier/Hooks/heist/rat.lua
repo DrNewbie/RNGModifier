@@ -125,3 +125,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_doctor_bag"),
 	menu_id = "RNGModifier_rat_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_rat_circuit = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_circuit")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_rat_circuit",
+	title = "RNGModifier_rat_circuit_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_rat_circuit",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_circuit"),
+	menu_id = "RNGModifier_rat_Options_Menu"
+})

@@ -53,8 +53,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_rvd2_gensec",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_rvd2_gensec_1",
-		"RNGModifier_rvd2_gensec_2"
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("rvd2", "_gensec"),
 	menu_id = "RNGModifier_rvd2_Options_Menu"

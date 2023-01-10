@@ -59,8 +59,8 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_spa_van_rush_in",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_spa_van_rush_in_true",
-		"RNGModifier_spa_van_rush_in_false"
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
 	},
 	value = RNGModifier:SafeGetData("spa", "_van_rush_in"),
 	menu_id = "RNGModifier_spa_Options_Menu"
@@ -123,5 +123,27 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_spa_doctor_bag_4"
 	},
 	value = RNGModifier:SafeGetData("spa", "_doctor_bag"),
+	menu_id = "RNGModifier_spa_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_spa_crowbar = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_crowbar")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_spa_crowbar",
+	title = "RNGModifier_spa_crowbar_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_spa_crowbar",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_spa_crowbar_1",
+		"RNGModifier_spa_crowbar_2",
+		"RNGModifier_spa_crowbar_3",
+		"RNGModifier_spa_crowbar_4",
+		"RNGModifier_spa_crowbar_5",
+		"RNGModifier_spa_crowbar_6"
+	},
+	value = RNGModifier:SafeGetData("spa", "_crowbar"),
 	menu_id = "RNGModifier_spa_Options_Menu"
 })

@@ -17,10 +17,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_firestarter_1_ehangar",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
+		"RNGModifier_firestarter_1_hangar_1",
+		"RNGModifier_firestarter_1_hangar_2",
+		"RNGModifier_firestarter_1_hangar_3",
+		"RNGModifier_firestarter_1_hangar_4"
 	},
 	value = RNGModifier:SafeGetData("firestarter_1", "_ehangar"),
 	menu_id = "RNGModifier_firestarter_1_Options_Menu"
@@ -36,10 +36,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_firestarter_1_hangar_1",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_firestarter_1_hangar_1",
+		"RNGModifier_firestarter_1_hangar_2",
+		"RNGModifier_firestarter_1_hangar_3",
+		"RNGModifier_firestarter_1_hangar_4"
 	},
 	value = RNGModifier:SafeGetData("firestarter_1", "_hangar_1"),
 	menu_id = "RNGModifier_firestarter_1_Options_Menu"
@@ -55,10 +55,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_firestarter_1_hangar_2",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4"
+		"RNGModifier_firestarter_1_hangar_1",
+		"RNGModifier_firestarter_1_hangar_2",
+		"RNGModifier_firestarter_1_hangar_3",
+		"RNGModifier_firestarter_1_hangar_4"
 	},
 	value = RNGModifier:SafeGetData("firestarter_1", "_hangar_2"),
 	menu_id = "RNGModifier_firestarter_1_Options_Menu"
@@ -74,10 +74,10 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_firestarter_1_gas",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3",
-		"RNGModifier_number_4_use_4",
+		"RNGModifier_firestarter_1_gas_1",
+		"RNGModifier_firestarter_1_gas_2",
+		"RNGModifier_firestarter_1_gas_3",
+		"RNGModifier_firestarter_1_gas_4"
 	},
 	value = RNGModifier:SafeGetData("firestarter_1", "_gas"),
 	menu_id = "RNGModifier_firestarter_1_Options_Menu"

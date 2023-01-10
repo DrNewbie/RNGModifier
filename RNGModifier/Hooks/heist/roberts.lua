@@ -56,9 +56,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_roberts_rand_drop_location",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_roberts_rand_drop_location_1",
+		"RNGModifier_roberts_rand_drop_location_2",
+		"RNGModifier_roberts_rand_drop_location_3"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_rand_drop_location"),
 	menu_id = "RNGModifier_roberts_Options_Menu"

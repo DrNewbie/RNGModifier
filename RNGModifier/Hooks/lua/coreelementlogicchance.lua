@@ -33,6 +33,13 @@ function ElementLogicChance:on_executed(...)
 				elseif _chance_of_door == 2 then
 					self._chance = -999
 				end
+			elseif self._id == 102620 or self._id == 104856 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
 			end
 		elseif _level_id == "jolly" then
 			if self._id == 100127 then
@@ -41,6 +48,16 @@ function ElementLogicChance:on_executed(...)
 				if _vans == 1 then
 					self._chance = 999
 				elseif _vans == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "pbr" then
+			if self._id == 102313 or self._id == 102316 or self._id == 102317 then
+				local _big_satellite_chance = RNGModifier:SafeGetData(_level_id, "_big_satellite_chance") or 0
+				_big_satellite_chance = _big_satellite_chance - 1
+				if _big_satellite_chance == 1 then
+					self._chance = 999
+				elseif _big_satellite_chance == 2 then
 					self._chance = -999
 				end
 			end
@@ -71,6 +88,12 @@ function ElementLogicChance:on_executed(...)
 				elseif _wall == 2 then
 					self._chance = 999
 				end
+			elseif self._id == 100522 or self._id == 100719 or self._id == 100911 then
+				local _trunk_chance = RNGModifier:SafeGetData(_level_id, "_trunk_chance") or 0
+				_trunk_chance = _trunk_chance - 1
+				if _trunk_chance == 1 then
+					self._chance = 999
+				end
 			end
 		elseif _level_id == "red2" then
 			if self._id == 102556 then
@@ -99,6 +122,13 @@ function ElementLogicChance:on_executed(...)
 				elseif _force_safe == 2 then
 					self._chance = -999
 				end
+			elseif self._id == 103539 or self._id == 103536 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
 			end
 		elseif _level_id == "branchbank" then
 			if self._id == 102194 then
@@ -108,6 +138,13 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				elseif _safe == 2 then
 					self._chance = 999
+				end
+			elseif self._id == 103293 or self._id == 103355 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "firestarter_2" then
@@ -145,7 +182,7 @@ function ElementLogicChance:on_executed(...)
 				end
 			end
 		elseif _level_id == "flat" then
-			if self._id == 102720 then
+			if self._id == 102720 or self._id == 101817 then
 				local _ambush = RNGModifier:SafeGetData(_level_id, "_ambush") or 0
 				_ambush = _ambush - 1
 				if _ambush == 1 then
@@ -153,15 +190,7 @@ function ElementLogicChance:on_executed(...)
 				elseif _ambush == 2 then
 					self._chance = -999
 				end
-			elseif self._id == 102827 then
-				local _ambush = RNGModifier:SafeGetData(_level_id, "_ambush") or 0
-				_ambush = _ambush - 1
-				if _ambush == 1 then
-					self._chance = 999
-				elseif _ambush == 2 then
-					self._chance = -999
-				end
-			elseif self._id == 103300 then
+			elseif self._id == 103300 or self._id == 101698 then
 				local _ambush = RNGModifier:SafeGetData(_level_id, "_basement_ambush") or 0
 				_ambush = _ambush - 1
 				if _ambush == 1 then
@@ -207,6 +236,13 @@ function ElementLogicChance:on_executed(...)
 				elseif _hotdog == 2 then
 					self._chance = -999
 				end
+			elseif self._id == 101430 or self._id == 101434 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
 			end
 		elseif _level_id == "ukrainian_job" then
 			if self._id == 102056 then
@@ -223,6 +259,13 @@ function ElementLogicChance:on_executed(...)
 				if _detector == 1 then
 					self._chance = 999
 				elseif _detector == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 101566 or self._id == 101620 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
 					self._chance = -999
 				end
 			end
@@ -252,6 +295,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
+		elseif _level_id == "framing_frame_1" then
+			if self._id == 102421 or self._id == 103954 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "framing_frame_2" then
 			if self._id == 101781 then
 				local _chanceForAAmbush = RNGModifier:SafeGetData(_level_id, "_chanceForAAmbush") or 0
@@ -274,6 +326,13 @@ function ElementLogicChance:on_executed(...)
 				if _doors == 1 then
 					self._chance = 999
 				elseif _doors == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 102188 or self._id == 102321 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
 					self._chance = -999
 				end
 			end
@@ -305,6 +364,15 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "alex_1" then
+			if self._id == 101440 or self._id == 101888 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "alex_2" then
 			if self._id == 104515 then
 				local _chance_of_fbi_interrupt = RNGModifier:SafeGetData(_level_id, "_chance_of_fbi_interrupt") or 0
@@ -323,6 +391,13 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				elseif _betrayal == 2 then
 					self._chance = 999
+				end
+			elseif self._id == 100338 or self._id == 102241 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "roberts" then
@@ -501,6 +576,13 @@ function ElementLogicChance:on_executed(...)
 				elseif _block == 3 then
 					self._chance = -999
 				end
+			elseif self._id == 102864 or self._id == 102875 or self._id == 102876 then
+				local _code  = RNGModifier:SafeGetData(_level_id,"_code") or 0
+				if _code == 2 then
+					self._chance = 999
+				elseif _code == 3 then
+					self._chance = -999
+				end
 			end
 		elseif _level_id == "mex" then
 			if self._id == 101702 then
@@ -525,6 +607,19 @@ function ElementLogicChance:on_executed(...)
 				if _force_keycard == 1 then
 					self._chance = 999
 				end
+			elseif self._id == 104383 or self._id == 100803 or self._id == 100804 or self._id == 100834 or self._id == 100703 or self._id == 100726 or self._id == 100727 or self._id == 100732 or self._id == 100737 or self._id == 100738 or self._id == 100742 or self._id == 100743 or self._id == 100744 or self._id == 100745 or self._id == 100747 or self._id == 100750 then
+				local _loot = RNGModifier:SafeGetData(_level_id, "_loot") or 0
+				_loot = _loot - 1
+				if _loot == 1 then
+					self._chance = 999
+				end
+			elseif self._id == 104284 or self._id == 103893 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
 			end
 		elseif _level_id == "tag" then
 			if self._id == 101653 then
@@ -541,6 +636,51 @@ function ElementLogicChance:on_executed(...)
 				if _chance_keycard == 1 then
 					self._chance = 999
 				elseif _chance_keycard == 2 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "arm_fac" then
+			if self._id == 104801 or self._id == 104804 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "arm_par" then
+			if self._id == 101264 or self._id == 101265 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "arm_hcm" then
+			if self._id == 101159 or self._id == 101378 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "arm_cro" then
+			if self._id == 100914 or self._id == 100917 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
+					self._chance = -999
+				end
+			end
+		elseif _level_id == "arm_und" then
+			if self._id == 100666 or self._id == 100652 then
+				local _force_escape_day = RNGModifier:SafeGetData(_level_id, "_force_escape_day") or 0
+				if _force_escape_day == 2 then
+					self._chance = 999
+				elseif _force_escape_day == 3 then
 					self._chance = -999
 				end
 			end
@@ -565,6 +705,48 @@ function ElementLogicChance:on_executed(...)
 				local _chance_of_jackpot = RNGModifier:SafeGetData(_level_id, "_chance_of_jackpot") or 0
 				if _chance_of_jackpot == 2 then
 					self._chance = 999
+				end
+			end
+		elseif _level_id == "election_day_3" or _level_id == "election_day_3_skip1" or _level_id == "election_day_3_skip2" then
+			if self._id == 104602 then
+				local _vault = RNGModifier:SafeGetData(_level_id, "_vault") or 0
+				_vault = _vault - 1
+				if _vault == 1 then
+					self._chance = 999
+				elseif _vault == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 101582 then
+				local _gate = RNGModifier:SafeGetData(_level_id, "_gate") or 0
+				_gate = _gate - 1
+				if _gate == 1 then
+					self._chance = -999
+				elseif _gate == 2 then
+					self._chance = 999
+				end
+			elseif self._id == 103562 then
+				local _crash = RNGModifier:SafeGetData(_level_id, "_crash") or 0
+				_crash = _crash - 1
+				if _crash == 1 then
+					self._chance = 999
+				elseif _crash == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 104527 then
+				local _money_A = RNGModifier:SafeGetData(_level_id, "_money_A") or 0
+				_money_A = _money_A - 1
+				if _money_A == 1 then
+					self._chance = 999
+				elseif _money_A == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 104564 then
+				local _money_B = RNGModifier:SafeGetData(_level_id, "_money_B") or 0
+				_money_B = _money_B - 1
+				if _money_B == 1 then
+					self._chance = 999
+				elseif _money_B == 2 then
+					self._chance = -999
 				end
 			end
 		elseif _level_id == "shoutout_raid" then

@@ -100,3 +100,40 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("family", "_camera_001"),
 	menu_id = "RNGModifier_family_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_family_force_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_force_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_family_force_escape_day",
+	title = "RNGModifier_family_force_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_family_force_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true",
+		"RNGModifier_bool_4_false"
+	},
+	value = RNGModifier:SafeGetData("family", "_force_escape_day"),
+	menu_id = "RNGModifier_family_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_family_escape_day = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_escape_day")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_family_escape_day",
+	title = "RNGModifier_family_escape_day_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_family_escape_day",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_family_escape_day_1",
+		"RNGModifier_family_escape_day_2",
+		"RNGModifier_family_escape_day_3"
+	},
+	value = RNGModifier:SafeGetData("family", "_escape_day"),
+	menu_id = "RNGModifier_family_Options_Menu"
+})
