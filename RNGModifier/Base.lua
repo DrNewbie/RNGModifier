@@ -29,6 +29,7 @@ RNGModifier._heistlist = {
 	"arm_par",--Bain - Transport: Park
 	"arm_for",--Bain - Transport: Train Heist
 	"arm_und",--Bain - Transport: Underpass
+	"corp", --Blaine Keegan - Hostile Takeover
 	"pal",--Classics - Counterfeit
 	"dah",--Classics - Diamond Heist
 	"red2",--Classics - First World Bank
@@ -178,6 +179,11 @@ function RNGModifier:Save()
 	local DINNER_gas3_B = self:SafeGetOpt("dinner", "_gas3_B")
 	if DINNER_gas_A ~= 0 and DINNER_gas3_A == DINNER_gas3_B then
 		self:SafeSetData(0, "dinner", "_gas3_A")
+	end
+	local CORP_keycard_A = self:SafeGetOpt("corp", "_keycard_A")
+	local CORP_keycard_B = self:SafeGetOpt("corp", "_keycard_B")
+	if CORP_keycard_A ~= 0 and CORP_keycard_A == CORP_keycard_B then
+		self:SafeSetData(0, "corp", "_keycard_A")
 	end
 	local CHAS_crate_A = self:SafeGetOpt("chas", "_crate_A")
 	local CHAS_crate_B = self:SafeGetOpt("chas", "_crate_B")

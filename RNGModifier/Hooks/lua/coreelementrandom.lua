@@ -2688,6 +2688,64 @@ function ElementRandom:_get_random_elements()
 					rand = ids_for_1[self._id] or rand
 				end
 			end
+		elseif _level_id == "corp" then
+			if self._id == 102431 then
+				rand = self:PickRandomFromList(rand, "_inspector")
+			elseif self._id == 101927 then
+				rand = self:PickRandomFromList(rand, "_camera_room")
+			elseif self._id == 100972 then
+				rand = self:PickRandomFromList(rand, "_phone")
+			elseif self._id == 102846 then
+				rand = self:PickRandomFromList(rand, "_car")
+			elseif self._id == 102856 then
+				rand = self:PickRandomFromList(rand, "_button")
+			elseif self._id == 100962 then
+				rand = self:PickRandomFromList(rand, "_office_safe")
+			elseif self._id == 102889 then
+				rand = self:PickRandomFromList(rand, "_briefcase_red")
+			elseif self._id == 102890 then
+				rand = self:PickRandomFromList(rand, "_briefcase_green")
+			elseif self._id == 102894 then
+				rand = self:PickRandomFromList(rand, "_briefcase_blue")
+			elseif self._id == 100645 or self._id == 101033 then
+				local _pc = RNGModifier:SafeGetData(_level_id, "_pc") or 0
+				_pc = _pc - 1
+				if _pc > 0 then
+					local ids_for_1 = {[100645] = 1, [101033] = 8}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 102877 or self._id == 102878 or self._id == 102879 then
+				local _lab_safe_code = RNGModifier:SafeGetData(_level_id, "_lab_safe_code") or 0
+				_lab_safe_code = _lab_safe_code - 1
+				if _lab_safe_code > 0 then
+					local ids_for_1 = {[102877] = 2, [102878] = 2, [102879] = 2}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101079 or self._id == 101081 or self._id == 101082 or self._id == 101083 then
+				local _office_safe_code = RNGModifier:SafeGetData(_level_id, "_office_safe_code") or 0
+				_office_safe_code = _office_safe_code - 1
+				if _office_safe_code > 0 then
+					local ids_for_1 = {[101079] = 10, [101081] = 1, [101082] = 1, [101083] = 1}
+					rand = ids_for_1[self._id] or rand
+				end
+			elseif self._id == 101642 then
+				_tmp_data[_level_id] = _tmp_data[_level_id] or {}
+				_tmp_data[_level_id]["spawnkeycard"] = _tmp_data[_level_id]["spawnkeycard"] or 0
+				_tmp_data[_level_id]["spawnkeycard"] = _tmp_data[_level_id]["spawnkeycard"] + 1
+				if _tmp_data[_level_id]["spawnkeycard"] == 1 then
+					local _keycard_A = RNGModifier:SafeGetData(_level_id, "_keycard_A") or 0
+					_keycard_A = _keycard_A - 1
+					if _keycard_A > 0 then
+						rand = _keycard_A
+					end
+				else
+					local _keycard_B = RNGModifier:SafeGetData(_level_id, "_keycard_B") or 0
+					_keycard_B = _keycard_B - 1
+					if _keycard_B > 0 then
+						rand = _keycard_B
+					end
+				end
+			end
 		elseif _level_id == "escape_overpass" then
 			if self._id == 101984 then
 				rand = self:PickRandomFromList(rand, "_spawn")
