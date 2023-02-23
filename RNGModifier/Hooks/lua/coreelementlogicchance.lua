@@ -71,6 +71,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "corp" then
+			if self._id == 102604 then
+				local _inspector_chance = RNGModifier:SafeGetData(_level_id, "_inspector_chance") or 0
+				_inspector_chance = _inspector_chance - 1
+				if _inspector_chance == 1 then
+					self._chance = 999
+				elseif _inspector_chance == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "born" then
 			if self._id == 101332 then
 				local _tools = RNGModifier:SafeGetData(_level_id, "_tools") or 0
