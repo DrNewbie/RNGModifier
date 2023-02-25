@@ -579,7 +579,7 @@
   "RNGModifier_election_day_3_skip1_spawn_title": "Spawn Location",
   "RNGModifier_election_day_3_skip1_spawn_1": "Right 1",
   "RNGModifier_election_day_3_skip1_spawn_2": "Right 2",
-  "RNGModifier_election_day_3_skip1_spawn_3": "Left"
+  "RNGModifier_election_day_3_skip1_spawn_3": "Left",
   "RNGModifier_election_day_3_skip1_escape_title": "Escape For Right Side",
   "RNGModifier_election_day_3_skip1_escape_1": "Near Right Spawn 1",
   "RNGModifier_election_day_3_skip1_escape_2": "Near Right Spawn 2",
@@ -615,7 +615,7 @@
   "RNGModifier_election_day_3_skip2_spawn_title": "Spawn Location",
   "RNGModifier_election_day_3_skip2_spawn_1": "Right 1",
   "RNGModifier_election_day_3_skip2_spawn_2": "Right 2",
-  "RNGModifier_election_day_3_skip2_spawn_3": "Left"
+  "RNGModifier_election_day_3_skip2_spawn_3": "Left",
   "RNGModifier_election_day_3_skip2_escape_title": "Escape For Right Side",
   "RNGModifier_election_day_3_skip2_escape_1": "Near Right Spawn 1",
   "RNGModifier_election_day_3_skip2_escape_2": "Near Right Spawn 2",
@@ -2620,9 +2620,9 @@
   "RNGModifier_vit_wirebox_location3_title": "Blue Wirebox",
   "RNGModifier_vit_wirebox_location4_title": "Yellow Wirebox",
   "RNGModifier_vit_thermite_room_title": "Thermite Location",
-  "RNGModifier_vit_wirebox_A_title" : "First Color",
-  "RNGModifier_vit_wirebox_B_title" : "Second Color",
-  "RNGModifier_vit_interrupt_chance_title" : "Hack Interruption",
+  "RNGModifier_vit_wirebox_A_title": "First Color",
+  "RNGModifier_vit_wirebox_B_title": "Second Color",
+  "RNGModifier_vit_interrupt_chance_title": "Hack Interruption",
   "RNGModifier_hox_3_panic_hector_title": "Where's Hector",
   "RNGModifier_hox_3_panic_hector_1": "2nd Main floor",
   "RNGModifier_hox_3_panic_hector_2": "2nd Main floor middle",
@@ -3354,5 +3354,5 @@
   "RNGModifier_escape_street_escape_2": "Warehouse roof",
   "RNGModifier_escape_street_time_title": "Escape arrives in",
   "RNGModifier_escape_street_time_1": "2 minutes",
-  "RNGModifier_escape_street_time_2": "1 minute and a half" 
+  "RNGModifier_escape_street_time_2": "1 minute and a half"
 }
