@@ -1,3 +1,7 @@
+## Coding
+
+### https://github.com/DrNewbie/RNGModifier/graphs/contributors
+
 ## Translator:
 
 ### Simplified Chinese - https://github.com/CaptainVash
