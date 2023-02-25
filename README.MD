@@ -1,10 +1,10 @@
-Translator:
+## Translator:
 
-Simplified Chinese - https://github.com/CaptainVash
+### Simplified Chinese - https://github.com/CaptainVash
 
-Korean - https://github.com/soulls00
+### Korean - https://github.com/soulls00
 
-### Allow you to control something
+## Allow you to control something
 
 https://modworkshop.net/mod/19913
 
