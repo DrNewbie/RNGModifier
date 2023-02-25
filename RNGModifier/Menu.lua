@@ -9,6 +9,8 @@ Hooks:Add('LocalizationManagerPostInit', 'LocalizationManagerPostInit_RNGModifie
 	self:load_localization_file(RNGModifier._path..'Loc/EN.json', false)
 	if SystemInfo:language():key() == Idstring("schinese"):key() then
 		self:load_localization_file(RNGModifier._path..'Loc/CN.json', true)
+	elseif SystemInfo:language():key() == Idstring("korean"):key() then
+		self:load_localization_file(RNGModifier._path..'Loc/KR.json', true)	
 	end
 end)
 
