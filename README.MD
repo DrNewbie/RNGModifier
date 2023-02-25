@@ -1,6 +1,12 @@
-Allow you to control something
+Translator:
 
-http://modwork.shop/19913
+Simplified Chinese - https://github.com/CaptainVash
+
+Korean - https://github.com/soulls00
+
+### Allow you to control something
+
+https://modworkshop.net/mod/19913
 
 ![ScreenShot](Img/thumbnail/thumbnail_0.jpg)
 
