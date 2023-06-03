@@ -1,7 +1,7 @@
 [
   {
     "ident": "RNGModifierGitHubUpdate",
-    "hash": "18af0947494f4d9709e90a3a4f65bab0f29d12be3ab4696a6efa567bddca72b0",
+    "version": "16.51",
     "patchnotes": "https://github.com/DrNewbie/RNGModifier/commits/master",
     "download": "https://drnewbie.github.io/RNGModifier/RNGModifier.zip"
   }
