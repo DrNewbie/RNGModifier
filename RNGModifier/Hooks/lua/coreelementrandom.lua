@@ -2097,18 +2097,18 @@ function ElementRandom:_get_random_elements()
 				rand = self:PickRandomFromList(rand, "_bile_location")
 			elseif self._id == 100040 then
 				rand = self:PickRandomFromList(rand, "_meth_lab")
-			elseif self._id == 100552 or self._id == 100914 then
+			elseif self._id == 100914 then
 				local _trunk_money = RNGModifier:SafeGetData(_level_id, "_trunk_money") or 0
 				_trunk_money = _trunk_money - 1
 				if _trunk_money > 0 then
-					local ids_for_1 = {[100552] = 1, [100914] = 2}
+					local ids_for_1 = {[100914] = 2}
 					rand = ids_for_1[self._id] or rand
 				end
-			elseif self._id == 101721 or self._id == 103149 then
+			elseif self._id == 101721 or self._id == 104508 then
 				local _basement_loot = RNGModifier:SafeGetData(_level_id, "_basement_loot") or 0
 				_basement_loot = _basement_loot - 1
 				if _basement_loot > 0 then
-					local ids_for_1 = {[101721] = 1, [103149] = 1}
+					local ids_for_1 = {[101721] = 2, [104508] = 1}
 					rand = ids_for_1[self._id] or rand
 				end
 			elseif self._id == 101547 then
