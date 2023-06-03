@@ -98,7 +98,7 @@ function ElementLogicChance:on_executed(...)
 				elseif _wall == 2 then
 					self._chance = 999
 				end
-			elseif self._id == 100522 or self._id == 100719 or self._id == 100911 then
+			elseif self._id == 100522 or self._id == 100719 or self._id == 100870 or self._id == 100850 or self._id == 100911 then
 				local _trunk_chance = RNGModifier:SafeGetData(_level_id, "_trunk_chance") or 0
 				_trunk_chance = _trunk_chance - 1
 				if _trunk_chance == 1 then
