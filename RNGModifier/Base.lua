@@ -292,10 +292,12 @@ function RNGModifier:Save()
 	if MOON_select_excursion_B ~= 0 and MOON_select_excursion_B == MOON_select_excursion_C then
 		self:SafeSetData(0, "moon", "_select_excursion_B")
 	end
-	for _, _heist in pairs(self._heistlist) do
-		if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
-			self._data[_heist] = self._data[_heist] or {}
-			self._data[_heist].name_id = tweak_data.levels[_heist].name_id
+	if tweak_data and tweak_data.levels then
+		for _, _heist in pairs(self._heistlist) do
+			if tweak_data.levels[_heist] and tweak_data.levels[_heist].name_id then
+				self._data[_heist] = self._data[_heist] or {}
+				self._data[_heist].name_id = tweak_data.levels[_heist].name_id
+			end
 		end
 	end
 	local _file = io.open(self._save_path, "w+")
