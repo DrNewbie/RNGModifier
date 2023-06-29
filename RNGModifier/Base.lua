@@ -196,19 +196,19 @@ function RNGModifier:Save()
 	local ED2_spawncrate_D = self:SafeGetOpt("election_day_2", "_spawncrate_D")
 	local ED2_spawncrate_E = self:SafeGetOpt("election_day_2", "_spawncrate_E")
 	local ED2_spawncrate_F = self:SafeGetOpt("election_day_2", "_spawncrate_F")
-	if ED2_spawncrate_A ~= 0 and ED2_spawncrate_A == ED2_spawncrate_B == ED2_spawncrate_C == ED2_spawncrate_D == ED2_spawncrate_E == ED2_spawncrate_F then
+	if ED2_spawncrate_A ~= 0 and table.contains({ED2_spawncrate_B, ED2_spawncrate_C, ED2_spawncrate_D, ED2_spawncrate_E, ED2_spawncrate_F}, ED2_spawncrate_A) then
 		self:SafeSetData(0, "election_day_2", "_spawncrate_A")
 	end
 	local tag_boxes_A = self:SafeGetOpt("tag", "_boxes_A")
 	local tag_boxes_B = self:SafeGetOpt("tag", "_boxes_B")
 	local tag_boxes_C = self:SafeGetOpt("tag", "_boxes_C")
-	if tag_boxes_A ~= 0 and tag_boxes_A == tag_boxes_B == tag_boxes_C then
+	if tag_boxes_A ~= 0 and table.contains({tag_boxes_B, tag_boxes_C}, tag_boxes_A) then
 		self:SafeSetData(0, "tag", "_boxes_A")
 	end
 	local tag_boxes1_A = self:SafeGetOpt("tag", "_boxes1_A")
 	local tag_boxes1_B = self:SafeGetOpt("tag", "_boxes1_B")
 	local tag_boxes1_C = self:SafeGetOpt("tag", "_boxes1_C")
-	if tag_boxes1_A ~= 0 and tag_boxes1_A == tag_boxes1_B == tag_boxes1_C then
+	if tag_boxes1_A ~= 0 and table.contains({tag_boxes1_B, tag_boxes1_C}, tag_boxes1_A) then
 		self:SafeSetData(0, "tag", "_boxes1_A")
 	end
 	local kosugi_painting_A = self:SafeGetOpt("kosugi", "_painting_A")
@@ -243,19 +243,19 @@ function RNGModifier:Save()
 	local mus_spawnboxes_E = self:SafeGetOpt("mus", "_spawnboxes_E")
 	local mus_spawnboxes_F = self:SafeGetOpt("mus", "_spawnboxes_F")
 	local mus_spawnboxes_G = self:SafeGetOpt("mus", "_spawnboxes_G")
-	if mus_spawnboxes_A ~= 0 and mus_spawnboxes_A == mus_spawnboxes_B == mus_spawnboxes_C == mus_spawnboxes_D == mus_spawnboxes_E then
+	if mus_spawnboxes_A ~= 0 and table.contains({mus_spawnboxes_B, mus_spawnboxes_C, mus_spawnboxes_D, mus_spawnboxes_E, mus_spawnboxes_F, mus_spawnboxes_G}, mus_spawnboxes_A) then
 		self:SafeSetData(0, "mus", "_spawnboxes_A")
 	end
 	local pal_crowbar_A = self:SafeGetOpt("pal", "_crowbar_A")
 	local pal_crowbar_B = self:SafeGetOpt("pal", "_crowbar_B")
 	local pal_crowbar_C = self:SafeGetOpt("pal", "_crowbar_C")
-	if pal_crowbar_A ~= 0 and pal_crowbar_A == pal_crowbar_B == pal_crowbar_C then
+	if pal_crowbar_A ~= 0 and table.contains({pal_crowbar_B, pal_crowbar_C}, pal_crowbar_A) then
 		self:SafeSetData(0, "pal", "_crowbar_A")
 	end
 	local HOX3_keycard_A = self:SafeGetOpt("HOX3", "_keycard_A")
 	local HOX3_keycard_B = self:SafeGetOpt("HOX3", "_keycard_B")
 	local HOX3_keycard_C = self:SafeGetOpt("HOX3", "_keycard_C")
-	if HOX3_keycard_A ~= 0 and HOX3_keycard_A == HOX3_keycard_B == HOX3_keycard_C then
+	if HOX3_keycard_A ~= 0 and table.contains({HOX3_keycard_B, HOX3_keycard_C}, HOX3_keycard_A) then
 		self:SafeSetData(0, "HOX3", "_keycard_A")
 	end
 	local M1_gascan_A = self:SafeGetOpt("mia_1", "_gascan_A")
@@ -266,7 +266,7 @@ function RNGModifier:Save()
 	local M1_gascan_F = self:SafeGetOpt("mia_1", "_gascan_F")
 	local M1_gascan_G = self:SafeGetOpt("mia_1", "_gascan_G")
 	local M1_gascan_H = self:SafeGetOpt("mia_1", "_gascan_H")
-	if M1_gascan_A ~= 0 and M1_gascan_A == M1_gascan_B == M1_gascan_C == M1_gascan_D == M1_gascan_E == M1_gascan_F == M1_gascan_G == M1_gascan_H then
+	if M1_gascan_A ~= 0 and table.contains({M1_gascan_B, M1_gascan_C, M1_gascan_D, M1_gascan_E, M1_gascan_F, M1_gascan_G, M1_gascan_H}, M1_gascan_A) then
 		self:SafeSetData(0, "mia_1", "_gascan_A")
 	end
 	local SR_crowbar_A = self:SafeGetOpt("shoutout_raid", "_crowbar_A")
@@ -277,7 +277,7 @@ function RNGModifier:Save()
 	local HOX2_select_excursion_A = self:SafeGetOpt("hox_2", "_select_excursion_A")
 	local HOX2_select_excursion_B = self:SafeGetOpt("hox_2", "_select_excursion_B")
 	local HOX2_select_excursion_C = self:SafeGetOpt("hox_2", "_select_excursion_C")
-	if HOX2_select_excursion_A ~= 0 and HOX2_select_excursion_A == HOX2_select_excursion_B or HOX2_select_excursion_A == HOX2_select_excursion_C then
+	if HOX2_select_excursion_A ~= 0 and table.contains({HOX2_select_excursion_B, HOX2_select_excursion_C}, HOX2_select_excursion_A) then
 		self:SafeSetData(0, "hox_2", "_select_excursion_A")
 	end
 	if HOX2_select_excursion_B ~= 0 and HOX2_select_excursion_B == HOX2_select_excursion_C then
@@ -286,7 +286,7 @@ function RNGModifier:Save()
 	local MOON_select_excursion_A = self:SafeGetOpt("moon", "_select_excursion_A")
 	local MOON_select_excursion_B = self:SafeGetOpt("moon", "_select_excursion_B")
 	local MOON_select_excursion_C = self:SafeGetOpt("moon", "_select_excursion_C")
-	if MOON_select_excursion_A ~= 0 and MOON_select_excursion_A == MOON_select_excursion_B or MOON_select_excursion_A == MOON_select_excursion_C then
+	if MOON_select_excursion_A ~= 0 and table.contains({MOON_select_excursion_B, MOON_select_excursion_C}, MOON_select_excursion_A) then
 		self:SafeSetData(0, "moon", "_select_excursion_A")
 	end
 	if MOON_select_excursion_B ~= 0 and MOON_select_excursion_B == MOON_select_excursion_C then
