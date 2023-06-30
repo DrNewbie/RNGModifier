@@ -297,3 +297,20 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_doctor_bag"),
 	menu_id = "RNGModifier_friend_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_friend_gas = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gas")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_friend_gas",
+	title = "RNGModifier_friend_gas_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_friend_gas",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_friend_gas_1"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_gas"),
+	menu_id = "RNGModifier_friend_Options_Menu"
+})
