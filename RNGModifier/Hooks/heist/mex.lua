@@ -252,26 +252,6 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_mex_Options_Menu"
 })
 
-
-MenuCallbackHandler.RNGModifier_mex_pump = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pump")
-	RNGModifier:Save()
-end
-MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_mex_pump",
-	title = "RNGModifier_mex_pump_title",
-	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_mex_pump",
-	items = {
-		"RNGModifier_Default_One_Item",
-		"RNGModifier_mex_pump_1",
-		"RNGModifier_mex_pump_2"
-	},
-	value = RNGModifier:SafeGetData("mex", "_pump"),
-	menu_id = "RNGModifier_mex_Options_Menu"
-})
-
-
 MenuCallbackHandler.RNGModifier_mex_plane = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_plane")
 	RNGModifier:Save()
@@ -342,5 +322,27 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_mex_crowbar_2"
 	},
 	value = RNGModifier:SafeGetData("mex", "_crowbar"),
+	menu_id = "RNGModifier_mex_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_mex_keychain = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_keychain")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mex_keychain",
+	title = "RNGModifier_mex_keychain_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mex_keychain",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mex_keychain_1",
+		"RNGModifier_mex_keychain_2",
+		"RNGModifier_mex_keychain_3",
+		"RNGModifier_mex_keychain_4",
+		"RNGModifier_mex_keychain_5",
+		"RNGModifier_mex_keychain_6"
+	},
+	value = RNGModifier:SafeGetData("mex", "_keychain"),
 	menu_id = "RNGModifier_mex_Options_Menu"
 })
