@@ -13,12 +13,13 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_flat_pick_1",
 	title = "RNGModifier_flat_pick_1_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_flat_pick_1_desc",
 	callback = "RNGModifier_flat_pick_1",
 	items = {
 		"RNGModifier_Default_One_Item",
 		"RNGModifier_flat_pick_1_1",
-		"RNGModifier_flat_pick_1_2"
+		"RNGModifier_flat_pick_1_2",
+		"RNGModifier_flat_pick_1_3"
 	},
 	value = RNGModifier:SafeGetData("flat", "_pick_1"),
 	menu_id = "RNGModifier_flat_Options_Menu",
@@ -187,5 +188,50 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_flat_doctor_bag_3"
 	},
 	value = RNGModifier:SafeGetData("flat", "_doctor_bag"),
+	menu_id = "RNGModifier_flat_Options_Menu",
+})
+
+MenuCallbackHandler.RNGModifier_flat_easy_loot = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_easy_loot")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_flat_easy_loot",
+	title = "RNGModifier_flat_easy_loot_title",
+	desc = "RNGModifier_flat_easy_loot_desc",
+	callback = "RNGModifier_flat_easy_loot",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData("flat", "_easy_loot"),
+	menu_id = "RNGModifier_flat_Options_Menu",
+})
+
+MenuCallbackHandler.RNGModifier_flat_toothbrush = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_toothbrush")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_flat_toothbrush",
+	title = "RNGModifier_flat_toothbrush_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_flat_toothbrush",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_flat_toothbrush_1",
+		"RNGModifier_flat_toothbrush_2",
+		"RNGModifier_flat_toothbrush_3",
+		"RNGModifier_flat_toothbrush_4",
+		"RNGModifier_flat_toothbrush_5",
+		"RNGModifier_flat_toothbrush_6",
+		"RNGModifier_flat_toothbrush_7",
+		"RNGModifier_flat_toothbrush_8",
+		"RNGModifier_flat_toothbrush_9",
+		"RNGModifier_flat_toothbrush_10",
+		"RNGModifier_flat_toothbrush_11",
+		"RNGModifier_flat_toothbrush_12"
+	},
+	value = RNGModifier:SafeGetData("flat", "_toothbrush"),
 	menu_id = "RNGModifier_flat_Options_Menu",
 })

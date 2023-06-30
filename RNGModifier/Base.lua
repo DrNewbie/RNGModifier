@@ -29,6 +29,7 @@ RNGModifier._heistlist = {
 	"arm_par",--Bain - Transport: Park
 	"arm_for",--Bain - Transport: Train Heist
 	"arm_und",--Bain - Transport: Underpass
+	"deep", --Blaine Keegan - Crude Awakening
 	"corp", --Blaine Keegan - Hostile Takeover
 	"pal",--Classics - Counterfeit
 	"dah",--Classics - Diamond Heist
@@ -93,7 +94,8 @@ RNGModifier._heistlist = {
 	"framing_frame_1",--The Elephant - Framing Frame 1
 	"framing_frame_2",--The Elephant - Framing Frame 2
 	"framing_frame_3",--The Elephant - Framing Frame 3
-	"born",--The Elephant - Biker Heist
+	"born",--The Elephant - Biker Heist 1
+	"chew",--The Elephant - Biker Heist 2
 	"jolly",--Vlad - Aftershock
 	"chca",--Vlad - Black Cat
 	"fex",--Vlad - Buluc's Mansion
@@ -106,8 +108,10 @@ RNGModifier._heistlist = {
 	"cane",--Vlad - Santa's Workshop
 	"moon",--Vlad - Stealing Xmas
 	"ukrainian_job",--Vlad - Ukrainian Job
+	"pines",--Vlad - White Xmas
 	"watchdogs_1_night",--Hector - Watchdogs 1 (Night)
 	"watchdogs_2_day",--Hector - Watchdogs 2 (Day)
+	"welcome_to_the_jungle_1_night",--The Elephant - Big Oil 1 (Night)
 	"escape_cafe",--Escape Days - Cafe Escape
 	"escape_cafe_day",--Escape Days - Cafe Escape (Day)
 	"escape_garage",--Escape Days - Garage Escape
@@ -251,6 +255,11 @@ function RNGModifier:Save()
 	local pal_crowbar_C = self:SafeGetOpt("pal", "_crowbar_C")
 	if pal_crowbar_A ~= 0 and table.contains({pal_crowbar_B, pal_crowbar_C}, pal_crowbar_A) then
 		self:SafeSetData(0, "pal", "_crowbar_A")
+	end
+	local deep_phone_A = self:SafeGetOpt("deep", "_phone_A")
+	local deep_phone_B = self:SafeGetOpt("deep", "_phone_B")
+	if deep_phone_A ~= 0 and deep_phone_A == deep_phone_B then
+		self:SafeSetData(0, "deep", "_phone_A")
 	end
 	local HOX3_keycard_A = self:SafeGetOpt("HOX3", "_keycard_A")
 	local HOX3_keycard_B = self:SafeGetOpt("HOX3", "_keycard_B")

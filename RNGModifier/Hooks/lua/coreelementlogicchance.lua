@@ -98,7 +98,7 @@ function ElementLogicChance:on_executed(...)
 				elseif _wall == 2 then
 					self._chance = 999
 				end
-			elseif self._id == 100522 or self._id == 100719 or self._id == 100870 or self._id == 100850 or self._id == 100911 then
+			elseif self._id == 100522 or self._id == 100719 or self._id == 100870 or self._id == 100850 or self._id == 100911 then --only 2 trunks has a chance to spawn loot, all other cars seems to have their random/chance codes disabled
 				local _trunk_chance = RNGModifier:SafeGetData(_level_id, "_trunk_chance") or 0
 				_trunk_chance = _trunk_chance - 1
 				if _trunk_chance == 1 then
@@ -442,9 +442,26 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
-		elseif _level_id == "welcome_to_the_jungle_1" or _level_id == "welcome_to_the_jungle_1_night" then
+		elseif _level_id == "welcome_to_the_jungle_1" then
 			if self._id == 103270 then
 				local _chanceOfTrade10 = RNGModifier:SafeGetData("welcome_to_the_jungle_1", "_chanceOfTrade10") or 0
+				if _chanceOfTrade10 == 0 then
+
+				else
+					self._chance = 999
+				end
+			elseif self._id == 103356 then
+				local _shock = RNGModifier:SafeGetData(_level_id, "_shock") or 0
+				_shock = _shock - 1
+				if _shock == 1 then
+					self._chance = -999
+				elseif _shock == 2 then
+					self._chance = 999
+				end
+			end
+		elseif _level_id == "welcome_to_the_jungle_1_night" then
+			if self._id == 103270 then
+				local _chanceOfTrade10 = RNGModifier:SafeGetData("welcome_to_the_jungle_1_night", "_chanceOfTrade10") or 0
 				if _chanceOfTrade10 == 0 then
 
 				else

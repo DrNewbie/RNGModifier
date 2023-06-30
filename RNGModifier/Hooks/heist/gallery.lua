@@ -40,3 +40,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_paintings"),
 	menu_id = "RNGModifier_gallery_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_gallery_artifact = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_artifact")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_gallery_artifact",
+	title = "RNGModifier_gallery_artifact_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_gallery_artifact",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_gallery_artifact_1",
+		"RNGModifier_gallery_artifact_2",
+		"RNGModifier_gallery_artifact_3"
+	},
+	value = RNGModifier:SafeGetData("gallery", "_artifact"),
+	menu_id = "RNGModifier_gallery_Options_Menu"
+})
