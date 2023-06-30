@@ -77,3 +77,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("framing_frame_1", "_escape_day"),
 	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_framing_frame_1_artifact = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_artifact")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_framing_frame_1_artifact",
+	title = "RNGModifier_framing_frame_1_artifact_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_framing_frame_1_artifact",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_framing_frame_1_artifact_1",
+		"RNGModifier_framing_frame_1_artifact_2",
+		"RNGModifier_framing_frame_1_artifact_3"
+	},
+	value = RNGModifier:SafeGetData("framing_frame_1", "_artifact"),
+	menu_id = "RNGModifier_framing_frame_1_Options_Menu"
+})
