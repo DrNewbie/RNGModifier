@@ -122,3 +122,22 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("run", "_turret_2"),
 	menu_id = "RNGModifier_run_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_run_gas_needed = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_gas_needed")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_run_gas_needed",
+	title = "RNGModifier_run_gas_needed_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_run_gas_needed",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_run_gas_needed_1",
+		"RNGModifier_run_gas_needed_2",
+		"RNGModifier_run_gas_needed_3"
+	},
+	value = RNGModifier:SafeGetData("run", "_gas_needed"),
+	menu_id = "RNGModifier_run_Options_Menu"
+})
