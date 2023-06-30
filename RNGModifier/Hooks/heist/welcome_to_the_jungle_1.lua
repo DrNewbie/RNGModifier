@@ -19,7 +19,7 @@ _bool = tonumber(RNGModifier:SafeGetData(_Curret_Heist, "_chanceOfTrade10")) == 
 MenuHelper:AddToggle({
 	id = "RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10",
 	title = "RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_chanceOfTrade10",
 	value = _bool,
 	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
@@ -33,7 +33,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_welcome_to_the_jungle_1_spawn",
 	title = "RNGModifier_welcome_to_the_jungle_1_spawn_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_spawn",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -52,7 +52,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_welcome_to_the_jungle_1_table_1",
 	title = "RNGModifier_welcome_to_the_jungle_1_table_1_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_table_1",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -74,7 +74,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_welcome_to_the_jungle_1_table_2",
 	title = "RNGModifier_welcome_to_the_jungle_1_table_2_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_table_2",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -95,7 +95,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_welcome_to_the_jungle_1_table_3",
 	title = "RNGModifier_welcome_to_the_jungle_1_table_3_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_table_3",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -117,7 +117,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_welcome_to_the_jungle_1_safe1",
 	title = "RNGModifier_welcome_to_the_jungle_1_safe1_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_safe1",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -147,7 +147,7 @@ end
 MenuHelper:AddMultipleChoice({
 	id = "RNGModifier_welcome_to_the_jungle_1_shock",
 	title = "RNGModifier_welcome_to_the_jungle_1_shock_title",
-	desc = "RNGModifier_empty_desc",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
 	callback = "RNGModifier_welcome_to_the_jungle_1_shock",
 	items = {
 		"RNGModifier_Default_One_Item",
@@ -155,5 +155,40 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_bool_4_true"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_shock"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_weapons = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_weapons")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_1_weapons",
+	title = "RNGModifier_welcome_to_the_jungle_1_weapons_title",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_1_weapons",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_bool_4_true"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_weapons"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_1_safe_amount = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_safe_amount")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_1_safe_amount",
+	title = "RNGModifier_welcome_to_the_jungle_1_safe_amount_title",
+	desc = "RNGModifier_welcome_to_the_jungle_1_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_1_safe_amount",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_1_safe_amount_1",
+		"RNGModifier_welcome_to_the_jungle_1_safe_amount_2"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_safe_amount"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_1_Options_Menu"
 })
