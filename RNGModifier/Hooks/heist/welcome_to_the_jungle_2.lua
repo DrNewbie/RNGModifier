@@ -24,6 +24,7 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_server"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
 })
+
 MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_plane = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_plane")
 	RNGModifier:Save()
@@ -86,6 +87,24 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
 })
 
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_engine_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_engine_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_2_engine_2",
+	title = "RNGModifier_welcome_to_the_jungle_2_engine_2_title",
+	desc = "RNGModifier_welcome_to_the_jungle_2_engine_2_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_2_engine_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_number_4_use_9",
+		"RNGModifier_number_4_use_12"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_engine_2"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
+})
+
 MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_pickup = function(self, item)
 	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pickup")
 	RNGModifier:Save()
@@ -120,5 +139,106 @@ MenuHelper:AddMultipleChoice({
 		"RNGModifier_welcome_to_the_jungle_2_ammo_bag_1"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_ammo_bag"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_switch = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_switch")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_2_switch",
+	title = "RNGModifier_welcome_to_the_jungle_2_switch_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_2_switch",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_2_switch_1"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_switch"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_pc = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_pc")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_2_pc",
+	title = "RNGModifier_welcome_to_the_jungle_2_pc_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_2_pc",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_2_pc_1",
+		"RNGModifier_welcome_to_the_jungle_2_pc_2",
+		"RNGModifier_welcome_to_the_jungle_2_pc_3",
+		"RNGModifier_welcome_to_the_jungle_2_pc_4",
+		"RNGModifier_welcome_to_the_jungle_2_pc_5",
+		"RNGModifier_welcome_to_the_jungle_2_pc_6"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_pc"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_clipboard = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_clipboard")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_2_clipboard",
+	title = "RNGModifier_welcome_to_the_jungle_2_clipboard_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_2_clipboard",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_1",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_2",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_3",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_4",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_5",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_6",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_7",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_8",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_9",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_10",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_11",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_12",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_13",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_14",
+		"RNGModifier_welcome_to_the_jungle_2_clipboard_15"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_clipboard"),
+	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_welcome_to_the_jungle_2_notebook = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_notebook")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_welcome_to_the_jungle_2_notebook",
+	title = "RNGModifier_welcome_to_the_jungle_2_notebook_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_welcome_to_the_jungle_2_notebook",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_1",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_2",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_3",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_4",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_5",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_6",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_7",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_8",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_9",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_10",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_11",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_12",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_13",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_14",
+		"RNGModifier_welcome_to_the_jungle_2_notebook_15"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_notebook"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
 })
