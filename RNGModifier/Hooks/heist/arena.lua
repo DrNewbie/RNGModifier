@@ -117,3 +117,21 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("arena", "_easy_c4"),
 	menu_id = "RNGModifier_arena_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_arena_vent = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vent")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_arena_vent",
+	title = "RNGModifier_arena_vent_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_arena_vent",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_arena_vent_1",
+		"RNGModifier_arena_vent_2"
+	},
+	value = RNGModifier:SafeGetData("arena", "_vent"),
+	menu_id = "RNGModifier_arena_Options_Menu"
+})
