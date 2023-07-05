@@ -3,7 +3,7 @@
   "description": "https://www.speedrun.com/pd2/thread/v2elh",
   "author": "Dr_Newbie",
   "contact": "https://modworkshop.net/mod/19913",
-  "version": "16.53",
+  "version": "16.54",
   "priority": 900,
   "blt_version": 2,
   "supermod_definition" : "hooks.xml",
