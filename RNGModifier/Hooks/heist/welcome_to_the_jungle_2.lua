@@ -36,9 +36,9 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_welcome_to_the_jungle_2_plane",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_number_4_use_1",
-		"RNGModifier_number_4_use_2",
-		"RNGModifier_number_4_use_3"
+		"RNGModifier_welcome_to_the_jungle_2_plane_1",
+		"RNGModifier_welcome_to_the_jungle_2_plane_2",
+		"RNGModifier_welcome_to_the_jungle_2_plane_3"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_plane"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
@@ -153,7 +153,7 @@ MenuHelper:AddMultipleChoice({
 	callback = "RNGModifier_welcome_to_the_jungle_2_switch",
 	items = {
 		"RNGModifier_Default_One_Item",
-		"RNGModifier_welcome_to_the_jungle_2_switch_1"
+		"RNGModifier_bool_4_true"
 	},
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_switch"),
 	menu_id = "RNGModifier_welcome_to_the_jungle_2_Options_Menu"
