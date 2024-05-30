@@ -1529,8 +1529,13 @@ function ElementRandom:_get_random_elements()
 				rand = self:PickRandomFromList(rand, "_alarm_box")
 			elseif self._id == 101529 then
 				rand = self:PickRandomFromList(rand, "_boss")
+			elseif self._id == 101783 then
+				local _code_fetch = self:PickRandomFromList(rand, "_vault_type_1")
+				if _code_fetch == 1 or _code_fetch == 2 then
+					rand = _code_fetch
+				end
 			elseif self._id == 101710 then
-				rand = self:PickRandomFromList(rand, "_setup")
+				rand = self:PickRandomFromList(rand, "_vault_type_2")
 			elseif self._id == 103006 then
 				rand = self:PickRandomFromList(rand, "_assets")
 			elseif self._id == 103010 then

@@ -65,20 +65,40 @@ MenuHelper:AddMultipleChoice({
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
 
-MenuCallbackHandler.RNGModifier_hox_3_code = function(self, item)
-	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_code")
+MenuCallbackHandler.RNGModifier_hox_3_vault_type_1 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vault_type_1")
 	RNGModifier:Save()
 end
 MenuHelper:AddMultipleChoice({
-	id = "RNGModifier_hox_3_code",
-	title = "RNGModifier_hox_3_code_title",
+	id = "RNGModifier_hox_3_vault_type_1",
+	title = "RNGModifier_hox_3_vault_type_1_title",
 	desc = "RNGModifier_empty_desc",
-	callback = "RNGModifier_hox_3_code",
+	callback = "RNGModifier_hox_3_vault_type_1",
 	items = {
 		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_code_2",
+		"RNGModifier_hox_3_code_3",
 		"RNGModifier_hox_3_code_1"
 	},
-	value = RNGModifier:SafeGetData(_Curret_Heist, "_code"),
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_vault_type_1"),
+	menu_id = "RNGModifier_hox_3_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_hox_3_vault_type_2 = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_vault_type_2")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_hox_3_vault_type_2",
+	title = "RNGModifier_hox_3_vault_type_2_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_hox_3_vault_type_2",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_hox_3_vault_type_boss",
+		"RNGModifier_hox_3_vault_type_keycard"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_vault_type_2"),
 	menu_id = "RNGModifier_hox_3_Options_Menu"
 })
 

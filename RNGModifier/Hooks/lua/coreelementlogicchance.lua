@@ -794,9 +794,11 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			elseif self._id == 101782 then
-				local _code = RNGModifier:SafeGetData(_level_id,"_code") or 0
-				if _code == 2 then
+				local _vault_type_1 = RNGModifier:SafeGetData(_level_id,"_vault_type_1") or 0
+				if _vault_type_1 == 4 then
 					self._chance = -999
+				elseif _vault_type_1 ~= 1 then
+					self._chance = 999
 				end
 			end
 		elseif _level_id == "nmh" then
