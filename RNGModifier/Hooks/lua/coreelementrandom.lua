@@ -798,6 +798,8 @@ function ElementRandom:_get_random_elements()
 				rand = self:PickValueFromList(rand, "_car_crash_drive_in")
 			elseif self._id == 100962 then
 				rand = self:PickRandomFromList(rand, "_assets")
+			elseif self._id == 101237 then
+				rand = self:PickRandomFromList(rand, "_middle_gate")
 			end
 		elseif _level_id == "rvd2" then
 			if self._id == 100442 then

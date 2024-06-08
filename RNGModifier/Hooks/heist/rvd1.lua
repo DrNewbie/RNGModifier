@@ -179,3 +179,39 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData("rvd1", "_assets"),
 	menu_id = "RNGModifier_rvd1_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_rvd1_left_gate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_left_gate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_rvd1_left_gate",
+	title = "RNGModifier_rvd1_left_gate_title",
+	desc = "RNGModifier_rvd1_left_gate_desc",
+	callback = "RNGModifier_rvd1_left_gate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_rvd1_left_gate_1",
+		"RNGModifier_rvd1_left_gate_2"
+	},
+	value = RNGModifier:SafeGetData("rvd1", "_left_gate"),
+	menu_id = "RNGModifier_rvd1_Options_Menu"
+})
+
+MenuCallbackHandler.RNGModifier_rvd1_middle_gate = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_middle_gate")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_rvd1_middle_gate",
+	title = "RNGModifier_rvd1_middle_gate_title",
+	desc = "RNGModifier_rvd1_middle_gate_desc",
+	callback = "RNGModifier_rvd1_middle_gate",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_rvd1_middle_gate_1",
+		"RNGModifier_rvd1_middle_gate_2"
+	},
+	value = RNGModifier:SafeGetData("rvd1", "_middle_gate"),
+	menu_id = "RNGModifier_rvd1_Options_Menu"
+})

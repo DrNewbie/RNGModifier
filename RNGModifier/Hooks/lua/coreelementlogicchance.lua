@@ -41,6 +41,16 @@ function ElementLogicChance:on_executed(...)
 					self._chance = -999
 				end
 			end
+		elseif _level_id == "rvd1" then
+			if self._id == 100736 then
+				local _left_gate = RNGModifier:SafeGetData(_level_id, "_left_gate") or 0
+				_left_gate = _left_gate - 1
+				if _left_gate == 1 then
+					self._chance = 999
+				elseif _left_gate == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "jolly" then
 			if self._id == 100127 then
 				local _vans = RNGModifier:SafeGetData(_level_id, "_vans") or 0
