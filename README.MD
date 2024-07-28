@@ -6,6 +6,8 @@
 
 ### Simplified Chinese - https://github.com/CaptainVash
 
+### Simplified Chinese - https://github.com/db03730
+
 ### Korean - https://github.com/soulls00
 
 ## Allow you to control something
