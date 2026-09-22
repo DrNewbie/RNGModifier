@@ -459,6 +459,8 @@ function ElementRandom:_get_random_elements()
 				rand = self:PickRandomFromList(rand, "_box_at_left_side")
 			elseif self._id == 101689 then
 				rand = self:PickRandomFromList(rand, "_box_in_room_right")
+			elseif self._id == 102432 then
+				rand = self:PickRandomFromList(rand, "_heli_arrival")
 			elseif self._id == 101271 then
 				local _guard = RNGModifier:SafeGetData(_level_id, "_guard") or 0
 				_guard = _guard - 1
@@ -3063,6 +3065,111 @@ function ElementRandom:_get_random_elements()
 					if _phone_B > 0 then
 						rand = _phone_B
 					end
+				end
+			end
+		elseif _level_id == "auc" then
+			if self._id == 102793 then
+				rand = self:PickRandomFromList(rand, "_vault")
+			elseif self._id == 103138 then
+				rand = self:PickRandomFromList(rand, "_armory")
+			elseif self._id == 103206 then
+				rand = self:PickRandomFromList(rand, "_security_1")
+			elseif self._id == 103205 then
+				rand = self:PickRandomFromList(rand, "_security_2")
+			elseif self._id == 103158 then
+				rand = self:PickRandomFromList(rand, "_insider_entrance")
+			elseif self._id == 101633 then
+				rand = self:PickRandomFromList(rand, "_correct_loot")
+			elseif self._id == 102972 then
+				rand = self:PickRandomFromList(rand, "_truck")
+			elseif self._id == 102808 then
+				rand = self:PickRandomFromList(rand, "_hall_stairs")
+			elseif self._id == 102876 then
+				rand = self:PickRandomFromList(rand, "_parking_wall")
+			elseif self._id == 105182 then
+				rand = self:PickRandomFromList(rand, "_plane")
+			elseif self._id == 102875 then
+				rand = self:PickRandomFromList(rand, "_keypad_door")
+			elseif self._id == 105074 then
+				rand = self:PickRandomFromList(rand, "_power_out_1")
+			elseif self._id == 105075 then
+				rand = self:PickRandomFromList(rand, "_power_out_2")
+			elseif self._id == 105076 then
+				rand = self:PickRandomFromList(rand, "_power_out_3")
+			elseif self._id == 104997 then
+				rand = self:PickRandomFromList(rand, "_power_in_1")
+			elseif self._id == 104998 then
+				rand = self:PickRandomFromList(rand, "_power_in_2")
+			elseif self._id == 104999 then
+				rand = self:PickRandomFromList(rand, "_power_in_3")
+			elseif self._id == 102806 then
+				rand = self:PickRandomFromList(rand, "_balcony")
+			elseif self._id == 105440 then 
+				rand = self:PickRandomFromList(rand, "_loot_a")
+			elseif self._id == 105447 then 
+				rand = self:PickRandomFromList(rand, "_loot_b")
+			elseif self._id == 102717 then 
+				rand = self:PickRandomFromList(rand, "_loot_c")
+			elseif self._id == 105439 then 
+				rand = self:PickRandomFromList(rand, "_loot_d")
+			elseif self._id == 105442 then 
+				rand = self:PickRandomFromList(rand, "_loot_e")
+			elseif self._id == 105441 then 
+				rand = self:PickRandomFromList(rand, "_loot_f")
+			elseif self._id == 105415 then 
+				rand = self:PickRandomFromList(rand, "_loot_g")
+			elseif self._id == 105436 then 
+				rand = self:PickRandomFromList(rand, "_loot_h")
+			elseif self._id == 102711 then 
+				rand = self:PickRandomFromList(rand, "_loot_i")
+			elseif self._id == 105443 then 
+				rand = self:PickRandomFromList(rand, "_loot_j")
+			elseif self._id == 105444 then 
+				rand = self:PickRandomFromList(rand, "_loot_k")
+			elseif self._id == 105435 then 
+				rand = self:PickRandomFromList(rand, "_loot_l")
+			elseif self._id == 105432 then 
+				rand = self:PickRandomFromList(rand, "_loot_m")
+			elseif self._id == 105445 then 
+				rand = self:PickRandomFromList(rand, "_loot_n")
+			elseif self._id == 105446 then 
+				rand = self:PickRandomFromList(rand, "_loot_o")
+			elseif self._id == 105433 then 
+				rand = self:PickRandomFromList(rand, "_loot_p")
+			elseif self._id == 105434 then 
+				rand = self:PickRandomFromList(rand, "_loot_q")
+			elseif self._id == 105914 then
+				rand = self:PickRandomFromList(rand, "_ammo_bag")
+			elseif self._id == 105916 then
+				rand = self:PickRandomFromList(rand, "_body_bag")
+			elseif self._id == 105917 then
+				rand = self:PickRandomFromList(rand, "_grenade_case")
+			elseif self._id == 105915 then
+				rand = self:PickRandomFromList(rand, "_doctor_bag")
+			elseif self._id == 106271 then
+				rand = self:PickRandomFromList(rand, "_ipad")
+			elseif self._id == 102555 then
+				rand = self:PickRandomFromList(rand, "_ipad_fashion")
+			elseif self._id == 102549 then
+				rand = self:PickRandomFromList(rand, "_ipad_library")
+			elseif self._id == 101717 then
+				rand = self:PickRandomFromList(rand, "_phone")
+			elseif self._id == 105813 then
+				rand = self:PickRandomFromList(rand, "_tool")
+			elseif self._id == 105109 then
+				rand = self:PickRandomFromList(rand, "_key")
+			elseif self._id == 101186 then
+				rand = self:PickRandomFromList(rand, "_pc")
+			elseif self._id == 103972 then
+				rand = self:PickRandomFromList(rand, "_curator")
+			elseif self._id == 102874 then
+				rand = self:PickRandomFromList(rand, "_office_doors")
+			elseif self._id == 106964 or self._id == 104919 or self._id == 104886 or self._id == 104888 then
+				local _bit = RNGModifier:SafeGetData(_level_id, "_bit") or 0
+				_bit = _bit - 1
+				if _bit > 0 then
+					local ids_for_1 = {[106964] = 1, [104919] = 1, [104886] = 1, [104888] = 1}
+					rand = ids_for_1[self._id] or rand
 				end
 			end
 		elseif _level_id == "escape_overpass" then
