@@ -24,6 +24,32 @@ function ElementLogicChance:on_executed(...)
 					self._chance = 999
 				end
 			end
+		elseif _level_id == "auc" then
+			if self._id == 109724 then
+				local _call = RNGModifier:SafeGetData(_level_id, "_call") or 0
+				_call = _call - 1
+				if _call == 1 then
+					self._chance = 999
+				elseif _call == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 105523 then
+				local _cutter_chance = RNGModifier:SafeGetData(_level_id, "_cutter_chance") or 0
+				_cutter_chance = _cutter_chance - 1
+				if _cutter_chance == 1 then
+					self._chance = 999
+				elseif _cutter_chance == 2 then
+					self._chance = -999
+				end
+			elseif self._id == 100353 then
+				local _ipad_spam = RNGModifier:SafeGetData(_level_id, "_ipad_spam") or 0
+				_ipad_spam = _ipad_spam - 1
+				if _ipad_spam == 1 then
+					self._chance = 999
+				elseif _ipad_spam == 2 then
+					self._chance = -999
+				end
+			end
 		elseif _level_id == "family" then
 			if self._id == 104842 then
 				local _chance_of_door = RNGModifier:SafeGetData(_level_id, "_chance_of_door") or 0
