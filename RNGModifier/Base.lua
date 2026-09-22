@@ -29,6 +29,7 @@ RNGModifier._heistlist = {
 	"arm_par",--Bain - Transport: Park
 	"arm_for",--Bain - Transport: Train Heist
 	"arm_und",--Bain - Transport: Underpass
+	"auc",--Bain - Under The Hammer
 	"deep", --Blaine Keegan - Crude Awakening
 	"corp", --Blaine Keegan - Hostile Takeover
 	"pal",--Classics - Counterfeit
