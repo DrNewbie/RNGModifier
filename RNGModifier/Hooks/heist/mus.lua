@@ -150,3 +150,23 @@ MenuHelper:AddMultipleChoice({
 	value = RNGModifier:SafeGetData(_Curret_Heist, "_guard"),
 	menu_id = "RNGModifier_mus_Options_Menu"
 })
+
+MenuCallbackHandler.RNGModifier_mus_heli_arrival = function(self, item)
+	RNGModifier:SafeSetData(item:value(), _Curret_Heist, "_heli_arrival")
+	RNGModifier:Save()
+end
+MenuHelper:AddMultipleChoice({
+	id = "RNGModifier_mus_heli_arrival",
+	title = "RNGModifier_mus_heli_arrival_title",
+	desc = "RNGModifier_empty_desc",
+	callback = "RNGModifier_mus_heli_arrival",
+	items = {
+		"RNGModifier_Default_One_Item",
+		"RNGModifier_mus_heli_arrival_1",
+		"RNGModifier_mus_heli_arrival_2",
+		"RNGModifier_mus_heli_arrival_3",
+		"RNGModifier_mus_heli_arrival_4"
+	},
+	value = RNGModifier:SafeGetData(_Curret_Heist, "_heli_arrival"),
+	menu_id = "RNGModifier_mus_Options_Menu"
+})
