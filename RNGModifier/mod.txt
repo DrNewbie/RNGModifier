@@ -1,20 +1,20 @@
 {
-  "name": "RNGModifier",
-  "description": "https://www.speedrun.com/pd2/thread/v2elh",
-  "author": "Dr_Newbie",
-  "contact": "https://modworkshop.net/mod/19913",
-  "version": "16.9",
-  "priority": 900,
-  "blt_version": 2,
-  "supermod_definition" : "hooks.xml",
-  "updates": [
-    {
-      "identifier": "RNGModifierGitHubUpdate",
-      "host": {
-        "meta": "https://drnewbie.github.io/RNGModifier/RNGModifier.meta.json",
-        "patchnotes": "https://github.com/DrNewbie/RNGModifier/commits/master",
-        "download": "https://drnewbie.github.io/RNGModifier/RNGModifier.zip"
-      }
-    }
-  ]
+    "name": "RNGModifier",
+    "description": "https://www.speedrun.com/pd2/thread/v2elh",
+    "author": "Dr_Newbie",
+    "contact": "https://modworkshop.net/mod/19913",
+    "version": "17.0",
+    "priority": 900,
+    "blt_version": 2,
+    "supermod_definition": "hooks.xml",
+    "updates": [
+        {
+            "identifier": "RNGModifierGitHubUpdate",
+            "host": {
+                "meta": "https://drnewbie.github.io/RNGModifier/RNGModifier.meta.json",
+                "patchnotes": "https://github.com/DrNewbie/RNGModifier/commits/master",
+                "download": "https://drnewbie.github.io/RNGModifier/RNGModifier.zip"
+            }
+        }
+    ]
 }
